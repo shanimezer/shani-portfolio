@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0e0e10">
+  <meta name="description" content="Shani Mezer, director, producer and digital media creator.">
+  <title>Shani Mezer | Interactive Portfolio</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="home-page">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span>EXPLORE</span></div>
+
+  <div class="intro" id="intro" role="dialog" aria-label="Portfolio introduction">
+    <div class="intro-orbit" aria-hidden="true"></div>
+    <p class="kicker">Interactive portfolio / 2026</p>
+    <h1>SHANI<br>MEZER</h1>
+    <p class="intro-copy">Director, producer and digital storyteller creating across film, games, social and emerging media.</p>
+    <button class="enter-button" id="enterButton"><span>Enter the universe</span><b>↗</b></button>
+    <button class="skip-button" id="skipIntro">Skip intro</button>
+  </div>
+
+  <header class="topbar">
+    <a class="brand magnetic" href="index.html" aria-label="Shani Mezer home">SM<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="work/index.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button class="motion-toggle" id="motionToggle" aria-label="Toggle motion">Motion <span>ON</span></button>
+      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="work/index.html">All Work</a>
+    <a href="work/directing.html">Directing</a>
+    <a href="work/production.html">Production</a>
+    <a href="work/social.html">Social</a>
+    <a href="work/editing.html">Editing</a>
+    <a href="work/ai.html">AI</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="desktop-experience" id="desktopExperience" aria-label="Creative disciplines">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+      <div class="hub" id="hub">
+        <div class="hub-center" data-depth="8">
+          <p class="kicker hub-eyebrow">My universe / portfolio</p>
+          <h2>SHANI MEZER</h2>
+          <p class="hub-instruction">Choose a world. See what I create.</p>
+          <button class="showreel-button project-trigger" data-project="showreel">
+            <span class="play">▶</span>
+            <span><b>Play Showreel</b><small>Selected work, 01:24</small></span>
+          </button>
+        </div>
+
+        <a class="world world-directing magnetic" href="work/directing.html" data-depth="20" data-label="ENTER">
+          <span class="world-number">01</span><span class="world-icon">◉</span><h3>Directing</h3><p>Animation, cinematics and live action.</p>
+        </a>
+        <a class="world world-games magnetic" href="project/heir-of-death.html" data-depth="28" data-label="PLAY">
+          <span class="world-number">02</span><span class="world-icon">✦</span><h3>Games</h3><p>Worldbuilding, narrative and player experience.</p>
+        </a>
+        <a class="world world-production magnetic" href="work/production.html" data-depth="16" data-label="OPEN">
+          <span class="world-number">03</span><span class="world-icon">▦</span><h3>Production</h3><p>Turning ambitious ideas into finished work.</p>
+        </a>
+        <a class="world world-social magnetic" href="work/social.html" data-depth="24" data-label="SCROLL">
+          <span class="world-number">04</span><span class="world-icon">↯</span><h3>Social</h3><p>Content, campaigns and digital communities.</p>
+        </a>
+        <a class="world world-editing magnetic" href="work/editing.html" data-depth="18" data-label="CUT">
+          <span class="world-number">05</span><span class="world-icon">⌁</span><h3>Editing</h3><p>Rhythm, emotion and story in every cut.</p>
+        </a>
+        <a class="world world-ai magnetic" href="work/ai.html" data-depth="30" data-label="GENERATE">
+          <span class="world-number">06</span><span class="world-icon">◇</span><h3>AI Lab</h3><p>New visual workflows and impossible worlds.</p>
+        </a>
+      </div>
+      <div class="desktop-hint"><span></span> Move to explore · Select a world</div>
+    </section>
+
+    <section class="mobile-experience" id="mobileExperience" aria-label="Portfolio journey">
+      <article class="mobile-hero chapter">
+        <div class="chapter-media hero-media"></div>
+        <div class="chapter-content">
+          <p class="kicker">Director · Producer · Creator</p>
+          <h1>I create worlds<br>across screens.</h1>
+          <button class="mobile-reel project-trigger" data-project="showreel">▶ Watch showreel</button>
+          <p class="swipe-hint">Swipe to explore <span>↓</span></p>
+        </div>
+      </article>
+
+      <a class="chapter discipline-chapter directing-chapter" href="work/directing.html">
+        <div class="chapter-media"></div><div class="chapter-index">01 / 06</div><div class="chapter-content"><p class="kicker">Crafting the frame</p><h2>Directing</h2><p>Animation, cinematics and live action built around performance and visual storytelling.</p><span class="chapter-cta">Explore directing ↗</span></div>
+      </a>
+      <a class="chapter discipline-chapter games-chapter" href="project/heir-of-death.html">
+        <div class="chapter-media"></div><div class="chapter-index">02 / 06</div><div class="chapter-content"><p class="kicker">Building playable worlds</p><h2>Games</h2><p>Narrative systems, cinematic moments and dark fantasy worlds developed in Unreal Engine.</p><span class="chapter-cta">Enter the game ↗</span></div>
+      </a>
+      <a class="chapter discipline-chapter production-chapter" href="work/production.html">
+        <div class="chapter-media"></div><div class="chapter-index">03 / 06</div><div class="chapter-content"><p class="kicker">Making ideas happen</p><h2>Production</h2><p>Creative leadership, teams and pipelines that move projects from concept to delivery.</p><span class="chapter-cta">Explore production ↗</span></div>
+      </a>
+      <a class="chapter discipline-chapter social-chapter" href="work/social.html">
+        <div class="chapter-media"></div><div class="chapter-index">04 / 06</div><div class="chapter-content"><p class="kicker">Stories that travel</p><h2>Social</h2><p>Platform-native ideas, community strategy and content with a distinct voice.</p><span class="chapter-cta">View social work ↗</span></div>
+      </a>
+      <a class="chapter discipline-chapter editing-chapter" href="work/editing.html">
+        <div class="chapter-media"></div><div class="chapter-index">05 / 06</div><div class="chapter-content"><p class="kicker">Finding the rhythm</p><h2>Editing</h2><p>Shaping emotion, pace and clarity from the first cut to the final frame.</p><span class="chapter-cta">Explore editing ↗</span></div>
+      </a>
+      <a class="chapter discipline-chapter ai-chapter" href="work/ai.html">
+        <div class="chapter-media"></div><div class="chapter-index">06 / 06</div><div class="chapter-content"><p class="kicker">Experimenting forward</p><h2>AI Lab</h2><p>Image, video and hybrid workflows for creating worlds that were previously out of reach.</p><span class="chapter-cta">Enter the lab ↗</span></div>
+      </a>
+      <article class="chapter mobile-contact">
+        <div class="chapter-content"><p class="kicker">Have a world to build?</p><h2>Let’s make<br>something alive.</h2><a href="contact.html" class="contact-pill">Start a conversation ↗</a><footer>© 2026 Shani Mezer</footer></div>
+      </article>
+    </section>
+  </main>
+
+  <div class="project-overlay" id="projectOverlay" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close showreel">×</button>
+    <div class="video-shell">
+      <div class="video-placeholder">
+        <span>SHOWREEL 2026</span>
+        <button class="big-play" aria-label="Play placeholder video">▶</button>
+        <p>Add your YouTube or Vimeo embed here</p>
+      </div>
+    </div>
+    <div class="overlay-meta"><span>Direction · Production · Games · Social · AI</span><span>01:24</span></div>
+  </div>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
