@@ -30,6 +30,34 @@
       if(Array.isArray(project.categories)) raw.push(...project.categories);
       return [...new Set(raw.map(value=>this.normalizeCategory(value)).filter(Boolean))];
     },
+    embedUrl(value=''){
+      const raw=String(value).trim();
+      if(!raw) return '';
+      try {
+        const url=new URL(raw);
+        const host=url.hostname.replace(/^www\./,'');
+        if(host==='youtu.be'){
+          const id=url.pathname.split('/').filter(Boolean)[0];
+          return id ? `https://www.youtube.com/embed/${id}` : raw;
+        }
+        if(host==='youtube.com' || host==='m.youtube.com'){
+          if(url.pathname.startsWith('/embed/')) return raw;
+          if(url.pathname.startsWith('/shorts/')){
+            const id=url.pathname.split('/').filter(Boolean)[1];
+            return id ? `https://www.youtube.com/embed/${id}` : raw;
+          }
+          const id=url.searchParams.get('v');
+          return id ? `https://www.youtube.com/embed/${id}` : raw;
+        }
+        if(host==='vimeo.com'){
+          const id=url.pathname.split('/').filter(Boolean).pop();
+          return id ? `https://player.vimeo.com/video/${id}` : raw;
+        }
+        return raw;
+      } catch {
+        return raw;
+      }
+    },
     escape(value=''){ const d=document.createElement('div'); d.textContent=String(value); return d.innerHTML; },
     projectUrl(project, prefix='../'){ return `${prefix}project/index.html?slug=${encodeURIComponent(project.id)}`; },
     renderGrid(container, options={}){
@@ -55,10 +83,11 @@
     if(!p){ detail.innerHTML='<section class="page-hero"><div class="wrap"><div class="eyebrow">Project not found</div><h1>This project does not exist.</h1><a class="button" href="../work/index.html">Back to work</a></div></section>'; return; }
     document.title=`${p.title} | Shani Mezer`;
     const gallery=(p.gallery||[]).filter(Boolean);
+    const video=PortfolioCMS.embedUrl(p.video||'');
     detail.style.setProperty('--project-accent',p.accent||'#b9bec8');
     detail.innerHTML=`
       <section class="project-hero-dynamic"><div class="project-hero-image" style="background-image:url('${PortfolioCMS.escape(p.cover||'')}')"></div><div class="project-hero-shade"></div><div class="wrap project-hero-copy"><div class="eyebrow">${PortfolioCMS.escape(p.categoryLabel||PortfolioCMS.categories[PortfolioCMS.normalizeCategory(p.category)]||p.category)}</div><h1>${PortfolioCMS.escape(p.title)}</h1><p>${PortfolioCMS.escape(p.summary||'')}</p><div class="project-tags"><span>${PortfolioCMS.escape(p.year||'')}</span><span>${PortfolioCMS.escape(p.role||'')}</span></div></div></section>
-      ${p.video?`<section class="section"><div class="wrap"><div class="video-frame"><iframe src="${PortfolioCMS.escape(p.video)}" title="${PortfolioCMS.escape(p.title)} video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></section>`:''}
+      ${video?`<section class="section"><div class="wrap"><div class="video-frame"><iframe src="${PortfolioCMS.escape(video)}" title="${PortfolioCMS.escape(p.title)} video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div></section>`:''}
       <section class="section"><div class="wrap project-info-grid"><div><div class="eyebrow">The project</div><h2>Overview</h2><p>${PortfolioCMS.escape(p.summary||'')}</p></div><dl><div><dt>Role</dt><dd>${PortfolioCMS.escape(p.role||'')}</dd></div><div><dt>Tools</dt><dd>${PortfolioCMS.escape(p.tools||'')}</dd></div><div><dt>Client / Context</dt><dd>${PortfolioCMS.escape(p.client||'')}</dd></div><div><dt>Year</dt><dd>${PortfolioCMS.escape(p.year||'')}</dd></div></dl></div></section>
       <section class="section alt-section"><div class="wrap two-column-story"><div><div class="eyebrow">Challenge</div><h2>What needed solving</h2><p>${PortfolioCMS.escape(p.challenge||'Add the project challenge in Admin.')}</p></div><div><div class="eyebrow">Approach</div><h2>How I approached it</h2><p>${PortfolioCMS.escape(p.approach||'Add the creative approach in Admin.')}</p></div></div></section>
       ${gallery.length?`<section class="section"><div class="wrap"><div class="eyebrow">Gallery</div><div class="project-gallery">${gallery.map((img,i)=>`<img src="${PortfolioCMS.escape(img)}" alt="${PortfolioCMS.escape(p.title)} gallery image ${i+1}" loading="lazy">`).join('')}</div></div></section>`:''}
