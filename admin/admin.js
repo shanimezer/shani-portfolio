@@ -1,16 +1,233 @@
 (() => {
- const cms=window.PortfolioCMS, form=document.getElementById('projectForm'), listEl=document.getElementById('projectList'), empty=document.getElementById('emptyEditor');
- let projects=cms.get(), current=null;
- const fields=['id','title','year','category','categoryLabel','accent','cover','video','summary','role','tools','client','challenge','approach'];
- const renderList=()=>{document.getElementById('projectCount').textContent=`${projects.length}`;listEl.innerHTML=projects.map(p=>`<button class="project-item ${current===p.id?'active':''}" data-id="${cms.escape(p.id)}"><span class="project-thumb" style="background-image:url('${cms.escape(p.cover||'')}')"></span><span><strong>${cms.escape(p.title)}</strong><small>${cms.escape(cms.categories[p.category]||p.category)} · ${cms.escape(p.year||'')}</small></span></button>`).join('');listEl.querySelectorAll('button').forEach(b=>b.onclick=()=>open(b.dataset.id));};
- const open=id=>{const p=projects.find(x=>x.id===id);if(!p)return;current=id;empty.hidden=true;form.hidden=false;fields.forEach(name=>{form.elements[name].value=p[name]||''});form.elements.featured.checked=!!p.featured;form.elements.gallery.value=(p.gallery||[]).join('\n');document.getElementById('editorTitle').textContent=p.title;renderList();};
- const newProject=()=>{const id=`new-project-${Date.now().toString().slice(-5)}`;projects.unshift({id,title:'Untitled Project',year:new Date().getFullYear().toString(),category:'directing',categoryLabel:'Directing',accent:'#b9bec8',cover:'',video:'',summary:'',role:'',tools:'',client:'',challenge:'',approach:'',featured:false,gallery:[]});open(id);};
- form.onsubmit=e=>{e.preventDefault();const old=current;const p={};fields.forEach(name=>p[name]=form.elements[name].value.trim());p.featured=form.elements.featured.checked;p.gallery=form.elements.gallery.value.split('\n').map(x=>x.trim()).filter(Boolean);if(!/^[a-z0-9-]+$/.test(p.id)){alert('Slug can only use lowercase letters, numbers and hyphens.');return;}if(projects.some(x=>x.id===p.id&&x.id!==old)){alert('That slug is already in use.');return;}const index=projects.findIndex(x=>x.id===old);projects[index]=p;current=p.id;cms.save(projects);document.getElementById('editorTitle').textContent=p.title;document.getElementById('saveStatus').textContent='Saved in this browser.';renderList();};
- document.getElementById('newProject').onclick=newProject;
- document.getElementById('deleteProject').onclick=()=>{if(!current||!confirm('Delete this project?'))return;projects=projects.filter(p=>p.id!==current);cms.save(projects);current=null;form.hidden=true;empty.hidden=false;renderList();};
- document.getElementById('previewProject').onclick=()=>{if(current)window.open(`../project/index.html?slug=${encodeURIComponent(current)}`,'_blank');};
- document.getElementById('exportData').onclick=()=>{const blob=new Blob([JSON.stringify(projects,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='shani-portfolio-projects.json';a.click();URL.revokeObjectURL(a.href);};
- document.getElementById('importData').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!Array.isArray(data))throw Error();projects=data;cms.save(projects);current=null;form.hidden=true;empty.hidden=false;renderList();}catch{alert('This does not look like a valid project backup.');}};
- document.getElementById('resetData').onclick=()=>{if(!confirm('Restore the original demo projects?'))return;cms.reset();projects=cms.get();current=null;form.hidden=true;empty.hidden=false;renderList();};
- renderList(); if(projects[0]) open(projects[0].id);
+  const cms = window.PortfolioCMS;
+
+  // Load local edits, but always recover projects that still exist in data/projects.js.
+  // This prevents an accidentally saved empty localStorage array from hiding the site projects.
+  const loadProjects = () => {
+    const localProjects = Array.isArray(cms.get()) ? cms.get() : [];
+    const siteProjects = Array.isArray(cms.defaults()) ? cms.defaults() : [];
+
+    if (!siteProjects.length) return localProjects;
+
+    const merged = [...localProjects];
+    const knownIds = new Set(merged.map(project => project.id));
+
+    siteProjects.forEach(project => {
+      if (!knownIds.has(project.id)) merged.push(project);
+    });
+
+    // An empty saved database should never override projects bundled with the site.
+    if (!localProjects.length || merged.length !== localProjects.length) {
+      cms.save(merged);
+    }
+
+    return merged;
+  };
+
+  let projects = loadProjects();
+  let currentId = null;
+  let editingBlockId = null;
+
+  const $ = selector => document.querySelector(selector);
+  const $$ = selector => [...document.querySelectorAll(selector)];
+  const projectList = $('#projectList');
+  const editor = $('#editor');
+  const empty = $('#emptyState');
+  const form = $('#settingsForm');
+  const blockList = $('#blockList');
+  const dialog = $('#blockDialog');
+  const blockForm = $('#blockForm');
+
+  const currentProject = () => projects.find(project => project.id === currentId);
+  const markChanged = () => $('#saveState').textContent = 'Unsaved local changes';
+
+  const slugify = value => value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  const parseLines = (value, kind) => value.split('\n').map(line => line.trim()).filter(Boolean).map(line => {
+    const parts = line.split('|').map(x => x.trim());
+    if (kind === 'media') return { id: cms.makeId('media'), url: parts[0] || '', type: /youtube|vimeo|\.mp4|\.webm/.test(parts[0] || '') ? 'video' : 'image', title: parts[1] || '', caption: parts[2] || '' };
+    return { id: cms.makeId('item'), title: parts[0] || '', text: parts.slice(1).join(' | ') || '' };
+  });
+  const serializeLines = (items, kind) => (items || []).map(item => kind === 'media' ? [item.url, item.title, item.caption].filter(Boolean).join(' | ') : [item.title, item.text].filter(Boolean).join(' | ')).join('\n');
+
+  const renderProjects = () => {
+    $('#projectCount').textContent = projects.length;
+    projectList.innerHTML = projects.map(project => `<button class="project-item ${project.id === currentId ? 'active' : ''}" data-id="${cms.escape(project.id)}"><span class="project-thumb" style="background-image:url('${cms.escape(project.cover || '')}')"></span><span><strong>${cms.escape(project.title || 'Untitled')}</strong><small>${cms.escape(project.status || 'draft')} · ${(project.blocks || []).length} blocks</small></span></button>`).join('');
+    $$('.project-item').forEach(button => button.onclick = () => openProject(button.dataset.id));
+  };
+
+  const populateSettings = project => {
+    ['id','title','year','summary','category','categoryLabel','status','accent','cover','video','tools','client'].forEach(name => form.elements[name].value = project[name] || '');
+    form.elements.categories.value = (project.categories || []).filter(x => x !== project.category).join(', ');
+    form.elements.roles.value = (project.roles || []).join(', ');
+    form.elements.featured.checked = !!project.featured;
+  };
+
+  const collectSettings = () => {
+    const project = currentProject();
+    const oldId = project.id;
+    const id = form.elements.id.value.trim();
+    if (!/^[a-z0-9-]+$/.test(id)) throw new Error('The slug can only contain lowercase letters, numbers and hyphens.');
+    if (projects.some(item => item.id === id && item.id !== oldId)) throw new Error('That slug is already being used.');
+    project.id = id;
+    project.title = form.elements.title.value.trim();
+    project.year = form.elements.year.value.trim();
+    project.summary = form.elements.summary.value.trim();
+    project.category = form.elements.category.value;
+    const extras = form.elements.categories.value.split(',').map(x => x.trim()).filter(Boolean);
+    project.categories = [...new Set([project.category, ...extras])];
+    project.categoryLabel = form.elements.categoryLabel.value.trim();
+    project.roles = form.elements.roles.value.split(',').map(x => x.trim()).filter(Boolean);
+    project.role = project.roles.join(', ');
+    project.status = form.elements.status.value;
+    project.accent = form.elements.accent.value;
+    project.cover = form.elements.cover.value.trim();
+    project.video = form.elements.video.value.trim();
+    project.tools = form.elements.tools.value.trim();
+    project.client = form.elements.client.value.trim();
+    project.featured = form.elements.featured.checked;
+    currentId = id;
+  };
+
+  const openProject = id => {
+    currentId = id;
+    const project = currentProject();
+    if (!project) return;
+    empty.hidden = true;
+    editor.hidden = false;
+    $('#editorTitle').textContent = project.title;
+    populateSettings(project);
+    renderProjects();
+    renderBlocks();
+    renderPreview();
+    $('#saveState').textContent = 'Saved locally in this browser';
+  };
+
+  const renderBlocks = () => {
+    const project = currentProject();
+    const blocks = project?.blocks || [];
+    if (!blocks.length) {
+      blockList.innerHTML = '<div class="empty-blocks"><h3>No story blocks yet</h3><p>Add the first step in this project’s creative journey.</p></div>';
+      return;
+    }
+    blockList.innerHTML = blocks.map((block, index) => `<article class="block-card ${block.visible === false ? 'is-hidden' : ''}" draggable="true" data-id="${block.id}"><span class="drag-handle">⋮⋮</span><span class="block-index">${String(index + 1).padStart(2,'0')}</span><div class="block-info"><strong>${cms.escape(block.title || cms.blockTypes[block.type])}</strong><small>${cms.escape(cms.blockTypes[block.type])}${block.role ? ` · ${cms.escape(block.role)}` : ''}${block.visible === false ? ' · Hidden' : ''}</small></div><div class="block-actions"><button data-action="up" title="Move up">↑</button><button data-action="down" title="Move down">↓</button><button data-action="toggle">${block.visible === false ? 'Show' : 'Hide'}</button><button data-action="duplicate">Duplicate</button><button data-action="edit">Edit</button><button data-action="delete">Delete</button></div></article>`).join('');
+    $$('.block-card').forEach(card => {
+      card.querySelectorAll('[data-action]').forEach(button => button.onclick = () => blockAction(card.dataset.id, button.dataset.action));
+      card.addEventListener('dragstart', () => card.classList.add('dragging'));
+      card.addEventListener('dragend', () => card.classList.remove('dragging'));
+      card.addEventListener('dragover', event => { event.preventDefault(); const dragging = $('.block-card.dragging'); if (!dragging || dragging === card) return; const rect = card.getBoundingClientRect(); card.parentNode.insertBefore(dragging, event.clientY < rect.top + rect.height / 2 ? card : card.nextSibling); });
+      card.addEventListener('drop', () => {
+        const order = $$('.block-card').map(item => item.dataset.id);
+        project.blocks.sort((a,b) => order.indexOf(a.id) - order.indexOf(b.id));
+        markChanged(); renderBlocks(); renderPreview();
+      });
+    });
+  };
+
+  const blockAction = (id, action) => {
+    const project = currentProject();
+    const index = project.blocks.findIndex(block => block.id === id);
+    const block = project.blocks[index];
+    if (action === 'edit') return openBlockDialog(block);
+    if (action === 'delete' && confirm('Delete this block?')) project.blocks.splice(index, 1);
+    if (action === 'duplicate') project.blocks.splice(index + 1, 0, {...JSON.parse(JSON.stringify(block)), id: cms.makeId('block'), title: `${block.title || cms.blockTypes[block.type]} copy`});
+    if (action === 'toggle') block.visible = block.visible === false;
+    if (action === 'up' && index > 0) [project.blocks[index - 1], project.blocks[index]] = [project.blocks[index], project.blocks[index - 1]];
+    if (action === 'down' && index < project.blocks.length - 1) [project.blocks[index + 1], project.blocks[index]] = [project.blocks[index], project.blocks[index + 1]];
+    markChanged(); renderBlocks(); renderPreview();
+  };
+
+  const openBlockDialog = block => {
+    editingBlockId = block?.id || null;
+    $('#blockDialogTitle').textContent = block ? 'Edit block' : 'Add block';
+    const data = block || cms.normalizeBlock({ type: 'story' });
+    ['type','layout','kicker','role','title','body','takeaway','quote','author','accent'].forEach(name => blockForm.elements[name].value = data[name] || (name === 'accent' ? '#8e95a3' : ''));
+    blockForm.elements.media.value = serializeLines(data.media, 'media');
+    blockForm.elements.items.value = serializeLines(data.items, 'items');
+    blockForm.elements.visible.checked = data.visible !== false;
+    dialog.showModal();
+  };
+
+  const saveBlock = event => {
+    event.preventDefault();
+    const project = currentProject();
+    const block = cms.normalizeBlock({
+      id: editingBlockId || cms.makeId('block'),
+      type: blockForm.elements.type.value,
+      layout: blockForm.elements.layout.value,
+      kicker: blockForm.elements.kicker.value.trim(),
+      role: blockForm.elements.role.value.trim(),
+      title: blockForm.elements.title.value.trim(),
+      body: blockForm.elements.body.value.trim(),
+      takeaway: blockForm.elements.takeaway.value.trim(),
+      media: parseLines(blockForm.elements.media.value, 'media'),
+      items: parseLines(blockForm.elements.items.value, 'items'),
+      quote: blockForm.elements.quote.value.trim(),
+      author: blockForm.elements.author.value.trim(),
+      accent: blockForm.elements.accent.value,
+      visible: blockForm.elements.visible.checked
+    });
+    const index = project.blocks.findIndex(item => item.id === editingBlockId);
+    if (index >= 0) project.blocks[index] = block; else project.blocks.push(block);
+    dialog.close(); markChanged(); renderBlocks(); renderPreview();
+  };
+
+  const renderPreview = () => {
+    const project = currentProject();
+    if (!project) return;
+    const visible = (project.blocks || []).filter(block => block.visible !== false);
+    $('#previewCanvas').innerHTML = `<header class="preview-hero" style="background-image:url('${cms.escape(project.cover || '')}')"><span class="eyebrow">${cms.escape(project.categoryLabel || cms.categories[project.category] || '')}</span><h1>${cms.escape(project.title)}</h1><p>${cms.escape(project.summary || '')}</p></header>${visible.map(renderPreviewBlock).join('')}`;
+  };
+
+  const renderPreviewBlock = block => {
+    const media = (block.media || []).map(item => item.type === 'video' ? `<figure><div style="aspect-ratio:16/9;background:#1a1d22;border-radius:12px;display:grid;place-items:center">Video: ${cms.escape(item.title || item.url)}</div><figcaption>${cms.escape(item.caption || '')}</figcaption></figure>` : `<figure><img src="${cms.escape(item.url)}" alt=""><figcaption><strong>${cms.escape(item.title || '')}</strong>${item.caption ? `<br>${cms.escape(item.caption)}` : ''}</figcaption></figure>`).join('');
+    const items = (block.items || []).map(item => `<div class="timeline-item"><strong>${cms.escape(item.title)}</strong><p>${cms.escape(item.text)}</p></div>`).join('');
+    return `<section class="preview-section" style="--block-accent:${cms.escape(block.accent || currentProject().accent || '#8e95a3')}"><span class="eyebrow">${cms.escape(block.kicker || cms.blockTypes[block.type])}</span><h2>${cms.escape(block.title || cms.blockTypes[block.type])}</h2>${block.body ? `<p>${cms.escape(block.body)}</p>` : ''}${block.quote ? `<blockquote>“${cms.escape(block.quote)}”${block.author ? `<footer>${cms.escape(block.author)}</footer>` : ''}</blockquote>` : ''}${media ? `<div class="preview-media">${media}</div>` : ''}${items ? `<div class="timeline-items">${items}</div>` : ''}${block.takeaway ? `<div class="takeaway"><span class="eyebrow">KEY TAKEAWAY</span><p>${cms.escape(block.takeaway)}</p></div>` : ''}</section>`;
+  };
+
+  const save = () => {
+    try { collectSettings(); cms.save(projects); $('#editorTitle').textContent = currentProject().title; $('#saveState').textContent = 'Saved locally in this browser'; renderProjects(); renderPreview(); }
+    catch (error) { alert(error.message); }
+  };
+
+  Object.entries(cms.blockTypes).forEach(([value,label]) => $('#blockType').add(new Option(label,value)));
+  Object.entries(cms.layouts).forEach(([value,label]) => $('#blockLayout').add(new Option(label,value)));
+  $$('.tabs button').forEach(button => button.onclick = () => { $$('.tabs button').forEach(x => x.classList.toggle('active', x === button)); $$('.tab-panel').forEach(panel => panel.classList.toggle('active', panel.dataset.panel === button.dataset.tab)); if (button.dataset.tab === 'preview') renderPreview(); });
+  form.addEventListener('input', markChanged);
+  $('#saveProject').onclick = save;
+  $('#addBlock').onclick = () => openBlockDialog();
+  $('#saveBlock').onclick = saveBlock;
+  $('#newProject').onclick = () => {
+    const title = 'Untitled Project';
+    const id = `${slugify(title)}-${Date.now().toString().slice(-5)}`;
+    projects.unshift(cms.migrateProject({ id, title, year: new Date().getFullYear().toString(), category: 'directing', categories: ['directing'], categoryLabel: 'Directing', roles: [], status: 'draft', accent: '#8e95a3', cover: '', video: '', summary: '', tools: '', client: '', featured: false, blocks: [] }));
+    cms.save(projects); openProject(id);
+  };
+  $('#duplicateProject').onclick = () => {
+    const source = currentProject(); if (!source) return;
+    const copy = JSON.parse(JSON.stringify(source));
+    copy.id = `${source.id}-copy-${Date.now().toString().slice(-4)}`;
+    copy.title = `${source.title} Copy`;
+    copy.status = 'draft';
+    copy.blocks = copy.blocks.map(block => ({...block, id: cms.makeId('block')}));
+    projects.unshift(copy); cms.save(projects); openProject(copy.id);
+  };
+  $('#deleteProject').onclick = () => { if (!currentId || !confirm('Delete this project?')) return; projects = projects.filter(project => project.id !== currentId); cms.save(projects); currentId = null; editor.hidden = true; empty.hidden = false; renderProjects(); };
+  $('#exportBackup').onclick = () => download('shani-portfolio-backup.json', JSON.stringify(projects, null, 2), 'application/json');
+  $('#exportSiteData').onclick = () => { save(); download('projects.js', cms.toProjectsJs(projects), 'text/javascript'); alert('Replace data/projects.js in your repository with the downloaded file, then Commit and Push.'); };
+  $('#importButton').onclick = () => $('#importInput').click();
+  $('#importInput').onchange = async event => {
+    const file = event.target.files[0]; if (!file) return;
+    try {
+      let text = await file.text();
+      if (file.name.endsWith('.js')) text = text.replace(/^\s*window\.PORTFOLIO_PROJECTS\s*=\s*/, '').replace(/;\s*$/, '');
+      projects = JSON.parse(text).map(cms.migrateProject); cms.save(projects); currentId = null; renderProjects(); if (projects[0]) openProject(projects[0].id);
+    } catch { alert('Could not import this file. Use a CMS backup JSON or projects.js export.'); }
+    event.target.value = '';
+  };
+  $('#resetData').onclick = () => { if (!confirm('Remove local edits and reload data/projects.js?')) return; cms.reset(); projects = loadProjects(); currentId = null; renderProjects(); if (projects[0]) openProject(projects[0].id); };
+
+  function download(name, content, type) { const blob = new Blob([content], {type}); const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = name; link.click(); setTimeout(() => URL.revokeObjectURL(link.href), 500); }
+
+  renderProjects();
+  if (projects[0]) openProject(projects[0].id);
 })();
