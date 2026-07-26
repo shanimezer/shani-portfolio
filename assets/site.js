@@ -32,21 +32,102 @@
     body.style.overflow = open ? 'hidden' : '';
   });
 
+  const mobileExperience = document.getElementById('mobileExperience');
+  let showreelTimer = null;
+  let pendingScrollNudge = false;
+  let scrollNudgePlayed = sessionStorage.getItem('mobile-scroll-nudge-seen') === '1';
+  let userExploredMobile = false;
+
+  const markMobileExplored = () => {
+    if (!mobileExperience || mobileExperience.scrollTop < 24) return;
+    userExploredMobile = true;
+  };
+
+  mobileExperience?.addEventListener('scroll', markMobileExplored, { passive: true });
+  mobileExperience?.addEventListener('touchstart', () => {
+    if (mobileExperience.scrollTop > 8) userExploredMobile = true;
+  }, { passive: true });
+
+  const easeInOut = value => value < .5
+    ? 4 * value * value * value
+    : 1 - Math.pow(-2 * value + 2, 3) / 2;
+
+  const animateMobileScroll = (from, to, duration, done) => {
+    if (!mobileExperience) return;
+    const start = performance.now();
+    const frame = now => {
+      const progress = Math.min((now - start) / duration, 1);
+      mobileExperience.scrollTop = from + (to - from) * easeInOut(progress);
+      if (progress < 1) requestAnimationFrame(frame);
+      else done?.();
+    };
+    requestAnimationFrame(frame);
+  };
+
+  const playMobileScrollNudge = () => {
+    if (!mobileExperience || !coarse || reduceMotion || scrollNudgePlayed || userExploredMobile) return;
+    if (mobileExperience.scrollTop > 12 || overlay?.classList.contains('open')) {
+      pendingScrollNudge = true;
+      return;
+    }
+
+    scrollNudgePlayed = true;
+    pendingScrollNudge = false;
+    sessionStorage.setItem('mobile-scroll-nudge-seen', '1');
+
+    const previousSnap = mobileExperience.style.scrollSnapType;
+    mobileExperience.style.scrollSnapType = 'none';
+    mobileExperience.style.pointerEvents = 'none';
+
+    animateMobileScroll(0, 74, 650, () => {
+      window.setTimeout(() => {
+        animateMobileScroll(74, 10, 700, () => {
+          mobileExperience.style.scrollSnapType = previousSnap;
+          mobileExperience.style.pointerEvents = '';
+        });
+      }, 360);
+    });
+  };
+
   document.querySelectorAll('.project-trigger').forEach(button => {
     button.addEventListener('click', event => {
       event.preventDefault();
       overlay?.classList.add('open');
       overlay?.setAttribute('aria-hidden', 'false');
       body.style.overflow = 'hidden';
+
+      if (coarse && !scrollNudgePlayed) {
+        window.clearTimeout(showreelTimer);
+        showreelTimer = window.setTimeout(() => {
+          pendingScrollNudge = true;
+          if (!overlay?.classList.contains('open')) playMobileScrollNudge();
+        }, 90000);
+      }
     });
   });
+
   const closeOverlay = () => {
     overlay?.classList.remove('open');
     overlay?.setAttribute('aria-hidden', 'true');
     body.style.overflow = '';
+
+    if (coarse && !scrollNudgePlayed) {
+      window.clearTimeout(showreelTimer);
+      window.setTimeout(playMobileScrollNudge, 500);
+    } else if (pendingScrollNudge) {
+      window.setTimeout(playMobileScrollNudge, 500);
+    }
   };
   overlayClose?.addEventListener('click', closeOverlay);
   overlay?.addEventListener('click', e => { if (e.target === overlay) closeOverlay(); });
+
+  overlay?.querySelectorAll('video').forEach(video => {
+    video.addEventListener('ended', () => {
+      pendingScrollNudge = true;
+      closeOverlay();
+    });
+  });
+
   window.addEventListener('keydown', e => { if (e.key === 'Escape') { closeOverlay(); mobileMenu?.classList.remove('open'); } });
 
   motionToggle?.addEventListener('click', () => {
