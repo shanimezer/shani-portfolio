@@ -41,7 +41,7 @@
       const gallery = Array.isArray(p.gallery) ? p.gallery : [];
       p.blocks = [
         normalizeBlock({ type: 'overview', kicker: 'The project', title: 'Overview', body: p.summary || '' }),
-        ...(p.challenge || p.apach ? [normalizeBlock({ type: 'story', kicker: 'Process', title: 'Challenge & approach', body: [p.challenge, p.approach].filter(Boolean).join('\n\n'), takeaway: '' })] : []),
+        ...(p.challenge || p.approach ? [normalizeBlock({ type: 'story', kicker: 'Process', title: 'Challenge & approach', body: [p.challenge, p.approach].filter(Boolean).join('\n\n'), takeaway: '' })] : []),
         ...(gallery.length ? [normalizeBlock({ type: 'gallery', kicker: 'Selected work', title: 'Project gallery', media: gallery.map(url => ({ url, type: 'image' })) })] : []),
         normalizeBlock({ type: 'credits', kicker: 'Project details', title: 'Credits', items: [
           { title: 'Role', text: p.role || '' },
