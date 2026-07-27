@@ -27,7 +27,8 @@
     timeline: 'Timeline',
     quote: 'Quote',
     results: 'Results',
-    credits: 'Credits'
+    credits: 'Credits',
+    gameLinks: 'Play the Game'
   };
 
   const normalizeCategory = (value = '') => {
@@ -95,6 +96,17 @@
     return `<div class="${timeline ? 'block-timeline' : 'block-items'}">${items.map(item => `<article class="block-item">${item.title ? `<strong>${escape(item.title)}</strong>` : ''}${item.text ? `<p>${escape(item.text)}</p>` : ''}</article>`).join('')}</div>`;
   };
 
+  const renderGameLinks = block => {
+    const items = Array.isArray(block.items) ? block.items.filter(item => item.title && item.text) : [];
+    if (!items.length) return '';
+    return `<div class="game-actions">${items.map((item, index) => {
+      const label = escape(item.title);
+      const url = escape(item.text);
+      const primary = index === 0 ? ' primary' : '';
+      return `<a class="game-action${primary}" href="${url}" target="_blank" rel="noopener noreferrer"><span>${label}</span><b>↗</b></a>`;
+    }).join('')}</div>`;
+  };
+
   const renderMedia = block => {
     const media = Array.isArray(block.media) ? block.media.filter(item => item.url) : [];
     if (!media.length) return '';
@@ -117,7 +129,8 @@
           : (project.roles || []).map(role => `<span>${escape(role)}</span>`).join(''))
       : '';
     const quote = block.quote ? `<blockquote class="block-quote">“${escape(block.quote)}”${block.author ? `<footer>${escape(block.author)}</footer>` : ''}</blockquote>` : '';
-    const content = `${block.body ? `<div class="project-block-copy">${escape(block.body)}</div>` : ''}${type === 'roles' && roleTags ? `<div class="roles-cloud">${roleTags}</div>` : ''}${quote}${renderMedia(block)}${renderItems(block, type === 'timeline')}${block.takeaway ? `<aside class="block-takeaway"><span class="eyebrow">Key takeaway</span><p>${escape(block.takeaway)}</p></aside>` : ''}`;
+    const specialContent = type === 'gameLinks' ? renderGameLinks(block) : renderItems(block, type === 'timeline');
+    const content = `${block.body ? `<div class="project-block-copy">${escape(block.body)}</div>` : ''}${type === 'roles' && roleTags ? `<div class="roles-cloud">${roleTags}</div>` : ''}${quote}${renderMedia(block)}${specialContent}${block.takeaway ? `<aside class="block-takeaway"><span class="eyebrow">Key takeaway</span><p>${escape(block.takeaway)}</p></aside>` : ''}`;
     return `<section class="project-block" data-type="${escape(type)}" data-layout="${escape(block.layout || 'wide')}" style="--block-accent:${escape(accent)}"><div class="project-block-inner"><header class="project-block-header">${kicker ? `<div class="eyebrow">${escape(kicker)}</div>` : ''}${title ? `<h2>${escape(title)}</h2>` : ''}</header><div class="project-block-content">${content}</div></div></section>`;
   };
 
