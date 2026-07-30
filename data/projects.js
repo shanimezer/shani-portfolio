@@ -10,7 +10,7 @@ window.PORTFOLIO_PROJECTS = [
       "AI Design",
       "Game Dev"
     ],
-    "categoryLabel": "Game Design · Production · AI Design",
+    "categoryLabel": "Game Design · Production · AI Lab",
     "roles": [
       "Producer",
       "Developer",
