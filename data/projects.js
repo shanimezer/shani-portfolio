@@ -6,11 +6,10 @@ window.PORTFOLIO_PROJECTS = [
     "category": "games",
     "categories": [
       "games",
-      "Production",
-      "AI Design",
-      "Game Dev"
+      "production",
+      "ai"
     ],
-    "categoryLabel": "Game Design · Production · AI Lab",
+    "categoryLabel": "Game Design · Production · AI",
     "roles": [
       "Producer",
       "Developer",
