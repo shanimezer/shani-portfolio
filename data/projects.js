@@ -6,10 +6,9 @@ window.PORTFOLIO_PROJECTS = [
     "category": "games",
     "categories": [
       "games",
-      "production",
       "ai"
     ],
-    "categoryLabel": "Game Design · Game Dev · Sound Design",
+    "categoryLabel": "Game Design · Game Dev · AI Sound Design",
     "roles": [
       "Lead Developer",
       "Game Designer",
@@ -354,7 +353,7 @@ window.PORTFOLIO_PROJECTS = [
       "production",
       "ai"
     ],
-    "categoryLabel": "Game Design · Production · AI",
+    "categoryLabel": "Game Design · Production · AI Design",
     "roles": [
       "Producer",
       "Developer",
