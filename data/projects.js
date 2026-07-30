@@ -36,41 +36,41 @@ window.PORTFOLIO_PROJECTS = [
         "role": "Lead Developer · Game Designer · Sound Designer",
         "links": [
           {
-            "id": "link-ms7y5nhj-qcxs",
+            "id": "link-ms7yc1ya-brv7",
             "label": "Play on Itch.io",
             "url": "https://lunis-moonfire.itch.io/popcorn-chicken",
             "style": "secondary"
           },
           {
-            "id": "link-ms7y5nhj-0fi6",
-            "label": "View full Game Pitch",
+            "id": "link-ms7yc1ya-syko",
+            "label": "Pitch Deck",
             "url": "https://docs.google.com/presentation/d/1kJoMEL7aHtVAZsQkTmaqW5-vDqUycGcwomfqdEog2Yc/edit?slide=id.p#slide=id.p",
             "style": "secondary"
           },
           {
-            "id": "link-ms7y5nhj-z59h",
-            "label": "View on GitHub",
+            "id": "link-ms7yc1ya-he52",
+            "label": "GitHub",
             "url": "https://github.com/shanimezer/Popcorn-Chicken",
             "style": "secondary"
           }
         ],
         "media": [
           {
-            "id": "media-ms7y5nhj-vlo4",
+            "id": "media-ms7yc1ya-l5vy",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/PC-fox.gif",
             "type": "image",
             "title": "Fox",
             "caption": ""
           },
           {
-            "id": "media-ms7y5nhj-sn0s",
+            "id": "media-ms7yc1ya-md2d",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-chicken.gif",
             "type": "image",
             "title": "Chicken",
             "caption": ""
           },
           {
-            "id": "media-ms7y5nhj-j74z",
+            "id": "media-ms7yc1ya-6qm1",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-littlechicken.gif",
             "type": "image",
             "title": "Little Chicken",
@@ -79,29 +79,19 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7y5nhk-91bs",
+            "id": "item-ms7yc1ya-12ri",
             "title": "2026",
             "text": "Prototype"
           },
           {
-            "id": "item-ms7y5nhk-51ic",
-            "title": "3 Month Development Cycle",
-            "text": ""
+            "id": "item-ms7yc1ya-pp6n",
+            "title": "Status",
+            "text": "Currently in Active Development"
           },
           {
-            "id": "item-ms7y5nhk-owev",
-            "title": "Currently in Active Development",
-            "text": ""
-          },
-          {
-            "id": "item-ms7y5nhk-fylj",
-            "title": "Team of 3 Developers",
-            "text": ""
-          },
-          {
-            "id": "item-ms7y5nhk-ggzl",
-            "title": "Unity",
-            "text": ""
+            "id": "item-ms7yc1ya-3haw",
+            "title": "Game Engine",
+            "text": "Unity"
           }
         ],
         "quote": "",
@@ -135,10 +125,17 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#cee198",
         "role": "Lead Gameplay Developer",
-        "links": [],
+        "links": [
+          {
+            "id": "link-ms7ya06y-7pe3",
+            "label": "View on GitHub",
+            "url": "https://github.com/shanimezer/Popcorn-Chicken",
+            "style": "secondary"
+          }
+        ],
         "media": [
           {
-            "id": "media-ms7y3w31-43vw",
+            "id": "media-ms7ya06y-2wg5",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-code-architecture.png",
             "type": "image",
             "title": "Gameplay Architecture",
@@ -147,22 +144,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7y3w31-rg44",
+            "id": "item-ms7ya06y-c4ip",
             "title": "Git Workflow",
             "text": "Managed repository structure and branching strategy"
           },
           {
-            "id": "item-ms7y3w31-0i2x",
+            "id": "item-ms7ya06y-54p9",
             "title": "Architecture",
             "text": "Designed the project's technical foundation"
           },
           {
-            "id": "item-ms7y3w31-ew6b",
+            "id": "item-ms7ya06y-28w6",
             "title": "Integration",
             "text": "Merged and integrated all gameplay systems"
           },
           {
-            "id": "item-ms7y3w31-uayp",
+            "id": "item-ms7ya06y-6l71",
             "title": "Debugging",
             "text": "Maintained a stable playable build"
           }
@@ -184,43 +181,36 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-ms7xotqs-v5t2",
-            "url": "https://github.com/shanimezer/shani-portfolio/blob/master/project/popcorn-chicken/pc-fox-movement.mp4",
+            "id": "media-ms7yie0j-xa65",
+            "url": "https://github.com/shanimezer/shani-portfolio/blob/master/project/popcorn-chicken/pc-fox-movement%20and%20chicken%20explosion%20system.mp4",
             "type": "video",
-            "title": "Fox Behaviour",
-            "caption": "Fox targeting and pursuit behaviour: the fox continuously identifies and moves toward the closest available chicken."
-          },
-          {
-            "id": "media-ms7xotqs-u6qc",
-            "url": "ֿ",
-            "type": "image",
-            "title": "Explosion System",
-            "caption": "Popcorn explosion system: tapping a chicken sacrifices it and applies distance-based knockback to nearby animals."
+            "title": "Fox Behaviour  and Explosion System",
+            "caption": ""
           }
         ],
         "items": [
           {
-            "id": "item-ms7xotqs-3q2x",
+            "id": "item-ms7yie0j-voje",
             "title": "Fox Behaviour",
             "text": "Target selection and movement"
           },
           {
-            "id": "item-ms7xotqs-4rxz",
+            "id": "item-ms7yie0j-f61w",
             "title": "Explosion System",
             "text": "Popcorn knockback mechanic"
           },
           {
-            "id": "item-ms7xotqs-yep3",
+            "id": "item-ms7yie0j-skeg",
             "title": "Touch Input",
             "text": "Mobile interaction system"
           },
           {
-            "id": "item-ms7xotqs-zi0v",
+            "id": "item-ms7yie0j-hwtd",
             "title": "Win / Lose Logic",
             "text": "Core gameplay flow"
           },
           {
-            "id": "item-ms7xotqs-7ke7",
+            "id": "item-ms7yie0j-xf3a",
             "title": "Menus",
             "text": "Main Menu & Pause Menu"
           }
@@ -228,6 +218,128 @@ window.PORTFOLIO_PROJECTS = [
         "quote": "",
         "author": "",
         "takeaway": "Simple mechanics require precise implementation. Every tap has to feel responsive, satisfying and strategically meaningful."
+      },
+      {
+        "id": "block-ms7yjjhc-8yvg",
+        "type": "story",
+        "visible": true,
+        "kicker": "Design Decisions",
+        "title": "Designing Strategy Through Sacrifice",
+        "body": "Beyond programming, I co-designed the game's core gameplay loop and progression.\n\nOne of the biggest design challenges was creating a mechanic where players are encouraged to sacrifice their own units while still feeling motivated to protect them. Finding the right balance between strategy, pressure and humor required continuous experimentation and player feedback.\n\nI was responsible for defining the win and lose conditions and introducing the central mechanic of exploding chickens into popcorn—an idea that shaped both the gameplay and the project's identity.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Game Design",
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-ms7yjjhc-dlro",
+            "title": "Core Mechanic",
+            "text": "Chickens explode into popcorn"
+          },
+          {
+            "id": "item-ms7yjjhc-ak1z",
+            "title": "Win / Lose Design",
+            "text": "Defined gameplay objectives"
+          },
+          {
+            "id": "item-ms7yjjhc-timx",
+            "title": "Balancing",
+            "text": "Refined through playtesting"
+          },
+          {
+            "id": "item-ms7yjjhc-bakx",
+            "title": "Future Systems",
+            "text": "Collectibles, waves and progression"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "The strongest mechanics often come from challenging player expectations rather than following familiar design conventions."
+      },
+      {
+        "id": "block-ms7ylen5-40iy",
+        "type": "story",
+        "visible": true,
+        "kicker": "Audio Direction",
+        "title": "Creating a Playful Audio Identity",
+        "body": "I created the game's complete audio experience using a combination of AI-assisted generation, live recordings and traditional audio editing workflows.\n\nUsing ElevenLabs together with Adobe Audition, I designed the game's UI sounds, ambient audio, menu music, victory and defeat feedback, explosion effects and character sounds.\n\nTo prevent repetitive playback, I also developed the game's sound management system, allowing multiple sound variations to be selected dynamically during gameplay. This added variety and significantly enhanced the game's overall game feel.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Sound Design",
+        "links": [],
+        "media": [
+          {
+            "id": "media-ms7ylen5-88zu",
+            "url": "https://github.com/shanimezer/shani-portfolio/blob/master/project/popcorn-chicken/pc-sound%20design.%20mp4.mp4",
+            "type": "video",
+            "title": "Base Sound Design",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-ms7ylen5-zfxt",
+            "title": "AI Audio",
+            "text": "ElevenLabs"
+          },
+          {
+            "id": "item-ms7ylen5-8e56",
+            "title": "Editing",
+            "text": "Adobe Audition"
+          },
+          {
+            "id": "item-ms7ylen5-j4gy",
+            "title": "Sound Manager",
+            "text": "Randomized sound variations"
+          },
+          {
+            "id": "item-ms7ylen5-78op",
+            "title": "Created Assets",
+            "text": "UI, Music, Ambient, SFX, Character Audio"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-ms7ynyy6-prh9",
+        "type": "story",
+        "visible": true,
+        "kicker": "Leadership",
+        "title": "Leading Development Across the Team",
+        "body": "In addition to my programming responsibilities, I coordinated the project's technical workflow from day one.\n\nI defined the team's Git strategy, managed repository integration, handled merges, resolved conflicts and ensured that every gameplay system developed by the team was successfully integrated into a stable playable build.\n\nThis allowed the team to iterate quickly while reducing technical bottlenecks throughout development.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Technical Leadership",
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-ms7ynyy6-15s3",
+            "title": "Lead Developer",
+            "text": "Technical ownership"
+          },
+          {
+            "id": "item-ms7ynyy6-d8c3",
+            "title": "Git Management",
+            "text": "Branches & merges"
+          },
+          {
+            "id": "item-ms7ynyy7-upa7",
+            "title": "Integration",
+            "text": "Combined all gameplay systems"
+          },
+          {
+            "id": "item-ms7ynyy7-kcpu",
+            "title": "Debugging",
+            "text": "Resolved integration issues"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
       }
     ],
     "role": "Lead Developer, Game Designer, Sound Designer"
