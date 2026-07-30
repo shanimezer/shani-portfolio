@@ -67,7 +67,8 @@
       timeline: 'Timeline',
       quote: 'Quote',
       results: 'Results',
-      credits: 'Credits'
+      credits: 'Credits',
+      gameLinks: 'Game Links / Play Buttons'
     },
     layouts: {
       wide: 'Wide',
