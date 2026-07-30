@@ -127,7 +127,7 @@ window.PORTFOLIO_PROJECTS = [
         "role": "Lead Gameplay Developer",
         "links": [
           {
-            "id": "link-ms7ya06y-7pe3",
+            "id": "link-ms7ywst9-rlx7",
             "label": "View on GitHub",
             "url": "https://github.com/shanimezer/Popcorn-Chicken",
             "style": "secondary"
@@ -135,7 +135,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "media": [
           {
-            "id": "media-ms7ya06y-2wg5",
+            "id": "media-ms7ywst9-g2po",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-code-architecture.png",
             "type": "image",
             "title": "Gameplay Architecture",
@@ -144,22 +144,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7ya06y-c4ip",
+            "id": "item-ms7ywst9-5nqn",
             "title": "Git Workflow",
             "text": "Managed repository structure and branching strategy"
           },
           {
-            "id": "item-ms7ya06y-54p9",
+            "id": "item-ms7ywst9-us0u",
             "title": "Architecture",
             "text": "Designed the project's technical foundation"
           },
           {
-            "id": "item-ms7ya06y-28w6",
+            "id": "item-ms7ywst9-6bjf",
             "title": "Integration",
             "text": "Merged and integrated all gameplay systems"
           },
           {
-            "id": "item-ms7ya06y-6l71",
+            "id": "item-ms7ywst9-dbv9",
             "title": "Debugging",
             "text": "Maintained a stable playable build"
           }
@@ -181,36 +181,36 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-ms7yie0j-xa65",
-            "url": "https://github.com/shanimezer/shani-portfolio/blob/master/project/popcorn-chicken/pc-fox-movement%20and%20chicken%20explosion%20system.mp4",
+            "id": "media-ms7yx86j-mvl8",
+            "url": "https://youtu.be/e5TUazlIZzY",
             "type": "video",
-            "title": "Fox Behaviour  and Explosion System",
+            "title": "Fox Behaviour and Explosion System",
             "caption": ""
           }
         ],
         "items": [
           {
-            "id": "item-ms7yie0j-voje",
+            "id": "item-ms7yx86j-qgze",
             "title": "Fox Behaviour",
             "text": "Target selection and movement"
           },
           {
-            "id": "item-ms7yie0j-f61w",
+            "id": "item-ms7yx86j-q21h",
             "title": "Explosion System",
             "text": "Popcorn knockback mechanic"
           },
           {
-            "id": "item-ms7yie0j-skeg",
+            "id": "item-ms7yx86j-4z07",
             "title": "Touch Input",
             "text": "Mobile interaction system"
           },
           {
-            "id": "item-ms7yie0j-hwtd",
+            "id": "item-ms7yx86j-4mlj",
             "title": "Win / Lose Logic",
             "text": "Core gameplay flow"
           },
           {
-            "id": "item-ms7yie0j-xf3a",
+            "id": "item-ms7yx86j-7avr",
             "title": "Menus",
             "text": "Main Menu & Pause Menu"
           }
@@ -270,8 +270,8 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-ms7ylen5-88zu",
-            "url": "https://github.com/shanimezer/shani-portfolio/blob/master/project/popcorn-chicken/pc-sound%20design.%20mp4.mp4",
+            "id": "media-ms7yydbi-ykey",
+            "url": "https://youtu.be/K7Hrrerrk_E",
             "type": "video",
             "title": "Base Sound Design",
             "caption": ""
@@ -279,22 +279,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7ylen5-zfxt",
+            "id": "item-ms7yydbi-2fxu",
             "title": "AI Audio",
             "text": "ElevenLabs"
           },
           {
-            "id": "item-ms7ylen5-8e56",
+            "id": "item-ms7yydbi-7h6f",
             "title": "Editing",
             "text": "Adobe Audition"
           },
           {
-            "id": "item-ms7ylen5-j4gy",
+            "id": "item-ms7yydbi-xuyp",
             "title": "Sound Manager",
             "text": "Randomized sound variations"
           },
           {
-            "id": "item-ms7ylen5-78op",
+            "id": "item-ms7yydbi-cqzy",
             "title": "Created Assets",
             "text": "UI, Music, Ambient, SFX, Character Audio"
           }
