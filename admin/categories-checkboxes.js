@@ -2,6 +2,21 @@
   const form = document.querySelector('#settingsForm');
   if (!form) return;
 
+  const style = document.createElement('style');
+  style.textContent = `
+    .category-picker{margin:0;border:1px solid var(--line);border-radius:14px;padding:16px;background:#101216}
+    .category-picker legend{padding:0 7px;color:#cfd2d9;font-size:13px}
+    .category-picker>small{display:block;margin-top:12px;color:var(--muted);line-height:1.45}
+    .category-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .category-options label{display:flex;flex-direction:row;align-items:center;gap:9px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);cursor:pointer}
+    .category-options label:has(input:checked){border-color:#626b7a;background:var(--panel2);color:var(--text)}
+    .category-options input{width:auto;margin:0;accent-color:#f1efe9}
+    .category-options input:disabled{opacity:.7}
+    @media(max-width:820px){.category-options{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.category-options{grid-template-columns:1fr}}
+  `;
+  document.head.appendChild(style);
+
   const hidden = form.elements.categories;
   const primary = form.elements.category;
   const checkboxes = [...form.querySelectorAll('[data-category-checkbox]')];
