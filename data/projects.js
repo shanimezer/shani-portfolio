@@ -830,26 +830,28 @@ window.PORTFOLIO_PROJECTS = [
     "id": "heir-of-death",
     "title": "Heir of Death",
     "category": "games",
-    "categoryLabel": "Game Production · Cinematics",
+    "categoryLabel": "Game Production · Cinematics · Game Design",
     "year": "2026",
     "featured": true,
     "accent": "#9f7cff",
-    "cover": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=88",
-    "video": "",
-    "summary": "A dark fantasy narrative action game developed by Six Minds Studio, built around precision combat and a world shaped by death.",
-    "role": "Cinematics · Production · Social",
-    "tools": "Unreal Engine 5 · Premiere Pro",
+    "cover": "https://github.com/shanimezer/shani-portfolio/blob/master/project/HOD/LogoHOD.png",
+    "video": "https://youtu.be/19JFuPUZJ-o",
+    "summary": "A cinematic dark fantasy action RPG that blends narrative storytelling, tactical combat, and environmental exploration into an immersive journey through the depths of Hell, inspired by Jewish and Canaanite mythology.",
+    "role": "Cinematic Director · Producer  · Game Designer",
+    "tools": "Unreal Engine 5 · Motion Capture Tools · Canva · Trello",
     "client": "Six Minds Studio",
     "challenge": "Create a clear identity for an early-stage indie game while development is still evolving.",
     "approach": "Build the world through cinematic fragments, a consistent dark-fantasy visual language and transparent development storytelling.",
     "gallery": [],
     "roles": [
-      "Cinematics · Production · Social"
+      "Cinematic Director · Producer  · Game Designer"
     ],
     "categories": [
-      "games"
+      "games",
+      "directing",
+      "production"
     ],
-    "status": "draft",
+    "status": "published",
     "blocks": [
       {
         "id": "block-ms21grsg-rnhr",
@@ -857,61 +859,44 @@ window.PORTFOLIO_PROJECTS = [
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
-        "body": "A dark fantasy narrative action game developed by Six Minds Studio, built around precision combat and a world shaped by death.",
+        "body": "Heir of Death is Six Minds Studio's debut title and our first commercial game. From the very beginning, the project was developed through close collaboration between a small multidisciplinary team, where design, storytelling, programming, art, and production evolved together through constant iteration.\n\nWorking across multiple disciplines allowed me to contribute throughout the entire development process. Rather than treating cinematics, gameplay, and production as separate tasks, we built them side by side, ensuring that every design decision supported both the narrative and the player experience. This collaborative workflow became one of the project's greatest strengths and shaped the way we approached every milestone.",
         "layout": "wide",
-        "accent": "",
+        "accent": "#003aad",
         "role": "",
-        "links": [],
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-5r9e",
-        "type": "story",
-        "visible": true,
-        "kicker": "Process",
-        "title": "Challenge & approach",
-        "body": "Create a clear identity for an early-stage indie game while development is still evolving.\n\nBuild the world through cinematic fragments, a consistent dark-fantasy visual language and transparent development storytelling.",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "links": [],
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-odx2",
-        "type": "credits",
-        "visible": true,
-        "kicker": "Project details",
-        "title": "Credits",
-        "body": "",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "links": [],
+        "links": [
+          {
+            "id": "link-ms81ubfw-hyf0",
+            "label": "View full Pitch Deck",
+            "url": "https://drive.google.com/open?id=1wIlJj6pf1dYUnSyuuVs2HD9iUki2xbDb&usp=drive_fs",
+            "style": "secondary"
+          }
+        ],
         "media": [],
         "items": [
           {
-            "id": "item-ms21grsg-wyny",
-            "title": "Role",
-            "text": "Cinematics · Production · Social"
+            "id": "item-ms81ubfw-zxfg",
+            "title": "Engine",
+            "text": "Unreal Engine 5"
           },
           {
-            "id": "item-ms21grsg-2cwf",
-            "title": "Tools",
-            "text": "Unreal Engine 5 · Premiere Pro"
+            "id": "item-ms81ubfw-0ram",
+            "title": "Genre",
+            "text": "Cinematic Dark Fantasy Action RPG"
           },
           {
-            "id": "item-ms21grsg-2ov8",
-            "title": "Client / Context",
-            "text": "Six Minds Studio"
+            "id": "item-ms81ubfw-zkrc",
+            "title": "Development Stage",
+            "text": "Prototype"
+          },
+          {
+            "id": "item-ms81ubfw-hlpe",
+            "title": "Team Size",
+            "text": "6 Developers"
+          },
+          {
+            "id": "item-ms81ubfw-kdj1",
+            "title": "Roles",
+            "text": "Cinematic Director • Producer • Co Game Designer • Motion Capture Director"
           }
         ],
         "quote": "",
