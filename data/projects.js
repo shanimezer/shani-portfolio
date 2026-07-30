@@ -7,7 +7,7 @@ window.PORTFOLIO_PROJECTS = [
     "categories": [
       "games",
       "Production",
-      "AI Creation",
+      "AI Design",
       "Game Dev"
     ],
     "categoryLabel": "Game Design · Production · AI Design",
@@ -32,12 +32,50 @@ window.PORTFOLIO_PROJECTS = [
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
-        "body": "Team R is a 2D top-down action-puzzle game in which the player controls three celestial beings: the Sun, the Comet and the Black Hole.\n\nTrapped near the event horizon of a supermassive black hole, the three characters must combine their unique abilities, navigate a cosmic maze and collect all Singularity Shards before the environment collapses around them.\n\nOnce every shard has been collected, the Stargate activates and the player can escape the level.\n\nEngine: Unity\nPlatform: PC\nTeam: Three Developers",
+        "body": "Team R is a 2D top-down action-puzzle game in which the player controls three celestial beings: the Sun, the Comet and the Black Hole.\n\nTrapped near the event horizon of a supermassive black hole, the three characters must combine their unique abilities, navigate a cosmic maze and collect all Singularity Shards before the environment collapses around them.\n\nOnce every shard has been collected, the Stargate activates and the player can escape the level.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "",
-        "media": [],
-        "items": [],
+        "links": [
+          {
+            "id": "link-ms7pg2sb-2j7t",
+            "label": "Play on itch.io",
+            "url": "https://shanimezer.itch.io/team-r",
+            "style": "main"
+          },
+          {
+            "id": "link-ms7pg2sb-rhye",
+            "label": "View full pitch deack",
+            "url": "https://canva.link/lvkeujatlpsla47",
+            "style": "secondary"
+          }
+        ],
+        "media": [
+          {
+            "id": "media-ms7pg2sb-oqb1",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-team.png",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-ms7pg2sb-p04g",
+            "title": "Engine",
+            "text": "Unity"
+          },
+          {
+            "id": "item-ms7pg2sb-4nxq",
+            "title": "Platform",
+            "text": "PC / Web"
+          },
+          {
+            "id": "item-ms7pg2sb-hfg0",
+            "title": "Time of Development",
+            "text": "One Month"
+          }
+        ],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -52,57 +90,51 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Game Designer",
+        "links": [],
         "media": [
           {
-            "id": "media-ms7lqp9m-njs4",
+            "id": "media-ms7mxoyp-evys",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/characters-abilities.jpg",
             "type": "image",
             "title": "Characters and Abilities",
             "caption": "Each character’s mechanic was designed around the physical identity of its celestial form."
           },
           {
-            "id": "media-ms7lqp9m-lf9j",
+            "id": "media-ms7mxoyp-a5r6",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/TeamR-core-loop.png",
             "type": "image",
-            "title": "",
-            "caption": ""
-          },
-          {
-            "id": "media-ms7lqp9m-t1hu",
-            "url": "Core Gameplay Loop",
-            "type": "image",
-            "title": "The gameplay combines exploration, character switching, obstacle solving, shard collection and escape.",
-            "caption": ""
+            "title": "Core Gameplay Loop",
+            "caption": "The gameplay combines exploration, character switching, obstacle solving, shard collection and escape."
           }
         ],
         "items": [
           {
-            "id": "item-ms7lqp9m-brmc",
+            "id": "item-ms7mxoyp-w91j",
             "title": "Collaborative Ideation",
             "text": "Developed the core concept, characters and gameplay structure through group brainstorming."
           },
           {
-            "id": "item-ms7lqp9m-35dv",
+            "id": "item-ms7mxoyp-k0fq",
             "title": "Character Identity",
             "text": "Connected each ability directly to the nature of its celestial character."
           },
           {
-            "id": "item-ms7lqp9m-nrk9",
+            "id": "item-ms7mxoyp-agvb",
             "title": "Obstacle Design",
             "text": "Created obstacles that clearly communicated which character and ability the player needed to use."
           },
           {
-            "id": "item-ms7lqp9m-7npa",
+            "id": "item-ms7mxoyp-u55l",
             "title": "Narrative Motivation",
             "text": "Helped shape the expanding black hole as a meaningful reason for the characters to escape."
           },
           {
-            "id": "item-ms7lqp9m-5gs0",
+            "id": "item-ms7mxoyp-vhm2",
             "title": "Puzzle and Action Balance",
             "text": "Combined environmental puzzles with fireball attacks, dashing and moving enemies."
           },
           {
-            "id": "item-ms7lqp9m-bo7o",
+            "id": "item-ms7mxoyp-3rpx",
             "title": "Iteration and Balancing",
             "text": "Refined the Sun’s ability, the maze structure and the black hole’s speed and gravitational radius through testing."
           }
@@ -116,81 +148,74 @@ window.PORTFOLIO_PROJECTS = [
         "type": "roles",
         "visible": true,
         "kicker": "Production",
-        "title": "Leading a One-Month Game Production",
+        "title": "Leading the Game Production",
         "body": "As the lead producer, I managed the project schedule, task distribution and production workflow across the three-person team.\n\nWe worked with ClickUp, Miro and GitHub, using a sprint-based structure in which each team member received a clearly defined task, completed it within a set timeframe and then moved on to the next priority.\n\nI divided responsibilities according to each team member’s strengths. Omer focused on the heavier code architecture, including the playable Black Hole, the expanding central black hole and the asteroid-path spawning system. Dafna led the initial art direction and character design while also developing the Comet. Alongside production, I developed the Sun, visual effects, animation, sound and the top-down parallax system.\n\nWe built the project around a strong minimum viable game first, then created a separate list of nice-to-have features. This allowed us to protect the core experience and add polish only after the essential systems were working.\n\nWhen one team member became unexpectedly unavailable, I redistributed part of her workload, adjusted priorities and used the buffer built into the schedule to keep the project on track. I also assembled the individual prefab-based test scenes into one complete playable level.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Producer",
+        "links": [
+          {
+            "id": "link-ms7pfvch-xoks",
+            "label": "Open Production Board",
+            "url": "https://sharing.clickup.com/90181826395/b/h/6-901811988708-2/576c4736c1ffa94",
+            "style": "secondary"
+          },
+          {
+            "id": "link-ms7pfvch-1478",
+            "label": "Open Design Board",
+            "url": "https://miro.com/app/live-embed/uXjVJAtRsW4=/?embedMode=view_only_without_ui&moveToViewport=1756%2C- 874%2c10192%2c5589&embedid=88274779096",
+            "style": "secondary"
+          }
+        ],
         "media": [
           {
-            "id": "media-ms7ma2z2-gzns",
+            "id": "media-ms7pfvch-ewgj",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-click-up.png",
             "type": "image",
             "title": "ClickUp Production Board",
             "caption": "Sprint planning, task ownership and production tracking."
           },
           {
-            "id": "media-ms7ma2z2-jso4",
-            "url": "https://sharing.clickup.com/90181826395/b/h/6-901811988708-2/576c4736c1ffa94",
-            "type": "image",
-            "title": "Open Production Board",
-            "caption": "View the project workflow and task structure."
-          },
-          {
-            "id": "media-ms7ma2z2-h5jz",
+            "id": "media-ms7pfvch-jnyf",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-miro-board.png",
             "type": "image",
-            "title": "",
-            "caption": ""
-          },
-          {
-            "id": "media-ms7ma2z2-3gik",
-            "url": "Miro Design Board",
-            "type": "image",
-            "title": "Collaborative brainstorming, mechanic development and narrative planning.",
-            "caption": ""
-          },
-          {
-            "id": "media-ms7ma2z2-rsdw",
-            "url": "https://miro.com/app/live-embed/uXjVJAtRsW4=/?embedMode=view_only_without_ui&moveToViewport=1756%2C-874%2C10192%2C5589&embedId=88274779096",
-            "type": "image",
-            "title": "Open Design Board",
-            "caption": "Explore the original ideation and game design process."
+            "title": "Miro Design Board",
+            "caption": "Collaborative brainstorming, mechanic development and narrative planning."
           }
         ],
         "items": [
           {
-            "id": "item-ms7ma2z2-l5nk",
+            "id": "item-ms7pfvch-fjzo",
             "title": "Planning",
             "text": "Defined the project scope, schedule and development priorities."
           },
           {
-            "id": "item-ms7ma2z2-5i29",
+            "id": "item-ms7pfvch-q8jd",
             "title": "Sprint Management",
             "text": "Assigned short, structured tasks with individual deadlines."
           },
           {
-            "id": "item-ms7ma2z2-d5s8",
+            "id": "item-ms7pfvch-huk2",
             "title": "Task Distribution",
             "text": "Divided responsibilities according to each team member’s technical and creative strengths."
           },
           {
-            "id": "item-ms7ma2z2-u8zl",
+            "id": "item-ms7pfvch-btzp",
             "title": "Core-First Strategy",
             "text": "Prioritized a complete playable foundation before adding optional features."
           },
           {
-            "id": "item-ms7ma2z2-rd77",
+            "id": "item-ms7pfvch-6w7a",
             "title": "Status Tracking",
             "text": "Managed ongoing updates through WhatsApp and weekly video meetings."
           },
           {
-            "id": "item-ms7ma2z2-2lrp",
+            "id": "item-ms7pfvch-shxw",
             "title": "Problem Solving",
             "text": "Redistributed work and adjusted the schedule when a team member became unavailable."
           },
           {
-            "id": "item-ms7ma2z2-ndi0",
+            "id": "item-ms7pfvch-2l7o",
             "title": "Final Integration",
             "text": "Combined individual prefab-based systems into one complete playable level."
           }
@@ -209,91 +234,92 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "AI Creator",
+        "links": [],
         "media": [
           {
-            "id": "media-ms7mtod8-9ycm",
-            "url": "IMAGE PATH",
+            "id": "media-ms7p0r5n-0bx8",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-characters-sheets.png",
             "type": "image",
-            "title": "Character Design Reference",
-            "caption": "Dafna Sharon’s character designs were used as the visual foundation for the final sprites."
+            "title": "AI-Assisted Character Animation Pipeline",
+            "caption": "After the initial character concepts were established, I created the final sprite sheets using an AI-assisted workflow. Each animation was refined manually before being integrated into Unity, ensuring consistent movement and visual language across all three playable characters."
           },
           {
-            "id": "media-ms7mtod8-pgh1",
-            "url": "IMAGE PATH",
+            "id": "media-ms7p0r5n-v4k4",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-bg.png",
             "type": "image",
-            "title": "Final Animated Sprites",
-            "caption": "AI-generated assets were refined, corrected and prepared for animation in Unity."
+            "title": "Environment",
+            "caption": "Backgrounds, black holes, visual effects and environmental assets were generated through an iterative AI workflow and refined to maintain a consistent visual language."
           },
           {
-            "id": "media-ms7mtod8-s09w",
-            "url": "IMAGE PATH",
+            "id": "media-ms7p0r5n-ds3i",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-traps-shreds-fire.png",
             "type": "image",
-            "title": "Environment and Obstacles",
-            "caption": "Backgrounds, ice barriers, asteroids and aliens were created through an AI-assisted workflow."
+            "title": "Gameplay Assets",
+            "caption": "I created the game's interactive assets, including enemies, obstacles, collectibles and combat effects, using AI-assisted workflows followed by manual refinement."
           },
           {
-            "id": "media-ms7mtod8-sxz4",
-            "url": "IMAGE PATH",
+            "id": "media-ms7p0r5n-1ivq",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-UI.png",
             "type": "image",
             "title": "UI and Main Menu",
-            "caption": "The final interface and menu assets were created to match the established visual language."
+            "caption": "Menus, HUD elements, icons, logos and player feedback screens were designed through an AI-assisted pipeline and adapted for Unity implementation."
           },
           {
-            "id": "media-ms7mtod8-fz23",
-            "url": "VIDEO URL",
+            "id": "media-ms7p0r5n-gxzh",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-sb.png",
             "type": "image",
-            "title": "Cinematic Animatic",
-            "caption": "The cinematic was developed from storyboard images into a complete animatic using Google Veo 3."
+            "title": "Cinematic AI Storyboarding",
+            "caption": "I created the entire storyboard using AI to establish the visual language, pacing and camera direction before producing the final opening cinematic. This allowed us to validate the sequence early and iterate quickly before moving into video production."
           }
         ],
         "items": [
           {
-            "id": "item-ms7mtod8-rsqy",
+            "id": "item-ms7p0r5n-2mts",
             "title": "Visual References",
             "text": "Used the original character designs and style language as the foundation for asset generation."
           },
           {
-            "id": "item-ms7mtod8-bfpz",
+            "id": "item-ms7p0r5n-vm96",
             "title": "Sprite Production",
             "text": "Generated and refined character sprites and animation assets using GPT and Nano Banana."
           },
           {
-            "id": "item-ms7mtod8-6tia",
+            "id": "item-ms7p0r5n-hpng",
             "title": "Environment Art",
             "text": "Created backgrounds, obstacles, aliens and supporting game graphics."
           },
           {
-            "id": "item-ms7mtod8-tg96",
+            "id": "item-ms7p0r5n-cdtt",
             "title": "UI Assets",
             "text": "Produced the menu, interface and HUD graphics used in the final game."
           },
           {
-            "id": "item-ms7mtod8-vsp1",
+            "id": "item-ms7p0r5n-sctq",
             "title": "Storyboard",
             "text": "Designed the cinematic sequence from beginning to end."
           },
           {
-            "id": "item-ms7mtod8-6znw",
+            "id": "item-ms7p0r5n-s6md",
             "title": "Animatic Production",
             "text": "Used Google Veo 3 to transform the storyboard into a cinematic animatic."
           },
           {
-            "id": "item-ms7mtod8-5aa9",
+            "id": "item-ms7p0r5n-9rzh",
             "title": "Sound Effects",
             "text": "Generated gameplay and interface sound effects using ElevenLabs."
           },
           {
-            "id": "item-ms7mtod8-vvi4",
+            "id": "item-ms7p0r5n-pxhz",
             "title": "Background Music",
             "text": "Created original generative music through iterative prompt development."
           },
           {
-            "id": "item-ms7mtod8-k0vy",
+            "id": "item-ms7p0r5n-wsvo",
             "title": "Manual Refinement",
             "text": "Corrected visual inconsistencies and generation errors in Photoshop."
           },
           {
-            "id": "item-ms7mtod8-hhj9",
+            "id": "item-ms7p0r5n-rxhp",
             "title": "Unity Integration",
             "text": "Prepared, animated and implemented the final assets inside the game."
           }
@@ -312,6 +338,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Developer",
+        "links": [],
         "media": [],
         "items": [
           {
@@ -358,22 +385,6 @@ window.PORTFOLIO_PROJECTS = [
         "quote": "",
         "author": "",
         "takeaway": "Developing and integrating the systems myself allowed me to see how small technical decisions directly affected pacing, clarity, feedback and the overall feel of the game."
-      },
-      {
-        "id": "block-ms6158p9-kc2f",
-        "type": "gameLinks",
-        "visible": true,
-        "kicker": "Links",
-        "title": "Play The Game",
-        "body": "Play on itch.io | https://shanimezer.itch.io/team-r",
-        "layout": "wide",
-        "accent": "#d400ff",
-        "role": "",
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
       }
     ],
     "role": "Producer, Developer, AI Designer, Tech-Artist"
@@ -413,6 +424,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -429,6 +441,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -445,6 +458,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [
           {
@@ -504,6 +518,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -520,6 +535,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -536,6 +552,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [
           {
@@ -595,6 +612,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -611,6 +629,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -627,6 +646,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [
           {
@@ -686,6 +706,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -702,6 +723,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -718,6 +740,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [
           {
@@ -777,6 +800,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -793,6 +817,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -809,6 +834,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [
           {
@@ -868,6 +894,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -884,6 +911,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [],
         "quote": "",
@@ -900,6 +928,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "links": [],
         "media": [],
         "items": [
           {
