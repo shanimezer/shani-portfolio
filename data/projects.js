@@ -127,15 +127,15 @@ window.PORTFOLIO_PROJECTS = [
         "role": "Lead Gameplay Developer",
         "links": [
           {
-            "id": "link-ms7ywst9-rlx7",
-            "label": "View on GitHub",
-            "url": "https://github.com/shanimezer/Popcorn-Chicken",
+            "id": "link-ms7z0np9-bici",
+            "label": "Full Code Flow Charts",
+            "url": "https://app.clickup.com/90182154781/whiteboards/2kzmcygx-798",
             "style": "secondary"
           }
         ],
         "media": [
           {
-            "id": "media-ms7ywst9-g2po",
+            "id": "media-ms7z0np9-k7bt",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-code-architecture.png",
             "type": "image",
             "title": "Gameplay Architecture",
@@ -144,22 +144,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7ywst9-5nqn",
+            "id": "item-ms7z0np9-5uie",
             "title": "Git Workflow",
             "text": "Managed repository structure and branching strategy"
           },
           {
-            "id": "item-ms7ywst9-us0u",
+            "id": "item-ms7z0np9-9elf",
             "title": "Architecture",
             "text": "Designed the project's technical foundation"
           },
           {
-            "id": "item-ms7ywst9-6bjf",
+            "id": "item-ms7z0np9-tgw1",
             "title": "Integration",
             "text": "Merged and integrated all gameplay systems"
           },
           {
-            "id": "item-ms7ywst9-dbv9",
+            "id": "item-ms7z0np9-5929",
             "title": "Debugging",
             "text": "Maintained a stable playable build"
           }
