@@ -834,7 +834,7 @@ window.PORTFOLIO_PROJECTS = [
     "year": "2026",
     "featured": true,
     "accent": "#9f7cff",
-    "cover": "https://github.com/shanimezer/shani-portfolio/blob/master/project/HOD/LogoHOD.png",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/HOD/LogoHOD.png",
     "video": "https://youtu.be/19JFuPUZJ-o",
     "summary": "A cinematic dark fantasy action RPG that blends narrative storytelling, tactical combat, and environmental exploration into an immersive journey through the depths of Hell, inspired by Jewish and Canaanite mythology.",
     "role": "Cinematic Director · Producer  · Game Designer",
@@ -865,7 +865,7 @@ window.PORTFOLIO_PROJECTS = [
         "role": "",
         "links": [
           {
-            "id": "link-ms81ubfw-hyf0",
+            "id": "link-ms83wyri-43rt",
             "label": "View full Pitch Deck",
             "url": "https://drive.google.com/open?id=1wIlJj6pf1dYUnSyuuVs2HD9iUki2xbDb&usp=drive_fs",
             "style": "secondary"
@@ -874,27 +874,27 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-ms81ubfw-zxfg",
+            "id": "item-ms83wyri-zig4",
             "title": "Engine",
             "text": "Unreal Engine 5"
           },
           {
-            "id": "item-ms81ubfw-0ram",
+            "id": "item-ms83wyri-qls2",
             "title": "Genre",
             "text": "Cinematic Dark Fantasy Action RPG"
           },
           {
-            "id": "item-ms81ubfw-zkrc",
+            "id": "item-ms83wyri-26bk",
             "title": "Development Stage",
             "text": "Prototype"
           },
           {
-            "id": "item-ms81ubfw-hlpe",
+            "id": "item-ms83wyri-wnjx",
             "title": "Team Size",
             "text": "6 Developers"
           },
           {
-            "id": "item-ms81ubfw-kdj1",
+            "id": "item-ms83wyri-3th4",
             "title": "Roles",
             "text": "Cinematic Director • Producer • Co Game Designer • Motion Capture Director"
           }
@@ -902,6 +902,77 @@ window.PORTFOLIO_PROJECTS = [
         "quote": "",
         "author": "",
         "takeaway": ""
+      },
+      {
+        "id": "block-ms840gie-86yx",
+        "type": "story",
+        "visible": true,
+        "kicker": "Creative Pipeline",
+        "title": "From Script to Cinematics",
+        "body": "Every cinematic in Heir of Death followed a structured end to end production pipeline, designed to create a seamless connection between storytelling and gameplay. Rather than treating cinematics as isolated cutscenes, each sequence was developed as an integrated part of the player's experience.\n\nThe process began with script analysis, where I broke down each scene into its emotional beats, character motivations, and gameplay transitions. Once the narrative direction was established, I managed the casting process and organized the motion capture production, preparing each recording session and directing the actors during performance capture.\n\nAfter recording, the captured performances were retargeted to MetaHumans and assembled inside Unreal Engine's Sequencer, followed by an initial animation cleanup to refine timing and poses. Each cinematic was then rendered and edited before being delivered back to the development team for final implementation into the game.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematic Director",
+        "links": [],
+        "media": [
+          {
+            "id": "media-ms840gie-c365",
+            "url": "https://youtu.be/dyM_pr5ePCs",
+            "type": "video",
+            "title": "Cinematic Intro",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-ms840gie-xsbv",
+            "title": "Script Analysis",
+            "text": "Narrative breakdown and cinematic planning."
+          },
+          {
+            "id": "item-ms840gie-l107",
+            "title": "Casting",
+            "text": "Selecting and preparing performers for each scene."
+          },
+          {
+            "id": "item-ms840gie-6qc9",
+            "title": "Motion Capture Production",
+            "text": "Organizing and directing performance capture sessions."
+          },
+          {
+            "id": "item-ms840gie-w01h",
+            "title": "Performance Capture",
+            "text": "Recording actors in the motion capture studio."
+          },
+          {
+            "id": "item-ms840gie-2mi9",
+            "title": "MetaHuman Retargeting & Sequencer",
+            "text": "Building cinematics inside Unreal Engine."
+          },
+          {
+            "id": "item-ms840gie-12id",
+            "title": "Animation Cleanup",
+            "text": "Refining the captured performances."
+          },
+          {
+            "id": "item-ms840gie-a9m7",
+            "title": "Rendering",
+            "text": "Producing the final cinematic shots."
+          },
+          {
+            "id": "item-ms840gie-rgez",
+            "title": "Editing",
+            "text": "Creating the final cinematic sequence."
+          },
+          {
+            "id": "item-ms840gie-qrxb",
+            "title": "Gameplay Integration",
+            "text": "Delivering the cinematic for implementation into the game."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "Managed the complete cinematic pipeline, from script analysis and performance direction to final implementation in Unreal Engine."
       }
     ]
   },
