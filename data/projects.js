@@ -1,5 +1,238 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "id": "popcorn-chicken",
+    "title": "Popcorn Chicken",
+    "year": "2026",
+    "category": "games",
+    "categories": [
+      "games",
+      "production",
+      "ai"
+    ],
+    "categoryLabel": "Game Design · Game Dev · Sound Design",
+    "roles": [
+      "Lead Developer",
+      "Game Designer",
+      "Sound Designer"
+    ],
+    "status": "published",
+    "accent": "#ffae00",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/popcorn-chicken-main.png",
+    "video": "https://www.youtube.com/watch?v=1BLiw9WlRss",
+    "summary": "A fast-paced strategy game where sacrificing chickens is the only way to save the flock. \n\nI led the programming, co-designed the gameplay, and created the AI-assisted sound design.",
+    "tools": "Unity | GitHub | ElevanLabs | ClickUp",
+    "client": "Game Develop{H}er",
+    "featured": false,
+    "blocks": [
+      {
+        "id": "block-ms7rjiw9-s7zl",
+        "type": "overview",
+        "visible": true,
+        "kicker": "Mobile Puzzle Strategy Game",
+        "title": "Overview",
+        "body": "Popcorn Chicken! is a fast-paced mobile strategy game where saving the flock means sacrificing part of it.\n\nCreated as a three-month prototype for the Develop{H}er course, the game challenges players to protect a group of helpless Corn Chickens from a hungry fox. Rather than controlling a traditional player character, the player interacts directly with the flock, tapping chickens to explode them into popcorn and push nearby animals away.\n\nThe prototype includes three complete levels and was developed in Unity by a team of three. Following highly positive feedback from dozens of players during playtesting events, we decided to continue the project beyond the course and develop it toward a full mobile release.",
+        "layout": "wide",
+        "accent": "#ffdd00",
+        "role": "Lead Developer · Game Designer · Sound Designer",
+        "links": [
+          {
+            "id": "link-ms7y5nhj-qcxs",
+            "label": "Play on Itch.io",
+            "url": "https://lunis-moonfire.itch.io/popcorn-chicken",
+            "style": "secondary"
+          },
+          {
+            "id": "link-ms7y5nhj-0fi6",
+            "label": "View full Game Pitch",
+            "url": "https://docs.google.com/presentation/d/1kJoMEL7aHtVAZsQkTmaqW5-vDqUycGcwomfqdEog2Yc/edit?slide=id.p#slide=id.p",
+            "style": "secondary"
+          },
+          {
+            "id": "link-ms7y5nhj-z59h",
+            "label": "View on GitHub",
+            "url": "https://github.com/shanimezer/Popcorn-Chicken",
+            "style": "secondary"
+          }
+        ],
+        "media": [
+          {
+            "id": "media-ms7y5nhj-vlo4",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/PC-fox.gif",
+            "type": "image",
+            "title": "Fox",
+            "caption": ""
+          },
+          {
+            "id": "media-ms7y5nhj-sn0s",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-chicken.gif",
+            "type": "image",
+            "title": "Chicken",
+            "caption": ""
+          },
+          {
+            "id": "media-ms7y5nhj-j74z",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-littlechicken.gif",
+            "type": "image",
+            "title": "Little Chicken",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-ms7y5nhk-91bs",
+            "title": "2026",
+            "text": "Prototype"
+          },
+          {
+            "id": "item-ms7y5nhk-51ic",
+            "title": "3 Month Development Cycle",
+            "text": ""
+          },
+          {
+            "id": "item-ms7y5nhk-owev",
+            "title": "Currently in Active Development",
+            "text": ""
+          },
+          {
+            "id": "item-ms7y5nhk-fylj",
+            "title": "Team of 3 Developers",
+            "text": ""
+          },
+          {
+            "id": "item-ms7y5nhk-ggzl",
+            "title": "Unity",
+            "text": ""
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "A one-touch puzzle strategy game built around a deliberately contradictory goal: sacrifice chickens to keep as many of them alive as possible."
+      },
+      {
+        "id": "block-ms7wy9g5-umfu",
+        "type": "story",
+        "visible": true,
+        "kicker": "The Design Challenge",
+        "title": "Designing Strategy Around Sacrifice",
+        "body": "Most strategy games reward players for protecting every unit they control.\n\nPopcorn Chicken! deliberately reverses that expectation.\n\nPlayers are asked to protect as many chickens as possible, yet their only available action destroys one of them. The challenge was making this contradiction feel intuitive, satisfying and strategically rewarding rather than frustrating.\n\nThrough rapid prototyping and continuous playtesting, we refined the interaction until sacrificing a chicken became both emotionally engaging and mechanically satisfying.",
+        "layout": "wide",
+        "accent": "#ffa200",
+        "role": "Game Designer",
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-ms7x5soo-4dem",
+        "type": "roles",
+        "visible": true,
+        "kicker": "Building for Collaboration",
+        "title": "Designing a Scalable Code Architecture",
+        "body": "As the project's Lead Gameplay Developer, I designed the overall code architecture before gameplay implementation began, creating a foundation that allowed three developers to work efficiently in parallel.\n\nI established the project's Git workflow, branch strategy and integration pipeline, enabling each developer to build independent gameplay systems without disrupting the main project.\n\nGameplay systems communicated through event-driven interactions while remaining modular and easy to iterate on. Dedicated test scenes and careful task separation minimized merge conflicts and allowed rapid iteration throughout development.\n\nBeyond programming gameplay systems, I was responsible for repository management, debugging, code integration and maintaining a stable playable build throughout the project.",
+        "layout": "wide",
+        "accent": "#cee198",
+        "role": "Lead Gameplay Developer",
+        "links": [],
+        "media": [
+          {
+            "id": "media-ms7y3w31-43vw",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-code-architecture.png",
+            "type": "image",
+            "title": "Gameplay Architecture",
+            "caption": "Overview of the project's gameplay systems and event-driven architecture, designed to support parallel development across a three-developer team."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-ms7y3w31-rg44",
+            "title": "Git Workflow",
+            "text": "Managed repository structure and branching strategy"
+          },
+          {
+            "id": "item-ms7y3w31-0i2x",
+            "title": "Architecture",
+            "text": "Designed the project's technical foundation"
+          },
+          {
+            "id": "item-ms7y3w31-ew6b",
+            "title": "Integration",
+            "text": "Merged and integrated all gameplay systems"
+          },
+          {
+            "id": "item-ms7y3w31-uayp",
+            "title": "Debugging",
+            "text": "Maintained a stable playable build"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "I belive that a well-designed architecture doesn't just organize code - it enables an entire team to build faster, iterate safely and collaborate efficiently."
+      },
+      {
+        "id": "block-ms7xotqs-hmns",
+        "type": "roles",
+        "visible": true,
+        "kicker": "Core Gameplay",
+        "title": "Building the Player Experience",
+        "body": "I implemented several of the game's core gameplay systems, focusing on mechanics that directly define the player's experience.\n\nMy responsibilities included developing the fox movement behaviour, the chicken explosion mechanic, touch input, win and lose conditions, as well as the Main Menu and Pause Menu systems.\n\nSince Popcorn Chicken! relies on only a single player interaction, every system had to feel immediate, readable and responsive. Throughout development these mechanics were continuously refined based on extensive playtesting to improve both clarity and game feel.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Gameplay Programming",
+        "links": [],
+        "media": [
+          {
+            "id": "media-ms7xotqs-v5t2",
+            "url": "https://github.com/shanimezer/shani-portfolio/blob/master/project/popcorn-chicken/pc-fox-movement.mp4",
+            "type": "video",
+            "title": "Fox Behaviour",
+            "caption": "Fox targeting and pursuit behaviour: the fox continuously identifies and moves toward the closest available chicken."
+          },
+          {
+            "id": "media-ms7xotqs-u6qc",
+            "url": "ֿ",
+            "type": "image",
+            "title": "Explosion System",
+            "caption": "Popcorn explosion system: tapping a chicken sacrifices it and applies distance-based knockback to nearby animals."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-ms7xotqs-3q2x",
+            "title": "Fox Behaviour",
+            "text": "Target selection and movement"
+          },
+          {
+            "id": "item-ms7xotqs-4rxz",
+            "title": "Explosion System",
+            "text": "Popcorn knockback mechanic"
+          },
+          {
+            "id": "item-ms7xotqs-yep3",
+            "title": "Touch Input",
+            "text": "Mobile interaction system"
+          },
+          {
+            "id": "item-ms7xotqs-zi0v",
+            "title": "Win / Lose Logic",
+            "text": "Core gameplay flow"
+          },
+          {
+            "id": "item-ms7xotqs-7ke7",
+            "title": "Menus",
+            "text": "Main Menu & Pause Menu"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "Simple mechanics require precise implementation. Every tap has to feel responsive, satisfying and strategically meaningful."
+      }
+    ],
+    "role": "Lead Developer, Game Designer, Sound Designer"
+  },
+  {
     "id": "team-r",
     "title": "Team R",
     "year": "2025",
