@@ -907,72 +907,141 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-ms840gie-86yx",
         "type": "story",
         "visible": true,
-        "kicker": "Creative Pipeline",
-        "title": "From Script to Cinematics",
-        "body": "Every cinematic in Heir of Death followed a structured end to end production pipeline, designed to create a seamless connection between storytelling and gameplay. Rather than treating cinematics as isolated cutscenes, each sequence was developed as an integrated part of the player's experience.\n\nThe process began with script analysis, where I broke down each scene into its emotional beats, character motivations, and gameplay transitions. Once the narrative direction was established, I managed the casting process and organized the motion capture production, preparing each recording session and directing the actors during performance capture.\n\nAfter recording, the captured performances were retargeted to MetaHumans and assembled inside Unreal Engine's Sequencer, followed by an initial animation cleanup to refine timing and poses. Each cinematic was then rendered and edited before being delivered back to the development team for final implementation into the game.",
+        "kicker": "From Script to Cinematics",
+        "title": "Script Breakdown & Narrative Development",
+        "body": "Every cinematic began with a collaborative script breakdown alongside our Narrative Designer. Together, we analyzed each scene to understand every character's objectives, emotional journey, and narrative purpose. This process often led to refining dialogue, restructuring scenes, and strengthening the emotional arc before entering production.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Cinematic Director",
-        "links": [],
-        "media": [
+        "links": [
           {
-            "id": "media-ms840gie-c365",
-            "url": "https://youtu.be/dyM_pr5ePCs",
-            "type": "video",
-            "title": "Cinematic Intro",
-            "caption": ""
+            "id": "link-msatopj8-a0vt",
+            "label": "Script with notes",
+            "url": "https://docs.google.com/document/d/1cM_X30CbLa4I4Gca0-emDCCaE-GM7tsgk-XPsCit45c/edit?tab=t.0",
+            "style": "secondary"
           }
         ],
-        "items": [
-          {
-            "id": "item-ms840gie-xsbv",
-            "title": "Script Analysis",
-            "text": "Narrative breakdown and cinematic planning."
-          },
-          {
-            "id": "item-ms840gie-l107",
-            "title": "Casting",
-            "text": "Selecting and preparing performers for each scene."
-          },
-          {
-            "id": "item-ms840gie-6qc9",
-            "title": "Motion Capture Production",
-            "text": "Organizing and directing performance capture sessions."
-          },
-          {
-            "id": "item-ms840gie-w01h",
-            "title": "Performance Capture",
-            "text": "Recording actors in the motion capture studio."
-          },
-          {
-            "id": "item-ms840gie-2mi9",
-            "title": "MetaHuman Retargeting & Sequencer",
-            "text": "Building cinematics inside Unreal Engine."
-          },
-          {
-            "id": "item-ms840gie-12id",
-            "title": "Animation Cleanup",
-            "text": "Refining the captured performances."
-          },
-          {
-            "id": "item-ms840gie-a9m7",
-            "title": "Rendering",
-            "text": "Producing the final cinematic shots."
-          },
-          {
-            "id": "item-ms840gie-rgez",
-            "title": "Editing",
-            "text": "Creating the final cinematic sequence."
-          },
-          {
-            "id": "item-ms840gie-qrxb",
-            "title": "Gameplay Integration",
-            "text": "Delivering the cinematic for implementation into the game."
-          }
-        ],
+        "media": [],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": "Managed the complete cinematic pipeline, from script analysis and performance direction to final implementation in Unreal Engine."
+      },
+      {
+        "id": "block-msau4z8q-4bm5",
+        "type": "story",
+        "visible": true,
+        "kicker": "From Script to Cinematics",
+        "title": "Performance Capture",
+        "body": "Once the script was finalized, I moved into the performance capture stage. Since the project was still in its prototype phase, we worked with a temporary cast to validate performances before official casting. During the motion capture sessions, I directed the actor's performance, focusing on emotional delivery, body language, and character motivation until we achieved the strongest result.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "links": [],
+        "media": [
+          {
+            "id": "media-msaug7om-j0ix",
+            "url": "https://youtu.be/SFTuVW-42ug",
+            "type": "video",
+            "title": "Motion Capture Filming for Prototype",
+            "caption": "Theron_S1_T1-5_Body"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msaufveu-9pei",
+        "type": "story",
+        "visible": true,
+        "kicker": "From Script to Cinematics",
+        "title": "Bringing the Performance into Unreal Engine",
+        "body": "After recording, the body performance was transferred using QuickMagic, while facial animation was recreated inside Unreal Engine using MetaHuman Animator. I then assembled the performance in Sequencer, blocked the scene, and performed an initial animation cleanup before moving into cinematic staging.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "links": [],
+        "media": [
+          {
+            "id": "media-msaumfri-j0e5",
+            "url": "https://youtu.be/9pNVdrV5GAY",
+            "type": "video",
+            "title": "Implementing animation in unreal for the first time",
+            "caption": ""
+          },
+          {
+            "id": "media-msaumfri-7prp",
+            "url": "https://youtu.be/0LPoyhdF99Q",
+            "type": "video",
+            "title": "Converting footage into an animation",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msaunxd9-spj5",
+        "type": "story",
+        "visible": true,
+        "kicker": "From Script to Cinematics",
+        "title": "Cinematic Staging & Visual Direction",
+        "body": "With the performance in place, I focused on the visual language of the cinematic. I designed the camera coverage, staged every shot, built dramatic contrast lighting, and introduced atmospheric fog to reinforce the mystery and emotional tone of the scene.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msauop13-p5fg",
+        "type": "story",
+        "visible": true,
+        "kicker": "From Script to Cinematics",
+        "title": "Editing Through Experimentation",
+        "body": "Because the animation pipeline was still experimental, I intentionally reversed the traditional filmmaking workflow. Instead of locking the edit before building coverage, I first explored multiple camera angles inside Unreal Engine and used the editing process itself to discover which performances and animation beats worked best. This iterative approach allowed the cinematic to evolve alongside the technology.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msauqcob-c4rx",
+        "type": "story",
+        "visible": true,
+        "kicker": "From Script to Cinematics",
+        "title": "Final Polish & Integration",
+        "body": "After completing the rough cut, we recorded ADR to refine the dialogue and improve performance quality. The final edit was combined with the original score composed specifically for the cinematic before being delivered to the development team for implementation into the game.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "links": [],
+        "media": [
+          {
+            "id": "media-msauqcob-4aye",
+            "url": "https://youtu.be/dyM_pr5ePCs",
+            "type": "video",
+            "title": "Final Intro Cinematic",
+            "caption": "For Prototype"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
       }
     ]
   },
