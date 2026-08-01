@@ -76,13 +76,28 @@
 
   const allFilterButtons = [...contentShell.querySelectorAll('[data-filter]')];
   const tocLinkElements = [...contentShell.querySelectorAll('[data-toc-link]')];
-  let currentFilter = 'all';
+  const sidebarScroller = contentShell.querySelector('.project-sidebar-sticky');
+
+  const keepActiveLinkVisible = link => {
+    if (!link || !sidebarScroller) return;
+    const linkTop = link.offsetTop;
+    const linkBottom = linkTop + link.offsetHeight;
+    const viewTop = sidebarScroller.scrollTop;
+    const viewBottom = viewTop + sidebarScroller.clientHeight;
+    const padding = 18;
+
+    if (linkTop < viewTop + padding) {
+      sidebarScroller.scrollTo({ top: Math.max(0, linkTop - padding), behavior: 'smooth' });
+    } else if (linkBottom > viewBottom - padding) {
+      sidebarScroller.scrollTo({ top: linkBottom - sidebarScroller.clientHeight + padding, behavior: 'smooth' });
+    }
+  };
 
   const setActiveSection = section => {
     if (!section) return;
     tocLinkElements.forEach(link => link.classList.toggle('active', link.dataset.tocLink === section.id));
     const activeLink = contentShell.querySelector(`.project-sidebar [data-toc-link="${section.id}"]`);
-    activeLink?.scrollIntoView({ block:'nearest' });
+    keepActiveLinkVisible(activeLink);
   };
 
   const updateActiveFromScroll = () => {
@@ -107,7 +122,6 @@
   };
 
   const applyFilter = filter => {
-    currentFilter = filter;
     allFilterButtons.forEach(button => button.classList.toggle('active', button.dataset.filter === filter));
     sections.forEach(section => {
       const matches = filter === 'all' || section.dataset.alwaysVisible === 'true' || section.dataset.disciplines.split(' ').includes(filter);
