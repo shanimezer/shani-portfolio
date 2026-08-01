@@ -8,24 +8,10 @@
   if (!project) return;
 
   const labels = {
-    directing: 'Directing',
-    games: 'Games',
-    gameDesign: 'Game Design',
-    cinematics: 'Cinematics',
-    production: 'Production',
-    motionCapture: 'Motion Capture',
-    editing: 'Editing',
-    ai: 'AI',
-    social: 'Social Content'
+    directing: 'Directing', games: 'Games', gameDesign: 'Game Design', cinematics: 'Cinematics',
+    production: 'Production', motionCapture: 'Motion Capture', editing: 'Editing', ai: 'AI', social: 'Social Content'
   };
-  const categoryToDiscipline = {
-    games: 'gameDesign',
-    directing: 'directing',
-    production: 'production',
-    editing: 'editing',
-    ai: 'ai',
-    social: 'social'
-  };
+  const categoryToDiscipline = { games:'gameDesign', directing:'directing', production:'production', editing:'editing', ai:'ai', social:'social' };
   const slugify = value => String(value || 'section').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
   const inferDisciplines = block => {
     const explicit = Array.isArray(block.disciplines) ? block.disciplines.filter(Boolean) : [];
@@ -76,11 +62,9 @@
   }).join('');
 
   sidebar.innerHTML = `<div class="project-sidebar-sticky"><span class="project-nav-label">Explore this project</span><nav>${tocLinks}</nav></div>`;
-
   const filterButtons = disciplines.length
     ? `<div class="project-filter-bar"><span class="project-nav-label">View by discipline</span><div class="project-filter-options"><button data-filter="all">All</button>${disciplines.map(value => `<button data-filter="${value}">${labels[value] || value}</button>`).join('')}</div></div>`
     : '';
-
   const mobileControls = `<div class="project-mobile-controls"><details class="project-mobile-menu"><summary>Sections</summary><nav>${tocLinks}</nav></details>${disciplines.length ? `<details class="project-mobile-menu"><summary>Filter</summary><div class="project-mobile-filter-options"><button data-filter="all">All</button>${disciplines.map(value => `<button data-filter="${value}">${labels[value] || value}</button>`).join('')}</div></details>` : ''}</div>`;
 
   content.innerHTML = `${mobileControls}${filterButtons}`;
@@ -91,37 +75,85 @@
   (heroVideo || hero)?.insertAdjacentElement('afterend', contentShell);
 
   const allFilterButtons = [...contentShell.querySelectorAll('[data-filter]')];
+  const tocLinkElements = [...contentShell.querySelectorAll('[data-toc-link]')];
+  const sidebarScroller = contentShell.querySelector('.project-sidebar-sticky');
+
+  const keepActiveLinkVisible = link => {
+    if (!link || !sidebarScroller) return;
+    const linkTop = link.offsetTop;
+    const linkBottom = linkTop + link.offsetHeight;
+    const viewTop = sidebarScroller.scrollTop;
+    const viewBottom = viewTop + sidebarScroller.clientHeight;
+    const padding = 18;
+
+    if (linkTop < viewTop + padding) {
+      sidebarScroller.scrollTo({ top: Math.max(0, linkTop - padding), behavior: 'smooth' });
+    } else if (linkBottom > viewBottom - padding) {
+      sidebarScroller.scrollTo({ top: linkBottom - sidebarScroller.clientHeight + padding, behavior: 'smooth' });
+    }
+  };
+
+  const setActiveSection = section => {
+    if (!section) return;
+    tocLinkElements.forEach(link => link.classList.toggle('active', link.dataset.tocLink === section.id));
+    const activeLink = contentShell.querySelector(`.project-sidebar [data-toc-link="${section.id}"]`);
+    keepActiveLinkVisible(activeLink);
+  };
+
+  const updateActiveFromScroll = () => {
+    const visibleSections = sections.filter(section => !section.hidden);
+    if (!visibleSections.length) return;
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 6;
+    if (atBottom) return setActiveSection(visibleSections[visibleSections.length - 1]);
+    const marker = Math.min(Math.max(window.innerHeight * 0.3, 150), 280);
+    let active = visibleSections[0];
+    for (const section of visibleSections) {
+      if (section.getBoundingClientRect().top <= marker) active = section;
+      else break;
+    }
+    setActiveSection(active);
+  };
+
+  let ticking = false;
+  const requestActiveUpdate = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { updateActiveFromScroll(); ticking = false; });
+  };
+
   const applyFilter = filter => {
     allFilterButtons.forEach(button => button.classList.toggle('active', button.dataset.filter === filter));
     sections.forEach(section => {
       const matches = filter === 'all' || section.dataset.alwaysVisible === 'true' || section.dataset.disciplines.split(' ').includes(filter);
       section.hidden = !matches;
     });
-    contentShell.querySelectorAll('[data-toc-link]').forEach(link => {
+    tocLinkElements.forEach(link => {
       const target = document.getElementById(link.dataset.tocLink);
-      link.hidden = !!target?.hidden;
+      const shouldHide = !target || target.hidden;
+      link.hidden = shouldHide;
+      link.setAttribute('aria-hidden', shouldHide ? 'true' : 'false');
+      link.tabIndex = shouldHide ? -1 : 0;
     });
     contentShell.querySelectorAll('details').forEach(item => item.removeAttribute('open'));
+    requestAnimationFrame(updateActiveFromScroll);
   };
 
   const requestedView = params.get('view');
   const contextualFilter = categoryToDiscipline[requestedView] || categoryToDiscipline[project.category] || 'all';
-  const initialFilter = disciplines.includes(contextualFilter) ? contextualFilter : 'all';
-  applyFilter(initialFilter);
+  applyFilter(disciplines.includes(contextualFilter) ? contextualFilter : 'all');
 
   allFilterButtons.forEach(button => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
-  contentShell.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', event => {
+  tocLinkElements.forEach(link => link.addEventListener('click', event => {
+    const target = document.getElementById(link.dataset.tocLink);
+    if (!target || target.hidden) return event.preventDefault();
     event.preventDefault();
-    document.getElementById(link.getAttribute('href').slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    target.scrollIntoView({ behavior:'smooth', block:'start' });
+    setActiveSection(target);
     contentShell.querySelectorAll('details').forEach(item => item.removeAttribute('open'));
   }));
 
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting && !entry.target.hidden).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (!visible) return;
-      contentShell.querySelectorAll('[data-toc-link]').forEach(link => link.classList.toggle('active', link.dataset.tocLink === visible.target.id));
-    }, { rootMargin: '-22% 0px -62% 0px', threshold: [0, .1, .35] });
-    sections.forEach(section => observer.observe(section));
-  }
+  window.addEventListener('scroll', requestActiveUpdate, { passive:true });
+  window.addEventListener('resize', requestActiveUpdate);
+  window.addEventListener('load', requestActiveUpdate);
+  requestActiveUpdate();
 })();
