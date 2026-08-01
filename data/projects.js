@@ -976,7 +976,7 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [
           {
-            "id": "link-msawn5i2-hq4d",
+            "id": "link-msax00ec-l70p",
             "label": "View full Pitch Deck",
             "url": "https://drive.google.com/open?id=1wIlJj6pf1dYUnSyuuVs2HD9iUki2xbDb&usp=drive_fs",
             "style": "secondary"
@@ -985,27 +985,27 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-msawn5i2-oc3f",
+            "id": "item-msax00ec-15m9",
             "title": "Production Roadmap",
             "text": "Building and maintaining the development timeline, milestones, and production schedule."
           },
           {
-            "id": "item-msawn5i2-olcz",
+            "id": "item-msax00ec-vqno",
             "title": "Budget Planning",
             "text": "Managing project budgets, production costs, and development priorities."
           },
           {
-            "id": "item-msawn5i2-vamh",
+            "id": "item-msax00ec-cdyd",
             "title": "Project Coordination",
             "text": "Aligning tasks across design, programming, art, audio, and narrative to keep production on track."
           },
           {
-            "id": "item-msawn5i2-6amj",
+            "id": "item-msax00ec-6j7q",
             "title": "Milestone Management",
             "text": "Tracking progress, adjusting priorities, and ensuring deadlines were met."
           },
           {
-            "id": "item-msawn5i2-q13n",
+            "id": "item-msax00ec-ou6c",
             "title": "Funding & Publishing",
             "text": "Preparing grant applications, production documentation, and investor materials for funding opportunities."
           }
