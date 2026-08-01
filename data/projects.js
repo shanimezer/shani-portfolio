@@ -904,18 +904,49 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
+        "id": "block-msavgt9f-szib",
+        "type": "story",
+        "visible": true,
+        "kicker": "Game Design",
+        "title": "Designing Gameplay Around Narrative",
+        "body": "Rather than starting with gameplay systems, we began by defining the narrative experience we wanted players to have. Together with the Lead Developer, I translated the game's narrative design into its core gameplay loop, ensuring that every mechanic reinforced the world, the story, and the player's progression.\n\nWe broke down every aspect of the experience, from the hero's abilities and combat mechanics to enemy behaviors, level progression, exploration, and progression systems. Instead of treating combat as a standalone feature, each mechanic was designed to support both gameplay and narrative, creating a more cohesive player experience.",
+        "layout": "wide",
+        "accent": "#47e0ff",
+        "role": "Game Designer",
+        "links": [],
+        "media": [
+          {
+            "id": "media-msavpvfq-86g7",
+            "url": "https://youtu.be/efFD2_aN0cA",
+            "type": "video",
+            "title": "Current Game-Play Highlights",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msavpvfq-lhw3",
+            "title": "Designing the Core Gameplay Loop",
+            "text": "Together, we iterated on the complete gameplay ecosystem, defining player abilities, enemy archetypes, bosses, progression systems, and unlockable skills. Every mechanic was evaluated not only by how it played, but by how well it supported the game's narrative identity."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "One of the most significant design decisions was replacing traditional RPG progression systems with a mechanic that felt native to the world itself. Instead of rewarding players with generic experience points or consumables, progression became directly tied to absorbing the souls of defeated enemies.\n\nSouls became the foundation of the game's progression, allowing players to restore health and mana, unlock new abilities, earn skill points, and eventually command fallen enemies. By connecting every reward to a single narrative mechanic, progression became a storytelling tool rather than just a gameplay system."
+      },
+      {
         "id": "block-ms840gie-86yx",
         "type": "story",
         "visible": true,
-        "kicker": "From Script to Cinematics",
+        "kicker": "Directing the Cinematics",
         "title": "Script Breakdown & Narrative Development",
         "body": "Every cinematic began with a collaborative script breakdown alongside our Narrative Designer. Together, we analyzed each scene to understand every character's objectives, emotional journey, and narrative purpose. This process often led to refining dialogue, restructuring scenes, and strengthening the emotional arc before entering production.",
         "layout": "wide",
-        "accent": "#8e95a3",
+        "accent": "#8f0015",
         "role": "Cinematic Director",
         "links": [
           {
-            "id": "link-msatopj8-a0vt",
+            "id": "link-msavpzrq-d7dt",
             "label": "Script with notes",
             "url": "https://docs.google.com/document/d/1cM_X30CbLa4I4Gca0-emDCCaE-GM7tsgk-XPsCit45c/edit?tab=t.0",
             "style": "secondary"
@@ -931,16 +962,16 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-msau4z8q-4bm5",
         "type": "story",
         "visible": true,
-        "kicker": "From Script to Cinematics",
+        "kicker": "Directing the Cinematics",
         "title": "Performance Capture",
         "body": "Once the script was finalized, I moved into the performance capture stage. Since the project was still in its prototype phase, we worked with a temporary cast to validate performances before official casting. During the motion capture sessions, I directed the actor's performance, focusing on emotional delivery, body language, and character motivation until we achieved the strongest result.",
         "layout": "wide",
-        "accent": "#8e95a3",
+        "accent": "#700000",
         "role": "Cinematics Director",
         "links": [],
         "media": [
           {
-            "id": "media-msaug7om-j0ix",
+            "id": "media-msavqdx0-dpqu",
             "url": "https://youtu.be/SFTuVW-42ug",
             "type": "video",
             "title": "Motion Capture Filming for Prototype",
@@ -956,23 +987,23 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-msaufveu-9pei",
         "type": "story",
         "visible": true,
-        "kicker": "From Script to Cinematics",
+        "kicker": "Directing the Cinematics",
         "title": "Bringing the Performance into Unreal Engine",
         "body": "After recording, the body performance was transferred using QuickMagic, while facial animation was recreated inside Unreal Engine using MetaHuman Animator. I then assembled the performance in Sequencer, blocked the scene, and performed an initial animation cleanup before moving into cinematic staging.",
         "layout": "wide",
-        "accent": "#8e95a3",
+        "accent": "#700000",
         "role": "Cinematics Director",
         "links": [],
         "media": [
           {
-            "id": "media-msaumfri-j0e5",
+            "id": "media-msavqnss-tdli",
             "url": "https://youtu.be/9pNVdrV5GAY",
             "type": "video",
             "title": "Implementing animation in unreal for the first time",
             "caption": ""
           },
           {
-            "id": "media-msaumfri-7prp",
+            "id": "media-msavqnss-qmzt",
             "url": "https://youtu.be/0LPoyhdF99Q",
             "type": "video",
             "title": "Converting footage into an animation",
@@ -988,11 +1019,11 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-msaunxd9-spj5",
         "type": "story",
         "visible": true,
-        "kicker": "From Script to Cinematics",
+        "kicker": "Directing the Cinematics",
         "title": "Cinematic Staging & Visual Direction",
         "body": "With the performance in place, I focused on the visual language of the cinematic. I designed the camera coverage, staged every shot, built dramatic contrast lighting, and introduced atmospheric fog to reinforce the mystery and emotional tone of the scene.",
         "layout": "wide",
-        "accent": "#8e95a3",
+        "accent": "#700000",
         "role": "Cinematics Director",
         "links": [],
         "media": [],
@@ -1005,11 +1036,11 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-msauop13-p5fg",
         "type": "story",
         "visible": true,
-        "kicker": "From Script to Cinematics",
+        "kicker": "Directing the Cinematics",
         "title": "Editing Through Experimentation",
         "body": "Because the animation pipeline was still experimental, I intentionally reversed the traditional filmmaking workflow. Instead of locking the edit before building coverage, I first explored multiple camera angles inside Unreal Engine and used the editing process itself to discover which performances and animation beats worked best. This iterative approach allowed the cinematic to evolve alongside the technology.",
         "layout": "wide",
-        "accent": "#8e95a3",
+        "accent": "#700000",
         "role": "Cinematics Director",
         "links": [],
         "media": [],
@@ -1022,16 +1053,16 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-msauqcob-c4rx",
         "type": "story",
         "visible": true,
-        "kicker": "From Script to Cinematics",
+        "kicker": "Directing the Cinematics",
         "title": "Final Polish & Integration",
         "body": "After completing the rough cut, we recorded ADR to refine the dialogue and improve performance quality. The final edit was combined with the original score composed specifically for the cinematic before being delivered to the development team for implementation into the game.",
         "layout": "wide",
-        "accent": "#8e95a3",
+        "accent": "#700000",
         "role": "Cinematics Director",
         "links": [],
         "media": [
           {
-            "id": "media-msauqcob-4aye",
+            "id": "media-msavs3ud-ygu7",
             "url": "https://youtu.be/dyM_pr5ePCs",
             "type": "video",
             "title": "Final Intro Cinematic",
