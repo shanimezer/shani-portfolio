@@ -6,7 +6,7 @@
 
   const normalizeCategory = (value = '') => {
     const key = String(value).trim().toLowerCase();
-    const aliases = { game:'games', 'game dev':'games', 'game development':'games', 'ai creation':'ai', 'ai creator':'ai', 'social content':'social', 'social media':'social' };
+    const aliases = { game:'games', 'game dev':'games', 'game development':'games', 'ai creation':'ai', 'ai design':'ai', 'ai creator':'ai', 'social content':'social', 'social media':'social' };
     return aliases[key] || key;
   };
   const projectCategories = project => {
@@ -58,9 +58,7 @@
   const blockLinks = block => {
     const dedicated = Array.isArray(block.links) ? block.links.filter(link => link.url) : [];
     if (dedicated.length) return dedicated;
-    if (block.type === 'gameLinks' && Array.isArray(block.items)) {
-      return block.items.filter(item => item.title && item.text).map((item, index) => ({ label:item.title, url:item.text, style:index === 0 ? 'primary' : 'secondary' }));
-    }
+    if (block.type === 'gameLinks' && Array.isArray(block.items)) return block.items.filter(item => item.title && item.text).map((item, index) => ({ label:item.title, url:item.text, style:index === 0 ? 'primary' : 'secondary' }));
     return [];
   };
 
@@ -99,13 +97,17 @@
     defaults() { return clone(window.PORTFOLIO_PROJECTS || []); },
     get() { return this.defaults(); },
     bySlug(slug) { return this.get().find(project => project.id === slug); },
-    projectUrl(project, prefix = '../') { return `${prefix}project/index.html?slug=${encodeURIComponent(project.id)}`; },
+    projectUrl(project, prefix = '../', view = '') {
+      const params = new URLSearchParams({ slug: project.id });
+      if (view) params.set('view', normalizeCategory(view));
+      return `${prefix}project/index.html?${params.toString()}`;
+    },
     renderGrid(container, options = {}) {
       if (!container) return;
       let list = this.get();
       if (options.category) { const wanted = normalizeCategory(options.category); list = list.filter(project => projectCategories(project).includes(wanted)); }
       if (options.featured) list = list.filter(project => project.featured);
-      container.innerHTML = list.length ? list.map(project => `<a class="card cms-card" data-cat="${escape(normalizeCategory(project.category))}" href="${this.projectUrl(project, options.prefix || '../')}"><div class="cms-cover" style="--project-accent:${escape(project.accent || '#b9bec8')};background-image:url('${escape(project.cover || '')}')"></div><div class="card-body"><div class="meta"><span>${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title)}</h3><p class="muted">${escape(project.summary || '')}</p></div></a>`).join('') : `<div class="empty-state"><h3>No projects here yet.</h3><p>Add one from the Admin panel.</p></div>`;
+      container.innerHTML = list.length ? list.map(project => `<a class="card cms-card" data-cat="${escape(normalizeCategory(project.category))}" href="${this.projectUrl(project, options.prefix || '../', options.category || '')}"><div class="cms-cover" style="--project-accent:${escape(project.accent || '#b9bec8')};background-image:url('${escape(project.cover || '')}')"></div><div class="card-body"><div class="meta"><span>${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title)}</h3><p class="muted">${escape(project.summary || '')}</p></div></a>`).join('') : `<div class="empty-state"><h3>No projects here yet.</h3><p>Add one from the Admin panel.</p></div>`;
     }
   };
 
@@ -118,6 +120,6 @@
   document.title = `${project.title} | Shani Mezer`;
   detail.style.setProperty('--project-accent', project.accent || '#b9bec8');
   const blocks = Array.isArray(project.blocks) ? project.blocks.filter(block => block.visible !== false) : [];
-  const heroVideo = project.video ? `<section class="section"><div class="wrap"><div class="video-frame"><iframe src="${escape(toEmbedUrl(project.video))}" title="${escape(project.title)} video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></section>` : '';
+  const heroVideo = project.video ? `<section class="section project-hero-video"><div class="wrap"><div class="video-frame"><iframe src="${escape(toEmbedUrl(project.video))}" title="${escape(project.title)} video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></section>` : '';
   detail.innerHTML = `<section class="project-hero-dynamic"><div class="project-hero-image" style="background-image:url('${escape(project.cover || '')}')"></div><div class="project-hero-shade"></div><div class="wrap project-hero-copy"><div class="eyebrow">${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</div><h1>${escape(project.title)}</h1><p>${escape(project.summary || '')}</p><div class="project-tags"><span>${escape(project.year || '')}</span><span>${escape(project.role || (project.roles || []).join(' · '))}</span></div></div></section>${heroVideo}${blocks.map(block => renderBlock(block, project)).join('')}<section class="section next-project"><div class="wrap"><a href="../work/index.html">← View all projects</a></div></section>`;
 })();
