@@ -1,29 +1,51 @@
 (() => {
   const form = document.querySelector('#settingsForm');
   if (!form) return;
-  const style = document.createElement('style');
-  style.textContent = `.category-picker,.block-meta-picker{margin:0;border:1px solid var(--line);border-radius:14px;padding:16px;background:#101216}.category-picker legend,.block-meta-picker legend{padding:0 7px;color:#cfd2d9;font-size:13px}.category-picker>small,.block-meta-picker>small{display:block;margin-top:12px;color:var(--muted);line-height:1.45}.category-options,.discipline-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.category-options label,.discipline-options label{display:flex;flex-direction:row;align-items:center;gap:9px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);cursor:pointer}.category-options label:has(input:checked),.discipline-options label:has(input:checked){border-color:#626b7a;background:var(--panel2);color:var(--text)}.category-options input,.discipline-options input{width:auto;margin:0;accent-color:#f1efe9}.block-nav-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.block-nav-options .check{border:1px solid var(--line);padding:12px;border-radius:10px;background:var(--panel)}@media(max-width:820px){.category-options,.discipline-options{grid-template-columns:1fr 1fr}}@media(max-width:480px){.category-options,.discipline-options,.block-nav-options{grid-template-columns:1fr}}`;
-  document.head.appendChild(style);
-  const hidden=form.elements.categories,primary=form.elements.category,checkboxes=[...form.querySelectorAll('[data-category-checkbox]')];
-  const aliases={directing:'directing',director:'directing',games:'games',game:'games','game dev':'games','game development':'games',production:'production',producer:'production',social:'social','social content':'social','social media':'social',editing:'editing',editor:'editing',ai:'ai','ai creation':'ai','ai design':'ai','ai creator':'ai','artificial intelligence':'ai'};
-  const normalize=value=>aliases[String(value||'').trim().toLowerCase()]||'';
-  const syncCategories=()=>{const selected=new Set([normalize(primary.value),...String(hidden.value||'').split(',').map(normalize).filter(Boolean)]);checkboxes.forEach(box=>{box.checked=selected.has(box.value);box.disabled=box.value===primary.value;});hidden.value=[...new Set([primary.value,...checkboxes.filter(box=>box.checked).map(box=>box.value)])].join(', ');};
-  checkboxes.forEach(box=>box.addEventListener('change',()=>{hidden.value=[...new Set([primary.value,...checkboxes.filter(item=>item.checked).map(item=>item.value)])].join(', ');hidden.dispatchEvent(new Event('input',{bubbles:true}));}));
-  primary.addEventListener('change',()=>{syncCategories();hidden.dispatchEvent(new Event('input',{bubbles:true}));});
-  ['#projectList','#newProject','#duplicateProject','#resetData','#importInput'].forEach(selector=>document.querySelector(selector)?.addEventListener('click',()=>setTimeout(syncCategories,0)));
-  setTimeout(syncCategories,0);
 
-  const blockForm=document.querySelector('#blockForm');
-  const itemsField=blockForm?.elements.items?.closest('label');
-  if(!blockForm||!itemsField)return;
-  const meta=document.createElement('div');
-  meta.className='span-2';
-  meta.innerHTML=`<div class="dialog-grid"><label class="span-2">Navigation title<input name="navTitle" placeholder="Short title for the contents menu"></label><fieldset class="span-2 block-meta-picker"><legend>Block disciplines</legend><div class="discipline-options">${Object.entries(window.PortfolioCMS.disciplines).map(([value,label])=>`<label><input type="checkbox" value="${value}" data-discipline> ${label}</label>`).join('')}</div><small>Choose every discipline this block belongs to. Visitors can filter the project by these fields.</small></fieldset><div class="span-2 block-nav-options"><label class="check"><input name="showInToc" type="checkbox" checked> Show in table of contents</label><label class="check"><input name="alwaysVisible" type="checkbox"> Always visible when filtering</label></div></div>`;
-  itemsField.parentNode.insertBefore(meta,itemsField);
-  let editingBlockId=null;
-  const activeProject=()=>{const id=document.querySelector('.project-item.active')?.dataset.id;return window.PortfolioCMS.get().find(project=>project.id===id);};
-  const fillMeta=()=>{const block=activeProject()?.blocks?.find(item=>item.id===editingBlockId);blockForm.elements.navTitle.value=block?.navTitle||'';blockForm.elements.showInToc.checked=block?.showInToc!==false;blockForm.elements.alwaysVisible.checked=block?.alwaysVisible===true;const chosen=new Set(block?.disciplines||[]);blockForm.querySelectorAll('[data-discipline]').forEach(box=>box.checked=chosen.has(box.value));};
-  document.querySelector('#blockList')?.addEventListener('click',event=>{const card=event.target.closest('.block-card');if(card&&event.target.closest('[data-action="edit"]')){editingBlockId=card.dataset.id;setTimeout(fillMeta,0);}});
-  document.querySelector('#addBlock')?.addEventListener('click',()=>{editingBlockId=null;setTimeout(fillMeta,0);});
-  document.querySelector('#saveBlock')?.addEventListener('click',()=>{setTimeout(()=>{const projectId=document.querySelector('.project-item.active')?.dataset.id;const projects=window.PortfolioCMS.get();const project=projects.find(item=>item.id===projectId);if(!project)return;const block=editingBlockId?project.blocks.find(item=>item.id===editingBlockId):project.blocks[project.blocks.length-1];if(!block)return;block.navTitle=blockForm.elements.navTitle.value.trim();block.showInToc=blockForm.elements.showInToc.checked;block.alwaysVisible=blockForm.elements.alwaysVisible.checked;block.disciplines=[...blockForm.querySelectorAll('[data-discipline]:checked')].map(box=>box.value);window.PortfolioCMS.save(projects);},0);});
+  const style = document.createElement('style');
+  style.textContent = `.category-picker{margin:0;border:1px solid var(--line);border-radius:14px;padding:16px;background:#101216}.category-picker legend{padding:0 7px;color:#cfd2d9;font-size:13px}.category-picker>small{display:block;margin-top:12px;color:var(--muted);line-height:1.45}.category-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.category-options label{display:flex;flex-direction:row;align-items:center;gap:9px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);cursor:pointer}.category-options label:has(input:checked){border-color:#626b7a;background:var(--panel2);color:var(--text)}.category-options input{width:auto;margin:0;accent-color:#f1efe9}@media(max-width:820px){.category-options{grid-template-columns:1fr 1fr}}@media(max-width:480px){.category-options{grid-template-columns:1fr}}`;
+  document.head.appendChild(style);
+
+  const hidden = form.elements.categories;
+  const primary = form.elements.category;
+  const checkboxes = [...form.querySelectorAll('[data-category-checkbox]')];
+  const aliases = {directing:'directing',director:'directing',games:'games',game:'games','game dev':'games','game development':'games',production:'production',producer:'production',social:'social','social content':'social','social media':'social',editing:'editing',editor:'editing',ai:'ai','ai creation':'ai','ai design':'ai','ai creator':'ai','artificial intelligence':'ai'};
+  const normalize = value => aliases[String(value || '').trim().toLowerCase()] || '';
+
+  const syncCategories = () => {
+    const selected = new Set([normalize(primary.value), ...String(hidden.value || '').split(',').map(normalize).filter(Boolean)]);
+    checkboxes.forEach(box => {
+      box.checked = selected.has(box.value);
+      box.disabled = box.value === primary.value;
+    });
+    hidden.value = [...new Set([primary.value, ...checkboxes.filter(box => box.checked).map(box => box.value)])].join(', ');
+  };
+
+  checkboxes.forEach(box => box.addEventListener('change', () => {
+    hidden.value = [...new Set([primary.value, ...checkboxes.filter(item => item.checked).map(item => item.value)])].join(', ');
+    hidden.dispatchEvent(new Event('input', { bubbles: true }));
+  }));
+
+  primary.addEventListener('change', () => {
+    syncCategories();
+    hidden.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+
+  ['#projectList','#newProject','#duplicateProject','#resetData','#importInput'].forEach(selector => {
+    document.querySelector(selector)?.addEventListener('click', () => setTimeout(syncCategories, 0));
+  });
+
+  const blockForm = document.querySelector('#blockForm');
+  if (blockForm) {
+    const disciplinePickers = [...blockForm.querySelectorAll('fieldset')].filter(fieldset => fieldset.querySelector('legend')?.textContent.trim() === 'Block disciplines');
+    disciplinePickers.slice(1).forEach(fieldset => fieldset.remove());
+    const navTitleInputs = [...blockForm.querySelectorAll('input[name="navTitle"]')];
+    navTitleInputs.slice(1).forEach(input => input.closest('label')?.remove());
+    const tocInputs = [...blockForm.querySelectorAll('input[name="showInToc"]')];
+    tocInputs.slice(1).forEach(input => input.closest('label')?.remove());
+    const alwaysInputs = [...blockForm.querySelectorAll('input[name="alwaysVisible"]')];
+    alwaysInputs.slice(1).forEach(input => input.closest('label')?.remove());
+  }
+
+  setTimeout(syncCategories, 0);
 })();
