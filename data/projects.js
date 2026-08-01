@@ -33,6 +33,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#ffdd00",
         "role": "Lead Developer · Game Designer · Sound Designer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [
           {
             "id": "link-ms7yc1ya-brv7",
@@ -107,6 +111,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#ffa200",
         "role": "Game Designer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -124,6 +132,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#cee198",
         "role": "Lead Gameplay Developer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [
           {
             "id": "link-ms7z0np9-bici",
@@ -177,6 +189,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Gameplay Programming",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
@@ -228,6 +244,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Game Design",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -266,6 +286,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Sound Design",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
@@ -312,6 +336,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Technical Leadership",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -379,6 +407,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [
           {
             "id": "link-ms7pg2sb-2j7t",
@@ -433,6 +465,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Game Designer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
@@ -496,6 +532,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Producer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [
           {
             "id": "link-ms7pfvch-xoks",
@@ -577,6 +617,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "AI Creator",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
@@ -681,6 +725,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Developer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -767,6 +815,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -784,6 +836,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -801,6 +857,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -863,9 +923,60 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#003aad",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-msawmd84-om99",
+            "title": "Engine",
+            "text": "Unreal Engine 5"
+          },
+          {
+            "id": "item-msawmd84-pig2",
+            "title": "Genre",
+            "text": "Cinematic Dark Fantasy Action RPG"
+          },
+          {
+            "id": "item-msawmd84-slms",
+            "title": "Development Stage",
+            "text": "Prototype"
+          },
+          {
+            "id": "item-msawmd84-vft5",
+            "title": "Team Size",
+            "text": "6 Developers"
+          },
+          {
+            "id": "item-msawmd84-s6oh",
+            "title": "Roles",
+            "text": "Cinematic Director • Producer • Co Game Designer • Motion Capture Director"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msawm13w-hpmi",
+        "type": "story",
+        "visible": true,
+        "kicker": "Production",
+        "title": "From Vision to Production",
+        "body": "As the project's producer, I was responsible for turning creative ideas into an achievable development plan. Working closely with the team, I translated the game's vision into structured milestones, production schedules, and realistic development goals that could be tracked throughout the project.\n\nI managed the production roadmap, maintained the project timeline and budget, coordinated priorities across different disciplines, and ensured that development stayed aligned with our milestones. Alongside day to day production, I also prepared funding materials, coordinated grant applications, and supported investor outreach to help secure future development opportunities for the project.",
+        "layout": "wide",
+        "accent": "#dbe7ff",
+        "role": "Producer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [
           {
-            "id": "link-ms83wyri-43rt",
+            "id": "link-msawn5i2-hq4d",
             "label": "View full Pitch Deck",
             "url": "https://drive.google.com/open?id=1wIlJj6pf1dYUnSyuuVs2HD9iUki2xbDb&usp=drive_fs",
             "style": "secondary"
@@ -874,34 +985,34 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-ms83wyri-zig4",
-            "title": "Engine",
-            "text": "Unreal Engine 5"
+            "id": "item-msawn5i2-oc3f",
+            "title": "Production Roadmap",
+            "text": "Building and maintaining the development timeline, milestones, and production schedule."
           },
           {
-            "id": "item-ms83wyri-qls2",
-            "title": "Genre",
-            "text": "Cinematic Dark Fantasy Action RPG"
+            "id": "item-msawn5i2-olcz",
+            "title": "Budget Planning",
+            "text": "Managing project budgets, production costs, and development priorities."
           },
           {
-            "id": "item-ms83wyri-26bk",
-            "title": "Development Stage",
-            "text": "Prototype"
+            "id": "item-msawn5i2-vamh",
+            "title": "Project Coordination",
+            "text": "Aligning tasks across design, programming, art, audio, and narrative to keep production on track."
           },
           {
-            "id": "item-ms83wyri-wnjx",
-            "title": "Team Size",
-            "text": "6 Developers"
+            "id": "item-msawn5i2-6amj",
+            "title": "Milestone Management",
+            "text": "Tracking progress, adjusting priorities, and ensuring deadlines were met."
           },
           {
-            "id": "item-ms83wyri-3th4",
-            "title": "Roles",
-            "text": "Cinematic Director • Producer • Co Game Designer • Motion Capture Director"
+            "id": "item-msawn5i2-q13n",
+            "title": "Funding & Publishing",
+            "text": "Preparing grant applications, production documentation, and investor materials for funding opportunities."
           }
         ],
         "quote": "",
         "author": "",
-        "takeaway": ""
+        "takeaway": "Built the production framework that transformed the project's creative vision into a structured and achievable development roadmap."
       },
       {
         "id": "block-msavgt9f-szib",
@@ -913,10 +1024,14 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#47e0ff",
         "role": "Game Designer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
-            "id": "media-msavpvfq-86g7",
+            "id": "media-msawfwsv-lwie",
             "url": "https://youtu.be/efFD2_aN0cA",
             "type": "video",
             "title": "Current Game-Play Highlights",
@@ -925,7 +1040,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-msavpvfq-lhw3",
+            "id": "item-msawfwsv-bu8r",
             "title": "Designing the Core Gameplay Loop",
             "text": "Together, we iterated on the complete gameplay ecosystem, defining player abilities, enemy archetypes, bosses, progression systems, and unlockable skills. Every mechanic was evaluated not only by how it played, but by how well it supported the game's narrative identity."
           }
@@ -944,9 +1059,13 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8f0015",
         "role": "Cinematic Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [
           {
-            "id": "link-msavpzrq-d7dt",
+            "id": "link-msawfk4z-r3l3",
             "label": "Script with notes",
             "url": "https://docs.google.com/document/d/1cM_X30CbLa4I4Gca0-emDCCaE-GM7tsgk-XPsCit45c/edit?tab=t.0",
             "style": "secondary"
@@ -968,10 +1087,14 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
-            "id": "media-msavqdx0-dpqu",
+            "id": "media-msawf5gz-p2r9",
             "url": "https://youtu.be/SFTuVW-42ug",
             "type": "video",
             "title": "Motion Capture Filming for Prototype",
@@ -993,17 +1116,21 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
-            "id": "media-msavqnss-tdli",
+            "id": "media-msawhqkt-ghyu",
             "url": "https://youtu.be/9pNVdrV5GAY",
             "type": "video",
             "title": "Implementing animation in unreal for the first time",
             "caption": ""
           },
           {
-            "id": "media-msavqnss-qmzt",
+            "id": "media-msawhqkt-k6cn",
             "url": "https://youtu.be/0LPoyhdF99Q",
             "type": "video",
             "title": "Converting footage into an animation",
@@ -1025,6 +1152,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1042,6 +1173,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1059,10 +1194,14 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [
           {
-            "id": "media-msavs3ud-ygu7",
+            "id": "media-msawimot-26lj",
             "url": "https://youtu.be/dyM_pr5ePCs",
             "type": "video",
             "title": "Final Intro Cinematic",
@@ -1111,6 +1250,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1128,6 +1271,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1145,6 +1292,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -1205,6 +1356,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1222,6 +1377,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1239,6 +1398,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -1299,6 +1462,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1316,6 +1483,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1333,6 +1504,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
@@ -1393,6 +1568,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1410,6 +1589,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [],
@@ -1427,6 +1610,10 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "",
         "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
         "links": [],
         "media": [],
         "items": [
