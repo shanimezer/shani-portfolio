@@ -917,41 +917,41 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-ms21grsg-rnhr",
         "type": "overview",
         "visible": true,
-        "kicker": "The project",
+        "kicker": "About The Game",
         "title": "Overview",
         "body": "Heir of Death is Six Minds Studio's debut title and our first commercial game. From the very beginning, the project was developed through close collaboration between a small multidisciplinary team, where design, storytelling, programming, art, and production evolved together through constant iteration.\n\nWorking across multiple disciplines allowed me to contribute throughout the entire development process. Rather than treating cinematics, gameplay, and production as separate tasks, we built them side by side, ensuring that every design decision supported both the narrative and the player experience. This collaborative workflow became one of the project's greatest strengths and shaped the way we approached every milestone.",
         "layout": "wide",
         "accent": "#003aad",
         "role": "",
-        "navTitle": "",
+        "navTitle": "Overview",
         "showInToc": true,
-        "alwaysVisible": false,
+        "alwaysVisible": true,
         "disciplines": [],
         "links": [],
         "media": [],
         "items": [
           {
-            "id": "item-msawmd84-om99",
+            "id": "item-msaxua5z-23ok",
             "title": "Engine",
             "text": "Unreal Engine 5"
           },
           {
-            "id": "item-msawmd84-pig2",
+            "id": "item-msaxua5z-4hwf",
             "title": "Genre",
             "text": "Cinematic Dark Fantasy Action RPG"
           },
           {
-            "id": "item-msawmd84-slms",
+            "id": "item-msaxua5z-j27y",
             "title": "Development Stage",
             "text": "Prototype"
           },
           {
-            "id": "item-msawmd84-vft5",
+            "id": "item-msaxua5z-h3pc",
             "title": "Team Size",
             "text": "6 Developers"
           },
           {
-            "id": "item-msawmd84-s6oh",
+            "id": "item-msaxua5z-sizl",
             "title": "Roles",
             "text": "Cinematic Director • Producer • Co Game Designer • Motion Capture Director"
           }
@@ -970,13 +970,15 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#dbe7ff",
         "role": "Producer",
-        "navTitle": "",
+        "navTitle": "Production",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "production"
+        ],
         "links": [
           {
-            "id": "link-msax00ec-l70p",
+            "id": "link-msaxwmem-idwi",
             "label": "View full Pitch Deck",
             "url": "https://drive.google.com/open?id=1wIlJj6pf1dYUnSyuuVs2HD9iUki2xbDb&usp=drive_fs",
             "style": "secondary"
@@ -985,27 +987,27 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-msax00ec-15m9",
+            "id": "item-msaxwmem-ryw9",
             "title": "Production Roadmap",
             "text": "Building and maintaining the development timeline, milestones, and production schedule."
           },
           {
-            "id": "item-msax00ec-vqno",
+            "id": "item-msaxwmem-3uw1",
             "title": "Budget Planning",
             "text": "Managing project budgets, production costs, and development priorities."
           },
           {
-            "id": "item-msax00ec-cdyd",
+            "id": "item-msaxwmem-rt08",
             "title": "Project Coordination",
             "text": "Aligning tasks across design, programming, art, audio, and narrative to keep production on track."
           },
           {
-            "id": "item-msax00ec-6j7q",
+            "id": "item-msaxwmem-sl4b",
             "title": "Milestone Management",
             "text": "Tracking progress, adjusting priorities, and ensuring deadlines were met."
           },
           {
-            "id": "item-msax00ec-ou6c",
+            "id": "item-msaxwmem-ijtq",
             "title": "Funding & Publishing",
             "text": "Preparing grant applications, production documentation, and investor materials for funding opportunities."
           }
@@ -1024,14 +1026,16 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#47e0ff",
         "role": "Game Designer",
-        "navTitle": "",
+        "navTitle": "Game Design",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-msawfwsv-lwie",
+            "id": "media-msaxxlo1-w0lc",
             "url": "https://youtu.be/efFD2_aN0cA",
             "type": "video",
             "title": "Current Game-Play Highlights",
@@ -1040,7 +1044,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-msawfwsv-bu8r",
+            "id": "item-msaxxlo1-w6l9",
             "title": "Designing the Core Gameplay Loop",
             "text": "Together, we iterated on the complete gameplay ecosystem, defining player abilities, enemy archetypes, bosses, progression systems, and unlockable skills. Every mechanic was evaluated not only by how it played, but by how well it supported the game's narrative identity."
           }
@@ -1059,13 +1063,15 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#8f0015",
         "role": "Cinematic Director",
-        "navTitle": "",
+        "navTitle": "Directing Cinematics | Step 1 | Narrative",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing"
+        ],
         "links": [
           {
-            "id": "link-msawfk4z-r3l3",
+            "id": "link-msaxza6a-1zlk",
             "label": "Script with notes",
             "url": "https://docs.google.com/document/d/1cM_X30CbLa4I4Gca0-emDCCaE-GM7tsgk-XPsCit45c/edit?tab=t.0",
             "style": "secondary"
@@ -1087,14 +1093,17 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
-        "navTitle": "",
+        "navTitle": "Directing Cinematics | Step 2 | Filming",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "motionCapture"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-msawf5gz-p2r9",
+            "id": "media-msay0co5-hb87",
             "url": "https://youtu.be/SFTuVW-42ug",
             "type": "video",
             "title": "Motion Capture Filming for Prototype",
@@ -1116,21 +1125,25 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
-        "navTitle": "",
+        "navTitle": "Directing Cinematics | Step 3 | Motion Capture",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "cinematics",
+          "motionCapture"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-msawhqkt-ghyu",
+            "id": "media-msay1o2a-qsqi",
             "url": "https://youtu.be/9pNVdrV5GAY",
             "type": "video",
             "title": "Implementing animation in unreal for the first time",
             "caption": ""
           },
           {
-            "id": "media-msawhqkt-k6cn",
+            "id": "media-msay1o2b-diqs",
             "url": "https://youtu.be/0LPoyhdF99Q",
             "type": "video",
             "title": "Converting footage into an animation",
@@ -1152,10 +1165,13 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
-        "navTitle": "",
+        "navTitle": "Directing Cinematics | Step 4 | Compositing",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "cinematics"
+        ],
         "links": [],
         "media": [],
         "items": [],
@@ -1173,10 +1189,13 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
-        "navTitle": "",
+        "navTitle": "Directing Cinematics | Step 1 | Editting",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "cinematics"
+        ],
         "links": [],
         "media": [],
         "items": [],
@@ -1194,14 +1213,17 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#700000",
         "role": "Cinematics Director",
-        "navTitle": "",
+        "navTitle": "Directing Cinematics | Step 5 | Polishing",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "cinematics"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-msawimot-26lj",
+            "id": "media-msay3tb7-lisd",
             "url": "https://youtu.be/dyM_pr5ePCs",
             "type": "video",
             "title": "Final Intro Cinematic",
