@@ -47,5 +47,9 @@
     alwaysInputs.slice(1).forEach(input => input.closest('label')?.remove());
   }
 
+  document.querySelector('#saveBlock')?.addEventListener('click', () => {
+    setTimeout(() => document.querySelector('#saveProject')?.click(), 0);
+  });
+
   setTimeout(syncCategories, 0);
 })();
