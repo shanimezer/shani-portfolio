@@ -42,6 +42,8 @@
     return [item.title, item.text].filter(Boolean).join(' | ');
   }).join('\n');
 
+  const selectedDisciplines = () => [...blockForm.querySelectorAll('input[name="disciplines"]:checked')].map(input => input.value);
+
   const renderProjects = () => {
     $('#projectCount').textContent = projects.length;
     projectList.innerHTML = projects.map(project => `<button class="project-item ${project.id === currentId ? 'active' : ''}" data-id="${cms.escape(project.id)}"><span class="project-thumb" style="background-image:url('${cms.escape(project.cover || '')}')"></span><span><strong>${cms.escape(project.title || 'Untitled')}</strong><small>${cms.escape(project.status || 'draft')} · ${(project.blocks || []).length} blocks</small></span></button>`).join('');
@@ -100,7 +102,7 @@
       blockList.innerHTML = '<div class="empty-blocks"><h3>No story blocks yet</h3><p>Add the first step in this project’s creative journey.</p></div>';
       return;
     }
-    blockList.innerHTML = blocks.map((block, index) => `<article class="block-card ${block.visible === false ? 'is-hidden' : ''}" draggable="true" data-id="${block.id}"><span class="drag-handle">⋮⋮</span><span class="block-index">${String(index + 1).padStart(2,'0')}</span><div class="block-info"><strong>${cms.escape(block.title || cms.blockTypes[block.type])}</strong><small>${cms.escape(cms.blockTypes[block.type] || block.type)}${(block.links || []).length ? ` · ${(block.links || []).length} links` : ''}${block.visible === false ? ' · Hidden' : ''}</small></div><div class="block-actions"><button data-action="up">↑</button><button data-action="down">↓</button><button data-action="toggle">${block.visible === false ? 'Show' : 'Hide'}</button><button data-action="duplicate">Duplicate</button><button data-action="edit">Edit</button><button data-action="delete">Delete</button></div></article>`).join('');
+    blockList.innerHTML = blocks.map((block, index) => `<article class="block-card ${block.visible === false ? 'is-hidden' : ''}" draggable="true" data-id="${block.id}"><span class="drag-handle">⋮⋮</span><span class="block-index">${String(index + 1).padStart(2,'0')}</span><div class="block-info"><strong>${cms.escape(block.title || cms.blockTypes[block.type])}</strong><small>${cms.escape(cms.blockTypes[block.type] || block.type)}${block.navTitle ? ` · Menu: ${cms.escape(block.navTitle)}` : ''}${(block.disciplines || []).length ? ` · ${(block.disciplines || []).length} disciplines` : ''}${block.visible === false ? ' · Hidden' : ''}</small></div><div class="block-actions"><button data-action="up">↑</button><button data-action="down">↓</button><button data-action="toggle">${block.visible === false ? 'Show' : 'Hide'}</button><button data-action="duplicate">Duplicate</button><button data-action="edit">Edit</button><button data-action="delete">Delete</button></div></article>`).join('');
     $$('.block-card').forEach(card => {
       card.querySelectorAll('[data-action]').forEach(button => button.onclick = () => blockAction(card.dataset.id, button.dataset.action));
       card.addEventListener('dragstart', () => card.classList.add('dragging'));
@@ -127,11 +129,14 @@
     editingBlockId = block?.id || null;
     $('#blockDialogTitle').textContent = block ? 'Edit block' : 'Add block';
     const data = block || cms.normalizeBlock({ type: 'story' });
-    ['type','layout','kicker','role','title','body','takeaway','quote','author','accent'].forEach(name => blockForm.elements[name].value = data[name] || (name === 'accent' ? '#8e95a3' : ''));
+    ['type','layout','kicker','role','title','navTitle','body','takeaway','quote','author','accent'].forEach(name => blockForm.elements[name].value = data[name] || (name === 'accent' ? '#8e95a3' : ''));
     blockForm.elements.links.value = serializeLines(data.links, 'links');
     blockForm.elements.media.value = serializeLines(data.media, 'media');
     blockForm.elements.items.value = serializeLines(data.items, 'items');
     blockForm.elements.visible.checked = data.visible !== false;
+    blockForm.elements.showInToc.checked = data.showInToc !== false;
+    blockForm.elements.alwaysVisible.checked = data.alwaysVisible === true;
+    blockForm.querySelectorAll('input[name="disciplines"]').forEach(input => { input.checked = (data.disciplines || []).includes(input.value); });
     dialog.showModal();
   };
 
@@ -140,7 +145,9 @@
     const project = currentProject();
     const block = cms.normalizeBlock({
       id: editingBlockId || cms.makeId('block'), type: blockForm.elements.type.value, layout: blockForm.elements.layout.value,
-      kicker: blockForm.elements.kicker.value.trim(), role: blockForm.elements.role.value.trim(), title: blockForm.elements.title.value.trim(), body: blockForm.elements.body.value.trim(), takeaway: blockForm.elements.takeaway.value.trim(),
+      kicker: blockForm.elements.kicker.value.trim(), role: blockForm.elements.role.value.trim(), title: blockForm.elements.title.value.trim(), navTitle: blockForm.elements.navTitle.value.trim(),
+      showInToc: blockForm.elements.showInToc.checked, alwaysVisible: blockForm.elements.alwaysVisible.checked, disciplines: selectedDisciplines(),
+      body: blockForm.elements.body.value.trim(), takeaway: blockForm.elements.takeaway.value.trim(),
       links: parseLines(blockForm.elements.links.value, 'links').filter(link => link.url),
       media: parseLines(blockForm.elements.media.value, 'media'), items: parseLines(blockForm.elements.items.value, 'items'),
       quote: blockForm.elements.quote.value.trim(), author: blockForm.elements.author.value.trim(), accent: blockForm.elements.accent.value, visible: blockForm.elements.visible.checked
@@ -161,7 +168,8 @@
     const links = (block.links || []).filter(link => link.url).map((link, index) => `<a href="${cms.escape(link.url)}" target="_blank" rel="noopener" class="${link.style === 'primary' || (block.type === 'gameLinks' && index === 0) ? 'primary' : 'ghost'}">${cms.escape(link.label || 'Open link')} ↗</a>`).join('');
     const media = (block.media || []).map(item => item.type === 'video' ? `<figure><div style="aspect-ratio:16/9;background:#1a1d22;border-radius:12px;display:grid;place-items:center">Video: ${cms.escape(item.title || item.url)}</div><figcaption>${cms.escape(item.caption || '')}</figcaption></figure>` : `<figure><img src="${cms.escape(item.url)}" alt=""><figcaption><strong>${cms.escape(item.title || '')}</strong>${item.caption ? `<br>${cms.escape(item.caption)}` : ''}</figcaption></figure>`).join('');
     const items = (block.items || []).map(item => `<div class="timeline-item"><strong>${cms.escape(item.title)}</strong><p>${cms.escape(item.text)}</p></div>`).join('');
-    return `<section class="preview-section" style="--block-accent:${cms.escape(block.accent || currentProject().accent || '#8e95a3')}"><span class="eyebrow">${cms.escape(block.kicker || cms.blockTypes[block.type])}</span><h2>${cms.escape(block.title || cms.blockTypes[block.type])}</h2>${block.body ? `<p>${cms.escape(block.body)}</p>` : ''}${links ? `<div class="preview-links">${links}</div>` : ''}${block.quote ? `<blockquote>“${cms.escape(block.quote)}”${block.author ? `<footer>${cms.escape(block.author)}</footer>` : ''}</blockquote>` : ''}${media ? `<div class="preview-media">${media}</div>` : ''}${items ? `<div class="timeline-items">${items}</div>` : ''}${block.takeaway ? `<div class="takeaway"><span class="eyebrow">KEY TAKEAWAY</span><p>${cms.escape(block.takeaway)}</p></div>` : ''}</section>`;
+    const meta = [block.navTitle ? `Menu: ${cms.escape(block.navTitle)}` : '', (block.disciplines || []).map(value => cms.disciplines?.[value] || value).join(' · ')].filter(Boolean).join(' | ');
+    return `<section class="preview-section" style="--block-accent:${cms.escape(block.accent || currentProject().accent || '#8e95a3')}">${meta ? `<small class="eyebrow">${meta}</small>` : ''}<span class="eyebrow">${cms.escape(block.kicker || cms.blockTypes[block.type])}</span><h2>${cms.escape(block.title || cms.blockTypes[block.type])}</h2>${block.body ? `<p>${cms.escape(block.body)}</p>` : ''}${links ? `<div class="preview-links">${links}</div>` : ''}${block.quote ? `<blockquote>“${cms.escape(block.quote)}”${block.author ? `<footer>${cms.escape(block.author)}</footer>` : ''}</blockquote>` : ''}${media ? `<div class="preview-media">${media}</div>` : ''}${items ? `<div class="timeline-items">${items}</div>` : ''}${block.takeaway ? `<div class="takeaway"><span class="eyebrow">KEY TAKEAWAY</span><p>${cms.escape(block.takeaway)}</p></div>` : ''}</section>`;
   };
 
   const save = () => {
