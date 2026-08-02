@@ -1699,7 +1699,7 @@ window.PORTFOLIO_PROJECTS = [
     "featured": true,
     "accent": "#fff700",
     "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_poster.png",
-    "video": "",
+    "video": "https://youtu.be/PR_xtBhu_CM",
     "summary": "LOOM is a narrative VR adventure about guiding a lost alien creature as she learns to connect with an unfamiliar organic world.\n\nI joined the project during its prototype stage to direct and produce its opening and ending cinematics, translating an early script, gameplay build, character sheet, environmental references, and cinematic briefs into two fully realized sequences.",
     "role": "Cinematic Director · AI Designer",
     "tools": "Generative Image · Generative Video · Premiere Pro · After Effects · Photoshop · Audition",
