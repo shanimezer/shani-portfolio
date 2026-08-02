@@ -41,45 +41,37 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [
           {
-            "id": "link-msb2wuoo-n9rp",
+            "id": "link-msb315io-9gnp",
             "label": "Play on Itch",
             "url": "https://shanimezer.itch.io/crazy-like-me",
             "style": "secondary"
           },
           {
-            "id": "link-msb2wuoo-aq6a",
+            "id": "link-msb315io-6l7u",
             "label": "Game Pitch",
             "url": "https://canva.link/4n1xsd5x1mlp57p",
             "style": "secondary"
           }
         ],
-        "media": [
-          {
-            "id": "media-msb2wuoo-6k0d",
-            "url": "https://youtu.be/6XCmbWokc14",
-            "type": "video",
-            "title": "Crazy Like Me",
-            "caption": "Trailer"
-          }
-        ],
+        "media": [],
         "items": [
           {
-            "id": "item-msb2wuoo-f0ra",
+            "id": "item-msb315io-jgua",
             "title": "Pre Production",
             "text": "✓ Narrative Concept  ✓ Game Design"
           },
           {
-            "id": "item-msb2wuoo-ptec",
+            "id": "item-msb315io-9p31",
             "title": "Production",
             "text": "✓ Production Management ✓ Sprint Planning ✓ Team Coordination"
           },
           {
-            "id": "item-msb2wuoo-0fla",
+            "id": "item-msb315io-s4aj",
             "title": "Content Production",
             "text": "✓ AI Cinematics ✓ Sound Design ✓ Main Menu Theme"
           },
           {
-            "id": "item-msb2wuoo-2f8e",
+            "id": "item-msb315io-e6cu",
             "title": "Final Delivery",
             "text": "✓ Build Integration ✓ Competition Submission"
           }
@@ -128,7 +120,15 @@ window.PORTFOLIO_PROJECTS = [
           "gameDesign"
         ],
         "links": [],
-        "media": [],
+        "media": [
+          {
+            "id": "media-msb33nor-kl68",
+            "url": "https://youtu.be/hXvcvmhCFR8",
+            "type": "video",
+            "title": "Crazy Like Me",
+            "caption": "Game Play"
+          }
+        ],
         "items": [],
         "quote": "",
         "author": "",
