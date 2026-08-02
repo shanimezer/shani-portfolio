@@ -1,5 +1,246 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "id": "crazy-like-me",
+    "title": "Crazy Like Me",
+    "year": "2025",
+    "category": "games",
+    "categories": [
+      "games",
+      "production",
+      "ai"
+    ],
+    "categoryLabel": "Game Designer · Producer · Narrative Designer · AI Designer",
+    "roles": [
+      "Game Designer",
+      "Producer",
+      "Narrative Designer",
+      "AI Designer"
+    ],
+    "status": "published",
+    "accent": "#ff70bc",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/crazy-like-me/CLM_Main.png",
+    "video": "https://youtu.be/6XCmbWokc14",
+    "summary": "A first person psychological mystery that combines environmental storytelling, puzzle solving, and immersive sound design to blur the line between reality and delusion.",
+    "tools": "Unity, C#, Trello, GitHub",
+    "client": "Tel Aviv University",
+    "featured": false,
+    "blocks": [
+      {
+        "id": "block-msaz0xbm-ip6e",
+        "type": "overview",
+        "visible": true,
+        "kicker": "About The Game",
+        "title": "Overview",
+        "body": "Crazy Like Me is a first person psychological mystery game that explores the fragile boundary between reality and madness. Players investigate an abandoned office while uncovering clues, solving environmental puzzles, and slowly piecing together a disturbing story hidden within the environment.\n\nRather than relying on traditional horror mechanics, the experience builds tension through atmosphere, sound, environmental storytelling, and psychological uncertainty.\n\nThroughout the project, I combined production leadership with hands on creative work, helping shape both the gameplay experience and the narrative while leading the team's production process.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Overview",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [],
+        "links": [
+          {
+            "id": "link-msb2wuoo-n9rp",
+            "label": "Play on Itch",
+            "url": "https://shanimezer.itch.io/crazy-like-me",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msb2wuoo-aq6a",
+            "label": "Game Pitch",
+            "url": "https://canva.link/4n1xsd5x1mlp57p",
+            "style": "secondary"
+          }
+        ],
+        "media": [
+          {
+            "id": "media-msb2wuoo-6k0d",
+            "url": "https://youtu.be/6XCmbWokc14",
+            "type": "video",
+            "title": "Crazy Like Me",
+            "caption": "Trailer"
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msb2wuoo-f0ra",
+            "title": "Pre Production",
+            "text": "✓ Narrative Concept  ✓ Game Design"
+          },
+          {
+            "id": "item-msb2wuoo-ptec",
+            "title": "Production",
+            "text": "✓ Production Management ✓ Sprint Planning ✓ Team Coordination"
+          },
+          {
+            "id": "item-msb2wuoo-0fla",
+            "title": "Content Production",
+            "text": "✓ AI Cinematics ✓ Sound Design ✓ Main Menu Theme"
+          },
+          {
+            "id": "item-msb2wuoo-2f8e",
+            "title": "Final Delivery",
+            "text": "✓ Build Integration ✓ Competition Submission"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msb0949p-6cew",
+        "type": "roles",
+        "visible": true,
+        "kicker": "My Contributions",
+        "title": "Production",
+        "body": "I managed the development pipeline from planning to delivery : \n\n- Responsibilities\n- Sprint planning\n- Task distribution\n- Production scheduling\n- Team coordination\n- Progress tracking\n- Milestone management\n- Cross disciplinary communication\n- Production documentation\n\nAs the project's Producer, I was responsible for keeping development aligned with the team's timeline while coordinating communication across disciplines.\n\nOne of the biggest production challenges emerged during integration. A core gameplay puzzle had been developed entirely from scratch, despite existing solutions that could have significantly accelerated implementation. Because this system became a dependency for integrating the rest of the level, development bottlenecked and the project's remaining scope quickly exceeded the available schedule.\n\nAfter reassessing the project's priorities, I made the decision to shift the team's approach. Instead of continuing to build every gameplay system from the ground up, we focused on leveraging existing solutions where appropriate, allowing development to move forward and the remaining puzzles to be integrated on time.\n\nAlthough this decision enabled us to deliver the project within scope, the compressed schedule left almost no dedicated QA period. As a result, several issues were only discovered during the competition build, reinforcing an important lesson about protecting testing time as a non negotiable milestone in production.\n\nThis project fundamentally changed the way I approach production. I learned that successful production isn't about keeping every original idea alive. It's about continuously evaluating risk, adapting priorities, and making difficult decisions that maximize the quality of the final player experience. Since this project, I place a much stronger emphasis on early integration, realistic scoping, and preserving dedicated QA time throughout development.",
+        "layout": "wide",
+        "accent": "#ffdbf4",
+        "role": "Producer",
+        "navTitle": "Production",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "I learned that technical ambition must always be balanced against production realities. Shipping a polished experience often means prioritizing proven solutions over reinventing existing systems, while protecting QA time as an essential part of the production schedule rather than a final step."
+      },
+      {
+        "id": "block-msb0rfvd-0v9c",
+        "type": "story",
+        "visible": true,
+        "kicker": "Game Design",
+        "title": "Game & Narrative Design",
+        "body": "As the project's Game and Narrative Designer, I developed the core narrative concept and designed the player's investigative journey.\n\nThe central idea behind Crazy Like Me was to create a murder mystery in which the player believes they are investigating a horrific crime, only to discover that they were responsible for it all along. The surviving coworker and the entire investigation gradually lead the player toward a final revelation: the murderer is not another character, but a split personality of the protagonist.\n\nThis twist became the foundation of the entire experience. Rather than treating it as a final surprise, I designed the narrative framework so every clue, environment, and gameplay objective would support the player's growing sense of uncertainty while preserving the mystery until the final reveal.\n\nI worked closely with the team to establish the overall story structure and gameplay progression. While I defined the narrative foundation and investigative flow, other team members expanded it through dialogue writing and the implementation of individual puzzles.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Game and Narrative Designer",
+        "navTitle": "Game Design",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "gameDesign"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "The objective was to create a psychological mystery where the player's assumptions constantly evolve.\nInstead of relying on exposition, the experience encourages players to investigate their surroundings, connect environmental clues, and slowly reconstruct the events that unfolded inside the office. Every puzzle and narrative beat was intended to answer one question while raising another, maintaining curiosity until the final revelation.\nOne of the core design goals was ensuring that the ending felt inevitable in hindsight. Once players discover that they are both the investigator and the murderer, the clues scattered throughout the environment should suddenly take on an entirely new meaning, encouraging them to reinterpret everything they experienced."
+      },
+      {
+        "id": "block-msb0zvkb-ca4q",
+        "type": "roles",
+        "visible": true,
+        "kicker": "AI Design",
+        "title": "AI Assisted Sound Design",
+        "body": "Beyond my production responsibilities, I designed the game's complete audio experience, using AI as a creative tool rather than a replacement for traditional sound design.\n\nMy goal was to reinforce the game's psychological tension through every layer of sound. Music, ambient effects, voices, and interactive audio were all designed to blur the line between comfort and discomfort, encouraging players to question their surroundings just as they questioned the narrative itself.\n\nI generated the project's music, voices, and sound assets using Suno and ElevenLabs, before editing, layering, and processing them in Adobe Audition to create a cohesive horror soundscape.\n\nOne of the most memorable audio decisions was transforming Take On Me into a distorted, unsettling version that loops from a unicorn toy found within the environment. The familiar melody serves two purposes: it reinforces the game's 1980s setting while simultaneously creating psychological discomfort through contrast. Something that should feel nostalgic instead becomes deeply unsettling, subtly contributing to the player's growing sense that something is fundamentally wrong.\n\nFor me, AI was never the end result. It became part of the creative pipeline, allowing rapid experimentation before shaping every asset through traditional audio editing and mixing.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "AI Designer",
+        "navTitle": "AI | Sound Design",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msb1r62n-s2c7",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/crazy-like-me/CLM_UnicornSheet.png",
+            "type": "image",
+            "title": "Unicorn Asset Sheet",
+            "caption": "For AI Model Generation"
+          },
+          {
+            "id": "media-msb1r62n-l8lv",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/crazy-like-me/CLM_UnicornResault.png",
+            "type": "image",
+            "title": "Generated Unicorn 3D Model In The Game",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msb1r62n-bbh8",
+            "title": "Creative Pipeline",
+            "text": ""
+          },
+          {
+            "id": "item-msb1r62n-3kyo",
+            "title": "Concept",
+            "text": "Define the emotional purpose of each sound."
+          },
+          {
+            "id": "item-msb1r62n-1fjo",
+            "title": "AI Generation",
+            "text": "Generate voices, music, and source material with Suno and ElevenLabs."
+          },
+          {
+            "id": "item-msb1r62n-838j",
+            "title": "Audio Editing",
+            "text": "Refine, distort, layer, and mix assets in Adobe Audition."
+          },
+          {
+            "id": "item-msb1r62n-qjt6",
+            "title": "Implementation",
+            "text": "Integrate the final audio into gameplay to support pacing, atmosphere, and narrative."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msaz0xbm-jsfb",
+        "type": "roles",
+        "visible": true,
+        "kicker": "AI Design",
+        "title": "AI Cinematic Production",
+        "body": "In addition to production and design, I created several cinematic sequences that introduced players to the game's world before gameplay began.\n\nTo achieve the desired atmosphere within the project's limited scope, I combined AI generated footage with found footage techniques, creating sequences that felt grounded while maintaining the game's unsettling tone.\n\nOne of the opening cinematics depicts Brayen waking the protagonist after the massacre, encouraging him to begin \"working\" without revealing the true nature of the events that had already taken place. I generated this sequence using Google Veo, integrating it into the game's introduction to establish mystery from the very first moments.\n\nBeyond the opening cinematic, I also created the animated Main Menu background, ensuring that the game's atmosphere began before the player even pressed Start.\n\nTo complete the presentation, I composed and produced the Main Menu theme, giving the title screen its own identity and setting the emotional tone before gameplay began.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "AI |  Cinematics Design",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "cinematics",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msb1th62-8xai",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/crazy-like-me/CLM_Menu.png",
+            "type": "image",
+            "title": "Main Menu background",
+            "caption": "Generated using Dall-e"
+          },
+          {
+            "id": "media-msb1th62-xdld",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/crazy-like-me/CLM_UnicornID.jpg",
+            "type": "image",
+            "title": "Player ID Footage",
+            "caption": "Generated using Dall-e"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "Rather than treating cinematics as standalone cutscenes, I designed them to become part of the storytelling itself. Each sequence was intended to raise questions instead of providing answers, introducing players to the world while preserving the mystery that drives the rest of the experience. Using AI generation allowed rapid visual experimentation, while careful editing and integration ensured that every cinematic remained consistent with the game's narrative and atmosphere."
+      }
+    ],
+    "role": "Game Designer, Producer, Narrative Designer, AI Designer"
+  },
+  {
     "id": "popcorn-chicken",
     "title": "Popcorn Chicken",
     "year": "2026",
