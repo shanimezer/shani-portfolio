@@ -1692,26 +1692,27 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     "id": "loom-cinematics",
-    "title": "Loom Cinematics",
+    "title": "Loom",
     "category": "ai",
-    "categoryLabel": "AI Video · Cinematic Direction",
+    "categoryLabel": "AI Design · Cinematic Direction",
     "year": "2026",
-    "featured": false,
-    "accent": "#48dfcf",
-    "cover": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=88",
+    "featured": true,
+    "accent": "#fff700",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_poster.png",
     "video": "",
-    "summary": "A cinematic sequence developed through AI-assisted image and video workflows for a science-fiction game world.",
-    "role": "Cinematic Director · AI Creator",
-    "tools": "Generative Image · Generative Video · Premiere Pro",
-    "client": "LOOM",
+    "summary": "LOOM is a narrative VR adventure about guiding a lost alien creature as she learns to connect with an unfamiliar organic world.\n\nI joined the project during its prototype stage to direct and produce its opening and ending cinematics, translating an early script, gameplay build, character sheet, environmental references, and cinematic briefs into two fully realized sequences.",
+    "role": "Cinematic Director · AI Designer",
+    "tools": "Generative Image · Generative Video · Premiere Pro · After Effects · Photoshop · Audition",
+    "client": "Goethe-Institut",
     "challenge": "Maintain character and environment continuity across a long AI-generated cinematic sequence.",
     "approach": "Use strict visual references, shot-by-shot continuity planning and iterative image-to-video workflows.",
     "gallery": [],
     "roles": [
-      "Cinematic Director · AI Creator"
+      "Cinematic Director · AI Designer"
     ],
     "categories": [
-      "ai"
+      "ai",
+      "directing"
     ],
     "status": "draft",
     "blocks": [
@@ -1719,80 +1720,281 @@ window.PORTFOLIO_PROJECTS = [
         "id": "block-ms21grsg-2e6k",
         "type": "overview",
         "visible": true,
-        "kicker": "The project",
+        "kicker": "About the Project",
         "title": "Overview",
-        "body": "A cinematic sequence developed through AI-assisted image and video workflows for a science-fiction game world.",
+        "body": "LOOM was developed as part of the Goethe-Institut's Digital Game Mixer, an international collaboration program connecting game creators from Germany and Israel.\n\nI was commissioned to direct and produce the game's opening and ending cinematics. Starting from a screenplay, gameplay prototype, early character sheet, environmental references, and cinematic briefs, I developed the complete visual language for both sequences. This included concept development, storyboarding, cinematic direction, AI assisted production, and post production, resulting in two cinematics that seamlessly bridge the narrative with the gameplay experience.\n\nBeyond creating the final videos, my role was to translate an early production brief into a cohesive cinematic experience while maintaining narrative continuity, visual consistency, and the emotional tone established by the game.",
         "layout": "wide",
-        "accent": "",
+        "accent": "#ffeb14",
         "role": "",
-        "navTitle": "",
+        "navTitle": "Overview",
         "showInToc": true,
-        "alwaysVisible": false,
+        "alwaysVisible": true,
         "disciplines": [],
-        "links": [],
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-i0mo",
-        "type": "story",
-        "visible": true,
-        "kicker": "Process",
-        "title": "Challenge & approach",
-        "body": "Maintain character and environment continuity across a long AI-generated cinematic sequence.\n\nUse strict visual references, shot-by-shot continuity planning and iterative image-to-video workflows.",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-w0kx",
-        "type": "credits",
-        "visible": true,
-        "kicker": "Project details",
-        "title": "Credits",
-        "body": "",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
+        "links": [
+          {
+            "id": "link-msbpe15j-re01",
+            "label": "Read more about the Game Mixer",
+            "url": "https://www.goethe.de/ins/il/en/bib/fur/dgm.html",
+            "style": "secondary"
+          }
+        ],
         "media": [],
         "items": [
           {
-            "id": "item-ms21grsg-cjgh",
+            "id": "item-msbpe15j-qdys",
+            "title": "Client",
+            "text": "Goethe-Institut"
+          },
+          {
+            "id": "item-msbpe15k-l83p",
+            "title": "Project Origin",
+            "text": "Digital Game Mixer"
+          },
+          {
+            "id": "item-msbpe15k-o6l4",
             "title": "Role",
-            "text": "Cinematic Director · AI Creator"
+            "text": "Cinematic Director & AI Filmmaker"
           },
           {
-            "id": "item-ms21grsg-pb0d",
-            "title": "Tools",
-            "text": "Generative Image · Generative Video · Premiere Pro"
+            "id": "item-msbpe15k-b116",
+            "title": "Stage",
+            "text": "Prototype / Demo"
           },
           {
-            "id": "item-ms21grsg-4b8z",
-            "title": "Client / Context",
-            "text": "LOOM"
+            "id": "item-msbpe15k-3qhy",
+            "title": "Deliverables",
+            "text": "Opening and Ending Cinematics"
           }
         ],
         "quote": "",
         "author": "",
         "takeaway": ""
+      },
+      {
+        "id": "block-msbpuic4-2uzf",
+        "type": "story",
+        "visible": true,
+        "kicker": "Step 1",
+        "title": "Initial Brief",
+        "body": "The project began with a screenplay, gameplay prototype, character sheet, environmental references, and a cinematic brief describing the narrative goals, emotional direction, and gameplay continuity. While the story beats were clearly defined, the visual execution, camera language, pacing, and overall cinematic direction were left entirely open for interpretation. My role was to transform these production materials into two fully realized cinematics that would seamlessly integrate with the game.",
+        "layout": "wide",
+        "accent": "#d6ba00",
+        "role": "Cinematics Director",
+        "navTitle": "Initial Brief",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msbs5oai-3h7b",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Brief_P1.png",
+            "type": "image",
+            "title": "Overview & structure",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs5oai-f03k",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Brief_P2.png",
+            "type": "image",
+            "title": "Visual references 1",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs5oai-l41g",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Brief_P3.png",
+            "type": "image",
+            "title": "Visual references 2",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs5oai-bswo",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_CharacterSheet.jpeg",
+            "type": "image",
+            "title": "Character Sheet",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs5oai-g43z",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_enviroments_Reph.png",
+            "type": "image",
+            "title": "Environments References",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msbsl6kl-qh4d",
+        "type": "story",
+        "visible": true,
+        "kicker": "Step 2",
+        "title": "Cinematic Planning",
+        "body": "Before developing the storyboard, I broke the screenplay into a detailed shot list, defining the purpose and complexity of every cinematic beat.\n\nThis planning stage helped organize the production workflow, identify technically demanding sequences early, and establish a clear roadmap before entering AI production. By mapping each shot in advance, I was able to prioritize complex scenes, maintain narrative pacing, and build a structured production pipeline that guided every stage of the project.",
+        "layout": "wide",
+        "accent": "#7adeff",
+        "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msbt86no-ehed",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Shooting.png",
+            "type": "image",
+            "title": "Shooting List",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msbpyey3-exxg",
+        "type": "story",
+        "visible": true,
+        "kicker": "Step 2",
+        "title": "From Brief to Previsualization",
+        "body": "With the creative brief approved, I translated the screenplay into a complete cinematic previsualization.\n\nRather than creating traditional sketch storyboards, I developed production ready frames for every shot, establishing the composition, camera language, pacing, environmental design, and narrative progression before moving into video production.\n\nEach sequence was reviewed collaboratively with the game's creator through multiple feedback rounds until every shot, transition, and visual beat aligned with the intended storytelling. Most revisions focused on refining LOOM's appearance and maintaining visual consistency across the entire cinematic.\n\nThe approved previs became the blueprint for the production phase, significantly reducing iteration during video generation while ensuring both cinematics remained cohesive from the first frame to the last.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Previsualization",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "cinematics",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msbs6x4k-rzt4",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Player-Character%20Sheet.png",
+            "type": "image",
+            "title": "Blue Figure Character Sheet",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs6x4k-l6qg",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S1_1.png",
+            "type": "image",
+            "title": "Storyboard P1",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs6x4k-044x",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S2_1.png",
+            "type": "image",
+            "title": "Storyboard P2",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs6x4k-1rvk",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S2_2.png",
+            "type": "image",
+            "title": "Storyboard P3",
+            "caption": ""
+          },
+          {
+            "id": "media-msbs6x4k-y4ls",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S3.png",
+            "type": "image",
+            "title": "Storyboard P4",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msbu4i7h-95i7",
+        "type": "story",
+        "visible": true,
+        "kicker": "Step 4",
+        "title": "Iterative Feedback",
+        "body": "Every major milestone was shared with the client for review before moving to the next stage of production. This iterative workflow ensured that creative decisions were validated early, allowing the cinematics to evolve through collaboration rather than extensive revisions at the end of the project.\n\nBelow is one example of how client feedback directly influenced the final cinematic.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "navTitle": "Iterative Feedback",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "cinematics"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msbu4i7h-9ay8",
+            "url": "https://youtu.be/fj-cA-xDFCM",
+            "type": "video",
+            "title": "Initial Submission of S1 Draft",
+            "caption": "Client Feedback : \"The blue figure should influence the environment rather than interacting directly with LOOM. The sequence should feel more subtle and naturally transition into the beginning of the gameplay.\""
+          },
+          {
+            "id": "media-msbu4i7h-w3qj",
+            "url": "https://youtu.be/qaoqKiGwM2k",
+            "type": "video",
+            "title": "Final Intro Version and Solution",
+            "caption": "Redesigned the sequence so the blue figure interacted only with a rock blocking the spacecraft. This preserved the creature's mysterious nature while creating a more organic transition into gameplay."
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msbu7jna-pfw4",
+        "type": "story",
+        "visible": true,
+        "kicker": "Last Step",
+        "title": "Final Delivery",
+        "body": "Over a two week production period, I delivered two fully produced cinematics that became part of the playable prototype of LOOM.\n\nThe final deliverables translated the project's narrative vision into a cohesive cinematic experience, establishing the emotional opening of the game while providing a seamless transition into gameplay, and concluding the player's journey with a visually connected ending sequence.\n\nBeyond the final videos, the project established a complete cinematic production pipeline, from creative planning and previsualization through AI assisted production, post production, and collaborative iteration with the game's creator.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Cinematics Director",
+        "navTitle": "Results",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "cinematics"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msbubcf0-rvje",
+            "url": "https://youtu.be/Or071jvIG_s",
+            "type": "video",
+            "title": "Ending Cinematic",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msbubcf0-308i",
+            "title": "Deliverables",
+            "text": "Opening Cinematic · Ending Cinematic · Cinematic Previsualization · Storyboards & Shot Planning · Production Documentation"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "- Directed and delivered two cinematics from concept to final edit.\n- Developed a structured AI production pipeline for narrative cinematics.\n- Balanced creative direction with technical constraints to maintain character and visual consistency.\n- Collaborated closely with the game's creator through multiple review and iteration cycles.\n- Delivered all production assets within a two week schedule and project budget."
       }
     ]
   },
