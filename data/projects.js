@@ -1590,13 +1590,13 @@ window.PORTFOLIO_PROJECTS = [
     "category": "social",
     "categoryLabel": "Social Strategy · Community",
     "year": "2026",
-    "featured": false,
-    "accent": "#ff657c",
-    "cover": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1800&q=88",
-    "video": "",
+    "featured": true,
+    "accent": "#53dfd6",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/SixMindsStudio_Logo_HighRes.png",
+    "video": "https://youtu.be/x5kmb3CKdqY",
     "summary": "Launch strategy, community building and ongoing content for an indie narrative game studio.",
     "role": "Social Lead · Content Creator",
-    "tools": "Premiere Pro · Canva · Discord",
+    "tools": "CapCut · Canva · Discord · Tiktok · IG · Linkedin · Youtube ·  X · Reddit",
     "client": "Six Minds Studio",
     "challenge": "Introduce a new studio before the game has a large library of finished assets.",
     "approach": "Make the process itself the content, turning team personalities, tutorials and development updates into an ongoing narrative.",
@@ -1607,7 +1607,7 @@ window.PORTFOLIO_PROJECTS = [
     "categories": [
       "social"
     ],
-    "status": "draft",
+    "status": "published",
     "blocks": [
       {
         "id": "block-ms21grsg-4etq",
