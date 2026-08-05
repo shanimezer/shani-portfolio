@@ -1026,40 +1026,265 @@ window.PORTFOLIO_PROJECTS = [
     "title": "Divine Chaos",
     "category": "directing",
     "categoryLabel": "Directing · 3D Animation · Musical",
-    "year": "2026",
+    "year": "2025-2026",
     "featured": true,
-    "accent": "#ffb45e",
-    "cover": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=88",
-    "video": "",
-    "summary": "A stylized 3D animated musical created in Unreal Engine, reimagining the story of Eden through performance, spectacle and dark comedy.",
-    "role": "Director · Producer · Creator",
-    "tools": "Unreal Engine · Motion Capture · Premiere Pro",
-    "client": "Independent MFA Film",
+    "accent": "#ff0000",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/divineChaos_Post.png",
+    "video": "https://youtu.be/-cXP3Sip4qE",
+    "summary": "A 3D animated musical created in Unreal Engine, reimagining the story of Adam, Eve and Lilith through a contemporary exploration of power, responsibility and abusive relationships.",
+    "role": "Director · Producer · Cinematics Director · Motion Capture Director · Unreal Engine Artist",
+    "tools": "Unreal Engine · Motion Capture · Adobe Creative Suit",
+    "client": "Independent MFA Animation Film",
     "challenge": "Build an ambitious musical world while balancing performance, spectacle and an emotionally complex story.",
     "approach": "A cinematic pipeline combining virtual production, motion capture, stylized MetaHumans and tightly directed musical staging.",
     "gallery": [],
     "roles": [
-      "Director · Producer · Creator"
+      "Director · Producer · Cinematics Director · Motion Capture Director · Unreal Engine Artist"
     ],
     "categories": [
-      "directing"
+      "directing",
+      "production"
     ],
-    "status": "draft",
+    "status": "published",
     "blocks": [
       {
         "id": "block-ms21grsg-5m2m",
         "type": "overview",
         "visible": true,
-        "kicker": "The project",
+        "kicker": "About the film",
         "title": "Overview",
-        "body": "A stylized 3D animated musical created in Unreal Engine, reimagining the story of Eden through performance, spectacle and dark comedy.",
+        "body": "Divine Chaos is a 3D animated musical that reimagines the biblical story of Adam, Eve and Lilith through a contemporary and emotionally complex perspective.\n\nThe story follows Eve, who is created to replace Lilith after she refuses to obey the natural order imposed upon her. When Lilith returns to reveal the truth behind her disappearance, the fragile balance of Eden begins to collapse. As God searches for someone to blame, Eve is forced to confront the system she was created to serve and decide whether to protect herself or take responsibility for the chaos around her.\n\nCreated as my MFA graduation film, the project combines cinematic storytelling, musical theatre, motion capture and real-time production in Unreal Engine. I directed and produced the film while overseeing its creative development, performance capture, cinematics and virtual production pipeline.\n\nAt its core, Divine Chaos explores the complexity of abusive relationships and the way responsibility, guilt and empathy are shaped by unequal systems of power. Rather than presenting a simple victim-and-villain narrative, the film asks the audience to examine how people become trapped inside harmful dynamics and why those dynamics can be difficult to recognise from the outside.",
         "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
+        "accent": "#ff0000",
+        "role": "Director",
+        "navTitle": "Overview",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-msg3xdya-gyca",
+            "title": "2023",
+            "text": "Initial Concept & Worldbuilding · Research & Theme Development · Screenplay Development"
+          },
+          {
+            "id": "item-msg3xdya-9qz6",
+            "title": "2024",
+            "text": "AI Concept Art · Production Planning · Team Building · Casting"
+          },
+          {
+            "id": "item-msg3xdya-4jl0",
+            "title": "2025",
+            "text": "Choreography & Rehearsals · Motion Capture Testing · Unreal Engine Pipeline"
+          },
+          {
+            "id": "item-msg3xdya-fjtt",
+            "title": "2026",
+            "text": "Motion Capture Production · Virtual Production · Graduation Preview · Post-Production"
+          },
+          {
+            "id": "item-msg3xdya-mgsf",
+            "title": "2027",
+            "text": "Final Polish · Animation Cleanup · Sound Mix · Festival Submissions · Distribution"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg4avzj-aynk",
+        "type": "story",
+        "visible": true,
+        "kicker": "The Evolution of the Story",
+        "title": "Script | Introduction",
+        "body": "Every project begins with a question.\n\nFor Divine Chaos, that question was simple:\n\nWhat if the biblical story of Adam and Eve had been misunderstood all along?\n\nOver the next three years, that question evolved into a continuous process of research, experimentation and iteration. What began as an immersive VR experience gradually transformed into a cinematic animated musical, with every stage helping redefine the project's narrative, visual identity and production pipeline.\n\nThis section documents that creative journey, from the earliest ideas to the foundation of the final film.",
+        "layout": "wide",
+        "accent": "#ffc800",
+        "role": "Narrative Design",
+        "navTitle": "Sctipt | Introduction",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg58ifc-n7cq",
+        "type": "story",
+        "visible": true,
+        "kicker": "The Evolution of the Story",
+        "title": "Script | Research",
+        "body": "Before writing a single scene, I immersed myself in extensive research that challenged the traditional interpretation of Genesis. My goal was never to retell the biblical story, but to reinterpret it through a contemporary emotional and philosophical lens.\n\nThe research explored biblical texts, Jewish commentaries, apocryphal writings, angelology, scientific theories of creation and evolution, mythology, psychology and musical storytelling. As recurring themes began to emerge, they shaped the creative foundation that would eventually become Divine Chaos.\n\nRather than searching for answers, I focused on asking better questions. Those questions ultimately became the heart of the screenplay.\n\nThe first version of Divine Chaos was conceived as an interactive VR experience, allowing the audience to witness the events of the Garden of Eden from within the story itself.\n\nAlthough the project would later evolve into a cinematic musical, this early concept established many of the creative pillars that remained throughout development, including its reinterpretation of biblical characters, its questioning of accepted narratives and its ambition to create an emotionally immersive experience.\n\nThe original pitch marked the beginning of a much larger creative journey.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Script | Research",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing"
+        ],
+        "links": [
+          {
+            "id": "link-msg59zt2-a8o8",
+            "label": "Explore the Early Concept",
+            "url": "https://docs.google.com/presentation/d/1uUOZmJghz8U6mvZC5Z-87vp8Rzl1iEmT/edit?slide=id.p1#slide=id.p1",
+            "style": "secondary"
+          }
+        ],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg5fu60-6m4n",
+        "type": "story",
+        "visible": true,
+        "kicker": "",
+        "title": "Finding the Visual Language",
+        "body": "Long before production began, I used AI as a creative prototyping tool to explore the project's visual identity.\n\nBy creating an early animatic, I was able to experiment with tone, pacing, character dynamics and cinematic language before committing those ideas to the screenplay. This iterative process made it possible to quickly test creative directions, identify what resonated emotionally and refine the project's overall vision.\n\nWhile many scenes changed throughout development, this prototype introduced several of the project's defining creative ideas and became an important milestone in shaping its identity.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Visual Language",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msg5fu60-a10h",
+            "url": "https://youtu.be/NdNjcOaxxPQ",
+            "type": "video",
+            "title": "Early AI Animatic",
+            "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg665zs-x3sq",
+        "type": "story",
+        "visible": true,
+        "kicker": "Script",
+        "title": "Script | Final",
+        "body": "As development progressed, the project gradually shifted away from its original VR format and evolved into a narrative-driven animated musical.\n\nWorking under the mentorship of Asaf Zipor and Anat Gafni, I developed multiple screenplay iterations that refined the story's structure, emotional arc and thematic focus.\n\nThe final narrative centers on Eve's journey while exploring power, responsibility, manipulation and abusive relationships through a contemporary reinterpretation of one of humanity's oldest stories.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Script | Final",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing"
+        ],
+        "links": [
+          {
+            "id": "link-msg665zs-8ou7",
+            "label": "Characters Description",
+            "url": "https://docs.google.com/document/d/1s4bP7ibEnAKM46zWKG7k5Qp5h1NqWe-NzbJbOr5aFoI?usp=drive_fs",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msg665zs-2hjf",
+            "label": "Treatment",
+            "url": "https://docs.google.com/document/d/1B4jBJkJD360ETNB05qG57yfx6yZK_6Dcr8ebkahXhoo/edit?tab=t.0",
+            "style": "secondary"
+          }
+        ],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg6pdur-go4a",
+        "type": "story",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Pre-production | Introduction",
+        "body": "Once the screenplay and musical structure were finalized, the focus shifted from writing to production planning.\n\nBecause Divine Chaos combines live performance, original music, choreography, motion capture and real-time production in Unreal Engine, pre-production required building multiple creative and technical pipelines simultaneously.\n\nThis stage focused on translating the screenplay into a practical production plan by defining the production workflow, assembling the creative team, planning technical requirements and preparing the project for casting and rehearsals.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Producer",
+        "navTitle": "Pre-production | Introduction",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg7honu-xecl",
+        "type": "story",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Building the Production",
+        "body": "Before production could begin, every scene was broken down into its creative and technical requirements.\n\nI created detailed production documents mapping each character, environment, prop, animation, sound effect and technical task required throughout the film. These breakdowns became the foundation for estimating resources, assigning responsibilities and identifying which assets would be purchased, adapted or created from scratch.\n\nAt this stage, Divine Chaos was still planned as an immersive VR experience. As a result, the planning documents include VR-specific systems and interactive features that were later redesigned when the project evolved into a cinematic animated film.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Pre-Production | Breakdown",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msg7jac3-9wwn",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/divine-chaos-prod-breakdown.png",
+            "type": "image",
+            "title": "Scene Production Breakdown",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg7dp3b-798k",
+        "type": "story",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Building the Production Team",
+        "body": "Building the Team\n\nBased on the production breakdown, I assembled a multidisciplinary team covering music, choreography, production, 3D art, technical art, animation, sound and Unreal Engine development.\n\nBecause the project was originally designed for VR, the initial team also included roles dedicated to interactive development and spatial audio. As the production evolved into a linear film, the team structure was adjusted to support the new production pipeline while maintaining the project's artistic vision.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Pre-Production | Team",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production"
+        ],
         "links": [],
         "media": [],
         "items": [],
@@ -1119,6 +1344,62 @@ window.PORTFOLIO_PROJECTS = [
             "id": "item-ms21grsg-9554",
             "title": "Client / Context",
             "text": "Independent MFA Film"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg6nugt-u4o4",
+        "type": "story",
+        "visible": true,
+        "kicker": "",
+        "title": "Storyboard",
+        "body": "With the screenplay established, I began translating the written story into a visual language.\n\nStoryboards became the bridge between script and production, allowing me to design compositions, camera movement, emotional pacing and cinematic rhythm long before stepping into motion capture and virtual production.\n\nThese boards served as the blueprint for rehearsals, cinematography and the film's overall visual direction.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msg6nugt-lfzi",
+            "url": "https://youtu.be/ox5CSH0Gan8",
+            "type": "video",
+            "title": "Storyboard Highlights",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg7qpni-o1qz",
+        "type": "story",
+        "visible": true,
+        "kicker": "",
+        "title": "",
+        "body": "Adapting the Production Pipeline\n\nDivine Chaos was originally conceived as an immersive VR experience.\n\nDuring development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-msg7qpni-vl30",
+            "title": "Production Note",
+            "text": "The production documents presented in this section were created during the original VR development phase. They are included to demonstrate the project's planning process and production evolution. Some technical systems and production requirements shown in these documents were later removed or redesigned as the project transitioned into a screen-based animated film."
           }
         ],
         "quote": "",
