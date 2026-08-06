@@ -79,9 +79,10 @@
     return `<div class="block-media ${layoutClass}">${media.map(mediaFigure).join('')}</div>`;
   };
 
-  const renderBlock = (block, project) => {
+  const renderBlock = (block, project, children = []) => {
     if (!block || block.visible === false) return '';
     const type = block.type || 'story';
+    const secondary = block.level === 'secondary';
     const title = block.title || blockTypes[type] || '';
     const kicker = block.kicker || blockTypes[type] || '';
     const accent = block.accent || project.accent || '#b9bec8';
@@ -89,7 +90,19 @@
     const quote = block.quote ? `<blockquote class="block-quote">“${escape(block.quote)}”${block.author ? `<footer>${escape(block.author)}</footer>` : ''}</blockquote>` : '';
     const ordinaryItems = type === 'gameLinks' ? '' : renderItems(block, type === 'timeline');
     const content = `${block.body ? `<div class="project-block-copy">${escape(block.body)}</div>` : ''}${type === 'roles' && roleTags ? `<div class="roles-cloud">${roleTags}</div>` : ''}${renderLinks(block)}${quote}${renderMedia(block)}${ordinaryItems}${block.takeaway ? `<aside class="block-takeaway"><span class="eyebrow">Key takeaway</span><p>${escape(block.takeaway)}</p></aside>` : ''}`;
-    return `<section class="project-block" data-type="${escape(type)}" data-layout="${escape(block.layout || 'wide')}" style="--block-accent:${escape(accent)}"><div class="project-block-inner"><header class="project-block-header">${kicker ? `<div class="eyebrow">${escape(kicker)}</div>` : ''}${title ? `<h2>${escape(title)}</h2>` : ''}</header><div class="project-block-content">${content}</div></div></section>`;
+    const childMarkup = children.length ? `<div class="project-sub-blocks">${children.map(child => renderBlock(child, project)).join('')}</div>` : '';
+    return `<section class="project-block${secondary ? ' project-sub-block' : ''}" data-block-id="${escape(block.id || '')}" data-parent-id="${escape(block.parentId || '')}" data-level="${secondary ? 'secondary' : 'primary'}" data-type="${escape(type)}" data-layout="${escape(block.layout || 'wide')}" style="--block-accent:${escape(accent)}"><div class="project-block-inner"><header class="project-block-header">${kicker ? `<div class="eyebrow">${escape(kicker)}</div>` : ''}${title ? `<h2>${escape(title)}</h2>` : ''}</header><div class="project-block-content">${content}</div>${childMarkup}</div></section>`;
+  };
+
+  const renderBlockTree = (blocks, project) => {
+    const visible = blocks.filter(block => block.visible !== false);
+    const primaryIds = new Set(visible.filter(block => block.level !== 'secondary').map(block => block.id));
+    const mains = visible.filter(block => block.level !== 'secondary' || !block.parentId || !primaryIds.has(block.parentId));
+    return mains.map(main => {
+      const children = visible.filter(block => block.level === 'secondary' && block.parentId === main.id);
+      const normalizedMain = main.level === 'secondary' ? {...main, level:'primary', parentId:''} : main;
+      return renderBlock(normalizedMain, project, children);
+    }).join('');
   };
 
   window.PortfolioCMS = {
@@ -119,7 +132,7 @@
   if (!project) { detail.innerHTML = '<section class="page-hero"><div class="wrap"><div class="eyebrow">Project not found</div><h1>This project does not exist.</h1><a class="button" href="../work/index.html">Back to work</a></div></section>'; return; }
   document.title = `${project.title} | Shani Mezer`;
   detail.style.setProperty('--project-accent', project.accent || '#b9bec8');
-  const blocks = Array.isArray(project.blocks) ? project.blocks.filter(block => block.visible !== false) : [];
+  const blocks = Array.isArray(project.blocks) ? project.blocks : [];
   const heroVideo = project.video ? `<section class="section project-hero-video"><div class="wrap"><div class="video-frame"><iframe src="${escape(toEmbedUrl(project.video))}" title="${escape(project.title)} video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></section>` : '';
-  detail.innerHTML = `<section class="project-hero-dynamic"><div class="project-hero-image" style="background-image:url('${escape(project.cover || '')}')"></div><div class="project-hero-shade"></div><div class="wrap project-hero-copy"><div class="eyebrow">${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</div><h1>${escape(project.title)}</h1><p>${escape(project.summary || '')}</p><div class="project-tags"><span>${escape(project.year || '')}</span><span>${escape(project.role || (project.roles || []).join(' · '))}</span></div></div></section>${heroVideo}${blocks.map(block => renderBlock(block, project)).join('')}<section class="section next-project"><div class="wrap"><a href="../work/index.html">← View all projects</a></div></section>`;
+  detail.innerHTML = `<section class="project-hero-dynamic"><div class="project-hero-image" style="background-image:url('${escape(project.cover || '')}')"></div><div class="project-hero-shade"></div><div class="wrap project-hero-copy"><div class="eyebrow">${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</div><h1>${escape(project.title)}</h1><p>${escape(project.summary || '')}</p><div class="project-tags"><span>${escape(project.year || '')}</span><span>${escape(project.role || (project.roles || []).join(' · '))}</span></div></div></section>${heroVideo}${renderBlockTree(blocks, project)}<section class="section next-project"><div class="wrap"><a href="../work/index.html">← View all projects</a></div></section>`;
 })();
