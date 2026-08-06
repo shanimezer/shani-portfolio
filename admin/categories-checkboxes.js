@@ -23,9 +23,9 @@
 
   checkboxes.forEach(box => box.addEventListener('change', () => {
     hidden.value = [...new Set([primary.value, ...checkboxes.filter(item => item.checked).map(item => item.value)])].join(', ');
-    hidden.dispatchEvent(new Event('input', { bubbles: true }));
+    hidden.dispatchEvent(new Event('input', { bubbles:true }));
   }));
-  primary.addEventListener('change', () => { syncCategories(); hidden.dispatchEvent(new Event('input', { bubbles: true })); });
+  primary.addEventListener('change', () => { syncCategories(); hidden.dispatchEvent(new Event('input', { bubbles:true })); });
   ['#projectList','#newProject','#duplicateProject','#resetData','#importInput'].forEach(selector => document.querySelector(selector)?.addEventListener('click', () => setTimeout(syncCategories, 0)));
 
   const blockForm = document.querySelector('#blockForm');
@@ -36,11 +36,8 @@
     const disciplinePicker = disciplinePickers[0];
     const disciplineOptions = disciplinePicker?.querySelector('.category-options');
     if (disciplineOptions && !disciplineOptions.querySelector('input[value="narrativeDesign"]')) {
-      disciplineOptions.insertAdjacentHTML('beforeend', '<label><input type="checkbox" name="disciplines" value="narrativeDesign"> Narrative Design</label>');
+      disciplineOptions.insertAdjacentHTML('beforeend','<label><input type="checkbox" name="disciplines" value="narrativeDesign"> Narrative Design</label>');
     }
-    [...blockForm.querySelectorAll('input[name="navTitle"]')].slice(1).forEach(input => input.closest('label')?.remove());
-    [...blockForm.querySelectorAll('input[name="showInToc"]')].slice(1).forEach(input => input.closest('label')?.remove());
-    [...blockForm.querySelectorAll('input[name="alwaysVisible"]')].slice(1).forEach(input => input.closest('label')?.remove());
 
     const titleLabel = blockForm.elements.title?.closest('label');
     if (titleLabel && !blockForm.querySelector('.block-hierarchy-fields')) {
@@ -60,7 +57,7 @@
   const parentWrap = parentField?.closest('[data-parent-field]');
   let editingBlockId = null;
 
-  const populateParents = (selected = '') => {
+  const populateParents = (selected='') => {
     if (!parentField) return;
     const project = activeProject();
     const primaryBlocks = (project?.blocks || []).filter(block => block.level !== 'secondary' && block.id !== editingBlockId);
@@ -109,7 +106,7 @@
   const decorateBlockCards = () => {
     const project = activeProject();
     if (!project) return;
-    const blocks = new Map((project.blocks || []).map(block => [block.id, block]));
+    const blocks = new Map((project.blocks || []).map(block => [block.id,block]));
     document.querySelectorAll('#blockList .block-card').forEach(card => {
       const block = blocks.get(card.dataset.id);
       const secondary = block?.level === 'secondary';
@@ -117,27 +114,19 @@
       card.querySelector('.hierarchy-badge')?.remove();
       if (secondary) {
         const parent = blocks.get(block.parentId);
-        const info = card.querySelector('.block-info small');
-        info?.insertAdjacentHTML('beforeend', `<span class="hierarchy-badge">Inside: ${window.PortfolioCMS.escape(parent?.navTitle || parent?.title || 'Main block')}</span>`);
+        card.querySelector('.block-info small')?.insertAdjacentHTML('beforeend', `<span class="hierarchy-badge">Inside: ${window.PortfolioCMS.escape(parent?.navTitle || parent?.title || 'Main block')}</span>`);
       }
     });
   };
   const blockList = document.querySelector('#blockList');
-  if (blockList) new MutationObserver(() => requestAnimationFrame(decorateBlockCards)).observe(blockList, {childList:true, subtree:true});
+  if (blockList) new MutationObserver(() => requestAnimationFrame(decorateBlockCards)).observe(blockList,{childList:true,subtree:true});
 
   document.querySelector('#saveBlock')?.addEventListener('click', () => {
     setTimeout(() => {
       document.querySelector('#saveProject')?.click();
       decorateBlockCards();
-    }, 0);
+    },0);
   });
 
-  if (!document.querySelector('script[data-preview-hierarchy]')) {
-    const previewScript = document.createElement('script');
-    previewScript.src = 'preview-hierarchy.js?v=20260806-1';
-    previewScript.dataset.previewHierarchy = 'true';
-    document.body.appendChild(previewScript);
-  }
-
-  setTimeout(() => { syncCategories(); decorateBlockCards(); }, 0);
+  setTimeout(() => { syncCategories(); decorateBlockCards(); },0);
 })();
