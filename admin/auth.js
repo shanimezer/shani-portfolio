@@ -27,7 +27,7 @@
   function loadAdminEnhancement(src) {
     if (document.querySelector(`script[data-admin-enhancement="${src}"]`)) return;
     const script = document.createElement('script');
-    script.src = `${src}?v=20260806-2`;
+    script.src = `${src}?v=20260806-4`;
     script.dataset.adminEnhancement = src;
     document.body.appendChild(script);
   }
@@ -38,8 +38,7 @@
     const input = document.getElementById('adminPassword');
     const error = document.getElementById('passwordError');
 
-    loadAdminEnhancement('preview-hierarchy.js');
-    loadAdminEnhancement('preview-sync.js');
+    loadAdminEnhancement('live-preview.js');
 
     if (!dialog || !form || !input || !config.passwordHash) {
       console.error('Admin password gate is not configured correctly.');
