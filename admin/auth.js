@@ -24,21 +24,11 @@
     window.setTimeout(() => window.location.replace('../index.html'), 120);
   }
 
-  function loadAdminEnhancement(src) {
-    if (document.querySelector(`script[data-admin-enhancement="${src}"]`)) return;
-    const script = document.createElement('script');
-    script.src = `${src}?v=20260806-4`;
-    script.dataset.adminEnhancement = src;
-    document.body.appendChild(script);
-  }
-
   window.addEventListener('DOMContentLoaded', () => {
     const dialog = document.getElementById('passwordDialog');
     const form = document.getElementById('passwordForm');
     const input = document.getElementById('adminPassword');
     const error = document.getElementById('passwordError');
-
-    loadAdminEnhancement('live-preview.js');
 
     if (!dialog || !form || !input || !config.passwordHash) {
       console.error('Admin password gate is not configured correctly.');
