@@ -28,6 +28,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msaz0xbm-ip6e",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "About The Game",
         "title": "Overview",
@@ -83,6 +85,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msb0949p-6cew",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "My Contributions",
         "title": "Production",
@@ -106,6 +110,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msb0rfvd-0v9c",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Game Design",
         "title": "Game & Narrative Design",
@@ -137,6 +143,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msb0zvkb-ca4q",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "AI Design",
         "title": "AI Assisted Sound Design",
@@ -201,6 +209,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msaz0xbm-jsfb",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "AI Design",
         "title": "AI Cinematic Production",
@@ -267,6 +277,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7rjiw9-s7zl",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Mobile Puzzle Strategy Game",
         "title": "Overview",
@@ -345,6 +357,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7wy9g5-umfu",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "The Design Challenge",
         "title": "Designing Strategy Around Sacrifice",
@@ -366,6 +380,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7x5soo-4dem",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Building for Collaboration",
         "title": "Designing a Scalable Code Architecture",
@@ -423,6 +439,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7xotqs-hmns",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Core Gameplay",
         "title": "Building the Player Experience",
@@ -478,6 +496,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7yjjhc-8yvg",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Design Decisions",
         "title": "Designing Strategy Through Sacrifice",
@@ -520,6 +540,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7ylen5-40iy",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Audio Direction",
         "title": "Creating a Playful Audio Identity",
@@ -570,6 +592,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7ynyy6-prh9",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Leadership",
         "title": "Leading Development Across the Team",
@@ -641,6 +665,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21mtnn-pyul",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
@@ -699,6 +725,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21mtnn-dqqs",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Game Design",
         "title": "Designing Meaningful Character Abilities",
@@ -766,6 +794,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms4qg4dt-enzj",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Production",
         "title": "Leading the Game Production",
@@ -851,6 +881,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms4qhixl-p8k9",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "AI Designer",
         "title": "AI-Assisted Visual and Audio Production",
@@ -959,6 +991,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms7mgt4c-9mh6",
         "type": "roles",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Development",
         "title": "Unity Development and System Integration",
@@ -1050,6 +1084,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-5m2m",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "About the film",
         "title": "Overview",
@@ -1097,18 +1133,20 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg4avzj-aynk",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "The Evolution of the Story",
-        "title": "Script | Introduction",
+        "title": "Script",
         "body": "Every project begins with a question.\n\nFor Divine Chaos, that question was simple:\n\nWhat if the biblical story of Adam and Eve had been misunderstood all along?\n\nOver the next three years, that question evolved into a continuous process of research, experimentation and iteration. What began as an immersive VR experience gradually transformed into a cinematic animated musical, with every stage helping redefine the project's narrative, visual identity and production pipeline.\n\nThis section documents that creative journey, from the earliest ideas to the foundation of the final film.",
         "layout": "wide",
         "accent": "#ffc800",
         "role": "Narrative Design",
-        "navTitle": "Sctipt - Introduction",
+        "navTitle": "Sctipt",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
-          "directing"
+          "narrativeDesign"
         ],
         "links": [],
         "media": [],
@@ -1120,22 +1158,24 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg58ifc-n7cq",
         "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg4avzj-aynk",
         "visible": true,
         "kicker": "The Evolution of the Story",
         "title": "Script - Research",
         "body": "Before writing a single scene, I immersed myself in extensive research that challenged the traditional interpretation of Genesis. My goal was never to retell the biblical story, but to reinterpret it through a contemporary emotional and philosophical lens.\n\nThe research explored biblical texts, Jewish commentaries, apocryphal writings, angelology, scientific theories of creation and evolution, mythology, psychology and musical storytelling. As recurring themes began to emerge, they shaped the creative foundation that would eventually become Divine Chaos.\n\nRather than searching for answers, I focused on asking better questions. Those questions ultimately became the heart of the screenplay.\n\nThe first version of Divine Chaos was conceived as an interactive VR experience, allowing the audience to witness the events of the Garden of Eden from within the story itself.\n\nAlthough the project would later evolve into a cinematic musical, this early concept established many of the creative pillars that remained throughout development, including its reinterpretation of biblical characters, its questioning of accepted narratives and its ambition to create an emotionally immersive experience.\n\nThe original pitch marked the beginning of a much larger creative journey.",
         "layout": "wide",
         "accent": "#8e95a3",
-        "role": "",
+        "role": "Narratice Design",
         "navTitle": "Script | Research",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
-          "directing"
+          "narrativeDesign"
         ],
         "links": [
           {
-            "id": "link-mshexuce-a1mb",
+            "id": "link-mshnm5aa-cujz",
             "label": "Explore the Early Concept",
             "url": "https://docs.google.com/presentation/d/1uUOZmJghz8U6mvZC5Z-87vp8Rzl1iEmT/edit?slide=id.p1#slide=id.p1",
             "style": "secondary"
@@ -1148,62 +1188,32 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-msg5fu60-6m4n",
-        "type": "story",
-        "visible": true,
-        "kicker": "",
-        "title": "Finding the Visual Language",
-        "body": "Long before production began, I used AI as a creative prototyping tool to explore the project's visual identity.\n\nBy creating an early animatic, I was able to experiment with tone, pacing, character dynamics and cinematic language before committing those ideas to the screenplay. This iterative process made it possible to quickly test creative directions, identify what resonated emotionally and refine the project's overall vision.\n\nWhile many scenes changed throughout development, this prototype introduced several of the project's defining creative ideas and became an important milestone in shaping its identity.",
-        "layout": "wide",
-        "accent": "#8e95a3",
-        "role": "Director",
-        "navTitle": "Visual Language",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [
-          "directing",
-          "ai"
-        ],
-        "links": [],
-        "media": [
-          {
-            "id": "media-mshexnca-3b78",
-            "url": "https://youtu.be/NdNjcOaxxPQ",
-            "type": "video",
-            "title": "Early AI Animatic",
-            "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
-          }
-        ],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
         "id": "block-msg665zs-x3sq",
         "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg4avzj-aynk",
         "visible": true,
         "kicker": "Script",
         "title": "Script - Final Version",
         "body": "As development progressed, the project gradually shifted away from its original VR format and evolved into a narrative-driven animated musical.\n\nWorking under the mentorship of Asaf Zipor and Anat Gafni, I developed multiple screenplay iterations that refined the story's structure, emotional arc and thematic focus.\n\nThe final narrative centers on Eve's journey while exploring power, responsibility, manipulation and abusive relationships through a contemporary reinterpretation of one of humanity's oldest stories.",
         "layout": "wide",
         "accent": "#8e95a3",
-        "role": "",
-        "navTitle": "Script | Final",
+        "role": "Narrative Designer",
+        "navTitle": "Script | Final Version",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
-          "directing"
+          "narrativeDesign"
         ],
         "links": [
           {
-            "id": "link-mshexi4i-dpz6",
+            "id": "link-mshnnkvq-4ar4",
             "label": "Characters Description",
             "url": "https://docs.google.com/document/d/1s4bP7ibEnAKM46zWKG7k5Qp5h1NqWe-NzbJbOr5aFoI?usp=drive_fs",
             "style": "secondary"
           },
           {
-            "id": "link-mshexi4i-ny8n",
+            "id": "link-mshnnkvq-tmeo",
             "label": "Treatment",
             "url": "https://docs.google.com/document/d/1B4jBJkJD360ETNB05qG57yfx6yZK_6Dcr8ebkahXhoo/edit?tab=t.0",
             "style": "secondary"
@@ -1218,14 +1228,16 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg6pdur-go4a",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Pre-production",
-        "title": "Pre-production | Introduction",
+        "title": "Pre-production",
         "body": "Once the screenplay and musical structure were finalized, the focus shifted from writing to production planning.\n\nBecause Divine Chaos combines live performance, original music, choreography, motion capture and real-time production in Unreal Engine, pre-production required building multiple creative and technical pipelines simultaneously.\n\nThis stage focused on translating the screenplay into a practical production plan by defining the production workflow, assembling the creative team, planning technical requirements and preparing the project for casting and rehearsals.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Producer",
-        "navTitle": "Pre-production | Introduction",
+        "navTitle": "Pre-production",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -1241,13 +1253,15 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg7honu-xecl",
         "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg6pdur-go4a",
         "visible": true,
         "kicker": "Pre-production",
         "title": "Building the Production",
         "body": "Before production could begin, every scene was broken down into its creative and technical requirements.\n\nI created detailed production documents mapping each character, environment, prop, animation, sound effect and technical task required throughout the film. These breakdowns became the foundation for estimating resources, assigning responsibilities and identifying which assets would be purchased, adapted or created from scratch.\n\nAt this stage, Divine Chaos was still planned as an immersive VR experience. As a result, the planning documents include VR-specific systems and interactive features that were later redesigned when the project evolved into a cinematic animated film.",
         "layout": "wide",
         "accent": "#8e95a3",
-        "role": "",
+        "role": "Producer |",
         "navTitle": "Pre-Production | Breakdown",
         "showInToc": true,
         "alwaysVisible": false,
@@ -1257,7 +1271,7 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msg7jac3-9wwn",
+            "id": "media-mshnoequ-ozo0",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/divine-chaos-prod-breakdown.png",
             "type": "image",
             "title": "Scene Production Breakdown",
@@ -1272,6 +1286,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg7dp3b-798k",
         "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg6pdur-go4a",
         "visible": true,
         "kicker": "Pre-production",
         "title": "Building the Production Team",
@@ -1289,52 +1305,52 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-mshi504q-eomr",
+            "id": "item-mshnpqai-j6sb",
             "title": "Production",
             "text": "Roy Aboody · Meighan Sol ·"
           },
           {
-            "id": "item-mshi504q-59qs",
+            "id": "item-mshnpqai-1kzn",
             "title": "Acting Coach",
             "text": "Smadar Brener"
           },
           {
-            "id": "item-mshi504q-08nt",
+            "id": "item-mshnpqai-o9jk",
             "title": "Music",
             "text": "Alon Kaplan"
           },
           {
-            "id": "item-mshi504q-94eq",
+            "id": "item-mshnpqai-kanx",
             "title": "Choreography",
             "text": "Noa Gur Itzack · Natalia Chigirinsky"
           },
           {
-            "id": "item-mshi504q-9k8c",
+            "id": "item-mshnpqai-hmaf",
             "title": "Concept Art",
             "text": "Avishag Sanbal"
           },
           {
-            "id": "item-mshi504q-wwdp",
+            "id": "item-mshnpqai-iznb",
             "title": "3D Art",
             "text": "Or Hadir · Ayelet Nechmad · Michal Hamzani · Daniel Bador · Roy Aboody · Tamar Feigner"
           },
           {
-            "id": "item-mshi504q-9se7",
+            "id": "item-mshnpqai-p9vo",
             "title": "Motion Capture & Animation",
             "text": "Shaked Regev"
           },
           {
-            "id": "item-mshi504q-g3gt",
+            "id": "item-mshnpqai-dj97",
             "title": "Editing",
             "text": "Inbar Kedmi · Neta Rokni"
           },
           {
-            "id": "item-mshi504q-vkcf",
+            "id": "item-mshnpqai-wht4",
             "title": "Sound Design",
             "text": "Eran Barkani"
           },
           {
-            "id": "item-mshi504q-m20z",
+            "id": "item-mshnpqai-0aq0",
             "title": "Unreal Develpment",
             "text": "Omer Solomon"
           }
@@ -1344,35 +1360,10 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-msg7qpni-o1qz",
-        "type": "story",
-        "visible": true,
-        "kicker": "Pre-production",
-        "title": "Adapting the Production Pipeline",
-        "body": "Adapting the Production Pipeline\n\nDivine Chaos was originally conceived as an immersive VR experience.\n\nDuring development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
-        "layout": "wide",
-        "accent": "#8e95a3",
-        "role": "",
-        "navTitle": "Adapting the Production Pipeline",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
-        "media": [],
-        "items": [
-          {
-            "id": "item-mshi9kzw-oa4m",
-            "title": "Production Note",
-            "text": "The production documents presented in this section were created during the original VR development phase. They are included to demonstrate the project's planning process and production evolution. Some technical systems and production requirements shown in these documents were later removed or redesigned as the project transitioned into a screen-based animated film."
-          }
-        ],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
         "id": "block-mshiey3i-su4c",
         "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg6pdur-go4a",
         "visible": true,
         "kicker": "Pre-production",
         "title": "Casting & Talent Selection",
@@ -1390,12 +1381,12 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-mshlkt50-889m",
+            "id": "item-mshnpdl5-3vnt",
             "title": "My Role",
             "text": "Defined the casting requirements based on the screenplay and characters · Wrote the audition materials, including acting scenes and song requirements · Published the open casting call across acting schools, Facebook communities and WhatsApp groups.· Reviewed self-tape submissions alongside the casting team. · Participated in callbacks, chemistry sessions and final casting decisions.· Selected performers based on their ability to combine acting, singing and movement."
           },
           {
-            "id": "item-mshlkt50-kdc4",
+            "id": "item-mshnpdl5-ujrw",
             "title": "Smadar Brener's Role",
             "text": "Led and managed the casting process. · Directed the audition sessions and callbacks. · Evaluated acting performances. · Worked closely with the creative team throughout the selection process. · Served as Acting Coach during rehearsals."
           }
@@ -1405,9 +1396,77 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
+        "id": "block-msg5fu60-6m4n",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg6pdur-go4a",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Finding the Visual Language",
+        "body": "Long before production began, I used AI as a creative prototyping tool to explore the project's visual identity.\n\nBy creating an early animatic, I was able to experiment with tone, pacing, character dynamics and cinematic language before committing those ideas to the screenplay. This iterative process made it possible to quickly test creative directions, identify what resonated emotionally and refine the project's overall vision.\n\nWhile many scenes changed throughout development, this prototype introduced several of the project's defining creative ideas and became an important milestone in shaping its identity.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Visual Language",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mshnraaf-cif8",
+            "url": "https://youtu.be/NdNjcOaxxPQ",
+            "type": "video",
+            "title": "Early AI Animatic",
+            "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg7qpni-o1qz",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msg6pdur-go4a",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Adapting the Production Pipeline",
+        "body": "Adapting the Production Pipeline\n\nDivine Chaos was originally conceived as an immersive VR experience.\n\nDuring development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Producer | Director",
+        "navTitle": "Adapting the Production Pipeline",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mshnqidf-qpzp",
+            "title": "Production Note",
+            "text": "The production documents presented in this section were created during the original VR development phase. They are included to demonstrate the project's planning process and production evolution. Some technical systems and production requirements shown in these documents were later removed or redesigned as the project transitioned into a screen-based animated film."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
         "id": "block-ms21grsg-qngn",
         "type": "story",
-        "visible": true,
+        "level": "primary",
+        "parentId": "",
+        "visible": false,
         "kicker": "Process",
         "title": "Challenge & approach",
         "body": "Build an ambitious musical world while balancing performance, spectacle and an emotionally complex story.\n\nA cinematic pipeline combining virtual production, motion capture, stylized MetaHumans and tightly directed musical staging.",
@@ -1428,7 +1487,9 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-u4on",
         "type": "credits",
-        "visible": true,
+        "level": "primary",
+        "parentId": "",
+        "visible": false,
         "kicker": "Project details",
         "title": "Credits",
         "body": "",
@@ -1465,7 +1526,9 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg6nugt-u4o4",
         "type": "story",
-        "visible": true,
+        "level": "primary",
+        "parentId": "",
+        "visible": false,
         "kicker": "",
         "title": "Storyboard",
         "body": "With the screenplay established, I began translating the written story into a visual language.\n\nStoryboards became the bridge between script and production, allowing me to design compositions, camera movement, emotional pacing and cinematic rhythm long before stepping into motion capture and virtual production.\n\nThese boards served as the blueprint for rehearsals, cinematography and the film's overall visual direction.",
@@ -1494,7 +1557,9 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-mshm33en-kk2u",
         "type": "story",
-        "visible": true,
+        "level": "primary",
+        "parentId": "",
+        "visible": false,
         "kicker": "",
         "title": "",
         "body": "",
@@ -1559,6 +1624,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-rnhr",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "About The Game",
         "title": "Overview",
@@ -1606,6 +1673,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msawm13w-hpmi",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Production",
         "title": "From Vision to Production",
@@ -1662,6 +1731,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msavgt9f-szib",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Game Design",
         "title": "Designing Gameplay Around Narrative",
@@ -1699,6 +1770,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms840gie-86yx",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Directing the Cinematics",
         "title": "Script Breakdown & Narrative Development",
@@ -1729,6 +1802,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msau4z8q-4bm5",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Directing the Cinematics",
         "title": "Performance Capture",
@@ -1761,6 +1836,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msaufveu-9pei",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Directing the Cinematics",
         "title": "Bringing the Performance into Unreal Engine",
@@ -1801,6 +1878,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msaunxd9-spj5",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Directing the Cinematics",
         "title": "Cinematic Staging & Visual Direction",
@@ -1825,6 +1904,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msauop13-p5fg",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Directing the Cinematics",
         "title": "Editing Through Experimentation",
@@ -1849,6 +1930,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msauqcob-c4rx",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Directing the Cinematics",
         "title": "Final Polish & Integration",
@@ -1908,6 +1991,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-vlfq",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
@@ -1929,6 +2014,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-0bkw",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Process",
         "title": "Challenge & approach",
@@ -1950,6 +2037,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-ncwm",
         "type": "credits",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Project details",
         "title": "Credits",
@@ -2014,6 +2103,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-4etq",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
@@ -2035,6 +2126,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-rpul",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Process",
         "title": "Challenge & approach",
@@ -2056,6 +2149,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-qr5m",
         "type": "credits",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Project details",
         "title": "Credits",
@@ -2121,6 +2216,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-2e6k",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "About the Project",
         "title": "Overview",
@@ -2175,6 +2272,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msbpuic4-2uzf",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Step 1",
         "title": "Initial Brief",
@@ -2234,6 +2333,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msbsl6kl-qh4d",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Step 2",
         "title": "Cinematic Planning",
@@ -2263,6 +2364,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msbpyey3-exxg",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Step 2",
         "title": "From Brief to Previsualization",
@@ -2324,6 +2427,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msbu4i7h-95i7",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Step 4",
         "title": "Iterative Feedback",
@@ -2363,6 +2468,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msbu7jna-pfw4",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Last Step",
         "title": "Final Delivery",
@@ -2428,6 +2535,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-vdvq",
         "type": "overview",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
@@ -2449,6 +2558,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-c35g",
         "type": "story",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Process",
         "title": "Challenge & approach",
@@ -2470,6 +2581,8 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-ms21grsg-qz9b",
         "type": "credits",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Project details",
         "title": "Credits",
