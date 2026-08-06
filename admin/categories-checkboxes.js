@@ -132,5 +132,12 @@
     }, 0);
   });
 
+  if (!document.querySelector('script[data-preview-hierarchy]')) {
+    const previewScript = document.createElement('script');
+    previewScript.src = 'preview-hierarchy.js?v=20260806-1';
+    previewScript.dataset.previewHierarchy = 'true';
+    document.body.appendChild(previewScript);
+  }
+
   setTimeout(() => { syncCategories(); decorateBlockCards(); }, 0);
 })();
