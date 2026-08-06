@@ -1,6 +1,13 @@
 (() => {
   'use strict';
 
+  if (!document.querySelector('script[data-smart-media]')) {
+    const smartMedia = document.createElement('script');
+    smartMedia.src = '../assets/smart-media.js?v=20260806-1';
+    smartMedia.dataset.smartMedia = 'true';
+    document.body.appendChild(smartMedia);
+  }
+
   const blockForm = document.querySelector('#blockForm');
   if (!blockForm) return;
 
