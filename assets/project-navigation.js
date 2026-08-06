@@ -8,14 +8,36 @@
   if (!project) return;
 
   const labels = {
-    directing: 'Directing', games: 'Games', gameDesign: 'Game Design', narrativeDesign: 'Narrative Design', cinematics: 'Cinematics',
-    production: 'Production', motionCapture: 'Motion Capture', editing: 'Editing', ai: 'AI', social: 'Social Content'
+    directing: 'Directing',
+    games: 'Games',
+    gameDesign: 'Game Design',
+    narrativeDesign: 'Narrative Design',
+    cinematics: 'Cinematics',
+    production: 'Production',
+    motionCapture: 'Motion Capture',
+    editing: 'Editing',
+    ai: 'AI',
+    social: 'Social Content'
   };
-  const categoryToDiscipline = { games:'gameDesign', directing:'directing', production:'production', editing:'editing', ai:'ai', social:'social' };
-  const slugify = value => String(value || 'section').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+  const categoryToDiscipline = {
+    games: 'gameDesign',
+    directing: 'directing',
+    production: 'production',
+    editing: 'editing',
+    ai: 'ai',
+    social: 'social'
+  };
+
+  const slugify = value => String(value || 'section')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
   const inferDisciplines = block => {
     const explicit = Array.isArray(block.disciplines) ? block.disciplines.filter(Boolean) : [];
     if (explicit.length) return explicit;
+
     const source = `${block.role || ''} ${block.kicker || ''} ${block.title || ''}`.toLowerCase();
     const found = [];
     if (/game design|gameplay|level design|combat design/.test(source)) found.push('gameDesign');
@@ -32,8 +54,33 @@
 
   const blocks = (project.blocks || []).filter(block => block.visible !== false);
   const blockById = new Map(blocks.map(block => [block.id, block]));
+
+  // Fallback nesting: even if cms.js rendered a flat list, physically move every
+  // secondary block into its selected parent before navigation and filtering run.
+  const initialSections = [...detail.querySelectorAll('.project-block')];
+  const initialSectionById = new Map(initialSections.map(section => [section.dataset.blockId, section]));
+
+  blocks.filter(block => block.level === 'secondary' && block.parentId).forEach(block => {
+    const child = initialSectionById.get(block.id);
+    const parent = initialSectionById.get(block.parentId);
+    if (!child || !parent || parent.contains(child)) return;
+
+    let wrapper = parent.querySelector(':scope > .project-block-inner > .project-sub-blocks');
+    if (!wrapper) {
+      wrapper = document.createElement('div');
+      wrapper.className = 'project-sub-blocks';
+      parent.querySelector(':scope > .project-block-inner')?.appendChild(wrapper);
+    }
+
+    child.classList.add('project-sub-block');
+    child.dataset.level = 'secondary';
+    child.dataset.parentId = block.parentId;
+    wrapper.appendChild(child);
+  });
+
   const sections = [...detail.querySelectorAll('.project-block')];
   if (!sections.length) return;
+
   const sectionByBlockId = new Map(sections.map(section => [section.dataset.blockId, section]));
 
   sections.forEach((section, index) => {
@@ -41,21 +88,31 @@
     section.id = `section-${slugify(block.navTitle || block.menuTitle || block.navigationTitle || block.title || block.type)}-${index + 1}`;
     section.dataset.disciplines = inferDisciplines(block).join(' ');
     section.dataset.alwaysVisible = block.alwaysVisible === true ? 'true' : 'false';
+    section.dataset.level = block.level === 'secondary' ? 'secondary' : 'primary';
+    section.dataset.parentId = block.parentId || '';
+    section.classList.toggle('project-sub-block', block.level === 'secondary');
   });
 
-  const tocItems = blocks.map(block => ({ block, section:sectionByBlockId.get(block.id) })).filter(item => item.section && item.block.showInToc !== false);
+  const tocItems = blocks
+    .map(block => ({ block, section: sectionByBlockId.get(block.id) }))
+    .filter(item => item.section && item.block.showInToc !== false);
+
   const disciplines = [...new Set(blocks.flatMap(inferDisciplines))].filter(Boolean);
   if (!tocItems.length && !disciplines.length) return;
 
   const hero = detail.querySelector('.project-hero-dynamic');
   const heroVideo = detail.querySelector('.project-hero-video');
   const nextProject = detail.querySelector('.next-project');
+
   const contentShell = document.createElement('section');
   contentShell.className = 'project-content-shell';
+
   const contentInner = document.createElement('div');
   contentInner.className = 'wrap project-content-layout';
+
   const sidebar = document.createElement('aside');
   sidebar.className = 'project-sidebar';
+
   const content = document.createElement('div');
   content.className = 'project-content-main';
 
@@ -66,14 +123,19 @@
   }).join('');
 
   sidebar.innerHTML = `<div class="project-sidebar-sticky"><span class="project-nav-label">Explore this project</span><nav>${tocLinks}</nav></div>`;
+
   const filterButtons = disciplines.length
     ? `<div class="project-filter-bar"><span class="project-nav-label">View by discipline</span><div class="project-filter-options"><button data-filter="all">All</button>${disciplines.map(value => `<button data-filter="${value}">${labels[value] || value}</button>`).join('')}</div></div>`
     : '';
+
   const mobileControls = `<div class="project-mobile-controls"><details class="project-mobile-menu"><summary>Sections</summary><nav>${tocLinks}</nav></details>${disciplines.length ? `<details class="project-mobile-menu"><summary>Filter</summary><div class="project-mobile-filter-options"><button data-filter="all">All</button>${disciplines.map(value => `<button data-filter="${value}">${labels[value] || value}</button>`).join('')}</div></details>` : ''}</div>`;
 
   content.innerHTML = `${mobileControls}${filterButtons}`;
+
+  // Move only main blocks. Secondary blocks stay inside their parent wrappers.
   sections.filter(section => section.dataset.level !== 'secondary').forEach(section => content.appendChild(section));
   if (nextProject) content.appendChild(nextProject);
+
   contentInner.append(sidebar, content);
   contentShell.appendChild(contentInner);
   (heroVideo || hero)?.insertAdjacentElement('afterend', contentShell);
@@ -89,8 +151,12 @@
     const viewTop = sidebarScroller.scrollTop;
     const viewBottom = viewTop + sidebarScroller.clientHeight;
     const padding = 18;
-    if (linkTop < viewTop + padding) sidebarScroller.scrollTo({ top:Math.max(0, linkTop - padding), behavior:'smooth' });
-    else if (linkBottom > viewBottom - padding) sidebarScroller.scrollTo({ top:linkBottom - sidebarScroller.clientHeight + padding, behavior:'smooth' });
+
+    if (linkTop < viewTop + padding) {
+      sidebarScroller.scrollTo({ top: Math.max(0, linkTop - padding), behavior: 'smooth' });
+    } else if (linkBottom > viewBottom - padding) {
+      sidebarScroller.scrollTo({ top: linkBottom - sidebarScroller.clientHeight + padding, behavior: 'smooth' });
+    }
   };
 
   const setActiveSection = section => {
@@ -99,11 +165,19 @@
     keepActiveLinkVisible(contentShell.querySelector(`.project-sidebar [data-toc-link="${section.id}"]`));
   };
 
+  const isSectionVisible = section => {
+    if (!section || section.hidden) return false;
+    const hiddenParent = section.parentElement?.closest('.project-block[hidden]');
+    return !hiddenParent;
+  };
+
   const updateActiveFromScroll = () => {
-    const visibleSections = sections.filter(section => !section.hidden && !section.closest('.project-block[hidden]'));
+    const visibleSections = sections.filter(isSectionVisible);
     if (!visibleSections.length) return;
+
     const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 6;
     if (atBottom) return setActiveSection(visibleSections[visibleSections.length - 1]);
+
     const marker = Math.min(Math.max(window.innerHeight * 0.3, 150), 280);
     let active = visibleSections[0];
     for (const section of visibleSections) {
@@ -117,27 +191,39 @@
   const requestActiveUpdate = () => {
     if (ticking) return;
     ticking = true;
-    requestAnimationFrame(() => { updateActiveFromScroll(); ticking = false; });
+    requestAnimationFrame(() => {
+      updateActiveFromScroll();
+      ticking = false;
+    });
   };
 
   const applyFilter = filter => {
     allFilterButtons.forEach(button => button.classList.toggle('active', button.dataset.filter === filter));
-    const directMatch = section => filter === 'all' || section.dataset.alwaysVisible === 'true' || section.dataset.disciplines.split(' ').includes(filter);
 
-    sections.filter(section => section.dataset.level === 'secondary').forEach(section => { section.hidden = !directMatch(section); });
-    sections.filter(section => section.dataset.level !== 'secondary').forEach(section => {
-      const matchingChild = [...section.querySelectorAll(':scope > .project-block-inner > .project-sub-blocks > .project-sub-block')].some(child => !child.hidden);
+    const directMatch = section => filter === 'all' ||
+      section.dataset.alwaysVisible === 'true' ||
+      section.dataset.disciplines.split(' ').includes(filter);
+
+    const secondarySections = sections.filter(section => section.dataset.level === 'secondary');
+    secondarySections.forEach(section => {
+      section.hidden = !directMatch(section);
+    });
+
+    const mainSections = sections.filter(section => section.dataset.level !== 'secondary');
+    mainSections.forEach(section => {
+      const children = [...section.querySelectorAll('.project-sub-block')];
+      const matchingChild = children.some(child => !child.hidden);
       section.hidden = !(directMatch(section) || matchingChild);
     });
 
     tocLinkElements.forEach(link => {
       const target = document.getElementById(link.dataset.tocLink);
-      const hiddenByParent = !!target?.closest('.project-block[hidden]');
-      const shouldHide = !target || target.hidden || hiddenByParent;
+      const shouldHide = !isSectionVisible(target);
       link.hidden = shouldHide;
       link.setAttribute('aria-hidden', shouldHide ? 'true' : 'false');
       link.tabIndex = shouldHide ? -1 : 0;
     });
+
     contentShell.querySelectorAll('details').forEach(item => item.removeAttribute('open'));
     requestAnimationFrame(updateActiveFromScroll);
   };
@@ -147,16 +233,21 @@
   applyFilter(disciplines.includes(contextualFilter) ? contextualFilter : 'all');
 
   allFilterButtons.forEach(button => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
+
   tocLinkElements.forEach(link => link.addEventListener('click', event => {
     const target = document.getElementById(link.dataset.tocLink);
-    if (!target || target.hidden || target.closest('.project-block[hidden]')) return event.preventDefault();
+    if (!isSectionVisible(target)) {
+      event.preventDefault();
+      return;
+    }
+
     event.preventDefault();
-    target.scrollIntoView({ behavior:'smooth', block:'start' });
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     setActiveSection(target);
     contentShell.querySelectorAll('details').forEach(item => item.removeAttribute('open'));
   }));
 
-  window.addEventListener('scroll', requestActiveUpdate, { passive:true });
+  window.addEventListener('scroll', requestActiveUpdate, { passive: true });
   window.addEventListener('resize', requestActiveUpdate);
   window.addEventListener('load', requestActiveUpdate);
   requestActiveUpdate();
