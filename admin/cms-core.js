@@ -7,6 +7,8 @@
   const normalizeBlock = block => ({
     id: block.id || makeId('block'),
     type: block.type || 'story',
+    level: block.level === 'secondary' ? 'secondary' : 'primary',
+    parentId: block.level === 'secondary' ? (block.parentId || '') : '',
     visible: block.visible !== false,
     kicker: block.kicker || '', title: block.title || '', body: block.body || '', layout: block.layout || 'wide', accent: block.accent || '', role: block.role || '',
     navTitle: block.navTitle || '',
@@ -32,16 +34,25 @@
         ...(gallery.length ? [normalizeBlock({ type:'gallery', kicker:'Selected work', title:'Project gallery', media:gallery.map(url => ({url,type:'image'})) })] : []),
         normalizeBlock({ type:'credits', kicker:'Project details', title:'Credits', alwaysVisible:true, items:[{title:'Role',text:p.role||''},{title:'Tools',text:p.tools||''},{title:'Client / Context',text:p.client||''}].filter(item=>item.text) })
       ];
-    } else p.blocks = p.blocks.map(normalizeBlock);
+    } else {
+      p.blocks = p.blocks.map(normalizeBlock);
+      const primaryIds = new Set(p.blocks.filter(block => block.level === 'primary').map(block => block.id));
+      p.blocks.forEach(block => {
+        if (block.level === 'secondary' && (!block.parentId || !primaryIds.has(block.parentId))) {
+          block.level = 'primary';
+          block.parentId = '';
+        }
+      });
+    }
     return p;
   };
 
   window.PortfolioCMS = {
-    version:3,
+    version:4,
     blockTypes:{overview:'Overview',roles:'Roles',story:'Story Step',image:'Large Image',split:'Two Images',video:'Video',comparison:'Before / After',gallery:'Gallery',timeline:'Timeline',quote:'Quote',results:'Results',credits:'Credits',gameLinks:'Game Links / Play Buttons'},
     layouts:{wide:'Wide',contained:'Contained','text-left':'Text left','text-right':'Text right',grid:'Grid',carousel:'Carousel',masonry:'Masonry'},
     categories:{directing:'Directing',games:'Games',production:'Production',social:'Social Content',editing:'Editing',ai:'AI Creation'},
-    disciplines:{directing:'Directing',gameDesign:'Game Design',cinematics:'Cinematics',production:'Production',motionCapture:'Motion Capture',editing:'Editing',ai:'AI',social:'Social Content'},
+    disciplines:{directing:'Directing',gameDesign:'Game Design',narrativeDesign:'Narrative Design',cinematics:'Cinematics',production:'Production',motionCapture:'Motion Capture',editing:'Editing',ai:'AI',social:'Social Content'},
     makeId,normalizeBlock,migrateProject,
     defaults(){return clone(window.PORTFOLIO_PROJECTS||[]).map(migrateProject);},
     get(){try{const saved=localStorage.getItem(KEY);if(saved)return JSON.parse(saved).map(migrateProject);const old=localStorage.getItem(OLD_KEY);if(old){const migrated=JSON.parse(old).map(migrateProject);this.save(migrated);return migrated;}return this.defaults();}catch{return this.defaults();}},
