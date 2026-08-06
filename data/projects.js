@@ -1560,27 +1560,30 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": false,
-        "kicker": "",
-        "title": "",
+        "kicker": "Music Pipeline",
+        "title": "Music",
         "body": "",
         "layout": "wide",
         "accent": "#8e95a3",
-        "role": "",
+        "role": "Director",
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "production"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-mshm33en-xhut",
+            "id": "media-mshpp0vh-sl18",
             "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
             "type": "video",
             "title": "Divine Rebranding",
             "caption": ""
           },
           {
-            "id": "media-mshm33en-2gm5",
+            "id": "media-mshpp0vh-el3f",
             "url": "https://youtu.be/ijIHEKgkt28",
             "type": "video",
             "title": "Trust in God's Plan",
