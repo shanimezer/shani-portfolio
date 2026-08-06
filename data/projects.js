@@ -1462,6 +1462,54 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
+        "id": "block-mshm33en-kk2u",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Music Pipeline",
+        "title": "Music",
+        "body": "",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mshtzvrb-ies5",
+            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
+            "type": "video",
+            "title": "Divine Rebranding",
+            "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
+          },
+          {
+            "id": "media-mshtzvrb-19xg",
+            "url": "https://youtu.be/ijIHEKgkt28",
+            "type": "video",
+            "title": "Trust in God's Plan",
+            "caption": "Angel Gabriel presents the divine order of creation, inviting Eve to accept the world exactly as it was designed."
+          },
+          {
+            "id": "media-mshtzvrb-cxsw",
+            "url": "https://youtu.be/PdIVTKPobaU",
+            "type": "video",
+            "title": "The Natural Order",
+            "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
         "id": "block-ms21grsg-qngn",
         "type": "story",
         "level": "primary",
@@ -1546,47 +1594,6 @@ window.PORTFOLIO_PROJECTS = [
             "url": "https://youtu.be/ox5CSH0Gan8",
             "type": "video",
             "title": "Storyboard Highlights",
-            "caption": ""
-          }
-        ],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-mshm33en-kk2u",
-        "type": "story",
-        "level": "primary",
-        "parentId": "",
-        "visible": false,
-        "kicker": "Music Pipeline",
-        "title": "Music",
-        "body": "",
-        "layout": "wide",
-        "accent": "#8e95a3",
-        "role": "Director",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [
-          "directing",
-          "production"
-        ],
-        "links": [],
-        "media": [
-          {
-            "id": "media-mshpp0vh-sl18",
-            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
-            "type": "video",
-            "title": "Divine Rebranding",
-            "caption": ""
-          },
-          {
-            "id": "media-mshpp0vh-el3f",
-            "url": "https://youtu.be/ijIHEKgkt28",
-            "type": "video",
-            "title": "Trust in God's Plan",
             "caption": ""
           }
         ],
