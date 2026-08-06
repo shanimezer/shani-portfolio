@@ -1,6 +1,14 @@
 (() => {
   'use strict';
 
+  if (!document.querySelector('link[data-block-editor-v2]')) {
+    const editorStyles = document.createElement('link');
+    editorStyles.rel = 'stylesheet';
+    editorStyles.href = 'block-editor-v2.css?v=20260806-1';
+    editorStyles.dataset.blockEditorV2 = 'true';
+    document.head.appendChild(editorStyles);
+  }
+
   if (!document.querySelector('script[data-smart-media]')) {
     const smartMedia = document.createElement('script');
     smartMedia.src = '../assets/smart-media.js?v=20260806-2';
