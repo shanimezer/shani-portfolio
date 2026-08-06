@@ -1025,10 +1025,10 @@ window.PORTFOLIO_PROJECTS = [
     "id": "divine-chaos",
     "title": "Divine Chaos",
     "category": "directing",
-    "categoryLabel": "Directing · 3D Animation · Musical",
+    "categoryLabel": "Directing · 3D Animation · Musical · Production",
     "year": "2025-2026",
     "featured": true,
-    "accent": "#ff0000",
+    "accent": "#9d0101",
     "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/divineChaos_Post.png",
     "video": "https://youtu.be/-cXP3Sip4qE",
     "summary": "A 3D animated musical created in Unreal Engine, reimagining the story of Adam, Eve and Lilith through a contemporary exploration of power, responsibility and abusive relationships.",
@@ -1104,7 +1104,7 @@ window.PORTFOLIO_PROJECTS = [
         "layout": "wide",
         "accent": "#ffc800",
         "role": "Narrative Design",
-        "navTitle": "Sctipt | Introduction",
+        "navTitle": "Sctipt - Introduction",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -1122,7 +1122,7 @@ window.PORTFOLIO_PROJECTS = [
         "type": "story",
         "visible": true,
         "kicker": "The Evolution of the Story",
-        "title": "Script | Research",
+        "title": "Script - Research",
         "body": "Before writing a single scene, I immersed myself in extensive research that challenged the traditional interpretation of Genesis. My goal was never to retell the biblical story, but to reinterpret it through a contemporary emotional and philosophical lens.\n\nThe research explored biblical texts, Jewish commentaries, apocryphal writings, angelology, scientific theories of creation and evolution, mythology, psychology and musical storytelling. As recurring themes began to emerge, they shaped the creative foundation that would eventually become Divine Chaos.\n\nRather than searching for answers, I focused on asking better questions. Those questions ultimately became the heart of the screenplay.\n\nThe first version of Divine Chaos was conceived as an interactive VR experience, allowing the audience to witness the events of the Garden of Eden from within the story itself.\n\nAlthough the project would later evolve into a cinematic musical, this early concept established many of the creative pillars that remained throughout development, including its reinterpretation of biblical characters, its questioning of accepted narratives and its ambition to create an emotionally immersive experience.\n\nThe original pitch marked the beginning of a much larger creative journey.",
         "layout": "wide",
         "accent": "#8e95a3",
@@ -1135,7 +1135,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "links": [
           {
-            "id": "link-msg59zt2-a8o8",
+            "id": "link-mshexuce-a1mb",
             "label": "Explore the Early Concept",
             "url": "https://docs.google.com/presentation/d/1uUOZmJghz8U6mvZC5Z-87vp8Rzl1iEmT/edit?slide=id.p1#slide=id.p1",
             "style": "secondary"
@@ -1167,7 +1167,7 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msg5fu60-a10h",
+            "id": "media-mshexnca-3b78",
             "url": "https://youtu.be/NdNjcOaxxPQ",
             "type": "video",
             "title": "Early AI Animatic",
@@ -1184,7 +1184,7 @@ window.PORTFOLIO_PROJECTS = [
         "type": "story",
         "visible": true,
         "kicker": "Script",
-        "title": "Script | Final",
+        "title": "Script - Final Version",
         "body": "As development progressed, the project gradually shifted away from its original VR format and evolved into a narrative-driven animated musical.\n\nWorking under the mentorship of Asaf Zipor and Anat Gafni, I developed multiple screenplay iterations that refined the story's structure, emotional arc and thematic focus.\n\nThe final narrative centers on Eve's journey while exploring power, responsibility, manipulation and abusive relationships through a contemporary reinterpretation of one of humanity's oldest stories.",
         "layout": "wide",
         "accent": "#8e95a3",
@@ -1197,13 +1197,13 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "links": [
           {
-            "id": "link-msg665zs-8ou7",
+            "id": "link-mshexi4i-dpz6",
             "label": "Characters Description",
             "url": "https://docs.google.com/document/d/1s4bP7ibEnAKM46zWKG7k5Qp5h1NqWe-NzbJbOr5aFoI?usp=drive_fs",
             "style": "secondary"
           },
           {
-            "id": "link-msg665zs-2hjf",
+            "id": "link-mshexi4i-ny8n",
             "label": "Treatment",
             "url": "https://docs.google.com/document/d/1B4jBJkJD360ETNB05qG57yfx6yZK_6Dcr8ebkahXhoo/edit?tab=t.0",
             "style": "secondary"
@@ -1287,7 +1287,119 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "links": [],
         "media": [],
-        "items": [],
+        "items": [
+          {
+            "id": "item-mshi504q-eomr",
+            "title": "Production",
+            "text": "Roy Aboody · Meighan Sol ·"
+          },
+          {
+            "id": "item-mshi504q-59qs",
+            "title": "Acting Coach",
+            "text": "Smadar Brener"
+          },
+          {
+            "id": "item-mshi504q-08nt",
+            "title": "Music",
+            "text": "Alon Kaplan"
+          },
+          {
+            "id": "item-mshi504q-94eq",
+            "title": "Choreography",
+            "text": "Noa Gur Itzack · Natalia Chigirinsky"
+          },
+          {
+            "id": "item-mshi504q-9k8c",
+            "title": "Concept Art",
+            "text": "Avishag Sanbal"
+          },
+          {
+            "id": "item-mshi504q-wwdp",
+            "title": "3D Art",
+            "text": "Or Hadir · Ayelet Nechmad · Michal Hamzani · Daniel Bador · Roy Aboody · Tamar Feigner"
+          },
+          {
+            "id": "item-mshi504q-9se7",
+            "title": "Motion Capture & Animation",
+            "text": "Shaked Regev"
+          },
+          {
+            "id": "item-mshi504q-g3gt",
+            "title": "Editing",
+            "text": "Inbar Kedmi · Neta Rokni"
+          },
+          {
+            "id": "item-mshi504q-vkcf",
+            "title": "Sound Design",
+            "text": "Eran Barkani"
+          },
+          {
+            "id": "item-mshi504q-m20z",
+            "title": "Unreal Develpment",
+            "text": "Omer Solomon"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msg7qpni-o1qz",
+        "type": "story",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Adapting the Production Pipeline",
+        "body": "Adapting the Production Pipeline\n\nDivine Chaos was originally conceived as an immersive VR experience.\n\nDuring development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Adapting the Production Pipeline",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mshi9kzw-oa4m",
+            "title": "Production Note",
+            "text": "The production documents presented in this section were created during the original VR development phase. They are included to demonstrate the project's planning process and production evolution. Some technical systems and production requirements shown in these documents were later removed or redesigned as the project transitioned into a screen-based animated film."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mshiey3i-su4c",
+        "type": "story",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Casting & Talent Selection",
+        "body": "Finding performers capable of acting, singing and dancing simultaneously was one of the most challenging aspects of the production. Together with Casting Director Smadar Brener, we designed a multi-stage casting process to identify performers who could meet both the artistic and technical demands of an animated musical built around motion capture.\n\nCasting Pipeline\n\nOpen Casting Call\n        ↓\nSelf-Tape Auditions\n        ↓\nInitial Selection\n        ↓\nIn-Person Callbacks\n        ↓\nActing + Singing + Movement Evaluation\n        ↓\nChemistry Matching\n        ↓\nFinal Cast",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Producer | Director",
+        "navTitle": "Casting",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production"
+        ],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mshlkt50-889m",
+            "title": "My Role",
+            "text": "Defined the casting requirements based on the screenplay and characters · Wrote the audition materials, including acting scenes and song requirements · Published the open casting call across acting schools, Facebook communities and WhatsApp groups.· Reviewed self-tape submissions alongside the casting team. · Participated in callbacks, chemistry sessions and final casting decisions.· Selected performers based on their ability to combine acting, singing and movement."
+          },
+          {
+            "id": "item-mshlkt50-kdc4",
+            "title": "Smadar Brener's Role",
+            "text": "Led and managed the casting process. · Directed the audition sessions and callbacks. · Evaluated acting performances. · Worked closely with the creative team throughout the selection process. · Served as Acting Coach during rehearsals."
+          }
+        ],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -1380,12 +1492,12 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-msg7qpni-o1qz",
+        "id": "block-mshm33en-kk2u",
         "type": "story",
         "visible": true,
         "kicker": "",
         "title": "",
-        "body": "Adapting the Production Pipeline\n\nDivine Chaos was originally conceived as an immersive VR experience.\n\nDuring development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
+        "body": "",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "",
@@ -1394,14 +1506,23 @@ window.PORTFOLIO_PROJECTS = [
         "alwaysVisible": false,
         "disciplines": [],
         "links": [],
-        "media": [],
-        "items": [
+        "media": [
           {
-            "id": "item-msg7qpni-vl30",
-            "title": "Production Note",
-            "text": "The production documents presented in this section were created during the original VR development phase. They are included to demonstrate the project's planning process and production evolution. Some technical systems and production requirements shown in these documents were later removed or redesigned as the project transitioned into a screen-based animated film."
+            "id": "media-mshm33en-xhut",
+            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
+            "type": "video",
+            "title": "Divine Rebranding",
+            "caption": ""
+          },
+          {
+            "id": "media-mshm33en-2gm5",
+            "url": "https://youtu.be/ijIHEKgkt28",
+            "type": "video",
+            "title": "Trust in God's Plan",
+            "caption": ""
           }
         ],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
