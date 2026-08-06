@@ -56,9 +56,15 @@
     }
   };
 
-  new MutationObserver(() => requestAnimationFrame(arrange)).observe(canvas, { childList:true, subtree:true });
-  document.querySelector('#blockList')?.addEventListener('click', () => setTimeout(arrange, 0));
-  document.querySelector('#saveBlock')?.addEventListener('click', () => setTimeout(arrange, 40));
-  document.querySelectorAll('[data-tab="preview"]').forEach(button => button.addEventListener('click', () => setTimeout(arrange, 0)));
-  setTimeout(arrange, 0);
+  const refresh = () => {
+    requestAnimationFrame(arrange);
+    setTimeout(arrange, 200);
+  };
+
+  new MutationObserver(refresh).observe(canvas, { childList:true, subtree:true });
+  document.querySelector('#blockList')?.addEventListener('click', refresh);
+  document.querySelector('#saveBlock')?.addEventListener('click', refresh);
+  document.querySelector('#saveProject')?.addEventListener('click', refresh);
+  document.querySelectorAll('[data-tab="preview"]').forEach(button => button.addEventListener('click', refresh));
+  refresh();
 })();
