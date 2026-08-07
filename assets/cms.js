@@ -32,8 +32,33 @@
         const id = url.pathname.split('/').filter(Boolean).pop();
         if (id) return `https://player.vimeo.com/video/${id}`;
       }
+      if (host === 'instagram.com' || host.endsWith('.instagram.com')) {
+        const parts = url.pathname.split('/').filter(Boolean);
+        const kind = parts[0];
+        const shortcode = parts[1] || '';
+        if ((kind === 'p' || kind === 'reel' || kind === 'tv') && shortcode) return `https://www.instagram.com/${kind}/${shortcode}/embed/`;
+      }
+      if (host === 'tiktok.com' || host.endsWith('.tiktok.com')) {
+        const match = url.pathname.match(/\/video\/(\d+)/);
+        if (match?.[1]) return `https://www.tiktok.com/player/v1/${match[1]}?autoplay=0&loop=0`;
+      }
       return value;
     } catch { return value; }
+  };
+
+  const socialPlatform = value => {
+    try {
+      const host = new URL(value, location.href).hostname.replace(/^www\./, '');
+      if (host === 'instagram.com' || host.endsWith('.instagram.com')) return 'instagram';
+      if (host === 'tiktok.com' || host.endsWith('.tiktok.com')) return 'tiktok';
+    } catch {}
+    return '';
+  };
+
+  const socialFallback = (item, platform) => {
+    const label = platform === 'instagram' ? 'View on Instagram' : 'View on TikTok';
+    const title = item.title || item.caption || (platform === 'instagram' ? 'Instagram post' : 'TikTok video');
+    return `<div class="social-embed-fallback" data-social-fallback hidden><strong>${escape(title)}</strong><a href="${escape(item.url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a></div>`;
   };
 
   const mediaFigure = item => {
@@ -41,9 +66,14 @@
     const title = item.title ? `<strong>${escape(item.title)}</strong>` : '';
     const caption = item.caption ? `<span>${escape(item.caption)}</span>` : '';
     const figcaption = title || caption ? `<figcaption>${title}${caption}</figcaption>` : '';
-    const isVideo = item.type === 'video' || /youtube|youtu\.be|vimeo|\.mp4(?:$|\?)|\.webm(?:$|\?)/i.test(item.url);
+    const social = socialPlatform(item.url);
+    const isVideo = item.type === 'video' || /youtube|youtu\.be|vimeo|instagram|tiktok|\.mp4(?:$|\?)|\.webm(?:$|\?)/i.test(item.url);
     if (isVideo) {
       if (/\.mp4(?:$|\?)|\.webm(?:$|\?)/i.test(item.url)) return `<figure><div class="block-video"><video controls playsinline preload="metadata" src="${escape(item.url)}"></video></div>${figcaption}</figure>`;
+      if (social) {
+        const frameClass = social === 'tiktok' || /instagram\.com\/(?:reel|tv)\//i.test(item.url) ? ' social-embed-vertical' : ' social-embed-square';
+        return `<figure class="social-media-figure ${social}"><div class="block-video social-embed${frameClass}"><iframe src="${escape(toEmbedUrl(item.url))}" title="${escape(item.title || (social === 'instagram' ? 'Instagram post' : 'TikTok video'))}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>${socialFallback(item, social)}</div>${figcaption}</figure>`;
+      }
       return `<figure><div class="block-video"><iframe src="${escape(toEmbedUrl(item.url))}" title="${escape(item.title || 'Project video')}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>${figcaption}</figure>`;
     }
     return `<figure><img src="${escape(item.url)}" alt="${escape(item.title || item.caption || '')}" loading="lazy">${figcaption}</figure>`;
@@ -123,6 +153,20 @@
       container.innerHTML = list.length ? list.map(project => `<a class="card cms-card" data-cat="${escape(normalizeCategory(project.category))}" href="${this.projectUrl(project, options.prefix || '../', options.category || '')}"><div class="cms-cover" style="--project-accent:${escape(project.accent || '#b9bec8')};background-image:url('${escape(project.cover || '')}')"></div><div class="card-body"><div class="meta"><span>${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title)}</h3><p class="muted">${escape(project.summary || '')}</p></div></a>`).join('') : `<div class="empty-state"><h3>No projects here yet.</h3><p>Add one from the Admin panel.</p></div>`;
     }
   };
+
+  const socialStyle = document.createElement('style');
+  socialStyle.textContent = `
+    .social-media-figure{width:100%}
+    .social-embed{position:relative;width:100%;overflow:hidden;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:#111318}
+    .social-embed iframe{display:block;width:100%;height:100%;border:0;background:#111318}
+    .social-embed-vertical{aspect-ratio:9/16;max-width:430px;margin-inline:auto}
+    .social-embed-square{aspect-ratio:1/1;max-width:540px;margin-inline:auto}
+    .social-embed-fallback{position:absolute;inset:0;display:grid;place-content:center;gap:12px;padding:24px;text-align:center;background:#111318;color:#f1efe9}
+    .social-embed-fallback[hidden]{display:none!important}
+    .social-embed-fallback a{display:inline-flex;justify-self:center;padding:10px 14px;border:1px solid rgba(255,255,255,.16);border-radius:10px;color:inherit;text-decoration:none}
+    @media(max-width:700px){.social-embed-vertical{max-width:100%}.social-embed-square{max-width:100%}}
+  `;
+  document.head.appendChild(socialStyle);
 
   document.querySelectorAll('[data-project-grid]').forEach(grid => PortfolioCMS.renderGrid(grid, { category:grid.dataset.category || '', prefix:grid.dataset.prefix || '../' }));
   const detail = document.querySelector('[data-project-detail]');
