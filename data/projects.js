@@ -2581,62 +2581,40 @@ window.PORTFOLIO_PROJECTS = [
     ]
   },
   {
-    "id": "tau-digital-media",
-    "title": "TAU Digital Media",
+    "id": "tau-arts",
+    "title": "TAU Arts Social Media",
     "category": "social",
-    "categoryLabel": "Social Content · Education",
+    "categoryLabel": "Content Creator · Social Manager · Editor",
     "year": "2025–2026",
     "featured": false,
-    "accent": "#ff657c",
-    "cover": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1800&q=88",
-    "video": "",
-    "summary": "Content creation and social management for the Digital Media program at Tel Aviv University.",
-    "role": "Social Media Manager · Creator",
+    "accent": "#51c0f0",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/tau-arts/tauArtsLogo.jpg",
+    "video": "https://www.instagram.com/reel/DaKMEHiMeqE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "summary": "Content creation and social management for both The Arts Faculty &  Digital Media track at Tel Aviv University.",
+    "role": "Social Media Manager · Content Creator · Editor",
     "tools": "Premiere Pro · Canva · Meta Platforms",
     "client": "Tel Aviv University",
     "challenge": "Translate an interdisciplinary academic program into accessible, engaging social content.",
     "approach": "Center student work, practical tools and authentic behind-the-scenes moments rather than institutional messaging.",
     "gallery": [],
     "roles": [
-      "Social Media Manager · Creator"
+      "Social Media Manager · Content Creator · Editor"
     ],
     "categories": [
-      "social"
+      "social",
+      "editing"
     ],
-    "status": "draft",
+    "status": "published",
     "blocks": [
       {
         "id": "block-ms21grsg-vdvq",
         "type": "overview",
         "level": "primary",
         "parentId": "",
-        "visible": true,
+        "visible": false,
         "kicker": "The project",
         "title": "Overview",
         "body": "Content creation and social management for the Digital Media program at Tel Aviv University.",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-c35g",
-        "type": "story",
-        "level": "primary",
-        "parentId": "",
-        "visible": true,
-        "kicker": "Process",
-        "title": "Challenge & approach",
-        "body": "Translate an interdisciplinary academic program into accessible, engaging social content.\n\nCenter student work, practical tools and authentic behind-the-scenes moments rather than institutional messaging.",
         "layout": "wide",
         "accent": "",
         "role": "",
@@ -2657,9 +2635,82 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "Project details",
-        "title": "Credits",
+        "kicker": "Videos are much better than words",
+        "title": "Content",
         "body": "",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production",
+          "editing",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msjlehss-fzu7",
+            "url": "https://www.instagram.com/reel/DZKs0_pss-Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "שת״פ עם  הגלריה האוניברסיטאית ע”ש גניה שרייבר",
+            "caption": ""
+          },
+          {
+            "id": "media-msjlehss-e4vv",
+            "url": "https://www.instagram.com/reel/DQ1mLxPjYKU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "הצגת פרוייקטי סטודנטים",
+            "caption": ""
+          },
+          {
+            "id": "media-msjlehss-1cyh",
+            "url": "https://www.tiktok.com/@tauarts/video/7652687685655465223?lang=cs-CZ",
+            "type": "image",
+            "title": "ראיונות עם סטודנטים",
+            "caption": ""
+          },
+          {
+            "id": "media-msjlehss-fxo6",
+            "url": "https://www.tiktok.com/@tauarts/video/7495703700481068295?lang=cs-CZ",
+            "type": "image",
+            "title": "יצירת וולוגים",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msjlehss-scuo",
+            "title": "Role",
+            "text": "Social Media Manager · Creator"
+          },
+          {
+            "id": "item-msjlehss-2rhs",
+            "title": "Tools",
+            "text": "Premiere Pro · Canva · Meta Platforms"
+          },
+          {
+            "id": "item-msjlehss-n5u6",
+            "title": "Client / Context",
+            "text": "Tel Aviv University"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-ms21grsg-c35g",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": false,
+        "kicker": "Process",
+        "title": "Challenge & approach",
+        "body": "Translate an interdisciplinary academic program into accessible, engaging social content.\n\nCenter student work, practical tools and authentic behind-the-scenes moments rather than institutional messaging.",
         "layout": "wide",
         "accent": "",
         "role": "",
@@ -2669,23 +2720,7 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [],
         "media": [],
-        "items": [
-          {
-            "id": "item-ms21grsg-oi2e",
-            "title": "Role",
-            "text": "Social Media Manager · Creator"
-          },
-          {
-            "id": "item-ms21grsg-mzat",
-            "title": "Tools",
-            "text": "Premiere Pro · Canva · Meta Platforms"
-          },
-          {
-            "id": "item-ms21grsg-q9g1",
-            "title": "Client / Context",
-            "text": "Tel Aviv University"
-          }
-        ],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
