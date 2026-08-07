@@ -1467,13 +1467,13 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "Music Pipeline",
-        "title": "Music",
-        "body": "",
+        "kicker": "Musical Numbers",
+        "title": "Musical Numbers",
+        "body": "Music was developed alongside the screenplay and became the emotional backbone of the film. Rather than supporting the story, each song was designed to drive the narrative forward. I wrote the lyrics, defined the dramatic purpose of every musical number, and created detailed creative briefs that guided composition, choreography and later motion capture.\n\nI worked closely with composer Alon Kaplan, providing detailed creative briefs that included dramatic objectives, emotional progression, musical references, visual direction and choreography notes. This ensured that every song supported the story while giving the composer creative freedom.\n\nProcess :\n\nScreenplay\n      ↓\nSong Objective\n      ↓\nLyrics\n      ↓\nCreative Brief\n      ↓\nComposition\n      ↓\nRecording\n      ↓\nChoreography\n      ↓\nMotion Capture",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
-        "navTitle": "",
+        "navTitle": "Musical Numbers",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -1483,21 +1483,55 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-mshtzvrb-ies5",
+            "id": "media-mshyg1si-k4i6",
             "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
             "type": "video",
             "title": "Divine Rebranding",
             "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
           },
           {
-            "id": "media-mshtzvrb-19xg",
-            "url": "https://youtu.be/ijIHEKgkt28",
+            "id": "media-mshyg1si-mk9g",
+            "url": "https://youtu.be/PdIVTKPobaU",
             "type": "video",
-            "title": "Trust in God's Plan",
-            "caption": "Angel Gabriel presents the divine order of creation, inviting Eve to accept the world exactly as it was designed."
+            "title": "The Natural Order",
+            "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mshyg45y-h1k5",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": false,
+        "kicker": "Musical Numbers",
+        "title": "Musical Numbers copy",
+        "body": "Music was developed alongside the screenplay and became the emotional backbone of the film. Rather than supporting the story, each song was designed to drive the narrative forward. I wrote the lyrics, defined the dramatic purpose of every musical number, and created detailed creative briefs that guided composition, choreography and later motion capture.\n\nI worked closely with composer Alon Kaplan, providing detailed creative briefs that included dramatic objectives, emotional progression, musical references, visual direction and choreography notes. This ensured that every song supported the story while giving the composer creative freedom.\n\nProcess :\n\nScreenplay\n      ↓\nSong Objective\n      ↓\nLyrics\n      ↓\nCreative Brief\n      ↓\nComposition\n      ↓\nRecording\n      ↓\nChoreography\n      ↓\nMotion Capture",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Musical Numbers",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mshypb0f-n5mp",
+            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
+            "type": "video",
+            "title": "Divine Rebranding",
+            "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
           },
           {
-            "id": "media-mshtzvrb-cxsw",
+            "id": "media-mshypb0f-g9us",
             "url": "https://youtu.be/PdIVTKPobaU",
             "type": "video",
             "title": "The Natural Order",
