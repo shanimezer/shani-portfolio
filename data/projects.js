@@ -292,19 +292,19 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [
           {
-            "id": "link-ms7yc1ya-brv7",
+            "id": "link-msjkt53v-wv4t",
             "label": "Play on Itch.io",
             "url": "https://lunis-moonfire.itch.io/popcorn-chicken",
             "style": "secondary"
           },
           {
-            "id": "link-ms7yc1ya-syko",
+            "id": "link-msjkt53v-wpz2",
             "label": "Pitch Deck",
             "url": "https://docs.google.com/presentation/d/1kJoMEL7aHtVAZsQkTmaqW5-vDqUycGcwomfqdEog2Yc/edit?slide=id.p#slide=id.p",
             "style": "secondary"
           },
           {
-            "id": "link-ms7yc1ya-he52",
+            "id": "link-msjkt53v-knl8",
             "label": "GitHub",
             "url": "https://github.com/shanimezer/Popcorn-Chicken",
             "style": "secondary"
@@ -312,21 +312,21 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "media": [
           {
-            "id": "media-ms7yc1ya-l5vy",
+            "id": "media-msjkt53v-fusy",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/PC-fox.gif",
             "type": "image",
             "title": "Fox",
             "caption": ""
           },
           {
-            "id": "media-ms7yc1ya-md2d",
+            "id": "media-msjkt53v-tzv0",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-chicken.gif",
             "type": "image",
             "title": "Chicken",
             "caption": ""
           },
           {
-            "id": "media-ms7yc1ya-6qm1",
+            "id": "media-msjkt53v-sfyv",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-littlechicken.gif",
             "type": "image",
             "title": "Little Chicken",
@@ -335,17 +335,17 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7yc1ya-12ri",
+            "id": "item-msjkt53v-ca2h",
             "title": "2026",
             "text": "Prototype"
           },
           {
-            "id": "item-ms7yc1ya-pp6n",
+            "id": "item-msjkt53v-66c9",
             "title": "Status",
             "text": "Currently in Active Development"
           },
           {
-            "id": "item-ms7yc1ya-3haw",
+            "id": "item-msjkt53v-489y",
             "title": "Game Engine",
             "text": "Unity"
           }
@@ -369,7 +369,9 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [],
         "items": [],
@@ -392,10 +394,12 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [
           {
-            "id": "link-ms7z0np9-bici",
+            "id": "link-msjktkp1-n953",
             "label": "Full Code Flow Charts",
             "url": "https://app.clickup.com/90182154781/whiteboards/2kzmcygx-798",
             "style": "secondary"
@@ -403,7 +407,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "media": [
           {
-            "id": "media-ms7z0np9-k7bt",
+            "id": "media-msjktkp1-i729",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-code-architecture.png",
             "type": "image",
             "title": "Gameplay Architecture",
@@ -412,22 +416,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7z0np9-5uie",
+            "id": "item-msjktkp1-zet5",
             "title": "Git Workflow",
             "text": "Managed repository structure and branching strategy"
           },
           {
-            "id": "item-ms7z0np9-9elf",
+            "id": "item-msjktkp1-vmpo",
             "title": "Architecture",
             "text": "Designed the project's technical foundation"
           },
           {
-            "id": "item-ms7z0np9-tgw1",
+            "id": "item-msjktkp1-i93v",
             "title": "Integration",
             "text": "Merged and integrated all gameplay systems"
           },
           {
-            "id": "item-ms7z0np9-5929",
+            "id": "item-msjktkp1-4wve",
             "title": "Debugging",
             "text": "Maintained a stable playable build"
           }
@@ -451,11 +455,13 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-ms7yx86j-mvl8",
+            "id": "media-msjktsyw-v89u",
             "url": "https://youtu.be/e5TUazlIZzY",
             "type": "video",
             "title": "Fox Behaviour and Explosion System",
@@ -464,27 +470,27 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7yx86j-qgze",
+            "id": "item-msjktsyw-gnzh",
             "title": "Fox Behaviour",
             "text": "Target selection and movement"
           },
           {
-            "id": "item-ms7yx86j-q21h",
+            "id": "item-msjktsyw-bsfm",
             "title": "Explosion System",
             "text": "Popcorn knockback mechanic"
           },
           {
-            "id": "item-ms7yx86j-4z07",
+            "id": "item-msjktsyw-2zul",
             "title": "Touch Input",
             "text": "Mobile interaction system"
           },
           {
-            "id": "item-ms7yx86j-4mlj",
+            "id": "item-msjktsyw-nfqf",
             "title": "Win / Lose Logic",
             "text": "Core gameplay flow"
           },
           {
-            "id": "item-ms7yx86j-7avr",
+            "id": "item-msjktsyw-ca65",
             "title": "Menus",
             "text": "Main Menu & Pause Menu"
           }
@@ -508,27 +514,29 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [],
         "items": [
           {
-            "id": "item-ms7yjjhc-dlro",
+            "id": "item-msjktwo0-205e",
             "title": "Core Mechanic",
             "text": "Chickens explode into popcorn"
           },
           {
-            "id": "item-ms7yjjhc-ak1z",
+            "id": "item-msjktwo0-30yb",
             "title": "Win / Lose Design",
             "text": "Defined gameplay objectives"
           },
           {
-            "id": "item-ms7yjjhc-timx",
+            "id": "item-msjktwo0-kz4w",
             "title": "Balancing",
             "text": "Refined through playtesting"
           },
           {
-            "id": "item-ms7yjjhc-bakx",
+            "id": "item-msjktwo0-co52",
             "title": "Future Systems",
             "text": "Collectibles, waves and progression"
           }
@@ -552,11 +560,13 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-ms7yydbi-ykey",
+            "id": "media-msjktzgg-9qwu",
             "url": "https://youtu.be/K7Hrrerrk_E",
             "type": "video",
             "title": "Base Sound Design",
@@ -565,22 +575,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7yydbi-2fxu",
+            "id": "item-msjktzgg-e97d",
             "title": "AI Audio",
             "text": "ElevenLabs"
           },
           {
-            "id": "item-ms7yydbi-7h6f",
+            "id": "item-msjktzgg-9rd5",
             "title": "Editing",
             "text": "Adobe Audition"
           },
           {
-            "id": "item-ms7yydbi-xuyp",
+            "id": "item-msjktzgg-xnq7",
             "title": "Sound Manager",
             "text": "Randomized sound variations"
           },
           {
-            "id": "item-ms7yydbi-cqzy",
+            "id": "item-msjktzgg-5uah",
             "title": "Created Assets",
             "text": "UI, Music, Ambient, SFX, Character Audio"
           }
@@ -604,27 +614,29 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [],
         "items": [
           {
-            "id": "item-ms7ynyy6-15s3",
+            "id": "item-msjku5c1-7boc",
             "title": "Lead Developer",
             "text": "Technical ownership"
           },
           {
-            "id": "item-ms7ynyy6-d8c3",
+            "id": "item-msjku5c1-lie9",
             "title": "Git Management",
             "text": "Branches & merges"
           },
           {
-            "id": "item-ms7ynyy7-upa7",
+            "id": "item-msjku5c1-vsj1",
             "title": "Integration",
             "text": "Combined all gameplay systems"
           },
           {
-            "id": "item-ms7ynyy7-kcpu",
+            "id": "item-msjku5c1-wz1c",
             "title": "Debugging",
             "text": "Resolved integration issues"
           }
@@ -676,17 +688,17 @@ window.PORTFOLIO_PROJECTS = [
         "role": "",
         "navTitle": "",
         "showInToc": true,
-        "alwaysVisible": false,
+        "alwaysVisible": true,
         "disciplines": [],
         "links": [
           {
-            "id": "link-ms7pg2sb-2j7t",
+            "id": "link-msjkv4n3-f2bu",
             "label": "Play on itch.io",
             "url": "https://shanimezer.itch.io/team-r",
             "style": "main"
           },
           {
-            "id": "link-ms7pg2sb-rhye",
+            "id": "link-msjkv4n3-avtt",
             "label": "View full pitch deack",
             "url": "https://canva.link/lvkeujatlpsla47",
             "style": "secondary"
@@ -694,7 +706,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "media": [
           {
-            "id": "media-ms7pg2sb-oqb1",
+            "id": "media-msjkv4n3-oifh",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-team.png",
             "type": "image",
             "title": "",
@@ -703,17 +715,17 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7pg2sb-p04g",
+            "id": "item-msjkv4n3-cxts",
             "title": "Engine",
             "text": "Unity"
           },
           {
-            "id": "item-ms7pg2sb-4nxq",
+            "id": "item-msjkv4n3-4861",
             "title": "Platform",
             "text": "PC / Web"
           },
           {
-            "id": "item-ms7pg2sb-hfg0",
+            "id": "item-msjkv4n3-rfjp",
             "title": "Time of Development",
             "text": "One Month"
           }
@@ -737,18 +749,20 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-ms7mxoyp-evys",
+            "id": "media-msjkv1n8-etss",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/characters-abilities.jpg",
             "type": "image",
             "title": "Characters and Abilities",
             "caption": "Each character’s mechanic was designed around the physical identity of its celestial form."
           },
           {
-            "id": "media-ms7mxoyp-a5r6",
+            "id": "media-msjkv1n8-3s92",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/TeamR-core-loop.png",
             "type": "image",
             "title": "Core Gameplay Loop",
@@ -757,32 +771,32 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7mxoyp-w91j",
+            "id": "item-msjkv1n8-ndrf",
             "title": "Collaborative Ideation",
             "text": "Developed the core concept, characters and gameplay structure through group brainstorming."
           },
           {
-            "id": "item-ms7mxoyp-k0fq",
+            "id": "item-msjkv1n8-t6wf",
             "title": "Character Identity",
             "text": "Connected each ability directly to the nature of its celestial character."
           },
           {
-            "id": "item-ms7mxoyp-agvb",
+            "id": "item-msjkv1n8-vib4",
             "title": "Obstacle Design",
             "text": "Created obstacles that clearly communicated which character and ability the player needed to use."
           },
           {
-            "id": "item-ms7mxoyp-u55l",
+            "id": "item-msjkv1n8-2xy2",
             "title": "Narrative Motivation",
             "text": "Helped shape the expanding black hole as a meaningful reason for the characters to escape."
           },
           {
-            "id": "item-ms7mxoyp-vhm2",
+            "id": "item-msjkv1n8-to2i",
             "title": "Puzzle and Action Balance",
             "text": "Combined environmental puzzles with fireball attacks, dashing and moving enemies."
           },
           {
-            "id": "item-ms7mxoyp-3rpx",
+            "id": "item-msjkv1n8-722y",
             "title": "Iteration and Balancing",
             "text": "Refined the Sun’s ability, the maze structure and the black hole’s speed and gravitational radius through testing."
           }
@@ -806,16 +820,18 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "production"
+        ],
         "links": [
           {
-            "id": "link-ms7pfvch-xoks",
+            "id": "link-msjkup4i-v5vz",
             "label": "Open Production Board",
             "url": "https://sharing.clickup.com/90181826395/b/h/6-901811988708-2/576c4736c1ffa94",
             "style": "secondary"
           },
           {
-            "id": "link-ms7pfvch-1478",
+            "id": "link-msjkup4i-iqeq",
             "label": "Open Design Board",
             "url": "https://miro.com/app/live-embed/uXjVJAtRsW4=/?embedMode=view_only_without_ui&moveToViewport=1756%2C- 874%2c10192%2c5589&embedid=88274779096",
             "style": "secondary"
@@ -823,14 +839,14 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "media": [
           {
-            "id": "media-ms7pfvch-ewgj",
+            "id": "media-msjkup4i-n8pj",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-click-up.png",
             "type": "image",
             "title": "ClickUp Production Board",
             "caption": "Sprint planning, task ownership and production tracking."
           },
           {
-            "id": "media-ms7pfvch-jnyf",
+            "id": "media-msjkup4i-hfkl",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-miro-board.png",
             "type": "image",
             "title": "Miro Design Board",
@@ -839,37 +855,37 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7pfvch-fjzo",
+            "id": "item-msjkup4i-8qu2",
             "title": "Planning",
             "text": "Defined the project scope, schedule and development priorities."
           },
           {
-            "id": "item-ms7pfvch-q8jd",
+            "id": "item-msjkup4i-brgf",
             "title": "Sprint Management",
             "text": "Assigned short, structured tasks with individual deadlines."
           },
           {
-            "id": "item-ms7pfvch-huk2",
+            "id": "item-msjkup4i-mm69",
             "title": "Task Distribution",
             "text": "Divided responsibilities according to each team member’s technical and creative strengths."
           },
           {
-            "id": "item-ms7pfvch-btzp",
+            "id": "item-msjkup4i-tq9l",
             "title": "Core-First Strategy",
             "text": "Prioritized a complete playable foundation before adding optional features."
           },
           {
-            "id": "item-ms7pfvch-6w7a",
+            "id": "item-msjkup4i-l23u",
             "title": "Status Tracking",
             "text": "Managed ongoing updates through WhatsApp and weekly video meetings."
           },
           {
-            "id": "item-ms7pfvch-shxw",
+            "id": "item-msjkup4i-u3oi",
             "title": "Problem Solving",
             "text": "Redistributed work and adjusted the schedule when a team member became unavailable."
           },
           {
-            "id": "item-ms7pfvch-2l7o",
+            "id": "item-msjkup4i-jo6o",
             "title": "Final Integration",
             "text": "Combined individual prefab-based systems into one complete playable level."
           }
@@ -893,39 +909,41 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "ai"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-ms7p0r5n-0bx8",
+            "id": "media-msjkus21-xwlq",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-characters-sheets.png",
             "type": "image",
             "title": "AI-Assisted Character Animation Pipeline",
             "caption": "After the initial character concepts were established, I created the final sprite sheets using an AI-assisted workflow. Each animation was refined manually before being integrated into Unity, ensuring consistent movement and visual language across all three playable characters."
           },
           {
-            "id": "media-ms7p0r5n-v4k4",
+            "id": "media-msjkus21-7759",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-bg.png",
             "type": "image",
             "title": "Environment",
             "caption": "Backgrounds, black holes, visual effects and environmental assets were generated through an iterative AI workflow and refined to maintain a consistent visual language."
           },
           {
-            "id": "media-ms7p0r5n-ds3i",
+            "id": "media-msjkus21-zuin",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-traps-shreds-fire.png",
             "type": "image",
             "title": "Gameplay Assets",
             "caption": "I created the game's interactive assets, including enemies, obstacles, collectibles and combat effects, using AI-assisted workflows followed by manual refinement."
           },
           {
-            "id": "media-ms7p0r5n-1ivq",
+            "id": "media-msjkus21-qw17",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-UI.png",
             "type": "image",
             "title": "UI and Main Menu",
             "caption": "Menus, HUD elements, icons, logos and player feedback screens were designed through an AI-assisted pipeline and adapted for Unity implementation."
           },
           {
-            "id": "media-ms7p0r5n-gxzh",
+            "id": "media-msjkus21-iybk",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/team-r/team-r-sb.png",
             "type": "image",
             "title": "Cinematic AI Storyboarding",
@@ -934,52 +952,52 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-ms7p0r5n-2mts",
+            "id": "item-msjkus21-v38i",
             "title": "Visual References",
             "text": "Used the original character designs and style language as the foundation for asset generation."
           },
           {
-            "id": "item-ms7p0r5n-vm96",
+            "id": "item-msjkus21-86am",
             "title": "Sprite Production",
             "text": "Generated and refined character sprites and animation assets using GPT and Nano Banana."
           },
           {
-            "id": "item-ms7p0r5n-hpng",
+            "id": "item-msjkus21-uhvi",
             "title": "Environment Art",
             "text": "Created backgrounds, obstacles, aliens and supporting game graphics."
           },
           {
-            "id": "item-ms7p0r5n-cdtt",
+            "id": "item-msjkus21-wj93",
             "title": "UI Assets",
             "text": "Produced the menu, interface and HUD graphics used in the final game."
           },
           {
-            "id": "item-ms7p0r5n-sctq",
+            "id": "item-msjkus21-n3y9",
             "title": "Storyboard",
             "text": "Designed the cinematic sequence from beginning to end."
           },
           {
-            "id": "item-ms7p0r5n-s6md",
+            "id": "item-msjkus21-58lv",
             "title": "Animatic Production",
             "text": "Used Google Veo 3 to transform the storyboard into a cinematic animatic."
           },
           {
-            "id": "item-ms7p0r5n-9rzh",
+            "id": "item-msjkus21-a8lz",
             "title": "Sound Effects",
             "text": "Generated gameplay and interface sound effects using ElevenLabs."
           },
           {
-            "id": "item-ms7p0r5n-pxhz",
+            "id": "item-msjkus21-4mmj",
             "title": "Background Music",
             "text": "Created original generative music through iterative prompt development."
           },
           {
-            "id": "item-ms7p0r5n-wsvo",
+            "id": "item-msjkus21-30mx",
             "title": "Manual Refinement",
             "text": "Corrected visual inconsistencies and generation errors in Photoshop."
           },
           {
-            "id": "item-ms7p0r5n-rxhp",
+            "id": "item-msjkus21-4mg6",
             "title": "Unity Integration",
             "text": "Prepared, animated and implemented the final assets inside the game."
           }
@@ -1003,47 +1021,50 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "gameDesign",
+          "production"
+        ],
         "links": [],
         "media": [],
         "items": [
           {
-            "id": "item-ms7mgt4c-tgsz",
+            "id": "item-msjkuxgz-u09f",
             "title": "Sun Character",
             "text": "Developed the playable Sun and its movement, effects and animation."
           },
           {
-            "id": "item-ms7mgt4c-o6uu",
+            "id": "item-msjkuxgz-i509",
             "title": "Ranged Fireball Mechanic",
             "text": "Reworked the Sun’s ability into a skill-based ranged attack."
           },
           {
-            "id": "item-ms7mgt4c-8yua",
+            "id": "item-msjkuxgz-wgd3",
             "title": "Parallax System",
             "text": "Created a top-down layered background system to add visual depth."
           },
           {
-            "id": "item-ms7mgt4c-6ozg",
+            "id": "item-msjkuxgz-kmqv",
             "title": "UI and Menus",
             "text": "Implemented the main menu, HUD and interface feedback."
           },
           {
-            "id": "item-ms7mgt4c-qkgm",
+            "id": "item-msjkuxgz-fuhx",
             "title": "Health System",
             "text": "Built the shared health display used across all three characters."
           },
           {
-            "id": "item-ms7mgt4c-rc7t",
+            "id": "item-msjkuxgz-xycw",
             "title": "Collectible System",
             "text": "Tracked Singularity Shards and connected them to level progression."
           },
           {
-            "id": "item-ms7mgt4c-bxih",
+            "id": "item-msjkuxgz-fdv4",
             "title": "Score and Win Condition",
             "text": "Implemented score tracking, Stargate activation and level completion."
           },
           {
-            "id": "item-ms7mgt4c-3vvx",
+            "id": "item-msjkuxgz-5czy",
             "title": "System Integration",
             "text": "Combined the team’s prefabs and test scenes into one complete playable level."
           }
@@ -1396,32 +1417,39 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-msg5fu60-6m4n",
+        "id": "block-mshm33en-kk2u",
         "type": "story",
-        "level": "secondary",
-        "parentId": "block-msg6pdur-go4a",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
-        "kicker": "Pre-production",
-        "title": "Finding the Visual Language",
-        "body": "Long before production began, I used AI as a creative prototyping tool to explore the project's visual identity.\n\nBy creating an early animatic, I was able to experiment with tone, pacing, character dynamics and cinematic language before committing those ideas to the screenplay. This iterative process made it possible to quickly test creative directions, identify what resonated emotionally and refine the project's overall vision.\n\nWhile many scenes changed throughout development, this prototype introduced several of the project's defining creative ideas and became an important milestone in shaping its identity.",
+        "kicker": "Musical Numbers",
+        "title": "Musical Numbers",
+        "body": "Music was developed alongside the screenplay and became the emotional backbone of the film. Rather than supporting the story, each song was designed to drive the narrative forward. I wrote the lyrics, defined the dramatic purpose of every musical number, and created detailed creative briefs that guided composition, choreography and later motion capture.\n\nI worked closely with composer Alon Kaplan, providing detailed creative briefs that included dramatic objectives, emotional progression, musical references, visual direction and choreography notes. This ensured that every song supported the story while giving the composer creative freedom.\n\nProcess :\n\nScreenplay\n      ↓\nSong Objective\n      ↓\nLyrics\n      ↓\nCreative Brief\n      ↓\nComposition\n      ↓\nRecording\n      ↓\nChoreography\n      ↓\nMotion Capture",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
-        "navTitle": "Visual Language",
+        "navTitle": "Musical Numbers",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
           "directing",
-          "ai"
+          "production"
         ],
         "links": [],
         "media": [
           {
-            "id": "media-mshnraaf-cif8",
-            "url": "https://youtu.be/NdNjcOaxxPQ",
+            "id": "media-mshyg1si-k4i6",
+            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
             "type": "video",
-            "title": "Early AI Animatic",
-            "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
+            "title": "Divine Rebranding",
+            "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
+          },
+          {
+            "id": "media-mshyg1si-mk9g",
+            "url": "https://youtu.be/PdIVTKPobaU",
+            "type": "video",
+            "title": "The Natural Order",
+            "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
           }
         ],
         "items": [],
@@ -1462,39 +1490,32 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-mshm33en-kk2u",
+        "id": "block-msg5fu60-6m4n",
         "type": "story",
-        "level": "primary",
-        "parentId": "",
-        "visible": true,
-        "kicker": "Musical Numbers",
-        "title": "Musical Numbers",
-        "body": "Music was developed alongside the screenplay and became the emotional backbone of the film. Rather than supporting the story, each song was designed to drive the narrative forward. I wrote the lyrics, defined the dramatic purpose of every musical number, and created detailed creative briefs that guided composition, choreography and later motion capture.\n\nI worked closely with composer Alon Kaplan, providing detailed creative briefs that included dramatic objectives, emotional progression, musical references, visual direction and choreography notes. This ensured that every song supported the story while giving the composer creative freedom.\n\nProcess :\n\nScreenplay\n      ↓\nSong Objective\n      ↓\nLyrics\n      ↓\nCreative Brief\n      ↓\nComposition\n      ↓\nRecording\n      ↓\nChoreography\n      ↓\nMotion Capture",
+        "level": "secondary",
+        "parentId": "block-msg6pdur-go4a",
+        "visible": false,
+        "kicker": "Pre-production",
+        "title": "Finding the Visual Language",
+        "body": "Long before production began, I used AI as a creative prototyping tool to explore the project's visual identity.\n\nBy creating an early animatic, I was able to experiment with tone, pacing, character dynamics and cinematic language before committing those ideas to the screenplay. This iterative process made it possible to quickly test creative directions, identify what resonated emotionally and refine the project's overall vision.\n\nWhile many scenes changed throughout development, this prototype introduced several of the project's defining creative ideas and became an important milestone in shaping its identity.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
-        "navTitle": "Musical Numbers",
+        "navTitle": "Visual Language",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
           "directing",
-          "production"
+          "ai"
         ],
         "links": [],
         "media": [
           {
-            "id": "media-mshyg1si-k4i6",
-            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
+            "id": "media-mshnraaf-cif8",
+            "url": "https://youtu.be/NdNjcOaxxPQ",
             "type": "video",
-            "title": "Divine Rebranding",
-            "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
-          },
-          {
-            "id": "media-mshyg1si-mk9g",
-            "url": "https://youtu.be/PdIVTKPobaU",
-            "type": "video",
-            "title": "The Natural Order",
-            "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
+            "title": "Early AI Animatic",
+            "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
           }
         ],
         "items": [],
@@ -2275,7 +2296,7 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [
           {
-            "id": "link-msbpe15j-re01",
+            "id": "link-msjkshs2-31km",
             "label": "Read more about the Game Mixer",
             "url": "https://www.goethe.de/ins/il/en/bib/fur/dgm.html",
             "style": "secondary"
@@ -2284,27 +2305,27 @@ window.PORTFOLIO_PROJECTS = [
         "media": [],
         "items": [
           {
-            "id": "item-msbpe15j-qdys",
+            "id": "item-msjkshs2-6t99",
             "title": "Client",
             "text": "Goethe-Institut"
           },
           {
-            "id": "item-msbpe15k-l83p",
+            "id": "item-msjkshs2-b7ms",
             "title": "Project Origin",
             "text": "Digital Game Mixer"
           },
           {
-            "id": "item-msbpe15k-o6l4",
+            "id": "item-msjkshs2-lbea",
             "title": "Role",
             "text": "Cinematic Director & AI Filmmaker"
           },
           {
-            "id": "item-msbpe15k-b116",
+            "id": "item-msjkshs2-gre5",
             "title": "Stage",
             "text": "Prototype / Demo"
           },
           {
-            "id": "item-msbpe15k-3qhy",
+            "id": "item-msjkshs2-ynut",
             "title": "Deliverables",
             "text": "Opening and Ending Cinematics"
           }
@@ -2329,40 +2350,42 @@ window.PORTFOLIO_PROJECTS = [
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
-          "directing"
+          "directing",
+          "cinematics",
+          "ai"
         ],
         "links": [],
         "media": [
           {
-            "id": "media-msbs5oai-3h7b",
+            "id": "media-msjksl6r-ga38",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Brief_P1.png",
             "type": "image",
             "title": "Overview & structure",
             "caption": ""
           },
           {
-            "id": "media-msbs5oai-f03k",
+            "id": "media-msjksl6r-fgex",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Brief_P2.png",
             "type": "image",
             "title": "Visual references 1",
             "caption": ""
           },
           {
-            "id": "media-msbs5oai-l41g",
+            "id": "media-msjksl6r-atn0",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Brief_P3.png",
             "type": "image",
             "title": "Visual references 2",
             "caption": ""
           },
           {
-            "id": "media-msbs5oai-bswo",
+            "id": "media-msjksl6r-49fy",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_CharacterSheet.jpeg",
             "type": "image",
             "title": "Character Sheet",
             "caption": ""
           },
           {
-            "id": "media-msbs5oai-g43z",
+            "id": "media-msjksl6r-fpq5",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_enviroments_Reph.png",
             "type": "image",
             "title": "Environments References",
@@ -2389,11 +2412,15 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "directing",
+          "cinematics",
+          "ai"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-msbt86no-ehed",
+            "id": "media-msjks5cl-gjld",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Shooting.png",
             "type": "image",
             "title": "Shooting List",
@@ -2428,35 +2455,35 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msbs6x4k-rzt4",
+            "id": "media-msjks1tq-ogeq",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_Player-Character%20Sheet.png",
             "type": "image",
             "title": "Blue Figure Character Sheet",
             "caption": ""
           },
           {
-            "id": "media-msbs6x4k-l6qg",
+            "id": "media-msjks1tq-zbe0",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S1_1.png",
             "type": "image",
             "title": "Storyboard P1",
             "caption": ""
           },
           {
-            "id": "media-msbs6x4k-044x",
+            "id": "media-msjks1tq-w1ii",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S2_1.png",
             "type": "image",
             "title": "Storyboard P2",
             "caption": ""
           },
           {
-            "id": "media-msbs6x4k-1rvk",
+            "id": "media-msjks1tq-iudv",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S2_2.png",
             "type": "image",
             "title": "Storyboard P3",
             "caption": ""
           },
           {
-            "id": "media-msbs6x4k-y4ls",
+            "id": "media-msjks1tq-o8jl",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/Loom/Loom_SB_S3.png",
             "type": "image",
             "title": "Storyboard P4",
@@ -2485,19 +2512,20 @@ window.PORTFOLIO_PROJECTS = [
         "alwaysVisible": false,
         "disciplines": [
           "directing",
-          "cinematics"
+          "cinematics",
+          "ai"
         ],
         "links": [],
         "media": [
           {
-            "id": "media-msbu4i7h-9ay8",
+            "id": "media-msjks92u-cqhp",
             "url": "https://youtu.be/fj-cA-xDFCM",
             "type": "video",
             "title": "Initial Submission of S1 Draft",
             "caption": "Client Feedback : \"The blue figure should influence the environment rather than interacting directly with LOOM. The sequence should feel more subtle and naturally transition into the beginning of the gameplay.\""
           },
           {
-            "id": "media-msbu4i7h-w3qj",
+            "id": "media-msjks92u-0pbt",
             "url": "https://youtu.be/qaoqKiGwM2k",
             "type": "video",
             "title": "Final Intro Version and Solution",
@@ -2526,12 +2554,13 @@ window.PORTFOLIO_PROJECTS = [
         "alwaysVisible": false,
         "disciplines": [
           "directing",
-          "cinematics"
+          "cinematics",
+          "ai"
         ],
         "links": [],
         "media": [
           {
-            "id": "media-msbubcf0-rvje",
+            "id": "media-msjksd2m-1zby",
             "url": "https://youtu.be/Or071jvIG_s",
             "type": "video",
             "title": "Ending Cinematic",
@@ -2540,7 +2569,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-msbubcf0-308i",
+            "id": "item-msjksd2m-hrug",
             "title": "Deliverables",
             "text": "Opening Cinematic · Ending Cinematic · Cinematic Previsualization · Storyboards & Shot Planning · Production Documentation"
           }
