@@ -1474,17 +1474,80 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msk8hs8n-5i24",
+            "id": "media-msk9iaf5-ae73",
             "url": "https://www.youtube.com/watch?v=ijIHEKgkt28",
             "type": "video",
             "title": "Trust in God's Plan",
             "caption": "Final Version"
           },
           {
-            "id": "media-msk8hs8n-n0d2",
+            "id": "media-msk9iaf5-ukv2",
             "url": "https://docs.google.com/document/d/1mnZdLWqGpNbMAPPTJZd5HFF-E-o_CKJRyS8Ri57v2-w/edit?tab=t.0",
             "type": "video",
             "title": "Creative Breif and Lyrics",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-8m8j",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-32x6",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb1.png",
+            "type": "image",
+            "title": "P.1",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-jc50",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb2.png",
+            "type": "image",
+            "title": "P.2",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-c0bw",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb3.png",
+            "type": "image",
+            "title": "P.3",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-dzoo",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb4.png",
+            "type": "image",
+            "title": "P.4",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-n4d7",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb5.png",
+            "type": "image",
+            "title": "P.5",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-i3ho",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb6.png",
+            "type": "image",
+            "title": "P.6",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-48fy",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb7.png",
+            "type": "image",
+            "title": "P.7",
+            "caption": ""
+          },
+          {
+            "id": "media-msk9iaf6-iqtr",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
             "caption": ""
           }
         ],
