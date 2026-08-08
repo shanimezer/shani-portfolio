@@ -39,8 +39,39 @@
   const iframeMarkup = (url, title = 'Embedded Google Drive file') =>
     `<div class="smart-media-frame"><iframe src="${escapeAttribute(url)}" title="${escapeAttribute(title)}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`;
 
+  const addFullscreenControl = frame => {
+    if (!frame || frame.querySelector(':scope > .smart-media-fullscreen')) return;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'smart-media-fullscreen';
+    button.setAttribute('aria-label', 'View document full screen');
+    button.innerHTML = '<span>Full screen</span><b>⛶</b>';
+    button.addEventListener('click', async event => {
+      event.preventDefault();
+      event.stopPropagation();
+      try {
+        if (document.fullscreenElement === frame) {
+          await document.exitFullscreen?.();
+          return;
+        }
+        if (frame.requestFullscreen) await frame.requestFullscreen();
+        else if (frame.webkitRequestFullscreen) frame.webkitRequestFullscreen();
+      } catch (_) {}
+    });
+    frame.appendChild(button);
+  };
+
+  const prepareFrame = frame => {
+    if (!frame) return;
+    frame.classList.add('smart-media-frame');
+    addFullscreenControl(frame);
+  };
+
   const upgradeIframe = iframe => {
-    if (iframe.dataset.smartMediaReady === 'true') return;
+    if (iframe.dataset.smartMediaReady === 'true') {
+      prepareFrame(iframe.closest('.smart-media-frame, .block-video, .video-frame'));
+      return;
+    }
     const embed = googleEmbedUrl(iframe.getAttribute('src'));
     if (!embed) return;
     iframe.src = embed;
@@ -48,7 +79,7 @@
     iframe.allow = 'autoplay; fullscreen';
     iframe.setAttribute('allowfullscreen', '');
     iframe.dataset.smartMediaReady = 'true';
-    iframe.closest('.block-video, .video-frame')?.classList.add('smart-media-frame');
+    prepareFrame(iframe.closest('.block-video, .video-frame') || iframe.parentElement);
   };
 
   const upgradeImage = image => {
@@ -60,6 +91,7 @@
     const holder = document.createElement('div');
     holder.innerHTML = iframeMarkup(embed, image.alt || 'Embedded Google Drive file');
     const frame = holder.firstElementChild;
+    prepareFrame(frame);
     if (figure) figure.replaceChild(frame, image);
     else image.replaceWith(frame);
   };
@@ -70,7 +102,9 @@
     if (!embed || !link.matches('[data-embed-media], .smart-media-link')) return;
     const holder = document.createElement('div');
     holder.innerHTML = iframeMarkup(embed, link.textContent.trim() || 'Embedded Google file');
-    link.replaceWith(holder.firstElementChild);
+    const frame = holder.firstElementChild;
+    prepareFrame(frame);
+    link.replaceWith(frame);
   };
 
   const upgrade = root => {
@@ -84,8 +118,13 @@
   style.textContent = `
     .smart-media-frame{position:relative;width:100%;aspect-ratio:16/9;min-height:360px;overflow:hidden;border-radius:14px;background:#111318;border:1px solid rgba(255,255,255,.1)}
     .smart-media-frame iframe{display:block;width:100%;height:100%;min-height:360px;border:0;background:#fff}
+    .smart-media-fullscreen{position:absolute;right:12px;bottom:12px;z-index:8;display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(8,10,14,.82);color:#fff;font:600 12px/1.1 DM Sans,sans-serif;backdrop-filter:blur(10px);cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+    .smart-media-fullscreen b{font-size:16px;line-height:1}
+    .smart-media-frame:fullscreen,.smart-media-frame:-webkit-full-screen{width:100vw!important;height:100vh!important;max-width:none!important;min-height:100vh!important;aspect-ratio:auto!important;border:0!important;border-radius:0!important;background:#fff}
+    .smart-media-frame:fullscreen iframe,.smart-media-frame:-webkit-full-screen iframe{width:100%!important;height:100%!important;min-height:100vh!important}
+    .smart-media-frame:fullscreen .smart-media-fullscreen,.smart-media-frame:-webkit-full-screen .smart-media-fullscreen{right:18px;bottom:18px}
     figure>.smart-media-frame{margin:0}
-    @media(max-width:700px){.smart-media-frame,.smart-media-frame iframe{min-height:260px}}
+    @media(max-width:700px){.smart-media-frame,.smart-media-frame iframe{min-height:260px}.smart-media-fullscreen span{display:none}.smart-media-fullscreen{width:40px;height:40px;justify-content:center;padding:0}}
   `;
   document.head.appendChild(style);
 
