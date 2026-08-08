@@ -1422,9 +1422,9 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "Musical Numbers",
-        "title": "Musical Numbers",
-        "body": "Music was developed alongside the screenplay and became the emotional backbone of the film. Rather than supporting the story, each song was designed to drive the narrative forward. I wrote the lyrics, defined the dramatic purpose of every musical number, and created detailed creative briefs that guided composition, choreography and later motion capture.\n\nI worked closely with composer Alon Kaplan, providing detailed creative briefs that included dramatic objectives, emotional progression, musical references, visual direction and choreography notes. This ensured that every song supported the story while giving the composer creative freedom.\n\nProcess :\n\nScreenplay\n      ↓\nSong Objective\n      ↓\nLyrics\n      ↓\nCreative Brief\n      ↓\nComposition\n      ↓\nRecording\n      ↓\nChoreography\n      ↓\nMotion Capture",
+        "kicker": "Musical Development",
+        "title": "Overview",
+        "body": "Since Divine Chaos is a musical, every musical number became a storytelling tool rather than a standalone piece of music. Each musical number was developed through close collaboration between writing, composition, choreography and performance, allowing the emotional journey to evolve simultaneously across every creative discipline.\n\nMy Roles\n----------\n- Wrote the lyrics for all three original songs.\n- Defined the dramatic purpose and emotional progression of each musical number.\n- Created detailed creative briefs, including musical references, visual direction and narrative objectives.\n- Worked closely with composer Alon Kaplan throughout the writing and revision process.\n- Collaborated with choreographer Noa Gur Itzack to translate each song into movement and performance.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
@@ -1438,18 +1438,99 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-mshyg1si-k4i6",
-            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
+            "id": "media-msk37hzt-dism",
+            "url": "https://youtu.be/epcJgm_Cx5I",
             "type": "video",
-            "title": "Divine Rebranding",
-            "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
+            "title": "BTS",
+            "caption": "Behind the scenes of the musical development process, where composition, choreography and performance were developed simultaneously through close collaboration between the creative team and cast."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msk37hzu-c8ll",
+            "title": "Creative Pipeline",
+            "text": "Screenplay ➡️ Narrative Goal  Lyrics ➡️  Musical Creative Brief and references ➡️  Composition ➡️  Beat Breakdown ➡️  Choreography alongside actors ➡️  Rehearsals ➡️  Musical Arraengment according to cherography ➡️  Recordings ➡️  Motion Capture"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mshyg45y-h1k5",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mshm33en-kk2u",
+        "visible": true,
+        "kicker": "Musical Numbers",
+        "title": "Trust in God's Plan",
+        "body": "Introduces Eden and establishes the world, while planting the first emotional cracks beneath its perfect surface.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Trust in God's Plan",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msk2fvkt-8iji",
+            "url": "https://www.youtube.com/watch?v=ijIHEKgkt28",
+            "type": "video",
+            "title": "Trust in God's Plan",
+            "caption": "Final Version"
           },
           {
-            "id": "media-mshyg1si-mk9g",
+            "id": "media-msk2fvkt-qgki",
+            "url": "https://docs.google.com/document/d/1mnZdLWqGpNbMAPPTJZd5HFF-E-o_CKJRyS8Ri57v2-w/edit?tab=t.0",
+            "type": "video",
+            "title": "Creative Breif and Lyrics",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msk2gery-cppr",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mshm33en-kk2u",
+        "visible": true,
+        "kicker": "Musical Numbers",
+        "title": "Musical Numbers copy",
+        "body": "",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Musical Numbers",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msk2vpw6-y9ur",
             "url": "https://youtu.be/PdIVTKPobaU",
             "type": "video",
             "title": "The Natural Order",
             "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
+          },
+          {
+            "id": "media-msk2vpw7-4n24",
+            "url": "https://docs.google.com/document/d/1EjLlWKn5afFp64jSNwVgSUd_oHYrS6b5/edit",
+            "type": "video",
+            "title": "Creative Brief and Lyrics",
+            "caption": ""
           }
         ],
         "items": [],
@@ -1516,47 +1597,6 @@ window.PORTFOLIO_PROJECTS = [
             "type": "video",
             "title": "Early AI Animatic",
             "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
-          }
-        ],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-mshyg45y-h1k5",
-        "type": "story",
-        "level": "primary",
-        "parentId": "",
-        "visible": false,
-        "kicker": "Musical Numbers",
-        "title": "Musical Numbers copy",
-        "body": "Music was developed alongside the screenplay and became the emotional backbone of the film. Rather than supporting the story, each song was designed to drive the narrative forward. I wrote the lyrics, defined the dramatic purpose of every musical number, and created detailed creative briefs that guided composition, choreography and later motion capture.\n\nI worked closely with composer Alon Kaplan, providing detailed creative briefs that included dramatic objectives, emotional progression, musical references, visual direction and choreography notes. This ensured that every song supported the story while giving the composer creative freedom.\n\nProcess :\n\nScreenplay\n      ↓\nSong Objective\n      ↓\nLyrics\n      ↓\nCreative Brief\n      ↓\nComposition\n      ↓\nRecording\n      ↓\nChoreography\n      ↓\nMotion Capture",
-        "layout": "wide",
-        "accent": "#8e95a3",
-        "role": "Director",
-        "navTitle": "Musical Numbers",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [
-          "directing",
-          "production"
-        ],
-        "links": [],
-        "media": [
-          {
-            "id": "media-mshypb0f-n5mp",
-            "url": "https://www.youtube.com/watch?v=KlpjbocZmPg",
-            "type": "video",
-            "title": "Divine Rebranding",
-            "caption": "After the events in the Garden begin to unravel, God takes center stage in a dazzling performance, reshaping the narrative and reclaiming control of the story."
-          },
-          {
-            "id": "media-mshypb0f-g9us",
-            "url": "https://youtu.be/PdIVTKPobaU",
-            "type": "video",
-            "title": "The Natural Order",
-            "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
           }
         ],
         "items": [],
