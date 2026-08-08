@@ -48,9 +48,9 @@
   };
 
   window.PortfolioCMS = {
-    version:4,
+    version:5,
     blockTypes:{overview:'Overview',roles:'Roles',story:'Story Step',image:'Large Image',split:'Two Images',video:'Video',comparison:'Before / After',gallery:'Gallery',timeline:'Timeline',quote:'Quote',results:'Results',credits:'Credits',gameLinks:'Game Links / Play Buttons'},
-    layouts:{wide:'Wide',contained:'Contained','text-left':'Text left','text-right':'Text right',grid:'Grid',carousel:'Carousel',masonry:'Masonry'},
+    layouts:{wide:'Wide',contained:'Contained','text-left':'Text left','text-right':'Text right',grid:'Grid',carousel:'Carousel',storyboard:'Storyboard / Slides',masonry:'Masonry'},
     categories:{directing:'Directing',games:'Games',production:'Production',social:'Social Content',editing:'Editing',ai:'AI Creation'},
     disciplines:{directing:'Directing',gameDesign:'Game Design',narrativeDesign:'Narrative Design',cinematics:'Cinematics',production:'Production',motionCapture:'Motion Capture',editing:'Editing',ai:'AI',social:'Social Content'},
     makeId,normalizeBlock,migrateProject,
