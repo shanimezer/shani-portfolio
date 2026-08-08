@@ -3,14 +3,14 @@
 
   if (!document.querySelector('script[data-smart-media]')) {
     const smartMedia = document.createElement('script');
-    smartMedia.src = '../assets/smart-media.js?v=20260806-3';
+    smartMedia.src = '../assets/smart-media.js?v=20260808-4';
     smartMedia.dataset.smartMedia = 'true';
     document.body.appendChild(smartMedia);
   }
 
   if (!document.querySelector('script[data-media-slideshow-admin]')) {
     const slideshowAdmin = document.createElement('script');
-    slideshowAdmin.src = 'media-slideshow-admin.js?v=20260808-1';
+    slideshowAdmin.src = 'media-slideshow-admin.js?v=20260808-2';
     slideshowAdmin.dataset.mediaSlideshowAdmin = 'true';
     document.body.appendChild(slideshowAdmin);
   }
