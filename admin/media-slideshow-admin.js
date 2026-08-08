@@ -37,6 +37,7 @@
 
   const startPattern = /^slideshow:\/\/start(?:\?transition=([a-z-]+))?/i;
   const endPattern = /^slideshow:\/\/end/i;
+  let loading = false;
 
   const setOpen = value => {
     enabled.checked = value;
@@ -67,7 +68,24 @@
     return { normal, groups };
   };
 
+  const mergeIntoMedia = () => {
+    if (loading) return;
+    const parsed = splitMedia(mediaField.value);
+    const output = [...parsed.normal];
+    if (enabled.checked) {
+      const slideLines = String(slides.value || '').split('\n').map(line => line.trim()).filter(Boolean);
+      if (slideLines.length) {
+        output.push(`slideshow://start?transition=${transition.value || 'slide'} | Slideshow`);
+        output.push(...slideLines);
+        output.push('slideshow://end | End slideshow');
+      }
+    }
+    mediaField.value = output.join('\n');
+    mediaField.dispatchEvent(new Event('input', { bubbles:true }));
+  };
+
   const loadFromMedia = () => {
+    loading = true;
     const parsed = splitMedia(mediaField.value);
     const group = parsed.groups[0];
     mediaField.value = parsed.normal.join('\n');
@@ -80,30 +98,24 @@
       transition.value = 'slide';
       slides.value = '';
     }
+    loading = false;
+    mergeIntoMedia();
   };
 
-  const mergeIntoMedia = () => {
-    const parsed = splitMedia(mediaField.value);
-    const output = [...parsed.normal];
-    if (enabled.checked) {
-      const slideLines = String(slides.value || '').split('\n').map(line => line.trim()).filter(Boolean);
-      if (slideLines.length) {
-        output.push(`slideshow://start?transition=${transition.value || 'slide'} | Slideshow`);
-        output.push(...slideLines);
-        output.push('slideshow://end | End slideshow');
-      }
-    }
-    mediaField.value = output.join('\n');
-  };
-
-  enabled.addEventListener('change', () => setOpen(enabled.checked));
+  enabled.addEventListener('change', () => {
+    setOpen(enabled.checked);
+    mergeIntoMedia();
+  });
+  transition.addEventListener('change', mergeIntoMedia);
+  slides.addEventListener('input', mergeIntoMedia);
+  slides.addEventListener('change', mergeIntoMedia);
 
   new MutationObserver(() => {
     if (dialog.open) requestAnimationFrame(() => requestAnimationFrame(loadFromMedia));
   }).observe(dialog, { attributes:true, attributeFilter:['open'] });
 
-  // admin.js saves blocks from the Save button click rather than a form submit.
-  // Capture the click first so slideshow marker rows are present before admin.js reads Media items.
+  // Keep a final safety sync immediately before the main admin save handler reads Media items.
+  saveButton?.addEventListener('pointerdown', mergeIntoMedia, true);
   saveButton?.addEventListener('click', mergeIntoMedia, true);
   form.addEventListener('submit', mergeIntoMedia, true);
 
