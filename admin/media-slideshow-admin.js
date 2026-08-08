@@ -33,6 +33,7 @@
   const fields = shell.querySelector('[data-slideshow-fields]');
   const transition = shell.querySelector('[data-slideshow-transition]');
   const slides = shell.querySelector('[data-slideshow-items]');
+  const saveButton = document.getElementById('saveBlock');
 
   const startPattern = /^slideshow:\/\/start(?:\?transition=([a-z-]+))?/i;
   const endPattern = /^slideshow:\/\/end/i;
@@ -101,6 +102,9 @@
     if (dialog.open) requestAnimationFrame(() => requestAnimationFrame(loadFromMedia));
   }).observe(dialog, { attributes:true, attributeFilter:['open'] });
 
+  // admin.js saves blocks from the Save button click rather than a form submit.
+  // Capture the click first so slideshow marker rows are present before admin.js reads Media items.
+  saveButton?.addEventListener('click', mergeIntoMedia, true);
   form.addEventListener('submit', mergeIntoMedia, true);
 
   const style = document.createElement('style');
