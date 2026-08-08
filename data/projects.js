@@ -1161,7 +1161,7 @@ window.PORTFOLIO_PROJECTS = [
         "title": "Script",
         "body": "Every project begins with a question.\n\nFor Divine Chaos, that question was simple:\n\nWhat if the biblical story of Adam and Eve had been misunderstood all along?\n\nOver the next three years, that question evolved into a continuous process of research, experimentation and iteration. What began as an immersive VR experience gradually transformed into a cinematic animated musical, with every stage helping redefine the project's narrative, visual identity and production pipeline.\n\nThis section documents that creative journey, from the earliest ideas to the foundation of the final film.",
         "layout": "wide",
-        "accent": "#ffc800",
+        "accent": "#ff0000",
         "role": "Narrative Design",
         "navTitle": "Sctipt",
         "showInToc": true,
@@ -1474,84 +1474,114 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msk9iaf5-ae73",
+            "id": "media-mskbu4jh-r6l4",
             "url": "https://www.youtube.com/watch?v=ijIHEKgkt28",
             "type": "video",
             "title": "Trust in God's Plan",
-            "caption": "Final Version"
+            "caption": "Final Version of Music Track"
           },
           {
-            "id": "media-msk9iaf5-ukv2",
+            "id": "media-mskbu4jh-i666",
             "url": "https://docs.google.com/document/d/1mnZdLWqGpNbMAPPTJZd5HFF-E-o_CKJRyS8Ri57v2-w/edit?tab=t.0",
             "type": "video",
-            "title": "Creative Breif and Lyrics",
+            "title": "Musical Breif",
+            "caption": "Detailed"
+          },
+          {
+            "id": "media-mskbu4jh-37th",
+            "url": "brief for Alon Kaplan with references, lyrics and character roles",
+            "type": "image",
+            "title": "",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-8m8j",
+            "id": "media-mskbu4jh-ctq7",
+            "url": "https://docs.google.com/spreadsheets/d/1vuHZ7h7jsXlpMJuFVIz6jdf_h4TbSaQipO9DZh0CJKc/edit?gid=0#gid=0",
+            "type": "video",
+            "title": "Chereography Breakdown",
+            "caption": "I broke down the emotional beats, added chereography refernces, and together with choreographer Noa Gur, we defined the movement motifs for each section."
+          },
+          {
+            "id": "media-mskbu4jh-kovc",
             "url": "slideshow://start?transition=slide",
             "type": "image",
             "title": "Slideshow",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-32x6",
+            "id": "media-mskbu4jh-wlii",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb1.png",
             "type": "image",
             "title": "P.1",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-jc50",
+            "id": "media-mskbu4jh-omgk",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb2.png",
             "type": "image",
             "title": "P.2",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-c0bw",
+            "id": "media-mskbu4jh-cgqt",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb3.png",
             "type": "image",
             "title": "P.3",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-dzoo",
+            "id": "media-mskbu4jh-044e",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb4.png",
             "type": "image",
             "title": "P.4",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-n4d7",
+            "id": "media-mskbu4jh-65i2",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb5.png",
             "type": "image",
             "title": "P.5",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-i3ho",
+            "id": "media-mskbu4jh-ls5s",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb6.png",
             "type": "image",
             "title": "P.6",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-48fy",
+            "id": "media-mskbu4jh-jvdc",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TIGP/sb7.png",
             "type": "image",
             "title": "P.7",
             "caption": ""
           },
           {
-            "id": "media-msk9iaf6-iqtr",
+            "id": "media-mskbu4jh-o8uh",
             "url": "slideshow://end",
             "type": "image",
             "title": "End slideshow",
             "caption": ""
           }
         ],
-        "items": [],
+        "items": [
+          {
+            "id": "item-mskbu4jh-4usm",
+            "title": "Narrative Purpose",
+            "text": "Introduces Eden through Gabriel's perspective while planting the first subtle signs that something beneath its perfection feels wrong."
+          },
+          {
+            "id": "item-mskbu4jh-rh9n",
+            "title": "Musical Language",
+            "text": "Inspired by Disney musicals, combining optimism, theatrical storytelling and growing curiosity."
+          },
+          {
+            "id": "item-mskbu4jh-d75d",
+            "title": "Creative Direction",
+            "text": "The number was designed to represent the illusion of harmony. While Gabriel celebrates God's plan, Eve's curiosity slowly emerges beneath the surface, foreshadowing the conflict to come."
+          }
+        ],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -1563,12 +1593,12 @@ window.PORTFOLIO_PROJECTS = [
         "parentId": "block-mshm33en-kk2u",
         "visible": true,
         "kicker": "Musical Numbers",
-        "title": "Musical Numbers copy",
-        "body": "",
+        "title": "The Natural Order",
+        "body": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Liltih to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow.\n\nChoreography Development\n_________________________\n\nUnlike the other musical numbers, The Natural Order was approached as a dramatic scene rather than a traditional dance sequence. Our goal was to make every movement feel like a natural extension of the characters' emotional conflict instead of relying on stylized choreography alone.\n\nThe process began with an extensive scene breakdown, created together with choreographer Noa Gur and dramaturg/acting coach Smadar Brener. We mapped the emotional beats, character objectives, power shifts, and key dramatic moments, while collecting visual and movement references to establish the intended tone and progression of the scene.\n\nFrom there, the choreography was developed collaboratively with the actors through rehearsals and improvisation. Rather than prescribing every movement from the start, we explored different physical interactions, refined what felt truthful to the characters, and gradually shaped the blocking and choreography through multiple iterations. This iterative process allowed the performances and movement language to evolve organically until reaching the final version seen in the film.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
-        "navTitle": "Musical Numbers",
+        "navTitle": "The Natural Order",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -1578,21 +1608,234 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msk2vpw6-y9ur",
+            "id": "media-mskbu07t-n9jt",
             "url": "https://youtu.be/PdIVTKPobaU",
             "type": "video",
             "title": "The Natural Order",
-            "caption": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Eve to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow."
+            "caption": "Final Version of Music Track"
           },
           {
-            "id": "media-msk2vpw7-4n24",
+            "id": "media-mskbu07t-ycbd",
             "url": "https://docs.google.com/document/d/1EjLlWKn5afFp64jSNwVgSUd_oHYrS6b5/edit",
             "type": "video",
             "title": "Creative Brief and Lyrics",
             "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-cjlq",
+            "url": "https://docs.google.com/spreadsheets/d/1q-Op4NmXq5XsSNG00QwglU0CmyPRi79aAgcgiTYNgrI/edit?gid=0#gid=0",
+            "type": "video",
+            "title": "Emotional Beats Breakdown",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-dsei",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-dfz1",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb1.png",
+            "type": "image",
+            "title": "P.1",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-he1d",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb2.png",
+            "type": "image",
+            "title": "P.2",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-qlih",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb3.png",
+            "type": "image",
+            "title": "P.3",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-9wry",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb4.png",
+            "type": "image",
+            "title": "P.4",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-lt2f",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb5.png",
+            "type": "image",
+            "title": "P.5",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-bkqw",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb6.png",
+            "type": "image",
+            "title": "P.6",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-fhk7",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb7.png",
+            "type": "image",
+            "title": "P.7",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-gvx4",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb8.png",
+            "type": "image",
+            "title": "P.8",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-07a7",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb9.png",
+            "type": "image",
+            "title": "P.9",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-hnoa",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb10.png",
+            "type": "image",
+            "title": "P.10",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-zoyq",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb11.png",
+            "type": "image",
+            "title": "P.11",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-ycd2",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb12.png",
+            "type": "image",
+            "title": "P.12",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-7blh",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb13.png",
+            "type": "image",
+            "title": "P.13",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-u7xy",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb14.png",
+            "type": "image",
+            "title": "P.14",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-vu7z",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb15.png",
+            "type": "image",
+            "title": "P.15",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-r2xu",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb16.png",
+            "type": "image",
+            "title": "P.16",
+            "caption": ""
+          },
+          {
+            "id": "media-mskbu07t-gj1i",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
           }
         ],
-        "items": [],
+        "items": [
+          {
+            "id": "item-mskbu07t-jomt",
+            "title": "Narrative Purpose",
+            "text": "Reveals Lilith's past and exposes the emotional and physical dynamics between her and Adam."
+          },
+          {
+            "id": "item-mskbu07t-kyxn",
+            "title": "Musical Language",
+            "text": "Inspired by tragic musical theatre, particularly Into the Woods and Les Misérables."
+          },
+          {
+            "id": "item-mskbu07t-akvo",
+            "title": "Creative Direction",
+            "text": "Unlike the other songs, the angelic choir is never seen. Their voices remain distant and almost mournful, emphasizing the isolation experienced within an abusive relationship. The contrast between the gentle musical language and the escalating physical violence reflects the emotional contradiction at the heart of the scene."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mskbircc-qqr5",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mshm33en-kk2u",
+        "visible": true,
+        "kicker": "Musical Numbers",
+        "title": "Divine Rebranding",
+        "body": "In this intimate duet, Adam presents the world's \"natural order\" as he understands it, inviting Liltih to embrace the life that has been chosen for them. What begins as a tender moment gradually reveals the beliefs that will shape their relationship and the choices that follow.\n\nChoreography Development\n_________________________\n\nUnlike the other musical numbers, The Natural Order was approached as a dramatic scene rather than a traditional dance sequence. Our goal was to make every movement feel like a natural extension of the characters' emotional conflict instead of relying on stylized choreography alone.\n\nThe process began with an extensive scene breakdown, created together with choreographer Noa Gur and dramaturg/acting coach Smadar Brener. We mapped the emotional beats, character objectives, power shifts, and key dramatic moments, while collecting visual and movement references to establish the intended tone and progression of the scene.\n\nFrom there, the choreography was developed collaboratively with the actors through rehearsals and improvisation. Rather than prescribing every movement from the start, we explored different physical interactions, refined what felt truthful to the characters, and gradually shaped the blocking and choreography through multiple iterations. This iterative process allowed the performances and movement language to evolve organically until reaching the final version seen in the film.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Divine Rebranding",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mskdizau-oqlp",
+            "url": "https://youtu.be/KlpjbocZmPg",
+            "type": "video",
+            "title": "Divine Rebranding",
+            "caption": "Final Version of Music Track"
+          },
+          {
+            "id": "media-mskdizau-33ze",
+            "url": "https://youtu.be/cVOOy0uxr8U",
+            "type": "video",
+            "title": "Divine Rebranding",
+            "caption": "BTS of the recording sessions"
+          },
+          {
+            "id": "media-mskdizau-pwvr",
+            "url": "https://docs.google.com/spreadsheets/d/1N5w_ipGqZYUoq1oB-N_pupM2wkKHHdLN3Vj1hgPgPjI/edit?gid=0#gid=0",
+            "type": "video",
+            "title": "Choreography & Visual Breakdown",
+            "caption": "I directed the number with the pacing, framing, and visual language of a music video, using rapid transitions, performance-driven staging, and choreography designed around the camera."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-mskdizau-x8x0",
+            "title": "Narrative Purpose",
+            "text": "Presents God through a theatrical spectacle while placing Eve inside the emotional chaos of deciding whether to stay or leave."
+          },
+          {
+            "id": "item-mskdizau-buuj",
+            "title": "Musical Language",
+            "text": "Broadway, jazz, camp and theatrical performance."
+          },
+          {
+            "id": "item-mskdizau-xoeq",
+            "title": "Creative Direction",
+            "text": "Rapid costume changes, saturated colours, exaggerated performances and fragmented editing create an overwhelming visual experience that mirrors Eve's emotional state. The number embraces contradiction, glamour and uncertainty, offering a glimpse into the psychological conflict experienced by someone trapped between love and survival."
+          }
+        ],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -1600,12 +1843,12 @@ window.PORTFOLIO_PROJECTS = [
       {
         "id": "block-msg7qpni-o1qz",
         "type": "story",
-        "level": "secondary",
-        "parentId": "block-msg6pdur-go4a",
+        "level": "primary",
+        "parentId": "",
         "visible": true,
         "kicker": "Pre-production",
         "title": "Adapting the Production Pipeline",
-        "body": "Adapting the Production Pipeline\n\nDivine Chaos was originally conceived as an immersive VR experience.\n\nDuring development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
+        "body": "During development, the project was submitted to funding opportunities and underwent several creative and production evaluations. Based on external feedback, production feasibility, storytelling considerations and the project's overall scope, I made the decision to shift the project from an interactive VR experience to a cinematic animated musical.\n\nRather than dividing the team's efforts between two fundamentally different formats, this decision allowed the production to focus entirely on performance, choreography, motion capture, cinematography and emotional storytelling.\n\nAlthough the format changed, the project's narrative, themes and artistic vision remained unchanged. The production timeline, team structure and technical pipeline were then revised to support the new direction.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Producer | Director",
@@ -1618,13 +1861,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "links": [],
         "media": [],
-        "items": [
-          {
-            "id": "item-mshnqidf-qpzp",
-            "title": "Production Note",
-            "text": "The production documents presented in this section were created during the original VR development phase. They are included to demonstrate the project's planning process and production evolution. Some technical systems and production requirements shown in these documents were later removed or redesigned as the project transitioned into a screen-based animated film."
-          }
-        ],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -1721,37 +1958,6 @@ window.PORTFOLIO_PROJECTS = [
             "text": "Independent MFA Film"
           }
         ],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-msg6nugt-u4o4",
-        "type": "story",
-        "level": "primary",
-        "parentId": "",
-        "visible": false,
-        "kicker": "",
-        "title": "Storyboard",
-        "body": "With the screenplay established, I began translating the written story into a visual language.\n\nStoryboards became the bridge between script and production, allowing me to design compositions, camera movement, emotional pacing and cinematic rhythm long before stepping into motion capture and virtual production.\n\nThese boards served as the blueprint for rehearsals, cinematography and the film's overall visual direction.",
-        "layout": "wide",
-        "accent": "#8e95a3",
-        "role": "Director",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
-        "media": [
-          {
-            "id": "media-msg6nugt-lfzi",
-            "url": "https://youtu.be/ox5CSH0Gan8",
-            "type": "video",
-            "title": "Storyboard Highlights",
-            "caption": ""
-          }
-        ],
-        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
