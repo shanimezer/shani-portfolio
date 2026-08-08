@@ -8,6 +8,13 @@
     document.body.appendChild(smartMedia);
   }
 
+  if (!document.querySelector('script[data-media-slideshow-admin]')) {
+    const slideshowAdmin = document.createElement('script');
+    slideshowAdmin.src = 'media-slideshow-admin.js?v=20260808-1';
+    slideshowAdmin.dataset.mediaSlideshowAdmin = 'true';
+    document.body.appendChild(slideshowAdmin);
+  }
+
   const blockForm = document.querySelector('#blockForm');
   if (!blockForm) return;
 
