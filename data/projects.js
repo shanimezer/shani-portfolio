@@ -1388,7 +1388,7 @@ window.PORTFOLIO_PROJECTS = [
         "visible": true,
         "kicker": "Pre-production",
         "title": "Casting & Talent Selection",
-        "body": "Finding performers capable of acting, singing and dancing simultaneously was one of the most challenging aspects of the production. Together with Casting Director Smadar Brener, we designed a multi-stage casting process to identify performers who could meet both the artistic and technical demands of an animated musical built around motion capture.\n\nCasting Pipeline\n\nOpen Casting Call\n        ↓\nSelf-Tape Auditions\n        ↓\nInitial Selection\n        ↓\nIn-Person Callbacks\n        ↓\nActing + Singing + Movement Evaluation\n        ↓\nChemistry Matching\n        ↓\nFinal Cast",
+        "body": "Finding performers capable of acting, singing and dancing simultaneously was one of the most challenging aspects of the production. Together with Casting Director Smadar Brener, we designed a multi-stage casting process to identify performers who could meet both the artistic and technical demands of an animated musical built around motion capture.\n\nMy Role \n---------\n- Defined the casting requirements based on the screenplay and characters\n- Wrote the audition materials, including acting scenes and song requirements\n- Published the open casting call across acting schools, Facebook communities and WhatsApp groups\n- Reviewed self-tape submissions alongside the casting team. \n- Participated in callbacks, chemistry sessions and final casting decisions.\n- Selected performers based on their ability to combine acting, singing and movement.\n\nSmadar Brener's Role\n----------------------\n- Led and managed the casting process. \n- Directed the audition sessions and callbacks.\n- Evaluated acting performances.\n- Worked closely with the creative team throughout the selection process.\n- Served as Acting Coach during rehearsals.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Producer | Director",
@@ -1396,20 +1396,16 @@ window.PORTFOLIO_PROJECTS = [
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
+          "directing",
           "production"
         ],
         "links": [],
         "media": [],
         "items": [
           {
-            "id": "item-mshnpdl5-3vnt",
-            "title": "My Role",
-            "text": "Defined the casting requirements based on the screenplay and characters · Wrote the audition materials, including acting scenes and song requirements · Published the open casting call across acting schools, Facebook communities and WhatsApp groups.· Reviewed self-tape submissions alongside the casting team. · Participated in callbacks, chemistry sessions and final casting decisions.· Selected performers based on their ability to combine acting, singing and movement."
-          },
-          {
-            "id": "item-mshnpdl5-ujrw",
-            "title": "Smadar Brener's Role",
-            "text": "Led and managed the casting process. · Directed the audition sessions and callbacks. · Evaluated acting performances. · Worked closely with the creative team throughout the selection process. · Served as Acting Coach during rehearsals."
+            "id": "item-msk5by8z-81w3",
+            "title": "Casting Pipeline",
+            "text": "Open Casting Call ➡️ Self-Tape Auditions ➡️ Initial Selection ➡️ In-Person Callbacks ➡️ Acting + Singing + Movement Evaluation ➡️ Chemistry Matching ➡️ Final Cast"
           }
         ],
         "quote": "",
@@ -1423,12 +1419,12 @@ window.PORTFOLIO_PROJECTS = [
         "parentId": "",
         "visible": true,
         "kicker": "Musical Development",
-        "title": "Overview",
+        "title": "Musical Development",
         "body": "Since Divine Chaos is a musical, every musical number became a storytelling tool rather than a standalone piece of music. Each musical number was developed through close collaboration between writing, composition, choreography and performance, allowing the emotional journey to evolve simultaneously across every creative discipline.\n\nMy Roles\n----------\n- Wrote the lyrics for all three original songs.\n- Defined the dramatic purpose and emotional progression of each musical number.\n- Created detailed creative briefs, including musical references, visual direction and narrative objectives.\n- Worked closely with composer Alon Kaplan throughout the writing and revision process.\n- Collaborated with choreographer Noa Gur Itzack to translate each song into movement and performance.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
-        "navTitle": "Musical Numbers",
+        "navTitle": "Musical Development",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -1438,7 +1434,7 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msk37hzt-dism",
+            "id": "media-msk5cddf-uw6w",
             "url": "https://youtu.be/epcJgm_Cx5I",
             "type": "video",
             "title": "BTS",
@@ -1447,7 +1443,7 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-msk37hzu-c8ll",
+            "id": "item-msk5cddf-29pd",
             "title": "Creative Pipeline",
             "text": "Screenplay ➡️ Narrative Goal  Lyrics ➡️  Musical Creative Brief and references ➡️  Composition ➡️  Beat Breakdown ➡️  Choreography alongside actors ➡️  Rehearsals ➡️  Musical Arraengment according to cherography ➡️  Recordings ➡️  Motion Capture"
           }
@@ -1478,14 +1474,14 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msk2fvkt-8iji",
+            "id": "media-msk8hs8n-5i24",
             "url": "https://www.youtube.com/watch?v=ijIHEKgkt28",
             "type": "video",
             "title": "Trust in God's Plan",
             "caption": "Final Version"
           },
           {
-            "id": "media-msk2fvkt-qgki",
+            "id": "media-msk8hs8n-n0d2",
             "url": "https://docs.google.com/document/d/1mnZdLWqGpNbMAPPTJZd5HFF-E-o_CKJRyS8Ri57v2-w/edit?tab=t.0",
             "type": "video",
             "title": "Creative Breif and Lyrics",
