@@ -33,86 +33,108 @@
   };
 
   const isGoogleMedia = value => /(?:drive|docs)\.google\.com/i.test(String(value || ''));
-  const iframeMarkup = (url, title = 'Embedded Google Drive file') => `<div class="smart-media-frame" inert><iframe src="${escapeAttribute(url)}" title="${escapeAttribute(title)}" loading="lazy" allow="fullscreen" allowfullscreen tabindex="-1" scrolling="no"></iframe></div>`;
 
-  const addInteractionShield = frame => {
-    if (!frame || frame.querySelector(':scope > .smart-media-shield')) return;
-    const shield = document.createElement('div');
-    shield.className = 'smart-media-shield';
-    shield.setAttribute('aria-hidden', 'true');
-    frame.appendChild(shield);
+  const labelFor = value => {
+    try {
+      const url = new URL(value, window.location.href);
+      const path = url.pathname;
+      if (/\/document\//.test(path)) return 'Google Doc';
+      if (/\/spreadsheets\//.test(path)) return 'Google Sheet';
+      if (/\/presentation\//.test(path)) return 'Google Slides';
+      if (/\/forms\//.test(path)) return 'Google Form';
+      if (/drive\.google\.com/.test(url.hostname)) return 'Google Drive File';
+    } catch (_) {}
+    return 'Google Drive File';
   };
 
-  const addFullscreenControl = frame => {
-    if (!frame || frame.querySelector(':scope > .smart-media-fullscreen')) return;
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'smart-media-fullscreen';
-    button.setAttribute('aria-label', 'Open document full screen');
-    button.innerHTML = '<span>Open full screen</span><b>⛶</b>';
-    button.addEventListener('click', async event => {
-      event.preventDefault(); event.stopPropagation();
-      frame.inert = false;
-      try {
-        if (document.fullscreenElement === frame) await document.exitFullscreen?.();
-        else if (frame.requestFullscreen) await frame.requestFullscreen();
-        else if (frame.webkitRequestFullscreen) frame.webkitRequestFullscreen();
-      } catch (_) { frame.inert = true; }
+  const makePreview = (embedUrl, sourceUrl, title = '') => {
+    const frame = document.createElement('div');
+    frame.className = 'smart-media-frame smart-media-preview';
+    frame.dataset.embedUrl = embedUrl;
+    frame.dataset.sourceUrl = sourceUrl || embedUrl;
+    frame.innerHTML = `
+      <div class="smart-media-preview-inner">
+        <span class="smart-media-preview-icon">▦</span>
+        <div class="smart-media-preview-copy">
+          <strong>${escapeAttribute(title || labelFor(sourceUrl || embedUrl))}</strong>
+          <small>Preview available in full screen</small>
+        </div>
+      </div>
+      <button type="button" class="smart-media-fullscreen" aria-label="Open document full screen"><span>Open full screen</span><b>⛶</b></button>
+    `;
+    frame.querySelector('.smart-media-fullscreen')?.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      openViewer(frame.dataset.embedUrl, title || labelFor(sourceUrl || embedUrl));
     });
-    frame.appendChild(button);
+    return frame;
   };
 
-  const prepareFrame = frame => {
-    if (!frame) return;
-    frame.classList.add('smart-media-frame');
-    frame.inert = true;
-    const iframe = frame.querySelector('iframe');
-    if (iframe) {
-      iframe.tabIndex = -1;
-      iframe.setAttribute('aria-hidden', 'true');
-      iframe.setAttribute('scrolling', 'no');
-      iframe.setAttribute('allow', 'fullscreen');
+  const openViewer = async (embedUrl, title) => {
+    if (!embedUrl) return;
+    let overlay = document.querySelector('.smart-media-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'smart-media-overlay';
+      overlay.innerHTML = `<div class="smart-media-overlay-shell"><button type="button" class="smart-media-overlay-close" aria-label="Close full screen">×</button><div class="smart-media-overlay-content"></div></div>`;
+      document.body.appendChild(overlay);
+      overlay.querySelector('.smart-media-overlay-close')?.addEventListener('click', closeViewer);
+      overlay.addEventListener('click', event => { if (event.target === overlay) closeViewer(); });
     }
-    addInteractionShield(frame);
-    addFullscreenControl(frame);
+    const content = overlay.querySelector('.smart-media-overlay-content');
+    content.innerHTML = `<iframe src="${escapeAttribute(embedUrl)}" title="${escapeAttribute(title || 'Google Drive document')}" allow="fullscreen" allowfullscreen></iframe>`;
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('smart-media-open');
+    try { await overlay.requestFullscreen?.(); } catch (_) {}
+  };
+
+  const closeViewer = async () => {
+    const overlay = document.querySelector('.smart-media-overlay');
+    if (!overlay) return;
+    if (document.fullscreenElement === overlay) {
+      try { await document.exitFullscreen?.(); } catch (_) {}
+    }
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    const content = overlay.querySelector('.smart-media-overlay-content');
+    if (content) content.innerHTML = '';
+    document.body.classList.remove('smart-media-open');
   };
 
   const upgradeIframe = iframe => {
-    if (iframe.dataset.smartMediaReady === 'true') { prepareFrame(iframe.closest('.smart-media-frame, .block-video, .video-frame')); return; }
-    const embed = googleEmbedUrl(iframe.getAttribute('src'));
+    if (iframe.dataset.smartMediaReady === 'true') return;
+    const source = iframe.getAttribute('src') || '';
+    const embed = googleEmbedUrl(source);
     if (!embed) return;
     const frame = iframe.closest('.block-video, .video-frame') || iframe.parentElement;
+    const title = iframe.getAttribute('title') || labelFor(source);
+    const preview = makePreview(embed, source, title);
     iframe.dataset.smartMediaReady = 'true';
-    iframe.loading = 'lazy';
-    iframe.tabIndex = -1;
-    iframe.setAttribute('aria-hidden', 'true');
-    iframe.setAttribute('scrolling', 'no');
-    iframe.setAttribute('allow', 'fullscreen');
-    prepareFrame(frame);
-    if (iframe.src !== embed) iframe.src = embed;
+    if (frame && frame !== iframe.parentElement) frame.replaceWith(preview);
+    else if (frame && frame === iframe.parentElement) frame.replaceWith(preview);
+    else iframe.replaceWith(preview);
   };
 
   const upgradeImage = image => {
     if (image.dataset.smartMediaReady === 'true') return;
-    const embed = googleEmbedUrl(image.getAttribute('src'));
+    const source = image.getAttribute('src') || '';
+    const embed = googleEmbedUrl(source);
     if (!embed) return;
     const figure = image.closest('figure');
-    const holder = document.createElement('div');
-    holder.innerHTML = iframeMarkup(embed, image.alt || 'Embedded Google Drive file');
-    const frame = holder.firstElementChild;
-    prepareFrame(frame);
-    if (figure) figure.replaceChild(frame, image); else image.replaceWith(frame);
+    const preview = makePreview(embed, source, image.alt || labelFor(source));
+    image.dataset.smartMediaReady = 'true';
+    if (figure) figure.replaceChild(preview, image); else image.replaceWith(preview);
   };
 
   const upgradeLink = link => {
     if (link.dataset.smartMediaReady === 'true') return;
-    const embed = googleEmbedUrl(link.href);
+    const source = link.href || '';
+    const embed = googleEmbedUrl(source);
     if (!embed || !link.matches('[data-embed-media], .smart-media-link')) return;
-    const holder = document.createElement('div');
-    holder.innerHTML = iframeMarkup(embed, link.textContent.trim() || 'Embedded Google file');
-    const frame = holder.firstElementChild;
-    prepareFrame(frame);
-    link.replaceWith(frame);
+    const preview = makePreview(embed, source, link.textContent.trim() || labelFor(source));
+    link.dataset.smartMediaReady = 'true';
+    link.replaceWith(preview);
   };
 
   const upgrade = root => {
@@ -122,44 +144,42 @@
     scope.querySelectorAll('a[href*="drive.google.com"], a[href*="docs.google.com"]').forEach(upgradeLink);
   };
 
-  const syncFullscreenState = () => {
-    document.querySelectorAll('.smart-media-frame').forEach(frame => {
-      const active = document.fullscreenElement === frame || document.webkitFullscreenElement === frame;
-      frame.classList.toggle('is-fullscreen', active);
-      frame.inert = !active;
-      const iframe = frame.querySelector('iframe');
-      if (iframe) {
-        iframe.style.pointerEvents = active ? 'auto' : 'none';
-        iframe.tabIndex = active ? 0 : -1;
-        if (active) { iframe.removeAttribute('aria-hidden'); iframe.removeAttribute('scrolling'); }
-        else { iframe.setAttribute('aria-hidden', 'true'); iframe.setAttribute('scrolling', 'no'); }
-      }
-    });
-  };
-
   const style = document.createElement('style');
   style.textContent = `
-    .smart-media-frame{position:relative;width:100%;aspect-ratio:16/9;height:auto!important;min-height:0!important;overflow:hidden;border-radius:14px;background:#111318;border:1px solid rgba(255,255,255,.1);overflow-anchor:none;contain:layout paint}
-    .smart-media-frame iframe{display:block;width:100%;height:100%;min-height:0;border:0;background:#fff;pointer-events:none}
-    .smart-media-shield{position:absolute;inset:0;z-index:6;background:transparent;touch-action:pan-y;overscroll-behavior:contain;cursor:default}
+    .smart-media-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;background:#111318;border:1px solid rgba(255,255,255,.1);overflow-anchor:none;contain:layout paint}
+    .smart-media-preview{display:grid;place-items:center}
+    .smart-media-preview-inner{display:flex;align-items:center;gap:16px;padding:24px;text-align:left;color:#f4f2ec}
+    .smart-media-preview-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.06);font-size:24px;color:#d9d7d1}
+    .smart-media-preview-copy{display:grid;gap:4px}.smart-media-preview-copy strong{font:600 16px/1.2 DM Sans,sans-serif}.smart-media-preview-copy small{color:#92959b;font:400 12px/1.4 DM Sans,sans-serif}
     .smart-media-fullscreen{position:absolute;right:12px;bottom:12px;z-index:8;display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(8,10,14,.82);color:#fff;font:600 12px/1.1 DM Sans,sans-serif;backdrop-filter:blur(10px);cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.28)}
     .smart-media-fullscreen b{font-size:16px;line-height:1}
-    .smart-media-frame:fullscreen,.smart-media-frame:-webkit-full-screen{width:100vw!important;height:100vh!important;max-width:none!important;min-height:100vh!important;aspect-ratio:auto!important;border:0!important;border-radius:0!important;background:#fff;contain:none}
-    .smart-media-frame:fullscreen iframe,.smart-media-frame:-webkit-full-screen iframe{width:100%!important;height:100%!important;min-height:100vh!important;pointer-events:auto!important}
-    .smart-media-frame:fullscreen .smart-media-shield,.smart-media-frame:-webkit-full-screen .smart-media-shield{display:none}
-    figure>.smart-media-frame{margin:0}
-    @media(max-width:700px){.smart-media-fullscreen span{display:none}.smart-media-fullscreen{width:40px;height:40px;justify-content:center;padding:0}}
+    .smart-media-overlay{position:fixed;inset:0;z-index:99999;display:none;background:#050608}
+    .smart-media-overlay.open{display:block}
+    .smart-media-overlay-shell{position:absolute;inset:0;background:#050608}
+    .smart-media-overlay-content{position:absolute;inset:0}.smart-media-overlay-content iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+    .smart-media-overlay-close{position:absolute;top:max(16px,env(safe-area-inset-top));right:16px;z-index:4;width:46px;height:46px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(8,10,14,.8);color:#fff;font-size:28px;line-height:1;cursor:pointer}
+    body.smart-media-open{overflow:hidden!important}
+    @media(max-width:700px){.smart-media-fullscreen span{display:none}.smart-media-fullscreen{width:40px;height:40px;justify-content:center;padding:0}.smart-media-preview-inner{padding:18px}.smart-media-preview-icon{width:46px;height:46px}}
   `;
   document.head.appendChild(style);
 
   window.SmartMedia = { googleEmbedUrl, isGoogleMedia, upgrade };
+
   const start = () => {
-    upgrade(document); syncFullscreenState();
-    document.addEventListener('fullscreenchange', syncFullscreenState);
-    document.addEventListener('webkitfullscreenchange', syncFullscreenState);
+    upgrade(document);
+    document.addEventListener('fullscreenchange', () => {
+      const overlay = document.querySelector('.smart-media-overlay');
+      if (overlay?.classList.contains('open') && !document.fullscreenElement) closeViewer();
+    });
+    window.addEventListener('keydown', event => { if (event.key === 'Escape') closeViewer(); });
     new MutationObserver(mutations => mutations.forEach(mutation => mutation.addedNodes.forEach(node => {
-      if (node.nodeType === 1) { if (node.matches?.('iframe, img, a')) upgrade(node.parentElement || document); else upgrade(node); }
+      if (node.nodeType === 1) {
+        if (node.matches?.('iframe, img, a')) upgrade(node.parentElement || document);
+        else upgrade(node);
+      }
     }))).observe(document.body, { childList:true, subtree:true });
   };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once:true }); else start();
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once:true });
+  else start();
 })();
