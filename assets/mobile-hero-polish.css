@@ -4,7 +4,7 @@
   .mobile-hero .chapter-content>.kicker{margin:0 0 10px!important;text-align:center!important;}
   .mobile-hero .chapter-content>h1{font-size:clamp(2.1rem,8.8vw,3.15rem)!important;line-height:.98!important;letter-spacing:-.055em!important;max-width:88vw!important;margin:0 0 18px!important;text-align:center!important;text-wrap:balance;}
   .mobile-hero .mobile-reel{display:flex!important;width:max-content;margin:0 auto 16px!important;justify-content:center;text-align:center;transition:transform .65s cubic-bezier(.22,1,.36,1),opacity .45s ease;}
-  .mobile-hero .simon-mobile-panel.is-in-flow{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:min(92vw,520px)!important;margin:0 auto 16px!important;transform:none!important;}
+  .mobile-hero .simon-mobile-panel.is-in-flow{position:relative!important;left:50%!important;right:auto!important;bottom:auto!important;width:min(calc(100vw - 36px),520px)!important;max-width:520px!important;margin:0 0 16px!important;translate:-50% 0!important;transform:none!important;box-sizing:border-box!important;}
   .mobile-hero .swipe-hint{display:flex!important;width:max-content;margin:0 auto!important;justify-content:center;text-align:center;transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .45s ease;}
   body.simon-mode .mobile-hero .chapter-content{padding-bottom:34px!important;}
   body.simon-mode .mobile-hero .mobile-reel,body.simon-mode .mobile-hero .swipe-hint{opacity:.82;transform:none;}
@@ -17,6 +17,6 @@
 @media(max-width:390px){
   .mobile-hero .chapter-content{padding-top:92px!important;}
   .mobile-hero .chapter-content>h1{font-size:clamp(1.95rem,8.2vw,2.75rem)!important;max-width:90vw!important;}
-  .mobile-hero .simon-mobile-panel.is-in-flow{width:94vw!important;}
+  .mobile-hero .simon-mobile-panel.is-in-flow{width:calc(100vw - 28px)!important;}
 }
 @media(prefers-reduced-motion:reduce){body.simon-restoring .mobile-hero .chapter-content,body.simon-restoring .mobile-hero .mobile-reel,body.simon-restoring .mobile-hero .swipe-hint{animation:none!important}}
