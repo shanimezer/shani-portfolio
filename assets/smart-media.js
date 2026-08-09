@@ -39,6 +39,40 @@
   const iframeMarkup = (url, title = 'Embedded Google Drive file') =>
     `<div class="smart-media-frame"><iframe src="${escapeAttribute(url)}" title="${escapeAttribute(title)}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen tabindex="-1"></iframe></div>`;
 
+  // Preserve the user's visual position only while a media node is being replaced.
+  // This avoids layout-shift jumps without intercepting normal scroll or TOC navigation.
+  const preserveVisualAnchor = (anchor, mutate) => {
+    if (!anchor || typeof mutate !== 'function') return mutate?.();
+    const beforeTop = anchor.getBoundingClientRect().top;
+    const beforeY = window.scrollY || 0;
+    const result = mutate();
+
+    const settle = () => {
+      const liveAnchor = result?.isConnected ? result : (anchor.isConnected ? anchor : null);
+      if (!liveAnchor) return;
+      const afterTop = liveAnchor.getBoundingClientRect().top;
+      const delta = afterTop - beforeTop;
+      if (Math.abs(delta) > 1 && Math.abs((window.scrollY || 0) - beforeY) < 8) {
+        window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+      }
+    };
+
+    requestAnimationFrame(() => requestAnimationFrame(settle));
+    return result;
+  };
+
+  const stabilizeFrameLoad = frame => {
+    if (!frame || frame.dataset.smartMediaLoadStable === 'true') return;
+    frame.dataset.smartMediaLoadStable = 'true';
+    const iframe = frame.querySelector('iframe');
+    if (!iframe) return;
+
+    iframe.addEventListener('load', () => {
+      // Keep the embed's outer dimensions fixed. Never move the page here.
+      frame.style.minHeight = frame.style.minHeight || '';
+    }, { passive:true });
+  };
+
   const addInteractionShield = frame => {
     if (!frame || frame.querySelector(':scope > .smart-media-shield')) return;
     const shield = document.createElement('div');
@@ -79,6 +113,7 @@
     }
     addInteractionShield(frame);
     addFullscreenControl(frame);
+    stabilizeFrameLoad(frame);
   };
 
   const upgradeIframe = iframe => {
@@ -88,13 +123,17 @@
     }
     const embed = googleEmbedUrl(iframe.getAttribute('src'));
     if (!embed) return;
-    iframe.src = embed;
-    iframe.loading = 'lazy';
-    iframe.allow = 'autoplay; fullscreen';
-    iframe.setAttribute('allowfullscreen', '');
-    iframe.tabIndex = -1;
-    iframe.dataset.smartMediaReady = 'true';
-    prepareFrame(iframe.closest('.block-video, .video-frame') || iframe.parentElement);
+    const frame = iframe.closest('.block-video, .video-frame') || iframe.parentElement;
+    preserveVisualAnchor(frame || iframe, () => {
+      iframe.src = embed;
+      iframe.loading = 'lazy';
+      iframe.allow = 'autoplay; fullscreen';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.tabIndex = -1;
+      iframe.dataset.smartMediaReady = 'true';
+      prepareFrame(frame);
+      return frame || iframe;
+    });
   };
 
   const upgradeImage = image => {
@@ -103,23 +142,30 @@
     const embed = googleEmbedUrl(source);
     if (!embed) return;
     const figure = image.closest('figure');
-    const holder = document.createElement('div');
-    holder.innerHTML = iframeMarkup(embed, image.alt || 'Embedded Google Drive file');
-    const frame = holder.firstElementChild;
-    prepareFrame(frame);
-    if (figure) figure.replaceChild(frame, image);
-    else image.replaceWith(frame);
+    const anchor = figure || image;
+    preserveVisualAnchor(anchor, () => {
+      const holder = document.createElement('div');
+      holder.innerHTML = iframeMarkup(embed, image.alt || 'Embedded Google Drive file');
+      const frame = holder.firstElementChild;
+      prepareFrame(frame);
+      if (figure) figure.replaceChild(frame, image);
+      else image.replaceWith(frame);
+      return figure || frame;
+    });
   };
 
   const upgradeLink = link => {
     if (link.dataset.smartMediaReady === 'true') return;
     const embed = googleEmbedUrl(link.href);
     if (!embed || !link.matches('[data-embed-media], .smart-media-link')) return;
-    const holder = document.createElement('div');
-    holder.innerHTML = iframeMarkup(embed, link.textContent.trim() || 'Embedded Google file');
-    const frame = holder.firstElementChild;
-    prepareFrame(frame);
-    link.replaceWith(frame);
+    preserveVisualAnchor(link, () => {
+      const holder = document.createElement('div');
+      holder.innerHTML = iframeMarkup(embed, link.textContent.trim() || 'Embedded Google file');
+      const frame = holder.firstElementChild;
+      prepareFrame(frame);
+      link.replaceWith(frame);
+      return frame;
+    });
   };
 
   const upgrade = root => {
@@ -145,17 +191,17 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    .smart-media-frame{position:relative;width:100%;aspect-ratio:16/9;min-height:360px;overflow:hidden;border-radius:14px;background:#111318;border:1px solid rgba(255,255,255,.1);overflow-anchor:none}
-    .smart-media-frame iframe{display:block;width:100%;height:100%;min-height:360px;border:0;background:#fff;pointer-events:none}
+    .smart-media-frame{position:relative;width:100%;height:clamp(360px,48vw,620px);min-height:360px;overflow:hidden;border-radius:14px;background:#111318;border:1px solid rgba(255,255,255,.1);overflow-anchor:none;contain:layout paint}
+    .smart-media-frame iframe{display:block;width:100%;height:100%;min-height:0;border:0;background:#fff;pointer-events:none}
     .smart-media-shield{position:absolute;inset:0;z-index:6;background:transparent;touch-action:pan-y;overscroll-behavior:contain;cursor:default}
     .smart-media-fullscreen{position:absolute;right:12px;bottom:12px;z-index:8;display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(8,10,14,.82);color:#fff;font:600 12px/1.1 DM Sans,sans-serif;backdrop-filter:blur(10px);cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.28)}
     .smart-media-fullscreen b{font-size:16px;line-height:1}
-    .smart-media-frame:fullscreen,.smart-media-frame:-webkit-full-screen{width:100vw!important;height:100vh!important;max-width:none!important;min-height:100vh!important;aspect-ratio:auto!important;border:0!important;border-radius:0!important;background:#fff}
+    .smart-media-frame:fullscreen,.smart-media-frame:-webkit-full-screen{width:100vw!important;height:100vh!important;max-width:none!important;min-height:100vh!important;aspect-ratio:auto!important;border:0!important;border-radius:0!important;background:#fff;contain:none}
     .smart-media-frame:fullscreen iframe,.smart-media-frame:-webkit-full-screen iframe{width:100%!important;height:100%!important;min-height:100vh!important;pointer-events:auto!important}
     .smart-media-frame:fullscreen .smart-media-shield,.smart-media-frame:-webkit-full-screen .smart-media-shield{display:none}
     .smart-media-frame:fullscreen .smart-media-fullscreen,.smart-media-frame:-webkit-full-screen .smart-media-fullscreen{right:18px;bottom:18px}
     figure>.smart-media-frame{margin:0}
-    @media(max-width:700px){.smart-media-frame,.smart-media-frame iframe{min-height:260px}.smart-media-fullscreen span{display:none}.smart-media-fullscreen{width:40px;height:40px;justify-content:center;padding:0}}
+    @media(max-width:700px){.smart-media-frame{height:300px;min-height:300px}.smart-media-fullscreen span{display:none}.smart-media-fullscreen{width:40px;height:40px;justify-content:center;padding:0}}
   `;
   document.head.appendChild(style);
 
