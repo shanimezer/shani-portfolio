@@ -39,40 +39,6 @@
   const iframeMarkup = (url, title = 'Embedded Google Drive file') =>
     `<div class="smart-media-frame"><iframe src="${escapeAttribute(url)}" title="${escapeAttribute(title)}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen tabindex="-1"></iframe></div>`;
 
-  // Preserve the user's visual position only while a media node is being replaced.
-  // This avoids layout-shift jumps without intercepting normal scroll or TOC navigation.
-  const preserveVisualAnchor = (anchor, mutate) => {
-    if (!anchor || typeof mutate !== 'function') return mutate?.();
-    const beforeTop = anchor.getBoundingClientRect().top;
-    const beforeY = window.scrollY || 0;
-    const result = mutate();
-
-    const settle = () => {
-      const liveAnchor = result?.isConnected ? result : (anchor.isConnected ? anchor : null);
-      if (!liveAnchor) return;
-      const afterTop = liveAnchor.getBoundingClientRect().top;
-      const delta = afterTop - beforeTop;
-      if (Math.abs(delta) > 1 && Math.abs((window.scrollY || 0) - beforeY) < 8) {
-        window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
-      }
-    };
-
-    requestAnimationFrame(() => requestAnimationFrame(settle));
-    return result;
-  };
-
-  const stabilizeFrameLoad = frame => {
-    if (!frame || frame.dataset.smartMediaLoadStable === 'true') return;
-    frame.dataset.smartMediaLoadStable = 'true';
-    const iframe = frame.querySelector('iframe');
-    if (!iframe) return;
-
-    iframe.addEventListener('load', () => {
-      // Keep the embed's outer dimensions fixed. Never move the page here.
-      frame.style.minHeight = frame.style.minHeight || '';
-    }, { passive:true });
-  };
-
   const addInteractionShield = frame => {
     if (!frame || frame.querySelector(':scope > .smart-media-shield')) return;
     const shield = document.createElement('div');
@@ -113,7 +79,6 @@
     }
     addInteractionShield(frame);
     addFullscreenControl(frame);
-    stabilizeFrameLoad(frame);
   };
 
   const upgradeIframe = iframe => {
@@ -124,48 +89,37 @@
     const embed = googleEmbedUrl(iframe.getAttribute('src'));
     if (!embed) return;
     const frame = iframe.closest('.block-video, .video-frame') || iframe.parentElement;
-    preserveVisualAnchor(frame || iframe, () => {
-      iframe.src = embed;
-      iframe.loading = 'lazy';
-      iframe.allow = 'autoplay; fullscreen';
-      iframe.setAttribute('allowfullscreen', '');
-      iframe.tabIndex = -1;
-      iframe.dataset.smartMediaReady = 'true';
-      prepareFrame(frame);
-      return frame || iframe;
-    });
+    iframe.src = embed;
+    iframe.loading = 'lazy';
+    iframe.allow = 'autoplay; fullscreen';
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.tabIndex = -1;
+    iframe.dataset.smartMediaReady = 'true';
+    prepareFrame(frame);
   };
 
   const upgradeImage = image => {
     if (image.dataset.smartMediaReady === 'true') return;
-    const source = image.getAttribute('src');
-    const embed = googleEmbedUrl(source);
+    const embed = googleEmbedUrl(image.getAttribute('src'));
     if (!embed) return;
     const figure = image.closest('figure');
-    const anchor = figure || image;
-    preserveVisualAnchor(anchor, () => {
-      const holder = document.createElement('div');
-      holder.innerHTML = iframeMarkup(embed, image.alt || 'Embedded Google Drive file');
-      const frame = holder.firstElementChild;
-      prepareFrame(frame);
-      if (figure) figure.replaceChild(frame, image);
-      else image.replaceWith(frame);
-      return figure || frame;
-    });
+    const holder = document.createElement('div');
+    holder.innerHTML = iframeMarkup(embed, image.alt || 'Embedded Google Drive file');
+    const frame = holder.firstElementChild;
+    prepareFrame(frame);
+    if (figure) figure.replaceChild(frame, image);
+    else image.replaceWith(frame);
   };
 
   const upgradeLink = link => {
     if (link.dataset.smartMediaReady === 'true') return;
     const embed = googleEmbedUrl(link.href);
     if (!embed || !link.matches('[data-embed-media], .smart-media-link')) return;
-    preserveVisualAnchor(link, () => {
-      const holder = document.createElement('div');
-      holder.innerHTML = iframeMarkup(embed, link.textContent.trim() || 'Embedded Google file');
-      const frame = holder.firstElementChild;
-      prepareFrame(frame);
-      link.replaceWith(frame);
-      return frame;
-    });
+    const holder = document.createElement('div');
+    holder.innerHTML = iframeMarkup(embed, link.textContent.trim() || 'Embedded Google file');
+    const frame = holder.firstElementChild;
+    prepareFrame(frame);
+    link.replaceWith(frame);
   };
 
   const upgrade = root => {
