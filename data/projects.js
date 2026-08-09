@@ -2121,14 +2121,40 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
+        "id": "block-msluspyv-zrda",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Art Direction",
+        "title": "Visual Development & Art Direction",
+        "body": "Divine Chaos was conceived as a dark-fantasy world with a hyper-real visual language, balancing beauty, theatricality and a subtle sense of the uncanny.\n\nThe earliest concepts leaned toward a more alien interpretation of Eden, inspired by otherworldly fantasy environments and luminous organic forms. As the visual direction developed, I moved away from an overtly extraterrestrial aesthetic and toward a world that felt more natural, divine and believable as something created by the film’s version of God.\n\nThe final visual language combines realistic materials and MetaHuman characters with stylized proportions, symbolic environments and increasingly theatrical color.\n\nAI was used as both an exploratory and production tool throughout visual development, rather than as a replacement for the design process.\n\nEarly generative concepts helped me rapidly explore visual directions before moving into artist-led concept development. Later, AI-assisted 3D workflows were used selectively for assets including the trees, forbidden fruit, serpent and angels, while character concepts were translated through an AI-assisted topology workflow before being adapted into MetaHumans.\n\nEach stage remained part of a directed pipeline, moving from concept and experimentation into assets designed for integration within Unreal Engine.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Visual Language",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
         "id": "block-msg5fu60-6m4n",
         "type": "story",
         "level": "secondary",
-        "parentId": "block-msg6pdur-go4a",
-        "visible": false,
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
         "kicker": "Pre-production",
         "title": "Finding the Visual Language",
-        "body": "Long before production began, I used AI as a creative prototyping tool to explore the project's visual identity.\n\nBy creating an early animatic, I was able to experiment with tone, pacing, character dynamics and cinematic language before committing those ideas to the screenplay. This iterative process made it possible to quickly test creative directions, identify what resonated emotionally and refine the project's overall vision.\n\nWhile many scenes changed throughout development, this prototype introduced several of the project's defining creative ideas and became an important milestone in shaping its identity.",
+        "body": "Early visual development focused on exploring how Eden could feel simultaneously beautiful, unfamiliar and slightly unsettling.\n\nInitial AI-generated concepts helped define broad ideas around characters, environments, the forbidden fruit, the serpent and recurring motifs. While these tests were useful for exploration, the characters often felt too generic, which led to a more deliberate concept-art process.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "Director",
@@ -2142,14 +2168,427 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-mshnraaf-cif8",
+            "id": "media-mslvhos2-kl8w",
+            "url": "https://www.canva.com/design/DAG9iwk7mCw/iZ0f9g36t_zMBsuA2YLKTw/edit",
+            "type": "image",
+            "title": "Early Visual Exploration",
+            "caption": "Initial concepts exploring Eden, character silhouettes, divine imagery and recurring visual motifs."
+          },
+          {
+            "id": "media-mslvhos2-yhkz",
             "url": "https://youtu.be/NdNjcOaxxPQ",
             "type": "video",
             "title": "Early AI Animatic",
             "caption": "Exploring VR Game Mechanics, Characters, Visual Language and Themes"
+          },
+          {
+            "id": "media-mslvhos2-pg1c",
+            "url": "https://miro.com/app/live-embed/uXjVJ5sqhCg=/?embedMode=view_only_without_ui&moveToViewport=-1651%2C-136%2C35244%2C34093&embedId=379355606075",
+            "type": "image",
+            "title": "Art Exploration Board",
+            "caption": ""
+          },
+          {
+            "id": "media-mslvhos2-o99g",
+            "url": "https://www.youtube.com/watch?v=Iw3OG6tvWII",
+            "type": "video",
+            "title": "Early Concept Trailer",
+            "caption": "Before the final visual language was established, I created an early concept trailer to explore the tone, atmosphere and cinematic potential of the project. It captures an earlier stage of the visual direction, before the world shifted from a more alien interpretation of Eden toward the more natural and theatrical aesthetic developed for the final film."
           }
         ],
         "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msluueqw-ndjf",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Character Development",
+        "body": "My first character concepts were created with Midjourney as a rapid exploration tool. While they helped establish an initial direction, the results felt too generic for the film.\n\nI then worked with concept artist Avishag Sanbal, providing creative briefs and references for characters designed around the physical features of the cast. Our goal was to combine recognizable human features with slightly exaggerated, Disney-inspired proportions and large expressive eyes.\n\nPaired with the realistic qualities of MetaHuman, this created the subtle uncanny quality I wanted while increasing facial readability for performance capture.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Character Design",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mslwas8o-ifzv",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-mslwas8o-d2f7",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Early%20-%20Character%20Concept%20Art.png",
+            "type": "image",
+            "title": "Early AI Concept Art Exploration",
+            "caption": ""
+          },
+          {
+            "id": "media-mslwas8o-gf2s",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Divine%20Chaos%20-%20Concept%20Art.jpg",
+            "type": "image",
+            "title": "Final Concept Art",
+            "caption": ""
+          },
+          {
+            "id": "media-mslwas8o-q898",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Chararcter%20Final%20Design/B_A-Adam.jpeg",
+            "type": "image",
+            "title": "Adam",
+            "caption": "Before and After Polishing by 3d Artist Michal"
+          },
+          {
+            "id": "media-mslwas8o-51k7",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Chararcter%20Final%20Design/B_A-Eve.jpeg",
+            "type": "image",
+            "title": "Eve",
+            "caption": "Before and After Polishing by 3d Artist Michal"
+          },
+          {
+            "id": "media-mslwas8o-sbfa",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Chararcter%20Final%20Design/B_A-Lilith.jpeg",
+            "type": "image",
+            "title": "Lilith",
+            "caption": "Before and After Polishing by 3d Artist Michal"
+          },
+          {
+            "id": "media-mslwas8o-m0wn",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Chararcter%20Final%20Design/B_A-Gabriel.jpeg",
+            "type": "image",
+            "title": "Gabriel",
+            "caption": "Before and After Polishing by 3d Artist Michal"
+          },
+          {
+            "id": "media-mslwas8o-im8g",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Chararcter%20Final%20Design/B_A-God.jpeg",
+            "type": "image",
+            "title": "God",
+            "caption": "Before and After Polishing by 3d Artist Michal"
+          },
+          {
+            "id": "media-mslwas8o-ajxr",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslwb1kh-nqek",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
+        "kicker": "Pre-production",
+        "title": "Designing God",
+        "body": "God underwent one of the most significant design evolutions in the project. Early concepts explored a visibly androgynous body, informed by research and interviews around non-binary representation.\n\nAs the character, casting and story developed, I reconsidered whether physically dividing the character into conventionally masculine and feminine traits actually served the film. The final direction moved away from visually explaining God’s gender and instead focused on the character’s theatricality, authority and presence.\n\nGod remains non-binary within the story, without requiring their physical appearance to function as a literal representation of gender identity.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Designing God",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mslwgnln-zbnt",
+            "url": "https://drive.google.com/file/d/13av6aLRlpluFgxYfTMcAhmOoqSRtGKUm/view?usp=sharing",
+            "type": "video",
+            "title": "Original God Design",
+            "caption": "By 3D Artist Daniel Bador"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslwgh6k-f2im",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
+        "kicker": "World Design",
+        "title": "Eden",
+        "body": "Eden initially leaned toward a luminous, almost alien fantasy world. As development progressed, I shifted toward a more natural environment while preserving the magical scale and sense of paradise through floating elements, clouds and heightened environmental compositions.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Designing Eden",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mslxs224-5wo4",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-mslxs224-ttbm",
+            "url": "https://studio.youtube.com/channel/UCfnYi-i6IiVpqY3YHZwPk2g/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+            "type": "video",
+            "title": "Early Visual Concept Trailer",
+            "caption": "Created during the earliest stage of development, this concept trailer combines initial character and world-design experiments to explore the first visual language of Divine Chaos. The more alien and luminous interpretation of Eden seen here would later evolve significantly toward the film’s current art direction."
+          },
+          {
+            "id": "media-mslxs224-8hjm",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Eden%20First%20Concept.png",
+            "type": "image",
+            "title": "First Concept",
+            "caption": "Glowing, magical and otherworldly, initially inspired by the fantastical environments of Avatar."
+          },
+          {
+            "id": "media-mslxs224-7xkt",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Eden%20Early%20Moodboard.png",
+            "type": "image",
+            "title": "Early Moodboard",
+            "caption": "Exploring a more natural and grounded paradise, shaped by the question: What kind of world would the God of Divine Chaos create?"
+          },
+          {
+            "id": "media-mslxs224-xzey",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/The%20Trees%20Enviroment%20moodboard.png",
+            "type": "image",
+            "title": "Trees Environment · Early Moodboard",
+            "caption": "Exploring a warmer, more inviting atmosphere with an underlying sense of danger surrounding the trees."
+          },
+          {
+            "id": "media-mslxs224-8vzw",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Final%20Env%20For%20Eden.png",
+            "type": "image",
+            "title": "Final Version",
+            "caption": "Cloudy and heavenly, with an underlying sense of mystery."
+          },
+          {
+            "id": "media-mslxs224-1364",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslxze40-5rct",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
+        "kicker": "World Design",
+        "title": "The Tree of Life & Tree of Knowledge",
+        "body": "The Tree of Life and Tree of Knowledge were designed as two halves of the same visual system. Inspired by yin and yang, the Tree of Life is represented through white forms while the darker Tree of Knowledge intertwines around it, reflecting the idea that life and knowledge cannot truly exist independently.\n\nThe forbidden fruit combines lips and an eye, bringing together temptation and knowledge. Designed to resemble precious jewelry rather than ordinary fruit, it turns the forbidden object into something deliberately seductive and desirable.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "The Tree of Life & Tree of Knowledge",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msly6paa-8zoq",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msly6paa-500t",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/The%20tree%20and%20fruit%20of%20knowledge%20first%20concept%20.png",
+            "type": "image",
+            "title": "The Trees · First Concept",
+            "caption": "The Tree of Knowledge was initially imagined as a brain-like organic structure covered in eye-shaped fruit, directly connecting knowledge with sight and awareness."
+          },
+          {
+            "id": "media-msly6paa-gclu",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/the%20tree%20of%20knowledge-Final%20Concept%20.jpeg",
+            "type": "image",
+            "title": "The Trees · Final Concept",
+            "caption": "The concept evolved into two intertwined opposites: a white Tree of Life and a dark Tree of Knowledge, inspired by yin and yang and representing life and knowledge as inseparable forces."
+          },
+          {
+            "id": "media-msly6paa-ruxn",
+            "url": "http://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/The%20forbidden%20fruit.png",
+            "type": "image",
+            "title": "The Forbidden Fruit · Final Concept",
+            "caption": "Combining an eye with the shape of lips, the final fruit design brings together knowledge and temptation, with a jewel-like appearance that makes the forbidden object deliberately alluring."
+          },
+          {
+            "id": "media-msly6paa-fp6r",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslxt8jm-zr8z",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
+        "kicker": "World Design",
+        "title": "God's Sphere",
+        "body": "Unlike Eden, God’s space was designed without a fixed physical identity. It transforms around the performance, moving between an abstract black void, theatrical spotlights, Broadway-inspired staging and celestial environments.\n\nThe environment functions almost as an extension of God, allowing reality itself to shift according to the performance and emotional rhythm of Divine Rebranding.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Designing God's Sphere",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mslxz0og-dmle",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-mslxz0og-bx7f",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/God%20Sphere%20%7C%20Early%20Concept.png",
+            "type": "image",
+            "title": "God's Sphere Firts Concept",
+            "caption": "Magical and a bit Gothic"
+          },
+          {
+            "id": "media-mslxz0og-z2y2",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/God%20Sphere%20Moodboard.png",
+            "type": "image",
+            "title": "God’s Sphere · Moodboard",
+            "caption": "Drawing inspiration from drag shows, The Rocky Horror Picture Show, and Aladdin to explore a theatrical, extravagant, and surreal divine space."
+          },
+          {
+            "id": "media-mslxz0og-6k1s",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msly907f-vk6f",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msluspyv-zrda",
+        "visible": true,
+        "kicker": "World Design",
+        "title": "Color as Storytelling",
+        "body": "Color is used throughout the film to reflect Eve’s growing awareness of the truth. At the beginning, Eden is intentionally colder, more desaturated and slightly grey, reinforcing the illusion of a perfect world in which everything appears to be in order.\n\nAs Eve begins to question that reality and uncover the truth about Lilith, Adam and her own creation, color gradually enters the world. The palette becomes warmer, richer and increasingly saturated, reaching its most colorful and visually overwhelming point toward the end of the film.\n\nIn this way, desaturation represents the illusion Eve is living in, while color represents truth, awareness and the breaking of that illusion.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Color Script",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mslyc6k4-3nv4",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/Color%20Script.png",
+            "type": "image",
+            "title": "Visual Color Script",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslyhjc8-yi3k",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Post-Production",
+        "title": "Post-Production",
+        "body": "Work in Progress\n__________________\n\nDivine Chaos is currently in post-production, where the performances, environments, music and visual development are being brought together into the final film inside Unreal Engine.\n\nI am currently directing and assembling the cinematics, integrating body and facial performance capture, refining camera work and timing, and overseeing the overall visual continuity of the film. Animation cleanup, compositing, editing and sound design are being developed alongside this process as scenes move toward their final form.\n\nBecause this stage is still ongoing, the material shown below represents the film’s current work-in-progress state rather than the final result.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Post-Production",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mslyhjc8-cfkg",
+            "title": "In Progress",
+            "text": "Animation Cleanup · Unreal Compositing"
+          },
+          {
+            "id": "item-mslyhjc8-xzgt",
+            "title": "Next",
+            "text": "Final Edit · Sound Design · Final Polish"
+          },
+          {
+            "id": "item-mslyhjc8-7l00",
+            "title": "Final Goal",
+            "text": "Festival Submission & Release"
+          }
+        ],
         "quote": "",
         "author": "",
         "takeaway": ""
