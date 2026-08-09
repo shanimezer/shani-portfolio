@@ -1888,8 +1888,8 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msl1fzba-osqw",
-            "url": "https://youtu.be/3Nn6u6chxRc",
+            "id": "media-msl2rvrh-epnz",
+            "url": "https://youtu.be/3Nn6u6chxRc?si=EM6KdYP4C7t7q81t",
             "type": "video",
             "title": "Production Test Animatic",
             "caption": "A working previsualization combining rehearsal footage, storyboards, early Unreal tests and motion capture experiments to explore staging, performance, timing and cinematic direction before production."
@@ -1897,22 +1897,22 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-msl1fzba-gsa2",
+            "id": "item-msl2rvrh-6ukz",
             "title": "My Role (Director and Producer)",
             "text": "Directed the dramatic beats, scene objectives and visual blocking, ensuring every performance supported the story and prepared the cast for motion capture. In addition i handled rehearsal coordination, strict timeline adherence, and cross-team scheduling."
           },
           {
-            "id": "item-msl1fzba-ga3i",
+            "id": "item-msl2rvrh-f0bp",
             "title": "Smadar Brener (Acting Coach)",
             "text": "Led the acting rehearsals, guiding the cast through character development, emotional truth and scene work."
           },
           {
-            "id": "item-msl1fzba-ezgn",
+            "id": "item-msl2rvrh-exch",
             "title": "Alon Kaplan (Composer & Vocal Coach)",
             "text": "Taught the melodies, harmonies and vocal arrangements, working closely with the cast to develop confident and emotionally driven musical performances."
           },
           {
-            "id": "item-msl1fzba-ujvt",
+            "id": "item-msl2rvrh-zacz",
             "title": "Noa Gur Itzack (Choreographer)",
             "text": "Worked directly with performers of different movement backgrounds, adapting choreography to each actor's abilities and refining every sequence through repeated rehearsals until the desired performance was achieved."
           }
