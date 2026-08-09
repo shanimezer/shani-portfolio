@@ -4,23 +4,14 @@
 
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-  const atExplicitAnchor = () => Boolean(location.hash && document.getElementById(location.hash.slice(1)));
-  const resetTop = () => {
-    if (atExplicitAnchor()) return;
+  // Start a freshly opened project at the top, but do not perform any delayed
+  // scroll correction after the CMS or embedded media begin rendering.
+  if (!location.hash) {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
-  };
+  }
 
-  // Reset both before and after the dynamic project content is assembled.
-  resetTop();
-  requestAnimationFrame(() => requestAnimationFrame(resetTop));
-  window.addEventListener('pageshow', event => {
-    if (!event.persisted) resetTop();
-  }, { once: true });
-
-  // Dynamic embeds can change their intrinsic size after load. Disable browser
-  // scroll anchoring so those layout shifts do not pull the viewport down.
   const style = document.createElement('style');
   style.textContent = `
     html.project-page-scroll-stable,html.project-page-scroll-stable body,
