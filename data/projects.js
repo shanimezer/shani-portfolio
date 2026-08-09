@@ -1608,147 +1608,147 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-mskbu07t-n9jt",
+            "id": "media-mslntoqi-lg0h",
             "url": "https://youtu.be/PdIVTKPobaU",
             "type": "video",
             "title": "The Natural Order",
             "caption": "Final Version of Music Track"
           },
           {
-            "id": "media-mskbu07t-ycbd",
+            "id": "media-mslntoqi-ae1p",
             "url": "https://docs.google.com/document/d/1EjLlWKn5afFp64jSNwVgSUd_oHYrS6b5/edit",
             "type": "video",
             "title": "Creative Brief and Lyrics",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-cjlq",
+            "id": "media-mslntoqi-h6pz",
             "url": "https://docs.google.com/spreadsheets/d/1q-Op4NmXq5XsSNG00QwglU0CmyPRi79aAgcgiTYNgrI/edit?gid=0#gid=0",
             "type": "video",
             "title": "Emotional Beats Breakdown",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-dsei",
-            "url": "slideshow://start?transition=slide",
+            "id": "media-mslntoqi-0b1n",
+            "url": "slideshow://start?transition=page",
             "type": "image",
             "title": "Slideshow",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-dfz1",
+            "id": "media-mslntoqi-iksc",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb1.png",
             "type": "image",
             "title": "P.1",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-he1d",
+            "id": "media-mslntoqi-vq96",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb2.png",
             "type": "image",
             "title": "P.2",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-qlih",
+            "id": "media-mslntoqi-bh12",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb3.png",
             "type": "image",
             "title": "P.3",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-9wry",
+            "id": "media-mslntoqi-n7j7",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb4.png",
             "type": "image",
             "title": "P.4",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-lt2f",
+            "id": "media-mslntoqi-1mer",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb5.png",
             "type": "image",
             "title": "P.5",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-bkqw",
+            "id": "media-mslntoqi-nyfc",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb6.png",
             "type": "image",
             "title": "P.6",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-fhk7",
+            "id": "media-mslntoqi-knru",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb7.png",
             "type": "image",
             "title": "P.7",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-gvx4",
+            "id": "media-mslntoqi-8go1",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb8.png",
             "type": "image",
             "title": "P.8",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-07a7",
+            "id": "media-mslntoqi-owih",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb9.png",
             "type": "image",
             "title": "P.9",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-hnoa",
+            "id": "media-mslntoqi-tm39",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb10.png",
             "type": "image",
             "title": "P.10",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-zoyq",
+            "id": "media-mslntoqi-4rl9",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb11.png",
             "type": "image",
             "title": "P.11",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-ycd2",
+            "id": "media-mslntoqi-dcme",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb12.png",
             "type": "image",
             "title": "P.12",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-7blh",
+            "id": "media-mslntoqi-5p3v",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb13.png",
             "type": "image",
             "title": "P.13",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-u7xy",
+            "id": "media-mslntoqi-dtat",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb14.png",
             "type": "image",
             "title": "P.14",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-vu7z",
+            "id": "media-mslntoqi-041a",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb15.png",
             "type": "image",
             "title": "P.15",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-r2xu",
+            "id": "media-mslntoqi-bxvg",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/divine-chaos/TNO/sb16.png",
             "type": "image",
             "title": "P.16",
             "caption": ""
           },
           {
-            "id": "media-mskbu07t-gj1i",
+            "id": "media-mslntoqi-hsf9",
             "url": "slideshow://end",
             "type": "image",
             "title": "End slideshow",
@@ -1757,17 +1757,17 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "items": [
           {
-            "id": "item-mskbu07t-jomt",
+            "id": "item-mslntoqi-rjp4",
             "title": "Narrative Purpose",
             "text": "Reveals Lilith's past and exposes the emotional and physical dynamics between her and Adam."
           },
           {
-            "id": "item-mskbu07t-kyxn",
+            "id": "item-mslntoqi-ocd2",
             "title": "Musical Language",
             "text": "Inspired by tragic musical theatre, particularly Into the Woods and Les Misérables."
           },
           {
-            "id": "item-mskbu07t-akvo",
+            "id": "item-mslntoqi-mzc8",
             "title": "Creative Direction",
             "text": "Unlike the other songs, the angelic choir is never seen. Their voices remain distant and almost mournful, emphasizing the isolation experienced within an abusive relationship. The contrast between the gentle musical language and the escalating physical violence reflects the emotional contradiction at the heart of the scene."
           }
@@ -1888,35 +1888,234 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msl2rvrh-epnz",
+            "id": "media-mslsdkc8-qrzm",
             "url": "https://youtu.be/3Nn6u6chxRc?si=EM6KdYP4C7t7q81t",
             "type": "video",
             "title": "Production Test Animatic",
             "caption": "A working previsualization combining rehearsal footage, storyboards, early Unreal tests and motion capture experiments to explore staging, performance, timing and cinematic direction before production."
+          },
+          {
+            "id": "media-mslsdkc8-7817",
+            "url": "https://www.youtube.com/shorts/pjklRgUzk1A",
+            "type": "video",
+            "title": "Dance Rehearsals With Noa",
+            "caption": "Teaching Trust in God's Plan Combination"
+          },
+          {
+            "id": "media-mslsdkc8-anno",
+            "url": "https://www.youtube.com/shorts/t3ZzR2A5fSk",
+            "type": "video",
+            "title": "Vocal Coaching Session with Alon",
+            "caption": "David Records his Musical Parts"
           }
         ],
         "items": [
           {
-            "id": "item-msl2rvrh-6ukz",
+            "id": "item-mslsdkc8-qzcx",
             "title": "My Role (Director and Producer)",
             "text": "Directed the dramatic beats, scene objectives and visual blocking, ensuring every performance supported the story and prepared the cast for motion capture. In addition i handled rehearsal coordination, strict timeline adherence, and cross-team scheduling."
           },
           {
-            "id": "item-msl2rvrh-f0bp",
+            "id": "item-mslsdkc8-hysn",
             "title": "Smadar Brener (Acting Coach)",
             "text": "Led the acting rehearsals, guiding the cast through character development, emotional truth and scene work."
           },
           {
-            "id": "item-msl2rvrh-exch",
+            "id": "item-mslsdkc8-scv4",
             "title": "Alon Kaplan (Composer & Vocal Coach)",
             "text": "Taught the melodies, harmonies and vocal arrangements, working closely with the cast to develop confident and emotionally driven musical performances."
           },
           {
-            "id": "item-msl2rvrh-zacz",
+            "id": "item-mslsdkc8-7q7c",
             "title": "Noa Gur Itzack (Choreographer)",
             "text": "Worked directly with performers of different movement backgrounds, adapting choreography to each actor's abilities and refining every sequence through repeated rehearsals until the desired performance was achieved."
           }
         ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslridz2-mjf9",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Production",
+        "title": "Motion Capture",
+        "body": "Divine Chaos was designed around performance capture, with the goal of preserving the actors' physical and facial performances within the animated characters.\n\nWhat began as a traditional motion capture plan eventually evolved into a hybrid pipeline combining QuickMagic, Rokoko motion capture and Unreal Engine facial capture, allowing the production to adapt to major technical and scheduling disruptions without losing the performances developed throughout rehearsals.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production",
+          "motionCapture"
+        ],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mslrlltq-i405",
+            "title": "My Role",
+            "text": "Performance Direction · Motion Capture · Facial Capture · QuickMagic Processing · Retargeting · Unreal Integration · Pipeline Adaptation"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslriodg-2crf",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mslridz2-mjf9",
+        "visible": true,
+        "kicker": "Production",
+        "title": "The Original Plan",
+        "body": "The original production was developed in collaboration with YOOM, a camera-based motion capture startup that offered the project access to its capture system for a half-day session.\n\nThe rehearsal process was therefore structured much like preparing a stage production: the cast would rehearse the complete film until performance-ready, followed by several full runs during a single capture session.\n\nShortly before production, YOOM was acquired by Take-Two Interactive and was no longer able to support the project within our production schedule.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "The Original Plan",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "motionCapture"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-mslrko0h-b41i",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mslridz2-mjf9",
+        "visible": true,
+        "kicker": "Production",
+        "title": "Building a New Pipeline",
+        "body": "Losing the original capture solution required rebuilding the production pipeline around the resources available to us.\n\nA five-day motion capture production was planned using Tel Aviv University's Rokoko suit, alongside iPhone recordings for facial capture. At the same time, tests I had been running with QuickMagic during rehearsals revealed another possibility: much of the footage we had already recorded could itself become usable animation data.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "The Original Plan",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "motionCapture"
+        ],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mslrobkg-fuku",
+            "title": "QuickMagic",
+            "text": "Most individual performances and musical sequences"
+          },
+          {
+            "id": "item-mslrobkg-j7kt",
+            "title": "Rokoko",
+            "text": "Complex physical interactions and multi-performer sequences"
+          },
+          {
+            "id": "item-mslrobkg-n5rb",
+            "title": "iPhone + MetaHuman Animator",
+            "text": "Facial performance and lip-sync capture"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": "Why a Hybrid Pipeline? \n_____________________\nQuickMagic worked surprisingly well for individual performances and allowed existing rehearsal and even audition footage to become usable motion capture data. Its limitations became apparent in scenes involving heavy occlusion, close physical interaction or multiple overlapping performers.\n\nFor those sequences, particularly The Natural Order and the serpent sequence, dedicated motion capture remained necessary."
+      },
+      {
+        "id": "block-mslroe46-55sb",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mslridz2-mjf9",
+        "visible": true,
+        "kicker": "Production",
+        "title": "Adapting Under Pressure",
+        "body": "A second major disruption came just before production. The general rehearsal was scheduled for the day after the war began, with the five-day capture shoot planned for two weeks later.\n\nWith the university operating under restrictions and production requiring relocation during alerts, I chose not to bring the cast and crew into an unnecessary risk.\n\nInstead of putting the project on hold, I redesigned the pipeline around material we already had.\n\nThe Pivot \n__________\nExisting rehearsal footage ➡️ QuickMagic \nRemote actor recordings ➡️ Facial Capture\nUncaptured complex scenes ➡️ Rescheduled Rokoko sessions",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Adapting Under Pressure",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production",
+          "motionCapture"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-mslulukh-9hkn",
+            "url": "https://drive.google.com/open?id=1_HmnsFZvinnvRoPlFjXsYfAJWGhw7fmy&usp=drive_fs",
+            "type": "video",
+            "title": "The Natural Order MC Test",
+            "caption": "QuickMagic test with an initial cleanup pass. The heavy physical interaction between the performers caused too much overlap for a reliable result, confirming that this sequence needed to be captured with Rokoko instead."
+          },
+          {
+            "id": "media-mslulukh-twim",
+            "url": "https://youtu.be/8QYhsUqRmDc",
+            "type": "video",
+            "title": "Eve's Facial Motion Capture Test",
+            "caption": "An iPhone-recorded performance processed through Unreal Engine's MetaHuman facial animation pipeline, testing lip-sync and facial performance for “Trust in God's Plan.”"
+          },
+          {
+            "id": "media-mslulukh-zodd",
+            "url": "https://youtu.be/NXsbAtCPeMw",
+            "type": "video",
+            "title": "QuickMagic Motion Capture Test",
+            "caption": "Rehearsal footage processed through QuickMagic to generate body animation for later retargeting in Unreal Engine."
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "Since I had documented every rehearsal, we had an extensive archive of performances to work from. What had originally been recorded primarily for rehearsal review and BTS meterial became a key production asset."
+      },
+      {
+        "id": "block-mslspiqe-tp9l",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-mslridz2-mjf9",
+        "visible": true,
+        "kicker": "Production",
+        "title": "Capturing the Remaining Performances",
+        "body": "Once in-person production became possible again, capture days were intentionally kept small and flexible. Rather than recreating the original five-day production structure, sessions were scheduled around the performers and focused only on material that could not be reliably reconstructed through video-based motion capture.\n\nI directed the physical performances during capture, with Smadar Brener supporting the actors' performance work. This reduced the number of people required on set and allowed the production to adapt quickly to changing actor availability.\n\nBody and facial performances were brought into Unreal Engine, retargeted to the MetaHuman characters and prepared for animation cleanup and final cinematic integration.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Capturing the Remaining Performances",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production",
+          "motionCapture"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msltfsu1-f6eh",
+            "url": "https://youtu.be/5-9F1AycPag",
+            "type": "video",
+            "title": "The Natural Order - Rokoko Capture BTS",
+            "caption": "Behind the scenes of Adam’s Rokoko capture session for one of the film’s most physically complex sequences, requiring synchronized performances between Adam and Lilith."
+          }
+        ],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -1951,68 +2150,6 @@ window.PORTFOLIO_PROJECTS = [
           }
         ],
         "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-qngn",
-        "type": "story",
-        "level": "primary",
-        "parentId": "",
-        "visible": false,
-        "kicker": "Process",
-        "title": "Challenge & approach",
-        "body": "Build an ambitious musical world while balancing performance, spectacle and an emotionally complex story.\n\nA cinematic pipeline combining virtual production, motion capture, stylized MetaHumans and tightly directed musical staging.",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
-        "media": [],
-        "items": [],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
-        "id": "block-ms21grsg-u4on",
-        "type": "credits",
-        "level": "primary",
-        "parentId": "",
-        "visible": false,
-        "kicker": "Project details",
-        "title": "Credits",
-        "body": "",
-        "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [],
-        "links": [],
-        "media": [],
-        "items": [
-          {
-            "id": "item-ms21grsg-3w0s",
-            "title": "Role",
-            "text": "Director · Producer · Creator"
-          },
-          {
-            "id": "item-ms21grsg-ps7n",
-            "title": "Tools",
-            "text": "Unreal Engine · Motion Capture · Premiere Pro"
-          },
-          {
-            "id": "item-ms21grsg-9554",
-            "title": "Client / Context",
-            "text": "Independent MFA Film"
-          }
-        ],
         "quote": "",
         "author": "",
         "takeaway": ""
