@@ -1,0 +1,15 @@
+@media(max-width:900px),(pointer:coarse){
+  .mobile-hero .chapter-content{transition:padding-bottom .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);}
+  .mobile-hero .chapter-content>h1{font-size:clamp(3.35rem,15.5vw,5.7rem)!important;line-height:.9!important;letter-spacing:-.075em!important;max-width:calc(100vw - 48px);margin:10px 0 24px!important;text-wrap:balance;}
+  .mobile-hero .mobile-reel{display:flex!important;width:max-content;margin-left:auto!important;margin-right:auto!important;justify-content:center;text-align:center;transition:transform .65s cubic-bezier(.22,1,.36,1),opacity .45s ease;}
+  .mobile-hero .swipe-hint{display:flex!important;width:max-content;margin:24px auto 0!important;justify-content:center;text-align:center;transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .45s ease;}
+  body.simon-mode .mobile-hero .chapter-content{padding-bottom:max(300px,env(safe-area-inset-bottom))!important;}
+  body.simon-mode .mobile-hero .mobile-reel,body.simon-mode .mobile-hero .swipe-hint{opacity:.34;transform:translateY(-2px) scale(.97);}
+  body.simon-restoring .mobile-hero .chapter-content{animation:heroSettle .9s cubic-bezier(.22,1,.36,1) both;}
+  body.simon-restoring .mobile-hero .mobile-reel{animation:heroControlSettle .78s .08s cubic-bezier(.22,1,.36,1) both;}
+  body.simon-restoring .mobile-hero .swipe-hint{animation:heroControlSettle .78s .16s cubic-bezier(.22,1,.36,1) both;}
+  @keyframes heroSettle{0%{transform:translateY(-10px)}55%{transform:translateY(4px)}100%{transform:translateY(0)}}
+  @keyframes heroControlSettle{0%{opacity:.28;transform:translateY(-10px) scale(.96)}65%{opacity:1;transform:translateY(3px) scale(1.015)}100%{opacity:1;transform:translateY(0) scale(1)}}
+}
+@media(max-width:390px){.mobile-hero .chapter-content>h1{font-size:clamp(3.05rem,14.6vw,4.7rem)!important}}
+@media(prefers-reduced-motion:reduce){body.simon-restoring .mobile-hero .chapter-content,body.simon-restoring .mobile-hero .mobile-reel,body.simon-restoring .mobile-hero .swipe-hint{animation:none!important}}
