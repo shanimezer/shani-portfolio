@@ -1867,6 +1867,61 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
+        "id": "block-msl1chtd-vkqw",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Pre-Production",
+        "title": "Rehearsals",
+        "body": "Preparing the cast required a hybrid rehearsal process. Acting rehearsals were primarily held remotely over Zoom, focusing on character work, emotional beats and scene direction. In parallel, the cast met in person for vocal and choreography rehearsals, where songs, harmonies and movement were refined before entering the motion capture stage.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Director",
+        "navTitle": "Rehearsals",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msl1fzba-osqw",
+            "url": "https://youtu.be/3Nn6u6chxRc",
+            "type": "video",
+            "title": "Production Test Animatic",
+            "caption": "A working previsualization combining rehearsal footage, storyboards, early Unreal tests and motion capture experiments to explore staging, performance, timing and cinematic direction before production."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msl1fzba-gsa2",
+            "title": "My Role (Director and Producer)",
+            "text": "Directed the dramatic beats, scene objectives and visual blocking, ensuring every performance supported the story and prepared the cast for motion capture. In addition i handled rehearsal coordination, strict timeline adherence, and cross-team scheduling."
+          },
+          {
+            "id": "item-msl1fzba-ga3i",
+            "title": "Smadar Brener (Acting Coach)",
+            "text": "Led the acting rehearsals, guiding the cast through character development, emotional truth and scene work."
+          },
+          {
+            "id": "item-msl1fzba-ezgn",
+            "title": "Alon Kaplan (Composer & Vocal Coach)",
+            "text": "Taught the melodies, harmonies and vocal arrangements, working closely with the cast to develop confident and emotionally driven musical performances."
+          },
+          {
+            "id": "item-msl1fzba-ujvt",
+            "title": "Noa Gur Itzack (Choreographer)",
+            "text": "Worked directly with performers of different movement backgrounds, adapting choreography to each actor's abilities and refining every sequence through repeated rehearsals until the desired performance was achieved."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
         "id": "block-msg5fu60-6m4n",
         "type": "story",
         "level": "secondary",
