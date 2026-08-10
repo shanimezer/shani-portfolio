@@ -1,5 +1,299 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "id": "gen-z-judgment",
+    "title": "Gen-Z Judgment",
+    "year": "2024",
+    "category": "directing",
+    "categories": [
+      "directing",
+      "editing",
+      "ai"
+    ],
+    "categoryLabel": "Directing · AI Creation",
+    "roles": [
+      "Director",
+      "AI Creator",
+      "Editor",
+      "Narrative Designer"
+    ],
+    "status": "published",
+    "accent": "#c700b6",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/gen-z/cover.png",
+    "video": "https://www.youtube.com/watch?v=n8WVm6cn5Yw",
+    "summary": "Gen Z Judgment is a satirical AI-generated short film that reimagines the afterlife as a divine video call, where gods from different mythologies must decide the fate of one very online Gen Z soul.\n\nCreated independently from concept to final edit, the project combines AI-assisted writing, visual generation, synthetic performance, voice technology, and editing into an end-to-end AI filmmaking workflow.",
+    "tools": "ChatGPT · Midjourney · D-ID · ElevenLabs · CapCut",
+    "client": "Passion Project",
+    "featured": false,
+    "blocks": [
+      {
+        "id": "block-msnb7zg1-fgsz",
+        "type": "overview",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "The project",
+        "title": "Overview",
+        "body": "Gen Z Judgment began as an experiment in a simple question: could the emerging generative AI tools available at the time be combined into a complete narrative filmmaking pipeline?\n\nThe result was a satirical short following Alex after her death, as she finds herself facing an unlikely divine judgment panel made up of Yahweh, Hades, Anubis, and Odin.\n\nI developed the concept and story, co-developed the script with ChatGPT, designed and generated the visual assets, created the characters' voices and performances, and edited the final film.\n\nRather than using a single generative platform, I built the film by connecting several specialized AI tools into one production workflow, treating each one as a different part of the filmmaking process.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [],
+        "links": [
+          {
+            "id": "link-msnrlbnr-a80g",
+            "label": "Explore the Production Assets",
+            "url": "https://drive.google.com/open?id=1tvowiiX5c0DDOss1ZXYKYudcvKoLFH8Z&usp=drive_fs",
+            "style": "secondary"
+          }
+        ],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msnbjvbb-zwg3",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Narrative Design",
+        "title": "The Concept",
+        "body": "What if divine judgment had a Zoom meeting?\n\nThe core idea behind Gen Z Judgment was to collide two completely different worlds: ancient ideas of divine judgment and the painfully familiar language of modern digital communication.\n\nInstead of arriving at a traditional afterlife, Alex finds herself inside a divine video call, facing Yahweh, Hades, Anubis, and Odin as they review her life and decide her fate.\n\nThe contrast became the foundation of the film's humor. Mythological figures, existential questions, and the fate of a human soul are filtered through the visual language, behavior, and internet culture of Gen Z.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "The Concept",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msnldr2s-fhza",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "",
+        "title": "Building an AI Filmmaking Pipeline",
+        "body": "Gen Z Judgment was created before today's all-in-one AI video generation workflows were widely available. Producing a complete scene meant combining multiple specialized tools and finding ways to make their outputs work together.\n\nI approached the process like a traditional production pipeline: developing the story first, establishing the characters and visual language, generating the required assets, creating voices and performances, and finally bringing everything together through editing.\n\nEach tool solved one part of the filmmaking process, while the creative direction, continuity, timing, and final storytelling remained consistent across the pipeline.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Pipeline",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-msnpf1zg-3caj",
+            "title": "CONCEPT & SCRIPT",
+            "text": "ChatGPT + Creative Development"
+          },
+          {
+            "id": "item-msnpf1zg-89k6",
+            "title": "VISUAL DEVELOPMENT",
+            "text": "Midjourney"
+          },
+          {
+            "id": "item-msnpf1zg-z56f",
+            "title": "VOICE",
+            "text": "ElevenLabs"
+          },
+          {
+            "id": "item-msnpf1zg-muqp",
+            "title": "PERFORMANCE & LYPSINC",
+            "text": "D-ID & Hedra"
+          },
+          {
+            "id": "item-msnpf1zg-hapc",
+            "title": "FINAL EDIT",
+            "text": "CapCut"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msnb7zg1-sv1t",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Narrative Design",
+        "title": "Script & Story Development",
+        "body": "The script was developed through an iterative AI-assisted writing process with ChatGPT.\n\nI began by defining the core premise, characters, comedic tone, audience, themes, and visual format of the film. From there, I used ChatGPT as a creative writing partner to explore different versions of the story, test character dynamics and jokes, and repeatedly refine the script.\n\nRather than generating a finished screenplay from a single prompt, the process became a back-and-forth writers' room: establishing creative constraints, evaluating different directions, and rewriting the story until the concept and characters worked together.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "Script & Story Development",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [
+          "narrativeDesign",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msnqlnc1-3m8n",
+            "url": "https://docs.google.com/document/d/1XDhXPZl3JKAkOApdk7Xk-gsKBNvwxnz3JzQPZ3RBfnU/edit?tab=t.0",
+            "type": "video",
+            "title": "Script Development",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msnqlqo0-awlh",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "AI Assets",
+        "title": "Character & Visual Development",
+        "body": "The characters and visual assets were developed using Midjourney.\n\nBecause the film relied on generated still imagery rather than traditional animation, each asset had to work both as a character design and as a usable performance shot.\n\nI iterated on the characters' appearance, framing, environments, and overall visual direction while maintaining enough consistency for the separate generations to feel like they belonged to the same world.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "AI Creator",
+        "navTitle": "Character & Visual Development",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msnqzws0-y0dk",
+            "url": "slideshow://start?transition=fade",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msnqzws0-ldm0",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/gen-z/assets_alex.png",
+            "type": "image",
+            "title": "Alex",
+            "caption": "Gen Z Girl"
+          },
+          {
+            "id": "media-msnqzws0-azzg",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/gen-z/assets_anubis.png",
+            "type": "image",
+            "title": "Anubis",
+            "caption": "Egyption Mythology"
+          },
+          {
+            "id": "media-msnqzws0-8v88",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/gen-z/assets_god.png",
+            "type": "image",
+            "title": "Yahuwe",
+            "caption": "Bible"
+          },
+          {
+            "id": "media-msnqzws0-0ur5",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/gen-z/assets_hades.png",
+            "type": "image",
+            "title": "Hades",
+            "caption": "Greek Mythology"
+          },
+          {
+            "id": "media-msnqzws0-e82d",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/gen-z/assets_odin.png",
+            "type": "image",
+            "title": "Odin",
+            "caption": "Norse Mythology"
+          },
+          {
+            "id": "media-msnqzws0-mhw7",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msnr1v9s-6210",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "AI Assets",
+        "title": "Voice & Synthetic Performance",
+        "body": "Once the characters were visually established, I built their performances through a combination of synthetic voice and AI facial animation.\n\nCharacter voices were generated using ElevenLabs, while the protagonist, Alex, was performed using a synthesized version of my own voice.\n\nThe final voice tracks were then used with D-ID and Hedra AI to generate facial animation and lip-sync according to the Elevan Labs files, transforming the static character assets into speaking performances.\n\nThis created a workflow in which voice, image, and performance were generated separately and then combined into a single character.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "AI Creator",
+        "navTitle": "Voice & Synthetic Performance",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [
+          "directing",
+          "ai"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msnr6bws-17a7",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Post Production",
+        "title": "Editing the Story",
+        "body": "The generated performances were assembled and edited in CapCut.\n\nThis stage was where the separate AI outputs became a film. I shaped the comedic timing, dialogue rhythm, shot order, transitions, and overall pacing around the limitations and strengths of the generated material.\n\nEditing became especially important because the individual AI tools had no understanding of the complete story. Narrative continuity ultimately had to be created in the edit.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Editor",
+        "navTitle": "Editing the Story",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [
+          "directing",
+          "editing",
+          "ai"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      }
+    ],
+    "role": "Director, AI Creator, Editor, Narrative Designer"
+  },
+  {
     "id": "crazy-like-me",
     "title": "Crazy Like Me",
     "year": "2025",
