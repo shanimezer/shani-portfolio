@@ -52,6 +52,10 @@
   };
 
   const isGoogleMedia = value => /(?:drive|docs)\.google\.com/i.test(String(value || ''));
+  const isDriveFile = value => {
+    try { return new URL(value, window.location.href).hostname.replace(/^www\./,'') === 'drive.google.com'; }
+    catch (_) { return false; }
+  };
 
   const labelFor = value => {
     try {
@@ -72,14 +76,15 @@
     if (!embedUrl) return;
     frame.dataset.liveMounted = 'true';
 
+    const interactive = frame.dataset.interactive === 'true';
     const iframe = document.createElement('iframe');
     iframe.className = 'smart-media-live';
     iframe.src = embedUrl;
     iframe.title = frame.dataset.title || 'Google Drive preview';
     iframe.loading = 'eager';
-    iframe.tabIndex = -1;
-    iframe.setAttribute('aria-hidden', 'true');
-    iframe.setAttribute('allow', 'fullscreen');
+    iframe.tabIndex = interactive ? 0 : -1;
+    if (!interactive) iframe.setAttribute('aria-hidden', 'true');
+    iframe.setAttribute('allow', interactive ? 'autoplay; encrypted-media; picture-in-picture; fullscreen' : 'fullscreen');
     iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('scrolling', 'no');
     frame.insertBefore(iframe, frame.firstChild);
@@ -111,7 +116,7 @@
       overlay.querySelector('.smart-media-overlay-close')?.addEventListener('click', closeViewer);
       overlay.addEventListener('click', event => { if (event.target === overlay) closeViewer(); });
     }
-    overlay.querySelector('.smart-media-overlay-content').innerHTML = `<iframe src="${esc(embedUrl)}" title="${esc(title || 'Google Drive document')}" allow="fullscreen" allowfullscreen></iframe>`;
+    overlay.querySelector('.smart-media-overlay-content').innerHTML = `<iframe src="${esc(embedUrl)}" title="${esc(title || 'Google Drive document')}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
     overlay.classList.add('open');
     overlay.setAttribute('aria-hidden', 'false');
     document.body.classList.add('smart-media-open');
@@ -131,19 +136,20 @@
     document.body.classList.remove('smart-media-open');
   };
 
-  const makePreview = (embedUrl, sourceUrl, title = '') => {
+  const makePreview = (embedUrl, sourceUrl, title = '', interactive = false) => {
     const frame = document.createElement('div');
-    frame.className = 'smart-media-frame smart-media-preview';
+    frame.className = `smart-media-frame smart-media-preview${interactive ? ' smart-media-interactive' : ''}`;
     frame.dataset.embedUrl = embedUrl;
     frame.dataset.sourceUrl = sourceUrl || embedUrl;
     frame.dataset.title = title || labelFor(sourceUrl || embedUrl);
+    frame.dataset.interactive = interactive ? 'true' : 'false';
     const thumb = googleThumbnailUrl(sourceUrl || embedUrl);
     frame.innerHTML = `
       ${thumb ? `<img class="smart-media-thumbnail" src="${esc(thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}
       <div class="smart-media-preview-shade"></div>
       <div class="smart-media-preview-inner">
-        <span class="smart-media-preview-icon">▦</span>
-        <div class="smart-media-preview-copy"><strong>${esc(frame.dataset.title)}</strong><small>Live preview · Open full screen for interaction</small></div>
+        <span class="smart-media-preview-icon">${interactive ? '▶' : '▦'}</span>
+        <div class="smart-media-preview-copy"><strong>${esc(frame.dataset.title)}</strong><small>${interactive ? 'Playable Drive media' : 'Live preview · Open full screen for interaction'}</small></div>
       </div>
       <button type="button" class="smart-media-fullscreen" aria-label="Open document full screen"><span>Open full screen</span><b>⛶</b></button>
     `;
@@ -164,7 +170,8 @@
     const embed = googleEmbedUrl(source);
     if (!embed) return;
     const frame = iframe.closest('.block-video, .video-frame') || iframe.parentElement;
-    const preview = makePreview(embed, source, iframe.getAttribute('title') || labelFor(source));
+    const interactive = isDriveFile(source);
+    const preview = makePreview(embed, source, iframe.getAttribute('title') || labelFor(source), interactive);
     iframe.dataset.smartMediaReady = 'true';
     if (frame) frame.replaceWith(preview); else iframe.replaceWith(preview);
   };
@@ -175,7 +182,7 @@
     const embed = googleEmbedUrl(source);
     if (!embed) return;
     const figure = image.closest('figure');
-    const preview = makePreview(embed, source, image.alt || labelFor(source));
+    const preview = makePreview(embed, source, image.alt || labelFor(source), false);
     image.dataset.smartMediaReady = 'true';
     if (figure) figure.replaceChild(preview, image); else image.replaceWith(preview);
   };
@@ -185,7 +192,7 @@
     const source = link.href || '';
     const embed = googleEmbedUrl(source);
     if (!embed || !link.matches('[data-embed-media], .smart-media-link')) return;
-    const preview = makePreview(embed, source, link.textContent.trim() || labelFor(source));
+    const preview = makePreview(embed, source, link.textContent.trim() || labelFor(source), false);
     link.dataset.smartMediaReady = 'true';
     link.replaceWith(preview);
   };
@@ -202,10 +209,13 @@
     .smart-media-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;background:#111318;border:1px solid rgba(255,255,255,.1);overflow-anchor:none;contain:layout paint;isolation:isolate}
     .smart-media-live{position:absolute;inset:0;z-index:1;width:100%;height:100%;border:0;background:#fff;opacity:0;pointer-events:none;transition:opacity .3s ease}
     .smart-media-preview.has-live .smart-media-live{opacity:1}
+    .smart-media-preview.smart-media-interactive.has-live .smart-media-live{pointer-events:auto}
     .smart-media-thumbnail{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.015);transition:opacity .3s ease}
     .smart-media-preview.has-thumbnail:not(.has-live) .smart-media-thumbnail{opacity:.88}
     .smart-media-preview-shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(8,10,14,.03),rgba(8,10,14,.12) 50%,rgba(8,10,14,.72));pointer-events:none}
+    .smart-media-preview.smart-media-interactive.has-live .smart-media-preview-shade{opacity:0}
     .smart-media-preview-inner{position:absolute;left:12px;bottom:12px;z-index:3;display:flex;align-items:center;gap:16px;padding:12px;color:#f4f2ec;max-width:calc(100% - 160px);pointer-events:none}
+    .smart-media-preview.smart-media-interactive.has-live .smart-media-preview-inner{opacity:0}
     .smart-media-preview-icon{display:grid;place-items:center;width:54px;height:54px;flex:0 0 54px;border-radius:14px;background:rgba(8,10,14,.76);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px);font-size:24px;color:#d9d7d1}
     .smart-media-preview-copy{display:grid;gap:4px;text-shadow:0 1px 12px rgba(0,0,0,.55)}
     .smart-media-preview-copy strong{font:600 16px/1.2 DM Sans,sans-serif}.smart-media-preview-copy small{color:#d2d4d8;font:400 12px/1.4 DM Sans,sans-serif}
