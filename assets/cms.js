@@ -1,12 +1,12 @@
 (() => {
   const clone = value => JSON.parse(JSON.stringify(value));
   const escape = (value = '') => { const node = document.createElement('div'); node.textContent = String(value); return node.innerHTML; };
-  const categories = { directing:'Directing', games:'Games', production:'Production', social:'Social Content', editing:'Editing', ai:'AI Creation' };
+  const categories = { directing:'Directing', games:'Games', narrative:'Narrative Design', production:'Production', social:'Social Content', editing:'Editing', ai:'AI Creation' };
   const blockTypes = { overview:'Overview', roles:'Roles', story:'Story Step', image:'Large Image', split:'Two Images', video:'Video', comparison:'Before / After', gallery:'Gallery', timeline:'Timeline', quote:'Quote', results:'Results', credits:'Credits', gameLinks:'Play the Game' };
 
   const normalizeCategory = (value = '') => {
     const key = String(value).trim().toLowerCase();
-    const aliases = { game:'games', 'game dev':'games', 'game development':'games', 'ai creation':'ai', 'ai design':'ai', 'ai creator':'ai', 'social content':'social', 'social media':'social' };
+    const aliases = { game:'games', 'game dev':'games', 'game development':'games', 'narrative design':'narrative', narrativeDesign:'narrative', 'ai creation':'ai', 'ai design':'ai', 'ai creator':'ai', 'social content':'social', 'social media':'social' };
     return aliases[key] || key;
   };
   const projectCategories = project => {
