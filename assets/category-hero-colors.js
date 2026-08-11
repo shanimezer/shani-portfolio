@@ -16,6 +16,17 @@
   const category = aliases[file];
   if (!category) return;
 
+  const style = document.createElement('style');
+  style.textContent = `
+    .page-hero{position:relative;isolation:isolate;overflow:hidden}
+    .page-hero>.wrap{position:relative;z-index:2;min-width:0}
+    .page-hero h1{width:100%;max-width:100%!important;font-size:clamp(3.15rem,7.15vw,7rem)!important;line-height:.9!important;letter-spacing:-.07em!important;overflow:visible!important;text-wrap:balance}
+    .page-hero:after{content:"";position:absolute;width:min(48vw,660px);aspect-ratio:1;right:-15vw;top:-22vw;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--category-accent-b,#a58cff) 17%,transparent),color-mix(in srgb,var(--category-accent-a,#ff70bc) 6%,transparent) 40%,transparent 70%);pointer-events:none;z-index:0}
+    @media(max-width:900px){.page-hero h1{font-size:clamp(3rem,11vw,5.2rem)!important;line-height:.94!important}}
+    @media(max-width:620px){.page-hero h1{font-size:clamp(2.7rem,13vw,4.15rem)!important;letter-spacing:-.055em!important}}
+  `;
+  document.head.appendChild(style);
+
   const normalize = value => String(value || '').trim().toLowerCase()
     .replace(/^narrative design$/, 'narrative')
     .replace(/^social content$/, 'social')
@@ -45,8 +56,8 @@
   const colors = accents.length >= 2 ? accents : fallbacks[category];
   if (!colors?.length) return;
 
-  const stops = colors.map((color, index) => `${color} ${Math.round(index * 100 / Math.max(1, colors.length - 1))}%`).join(',');
-  title.style.backgroundImage = `linear-gradient(105deg, #f5f2e9 0%, ${stops})`;
+  const gradientColors = colors.map((color, index) => `${color} ${18 + Math.round(index * 82 / Math.max(1, colors.length - 1))}%`).join(',');
+  title.style.backgroundImage = `linear-gradient(105deg, #f5f2e9 0%, ${gradientColors})`;
   title.style.webkitBackgroundClip = 'text';
   title.style.backgroundClip = 'text';
   title.style.color = 'transparent';
