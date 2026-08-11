@@ -197,11 +197,32 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msooah3v-opo4",
+            "id": "media-msoq6kqz-wagv",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoq6kqz-ry0o",
             "url": "https://www.instagram.com/reel/DXBbCSQD_Zm/",
             "type": "image",
-            "title": "",
-            "caption": "Real User, Real Apartment"
+            "title": "Real User, Real Apartment",
+            "caption": "A Shushu user gives a casual tour of the apartment he just rented after finding it through the platform and being the first to reach the listing. A real success story that demonstrates the product’s value through an authentic user experience."
+          },
+          {
+            "id": "media-msoq6kqz-2h5n",
+            "url": "https://www.tiktok.com/@shushu.app/video/7600330736448703764",
+            "type": "image",
+            "title": "Why Do You Live in Tel Aviv?",
+            "caption": "A street-style UGC format using real people, humor, and hyper-local references to connect Shushu with the culture and lifestyle of its target audience."
+          },
+          {
+            "id": "media-msoq6kqz-fc0o",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
           }
         ],
         "items": [],
@@ -270,6 +291,192 @@ window.PORTFOLIO_PROJECTS = [
         "quote": "",
         "author": "",
         "takeaway": "What have we learned?\n_______________\nAs engagement improved, the campaign revealed a targeting mismatch: some interested users were searching in cities Shushu did not yet support. This highlighted the need to align paid targeting more closely with current product coverage."
+      },
+      {
+        "id": "block-msoq0al7-6kfn",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Expanding the Visual Toolkit",
+        "title": "AI-Assisted Creative",
+        "body": "AI tools are integrated into my creative workflow when they can help expand the visual language of the content, speed up asset creation, or make ideas possible within the constraints of social media production.\n\nFor Shushu, I use AI-assisted design to create graphics and supporting visual assets, then adapt and refine them to fit the brand and the specific content format.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "AI Visual Creator · Content Creator",
+        "navTitle": "AI-Assisted Creative",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "ai",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msoq0al7-a3z2",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoq0al7-516k",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/Campain%20english%20Early%20Option.png",
+            "type": "image",
+            "title": "Early Shuhu Graphic",
+            "caption": "For promotions"
+          },
+          {
+            "id": "media-msoq0al7-j0u1",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/SHushu%20Facebook%20Cmapign%20.png",
+            "type": "image",
+            "title": "Shuhu Facebook Promotion",
+            "caption": "Version 1"
+          },
+          {
+            "id": "media-msoq0al7-uylm",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/SHushu%20IG%20Cmapign%2016-9.png",
+            "type": "image",
+            "title": "Shuhu IG Promotion",
+            "caption": "Version 2"
+          },
+          {
+            "id": "media-msoq0al7-nrwt",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msoq8a41-9x39",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Beyond In-House Content",
+        "title": "Influencer Strategy",
+        "body": "Alongside content creation, I provide strategic and creative guidance for Shushu’s influencer collaborations.\n\nThe approach focuses on matching the product message to each creator’s existing voice, audience, and content style, rather than forcing the same advertising format across every collaboration.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Influencer Strategy · Creative Consultant",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msoq8a41-ossl",
+            "url": "Creator Fit",
+            "type": "image",
+            "title": "Matching creators, audiences, and content styles with the campaign goal.",
+            "caption": ""
+          },
+          {
+            "id": "media-msoq8a41-1wxt",
+            "url": "Creative Direction",
+            "type": "image",
+            "title": "Developing concepts and angles that naturally integrate Shushu into the creator’s content.",
+            "caption": ""
+          },
+          {
+            "id": "media-msoq8a41-uwyu",
+            "url": "Authenticity",
+            "type": "image",
+            "title": "Keeping collaborations native to each creator rather than turning them into traditional ads.",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msoq8dsp-4gfh",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "One Strategy, Different Platforms",
+        "title": "Platform Approach",
+        "body": "The core brand strategy stays consistent, while the creative approach shifts according to the way audiences consume and interact with content on each platform.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Strategy",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msoqk4j8-hlo5",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoqk4j8-37ko",
+            "url": "https://drive.google.com/open?id=1n5dfHqzSbx4rSs92rHyGREbpbQ4nwcS2&usp=drive_fs",
+            "type": "video",
+            "title": "Paid Meta",
+            "caption": ""
+          },
+          {
+            "id": "media-msoqk4j8-tl6t",
+            "url": "https://www.instagram.com/reel/DZXa2hevYzY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "Instagram",
+            "caption": ""
+          },
+          {
+            "id": "media-msoqk4j8-rkl2",
+            "url": "https://www.tiktok.com/@shushu.app/video/7620376649355234568",
+            "type": "image",
+            "title": "Tiktok",
+            "caption": ""
+          },
+          {
+            "id": "media-msoqk4j8-1pdr",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msoqk4j8-ef2r",
+            "title": "TikTok",
+            "text": "Trend-led, entertaining, and personality-driven content designed to feel native to the platform and connect with younger audiences."
+          },
+          {
+            "id": "item-msoqk4j8-5b6e",
+            "title": "Instagram",
+            "text": "A mix of Reels, branded storytelling, visual content, and product communication, balancing entertainment with a consistent brand presence."
+          },
+          {
+            "id": "item-msoqk4j8-p8uf",
+            "title": "Paid Meta",
+            "text": "Performance-oriented creative built around strong hooks, clear product messaging, and simple problem-solution structures designed to drive action."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
       }
     ],
     "role": "Content Creator · Creative · Scriptwriter · Creative Director · Editor · AI Visual Creator · Influencer Strategy"
