@@ -15,6 +15,25 @@
     document.body.appendChild(slideshowAdmin);
   }
 
+  const settingsForm = document.querySelector('#settingsForm');
+  if (settingsForm) {
+    const categorySelect = settingsForm.elements.category;
+    if (categorySelect && !categorySelect.querySelector('option[value="narrative"]')) {
+      const option = document.createElement('option');
+      option.value = 'narrative';
+      option.textContent = 'Narrative Design';
+      const production = categorySelect.querySelector('option[value="production"]');
+      categorySelect.insertBefore(option, production || null);
+    }
+    const projectCategoryPicker = [...settingsForm.querySelectorAll('fieldset')]
+      .find(fieldset => fieldset.querySelector('legend')?.textContent.trim() === 'Project categories');
+    const projectCategoryOptions = projectCategoryPicker?.querySelector('.category-options');
+    if (projectCategoryOptions && !projectCategoryOptions.querySelector('input[value="narrative"]')) {
+      const games = projectCategoryOptions.querySelector('input[value="games"]')?.closest('label');
+      games?.insertAdjacentHTML('afterend','<label><input type="checkbox" value="narrative" data-category-checkbox> Narrative Design</label>');
+    }
+  }
+
   const blockForm = document.querySelector('#blockForm');
   if (!blockForm) return;
 
@@ -54,14 +73,9 @@
   const disciplinePicker = [...blockForm.querySelectorAll('fieldset')]
     .find(fieldset => fieldset.querySelector('legend')?.textContent.trim() === 'Block disciplines');
   const disciplineOptions = disciplinePicker?.querySelector('.category-options');
-
   if (disciplineOptions && !disciplineOptions.querySelector('input[value="narrativeDesign"]')) {
-    disciplineOptions.insertAdjacentHTML(
-      'beforeend',
-      '<label><input type="checkbox" name="disciplines" value="narrativeDesign"> Narrative Design</label>'
-    );
+    disciplineOptions.insertAdjacentHTML('beforeend','<label><input type="checkbox" name="disciplines" value="narrativeDesign"> Narrative Design</label>');
   }
-
   disciplinePicker?.classList.add('block-disciplines-compact');
 
   let hierarchy = blockForm.querySelector('.block-hierarchy-fields');
@@ -69,7 +83,6 @@
   const oldParentSelect = hierarchy?.querySelector('select[name="parentId"]');
   const initialLevel = oldLevelSelect?.value || 'primary';
   const initialParent = oldParentSelect?.value || '';
-
   if (hierarchy) hierarchy.remove();
 
   hierarchy = document.createElement('fieldset');
@@ -77,20 +90,11 @@
   hierarchy.innerHTML = `
     <legend>Hierarchy</legend>
     <div class="hierarchy-choice-row">
-      <label class="hierarchy-choice">
-        <input type="radio" name="levelChoice" value="primary" ${initialLevel !== 'secondary' ? 'checked' : ''}>
-        <span><strong>Main block</strong><small>Starts a new section.</small></span>
-      </label>
-      <label class="hierarchy-choice">
-        <input type="radio" name="levelChoice" value="secondary" ${initialLevel === 'secondary' ? 'checked' : ''}>
-        <span><strong>Sub-block</strong><small>Lives inside a main block.</small></span>
-      </label>
+      <label class="hierarchy-choice"><input type="radio" name="levelChoice" value="primary" ${initialLevel !== 'secondary' ? 'checked' : ''}><span><strong>Main block</strong><small>Starts a new section.</small></span></label>
+      <label class="hierarchy-choice"><input type="radio" name="levelChoice" value="secondary" ${initialLevel === 'secondary' ? 'checked' : ''}><span><strong>Sub-block</strong><small>Lives inside a main block.</small></span></label>
     </div>
     <input type="hidden" name="level" value="${initialLevel === 'secondary' ? 'secondary' : 'primary'}">
-    <label class="parent-block-field" data-parent-field ${initialLevel === 'secondary' ? '' : 'hidden'}>
-      Parent block
-      <select name="parentId"><option value="">Choose a main block</option></select>
-    </label>`;
+    <label class="parent-block-field" data-parent-field ${initialLevel === 'secondary' ? '' : 'hidden'}>Parent block<select name="parentId"><option value="">Choose a main block</option></select></label>`;
 
   if (disciplinePicker) disciplinePicker.insertAdjacentElement('afterend', hierarchy);
   else blockForm.querySelector('.dialog-grid')?.prepend(hierarchy);
@@ -99,7 +103,6 @@
   const parentField = blockForm.elements.parentId;
   const parentWrap = hierarchy.querySelector('[data-parent-field]');
   const choices = [...hierarchy.querySelectorAll('input[name="levelChoice"]')];
-
   if (parentField && initialParent) parentField.dataset.pendingValue = initialParent;
 
   const syncFromHiddenLevel = () => {
@@ -108,16 +111,12 @@
     if (parentWrap) parentWrap.hidden = level !== 'secondary';
     if (level !== 'secondary' && parentField) parentField.value = '';
   };
-
-  choices.forEach(choice => {
-    choice.addEventListener('change', () => {
-      if (!choice.checked || !levelField) return;
-      levelField.value = choice.value;
-      levelField.dispatchEvent(new Event('change', { bubbles:true }));
-      syncFromHiddenLevel();
-    });
-  });
-
+  choices.forEach(choice => choice.addEventListener('change', () => {
+    if (!choice.checked || !levelField) return;
+    levelField.value = choice.value;
+    levelField.dispatchEvent(new Event('change', { bubbles:true }));
+    syncFromHiddenLevel();
+  }));
   levelField?.addEventListener('change', syncFromHiddenLevel);
 
   const dialog = blockForm.closest('dialog');
@@ -128,7 +127,6 @@
       delete parentField.dataset.pendingValue;
     }
   });
-
   dialog?.addEventListener('toggle', () => { if (dialog.open) refresh(); });
   syncFromHiddenLevel();
 })();
