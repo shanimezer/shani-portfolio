@@ -3404,7 +3404,7 @@ window.PORTFOLIO_PROJECTS = [
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
-        "body": "### Overview\n\nLaunching Six Minds meant building more than a game. We also needed to build an identity, an audience and a community around a completely new indie studio.\n\nI developed and manage the studio’s digital presence across platforms, translating an ongoing game-development process into content that people can understand, engage with and become part of.\n\nMy work spans brand voice and social strategy, short-form video concepts, production and editing, developer-focused content, community engagement, campaign planning and platform-specific publishing.\n\nBecause I am also directly involved in the production of *Heir of Death*, I can bridge the gap between development and marketing, identifying moments from inside the process that can become stories, educational content, entertainment and opportunities for community participation.",
+        "body": "Launching Six Minds meant building more than a game. We also needed to build an identity, an audience and a community around a completely new indie studio.\n\nI developed and manage the studio’s digital presence across platforms, translating an ongoing game-development process into content that people can understand, engage with and become part of.\n\nMy work spans brand voice and social strategy, short-form video concepts, production and editing, developer-focused content, community engagement, campaign planning and platform-specific publishing.\n\nBecause I am also directly involved in the production of Heir of Death, I can bridge the gap between development and marketing, identifying moments from inside the process that can become stories, educational content, entertainment and opportunities for community participation.",
         "layout": "wide",
         "accent": "#8e95a3",
         "role": "",
@@ -3414,37 +3414,37 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [
           {
-            "id": "link-msokjz9e-1f4x",
+            "id": "link-msolfukm-czik",
             "label": "Instagram",
             "url": "https://www.instagram.com/sixmindsstudio/",
             "style": "secondary"
           },
           {
-            "id": "link-msokjz9e-nuh8",
+            "id": "link-msolfukm-e5az",
             "label": "Tiktok",
             "url": "https://www.tiktok.com/@six.minds.studio",
             "style": "secondary"
           },
           {
-            "id": "link-msokjz9e-ul7j",
+            "id": "link-msolfukm-276m",
             "label": "Youtube",
             "url": "https://www.youtube.com/@SixMindsStudio",
             "style": "secondary"
           },
           {
-            "id": "link-msokjz9e-ofew",
+            "id": "link-msolfukm-8jh3",
             "label": "X",
             "url": "https://x.com/SixMindsStudio",
             "style": "secondary"
           },
           {
-            "id": "link-msokjz9e-dpv9",
+            "id": "link-msolfukm-8oif",
             "label": "Reddit",
             "url": "https://www.reddit.com/user/6MINDSSTUDIO/",
             "style": "secondary"
           },
           {
-            "id": "link-msokjz9e-j30p",
+            "id": "link-msolfukm-ykz0",
             "label": "Discord",
             "url": "https://discord.gg/SHR7Wg6wmA",
             "style": "secondary"
