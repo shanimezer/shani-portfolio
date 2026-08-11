@@ -20,10 +20,10 @@
   style.textContent = `
     .page-hero{position:relative;isolation:isolate;overflow:hidden}
     .page-hero>.wrap{position:relative;z-index:2;min-width:0}
-    .page-hero h1{width:100%;max-width:100%!important;font-size:clamp(3.15rem,7.15vw,7rem)!important;line-height:.9!important;letter-spacing:-.07em!important;overflow:visible!important;text-wrap:balance}
+    .page-hero h1{width:100%;max-width:100%!important;font-size:clamp(3.15rem,7.15vw,7rem)!important;line-height:1.02!important;letter-spacing:-.07em!important;overflow:visible!important;text-wrap:balance;padding:.06em 0 .12em;margin:.18em 0 .12em}
     .page-hero:after{content:"";position:absolute;width:min(48vw,660px);aspect-ratio:1;right:-15vw;top:-22vw;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--category-accent-b,#a58cff) 17%,transparent),color-mix(in srgb,var(--category-accent-a,#ff70bc) 6%,transparent) 40%,transparent 70%);pointer-events:none;z-index:0}
-    @media(max-width:900px){.page-hero h1{font-size:clamp(3rem,11vw,5.2rem)!important;line-height:.94!important}}
-    @media(max-width:620px){.page-hero h1{font-size:clamp(2.7rem,13vw,4.15rem)!important;letter-spacing:-.055em!important}}
+    @media(max-width:900px){.page-hero h1{font-size:clamp(3rem,11vw,5.2rem)!important;line-height:1.04!important;padding:.07em 0 .13em}}
+    @media(max-width:620px){.page-hero h1{font-size:clamp(2.7rem,13vw,4.15rem)!important;line-height:1.05!important;letter-spacing:-.055em!important;padding:.08em 0 .14em}}
   `;
   document.head.appendChild(style);
 
