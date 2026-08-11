@@ -83,6 +83,8 @@
     iframe.title = frame.dataset.title || 'Google Drive preview';
     iframe.loading = 'eager';
     iframe.tabIndex = interactive ? 0 : -1;
+    iframe.dataset.smartMediaReady = 'true';
+    iframe.dataset.smartMediaGenerated = 'true';
     if (!interactive) iframe.setAttribute('aria-hidden', 'true');
     iframe.setAttribute('allow', interactive ? 'autoplay; encrypted-media; picture-in-picture; fullscreen' : 'fullscreen');
     iframe.setAttribute('allowfullscreen', '');
@@ -165,7 +167,7 @@
   };
 
   const upgradeIframe = iframe => {
-    if (iframe.dataset.smartMediaReady === 'true') return;
+    if (iframe.dataset.smartMediaReady === 'true' || iframe.closest('.smart-media-frame')) return;
     const source = iframe.getAttribute('src') || '';
     const embed = googleEmbedUrl(source);
     if (!embed) return;
@@ -177,7 +179,7 @@
   };
 
   const upgradeImage = image => {
-    if (image.dataset.smartMediaReady === 'true') return;
+    if (image.dataset.smartMediaReady === 'true' || image.closest('.smart-media-frame')) return;
     const source = image.getAttribute('src') || '';
     const embed = googleEmbedUrl(source);
     if (!embed) return;
@@ -188,7 +190,7 @@
   };
 
   const upgradeLink = link => {
-    if (link.dataset.smartMediaReady === 'true') return;
+    if (link.dataset.smartMediaReady === 'true' || link.closest('.smart-media-frame')) return;
     const source = link.href || '';
     const embed = googleEmbedUrl(source);
     if (!embed || !link.matches('[data-embed-media], .smart-media-link')) return;
@@ -239,10 +241,9 @@
     });
     window.addEventListener('keydown', event => { if (event.key === 'Escape') closeViewer(); });
     new MutationObserver(mutations => mutations.forEach(mutation => mutation.addedNodes.forEach(node => {
-      if (node.nodeType === 1) {
-        if (node.matches?.('iframe, img, a')) upgrade(node.parentElement || document);
-        else upgrade(node);
-      }
+      if (node.nodeType !== 1 || node.closest?.('.smart-media-frame')) return;
+      if (node.matches?.('iframe, img, a')) upgrade(node.parentElement || document);
+      else upgrade(node);
     }))).observe(document.body, { childList:true, subtree:true });
   };
 
