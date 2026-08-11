@@ -3471,32 +3471,36 @@ window.PORTFOLIO_PROJECTS = [
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "production",
+          "ai",
+          "social"
+        ],
         "links": [],
         "media": [
           {
-            "id": "media-msoiyd1b-pqdt",
+            "id": "media-msold410-cqpj",
             "url": "slideshow://start?transition=slide",
             "type": "image",
             "title": "Slideshow",
             "caption": ""
           },
           {
-            "id": "media-msoiyd1b-rk4j",
+            "id": "media-msold410-xvso",
             "url": "https://drive.google.com/open?id=1GAbzr_dCSdDnkpimfo63Y-cRO5CMBPAx&usp=drive_fs",
             "type": "video",
-            "title": "First logo attampt",
-            "caption": "More of a cinematic approach"
+            "title": "Initial Logo Concept",
+            "caption": "A More Cinematic Approach"
           },
           {
-            "id": "media-msoiyd1b-1yl6",
+            "id": "media-msold410-4wmp",
             "url": "https://drive.google.com/open?id=1JzBQ5n_t5qbcAV8pObxLeqxoGxnd7zPt&usp=drive_fs",
             "type": "video",
-            "title": "Later logo design",
-            "caption": "More  of a \"Gamery\" approach"
+            "title": "Evolved Logo Design",
+            "caption": "A More Game-Focused Approach"
           },
           {
-            "id": "media-msoiyd1b-q7hp",
+            "id": "media-msold410-w6rz",
             "url": "slideshow://end",
             "type": "image",
             "title": "End slideshow",
