@@ -18,6 +18,14 @@ body.project-shushu .block-takeaway{margin-top:24px;padding:20px}
 body.project-shushu .block-takeaway p{font-size:.95rem;line-height:1.58}
 body.project-shushu .project-sub-block{padding-top:42px;padding-bottom:42px}
 body.project-shushu .project-filter-bar{margin-bottom:28px}
+
+/* Shushu is primarily short-form social work. Keep vertical video embeds at a reel-sized card instead of stretching them across the content column. */
+body.project-shushu .block-media:not(.grid):not(.masonry):not(.carousel)>figure.social-media-figure,
+body.project-shushu .block-media:not(.grid):not(.masonry):not(.carousel)>figure:has(.smart-media-frame){width:min(100%,420px);margin-left:auto;margin-right:auto}
+body.project-shushu .social-embed-vertical{aspect-ratio:9/16;max-height:min(68vh,720px)}
+body.project-shushu .social-embed-vertical iframe{position:absolute;inset:0;width:100%;height:100%}
+body.project-shushu .smart-media-frame{max-height:min(68vh,720px)}
+
 @media(max-width:760px){
   body.project-shushu .project-hero-dynamic{min-height:54svh!important}
   body.project-shushu .project-hero-copy{padding:104px 0 38px!important}
@@ -26,4 +34,7 @@ body.project-shushu .project-filter-bar{margin-bottom:28px}
   body.project-shushu .project-sub-block{padding-top:34px;padding-bottom:34px}
   body.project-shushu .project-block-header h2{font-size:clamp(1.8rem,8.5vw,3rem)}
   body.project-shushu .project-block-copy{font-size:.95rem;line-height:1.62}
+  body.project-shushu .block-media:not(.grid):not(.masonry):not(.carousel)>figure.social-media-figure,
+  body.project-shushu .block-media:not(.grid):not(.masonry):not(.carousel)>figure:has(.smart-media-frame){width:min(100%,360px)}
+  body.project-shushu .social-embed-vertical{max-height:64svh}
 }
