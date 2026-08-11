@@ -1,0 +1,56 @@
+.contact-page{--contact-pink:#ff70bc;--contact-violet:#9c7cff;--contact-cyan:#73d8ff;--contact-amber:#ffd56a;background:#08090c}
+.contact-page .contact-hero{position:relative;min-height:auto;padding:128px 0 76px;isolation:isolate;overflow:hidden}
+.contact-page .contact-hero:before{width:720px;height:720px;right:-260px;top:-250px;border-color:rgba(255,112,188,.12);box-shadow:0 0 0 68px rgba(156,124,255,.025),0 0 0 136px rgba(255,112,188,.018),0 0 120px rgba(156,124,255,.08)}
+.contact-page .contact-hero:after{background:radial-gradient(circle at 86% 18%,rgba(255,112,188,.13),transparent 24%),radial-gradient(circle at 68% 42%,rgba(156,124,255,.09),transparent 27%),radial-gradient(circle at 12% 78%,rgba(115,216,255,.055),transparent 24%)}
+.contact-page .info-hero-copy{max-width:1160px}
+.contact-page .contact-kicker{display:flex;align-items:center;gap:12px;color:#b7a0bb}
+.contact-page .contact-kicker:after{content:"";width:92px;height:1px;background:linear-gradient(90deg,var(--contact-pink),transparent)}
+.contact-page .contact-title{max-width:900px;margin:20px 0 22px;font-size:clamp(3.6rem,7.2vw,6.9rem)!important;line-height:.98!important;letter-spacing:-.065em!important}
+.contact-page .contact-title .line{display:block}
+.contact-page .contact-title .accent{background:linear-gradient(110deg,#f7f1e8 0%,#f7f1e8 8%,#ff7fc4 38%,#bd86ff 72%,#7ed9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:170% 100%;transition:background-position .65s ease,filter .65s ease}
+.contact-page .contact-title:hover .accent{background-position:100% 0;filter:drop-shadow(0 0 22px rgba(255,112,188,.18))}
+.contact-page .contact-spark{display:inline-block;margin-left:.08em;color:var(--contact-pink);font-size:.42em;vertical-align:top;translate:0 .12em;transition:transform .4s ease,text-shadow .4s ease}
+.contact-page .contact-title:hover .contact-spark{transform:rotate(25deg) scale(1.25);text-shadow:0 0 22px var(--contact-pink)}
+.contact-page .contact-hero .lede{max-width:670px;font-size:1.02rem;line-height:1.72;color:#bdbbc0}
+.contact-page .contact-panel{max-width:1060px;grid-template-columns:minmax(0,1.18fr) minmax(310px,.82fr);gap:18px;margin-top:42px;align-items:stretch}
+.contact-page .contact-primary{position:relative;min-height:280px;padding:28px;border:1px solid rgba(255,112,188,.34);background:linear-gradient(145deg,rgba(255,112,188,.055),rgba(156,124,255,.022) 50%,rgba(255,255,255,.015));color:#f5f1ea;box-shadow:inset 0 0 0 1px rgba(255,255,255,.015);overflow:hidden}
+.contact-page .contact-primary:before{content:"";position:absolute;width:340px;height:340px;right:-160px;bottom:-210px;border-radius:50%;border:1px solid rgba(255,112,188,.18);box-shadow:0 0 0 34px rgba(156,124,255,.025),0 0 70px rgba(255,112,188,.08);transition:transform .55s cubic-bezier(.22,1,.36,1),box-shadow .55s ease}
+.contact-page .contact-primary:hover{transform:translateY(-5px);border-color:rgba(255,112,188,.68);box-shadow:0 20px 65px rgba(0,0,0,.26),0 0 42px rgba(255,112,188,.07)}
+.contact-page .contact-primary:hover:before{transform:scale(1.12) translate(-12px,-8px);box-shadow:0 0 0 42px rgba(156,124,255,.04),0 0 90px rgba(255,112,188,.14)}
+.contact-page .contact-primary small{position:relative;z-index:2;color:#d891c1;font-weight:700}
+.contact-page .contact-email-row{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
+.contact-page .contact-primary strong{font-size:clamp(1.35rem,2.4vw,2.35rem);color:#f4efe7;white-space:nowrap}
+.contact-page .contact-mail-icon,.contact-page .contact-arrow-circle,.contact-page .work-icon{display:grid;place-items:center;border-radius:999px;border:1px solid rgba(255,112,188,.4);color:#ff8bcc;background:rgba(255,112,188,.045);box-shadow:0 0 24px rgba(255,112,188,.06)}
+.contact-page .contact-mail-icon{position:relative;z-index:2;width:48px;height:48px;margin-bottom:24px;font-size:1.15rem}
+.contact-page .contact-arrow-circle{width:50px;height:50px;flex:0 0 50px;font-size:1.3rem;transition:transform .35s ease,background .35s ease,box-shadow .35s ease}
+.contact-page .contact-primary:hover .contact-arrow-circle{transform:rotate(45deg);background:rgba(255,112,188,.12);box-shadow:0 0 30px rgba(255,112,188,.14)}
+.contact-page .contact-side{gap:14px;grid-template-rows:1fr auto}
+.contact-page .contact-mini{position:relative;min-height:150px;padding:24px;align-items:center;overflow:hidden;background:linear-gradient(145deg,rgba(156,124,255,.055),rgba(255,255,255,.018));border-color:rgba(156,124,255,.2)}
+.contact-page .contact-mini:before{content:"";position:absolute;inset:auto -50px -90px auto;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(156,124,255,.16),transparent 65%);opacity:.5;transition:transform .4s ease,opacity .4s ease}
+.contact-page .contact-mini:hover{border-color:rgba(188,134,255,.52);box-shadow:0 0 35px rgba(156,124,255,.06)}
+.contact-page .contact-mini:hover:before{transform:scale(1.35);opacity:.9}
+.contact-page .work-link-copy{position:relative;z-index:2;display:flex;align-items:center;gap:14px}
+.contact-page .work-icon{width:46px;height:46px;flex:0 0 46px;color:#c68cff;border-color:rgba(198,140,255,.32);font-size:1.1rem}
+.contact-page .contact-mini b{font-size:1.03rem}.contact-page .contact-mini small{display:block;margin-top:5px;color:#8e8795;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase}
+.contact-page .contact-socials{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0}
+.contact-page .contact-socials .social-card{--social:#fff;width:100%;height:78px;border-radius:18px;border-color:color-mix(in srgb,var(--social) 22%,rgba(255,255,255,.08));color:var(--social);background:linear-gradient(150deg,color-mix(in srgb,var(--social) 5%,transparent),rgba(255,255,255,.015));position:relative;overflow:hidden}
+.contact-page .contact-socials .social-card:before{content:"";position:absolute;inset:12px;border-radius:12px;background:radial-gradient(circle,color-mix(in srgb,var(--social) 18%,transparent),transparent 68%);opacity:0;transform:scale(.7);transition:opacity .3s ease,transform .3s ease}
+.contact-page .contact-socials .social-card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--social) 54%,rgba(255,255,255,.1));box-shadow:0 0 28px color-mix(in srgb,var(--social) 12%,transparent)}
+.contact-page .contact-socials .social-card:hover:before{opacity:1;transform:scale(1.15)}
+.contact-page .contact-socials .social-card svg{position:relative;z-index:2;width:23px;height:23px}
+.contact-page .social-instagram{--social:#ff6fb5}.contact-page .social-tiktok{--social:#75f3ef}.contact-page .social-youtube{--social:#ff625d}.contact-page .social-linkedin{--social:#67b5ff}
+.contact-page .collab-section{position:relative;background:linear-gradient(180deg,#090a0d,#08090c)}
+.contact-page .collab-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:4px}
+.contact-page .collab-heading h2{max-width:720px}
+.contact-page .availability-grid{gap:13px;margin-top:34px}
+.contact-page .availability-card{--card-accent:#ff70bc;position:relative;min-height:195px;padding:22px;overflow:hidden;background:linear-gradient(150deg,color-mix(in srgb,var(--card-accent) 4%,transparent),rgba(255,255,255,.014));border-color:color-mix(in srgb,var(--card-accent) 15%,rgba(255,255,255,.07));transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.contact-page .availability-card:before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;right:-72px;top:-72px;background:radial-gradient(circle,color-mix(in srgb,var(--card-accent) 22%,transparent),transparent 68%);opacity:.45;transition:transform .4s ease,opacity .4s ease}
+.contact-page .availability-card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--card-accent) 45%,rgba(255,255,255,.08));box-shadow:0 18px 50px rgba(0,0,0,.25),0 0 35px color-mix(in srgb,var(--card-accent) 7%,transparent)}
+.contact-page .availability-card:hover:before{transform:scale(1.5);opacity:.9}
+.contact-page .availability-card i{position:relative;z-index:2;width:42px;height:42px;display:grid;place-items:center;border-radius:13px;border:1px solid color-mix(in srgb,var(--card-accent) 32%,rgba(255,255,255,.08));color:var(--card-accent);background:color-mix(in srgb,var(--card-accent) 5%,transparent)}
+.contact-page .availability-card>div{position:relative;z-index:2}.contact-page .availability-card b{font-size:1rem;color:#e9e5df}.contact-page .availability-card p{font-size:.78rem;line-height:1.55}
+.contact-page .closing-section{padding:34px 0 62px;border-bottom:0}
+.contact-page .contact-closing{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:22px 24px;border:1px solid rgba(255,112,188,.14);border-radius:20px;background:linear-gradient(90deg,rgba(255,112,188,.035),rgba(156,124,255,.018),transparent)}
+.contact-page .closing-heart{display:grid;place-items:center;width:46px;height:46px;border:1px solid rgba(255,112,188,.3);border-radius:50%;color:#ff83c5;font-size:1.1rem}.contact-page .contact-closing p{margin:0;color:#9f9ca3;font-size:.83rem;line-height:1.55}.contact-page .contact-closing strong{display:block;color:#d88fc3;font-weight:500}.contact-page .closing-cta{color:#f28bc9;text-decoration:none;font:500 1.25rem Manrope,sans-serif;letter-spacing:-.035em;white-space:nowrap;transition:text-shadow .3s ease,transform .3s ease}.contact-page .closing-cta:hover{text-shadow:0 0 20px rgba(255,112,188,.3);transform:translateX(4px)}
+@media(max-width:900px){.contact-page .contact-title{font-size:clamp(3.15rem,10vw,5.2rem)!important}.contact-page .contact-panel{grid-template-columns:1fr}.contact-page .contact-side{grid-template-rows:auto auto}.contact-page .contact-mini{min-height:120px}.contact-page .contact-socials .social-card{height:68px}.contact-page .contact-closing{grid-template-columns:auto 1fr}.contact-page .closing-cta{grid-column:2}}
+@media(max-width:620px){.contact-page .contact-hero{padding:108px 0 54px}.contact-page .contact-title{font-size:clamp(2.7rem,13vw,4rem)!important;line-height:1!important}.contact-page .contact-title .line{display:block}.contact-page .contact-panel{margin-top:30px}.contact-page .contact-primary{min-height:220px;padding:22px}.contact-page .contact-primary strong{font-size:clamp(1.05rem,5vw,1.38rem)!important}.contact-page .contact-mail-icon{margin-bottom:18px}.contact-page .contact-socials{grid-template-columns:repeat(4,1fr)}.contact-page .contact-socials .social-card{height:58px;border-radius:15px}.contact-page .availability-grid{grid-template-columns:1fr!important}.contact-page .availability-card{min-height:165px}.contact-page .contact-closing{grid-template-columns:auto 1fr;padding:18px}.contact-page .closing-cta{grid-column:1/-1;margin-left:64px;font-size:1.05rem}}
