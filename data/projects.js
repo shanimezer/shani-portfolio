@@ -373,30 +373,24 @@ window.PORTFOLIO_PROJECTS = [
           "social"
         ],
         "links": [],
-        "media": [
+        "media": [],
+        "items": [
           {
-            "id": "media-msoq8a41-ossl",
-            "url": "Creator Fit",
-            "type": "image",
-            "title": "Matching creators, audiences, and content styles with the campaign goal.",
-            "caption": ""
+            "id": "item-msortpo5-ctb1",
+            "title": "Creator Fit",
+            "text": "Matching creators, audiences, and content styles with the campaign goal."
           },
           {
-            "id": "media-msoq8a41-1wxt",
-            "url": "Creative Direction",
-            "type": "image",
-            "title": "Developing concepts and angles that naturally integrate Shushu into the creator’s content.",
-            "caption": ""
+            "id": "item-msortpo5-foa4",
+            "title": "Creative Direction",
+            "text": "Developing concepts and angles that naturally integrate Shushu into the creator’s content."
           },
           {
-            "id": "media-msoq8a41-uwyu",
-            "url": "Authenticity",
-            "type": "image",
-            "title": "Keeping collaborations native to each creator rather than turning them into traditional ads.",
-            "caption": ""
+            "id": "item-msortpo5-yums",
+            "title": "Authenticity",
+            "text": "Keeping collaborations native to each creator rather than turning them into traditional ads."
           }
         ],
-        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
