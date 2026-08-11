@@ -15,7 +15,9 @@
     const source = `${block.role || ''} ${block.kicker || ''} ${block.title || ''}`.toLowerCase();
     return /narrative design|story design|screenplay|script|writing|worldbuilding|character development|dialogue/.test(source);
   });
-  const projects = window.PORTFOLIO_PROJECTS.filter(project => project.status !== 'draft' && (explicitNarrative(project) || narrativeFromBlocks(project)));
+  const projects = window.PortfolioCMS.sortNewestFirst(
+    window.PORTFOLIO_PROJECTS.filter(project => project.status !== 'draft' && (explicitNarrative(project) || narrativeFromBlocks(project)))
+  );
   grid.innerHTML = projects.length ? projects.map(project => `
     <a class="card cms-card narrative-card" href="${window.PortfolioCMS.projectUrl(project, prefix, 'narrative')}">
       <div class="cms-cover" style="--project-accent:${escape(project.accent || '#ff70bc')};background-image:url('${escape(project.cover || '')}')"></div>
