@@ -1,0 +1,29 @@
+/* Project-specific density tuning */
+body.project-shushu .project-hero-dynamic{min-height:clamp(430px,58vh,650px)!important}
+body.project-shushu .project-hero-copy{padding:118px 0 48px!important}
+body.project-shushu .project-hero-copy h1{font-size:clamp(3rem,6.2vw,6rem)!important;line-height:.9!important;max-width:860px!important}
+body.project-shushu .project-hero-copy p{font-size:1rem!important;line-height:1.6!important;max-width:660px!important}
+body.project-shushu .project-hero-copy .project-tags{margin-top:18px!important}
+body.project-shushu .project-block{padding:58px 0}
+body.project-shushu .project-block-header{margin-bottom:22px;max-width:760px}
+body.project-shushu .project-block-header h2{font-size:clamp(1.9rem,3.5vw,3.5rem);line-height:1;margin:7px 0 12px}
+body.project-shushu .project-block-copy{font-size:.98rem;line-height:1.68;max-width:790px}
+body.project-shushu .block-media{margin-top:22px;gap:14px}
+body.project-shushu .block-media img{max-height:68vh}
+body.project-shushu .block-items{margin-top:22px;gap:12px}
+body.project-shushu .block-item{padding:18px}
+body.project-shushu .block-item strong{font-size:1rem}
+body.project-shushu .block-item p{font-size:.9rem;line-height:1.52}
+body.project-shushu .block-takeaway{margin-top:24px;padding:20px}
+body.project-shushu .block-takeaway p{font-size:.95rem;line-height:1.58}
+body.project-shushu .project-sub-block{padding-top:42px;padding-bottom:42px}
+body.project-shushu .project-filter-bar{margin-bottom:28px}
+@media(max-width:760px){
+  body.project-shushu .project-hero-dynamic{min-height:54svh!important}
+  body.project-shushu .project-hero-copy{padding:104px 0 38px!important}
+  body.project-shushu .project-hero-copy h1{font-size:clamp(2.7rem,12vw,4.2rem)!important}
+  body.project-shushu .project-block{padding:44px 0}
+  body.project-shushu .project-sub-block{padding-top:34px;padding-bottom:34px}
+  body.project-shushu .project-block-header h2{font-size:clamp(1.8rem,8.5vw,3rem)}
+  body.project-shushu .project-block-copy{font-size:.95rem;line-height:1.62}
+}
