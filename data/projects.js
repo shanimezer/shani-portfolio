@@ -3380,7 +3380,7 @@ window.PORTFOLIO_PROJECTS = [
     "accent": "#53dfd6",
     "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/SixMindsStudio_Logo_HighRes.png",
     "video": "https://youtu.be/x5kmb3CKdqY",
-    "summary": "Launch strategy, community building and ongoing content for an indie narrative game studio.",
+    "summary": "Six Minds Studio is an independent game studio founded by a team of six creators developing narrative-driven games.\n\nAlongside my work on the studio’s debut title, *Heir of Death*, I lead Six Minds’ social media, content and community presence, shaping how the studio communicates its identity, development process and games to an audience from the ground up.",
     "role": "Social Lead · Content Creator",
     "tools": "CapCut · Canva · Discord · Tiktok · IG · Linkedin · Youtube ·  X · Reddit",
     "client": "Six Minds Studio",
@@ -3391,7 +3391,8 @@ window.PORTFOLIO_PROJECTS = [
       "Social Lead · Content Creator"
     ],
     "categories": [
-      "social"
+      "social",
+      "production"
     ],
     "status": "published",
     "blocks": [
@@ -3403,15 +3404,52 @@ window.PORTFOLIO_PROJECTS = [
         "visible": true,
         "kicker": "The project",
         "title": "Overview",
-        "body": "Launch strategy, community building and ongoing content for an indie narrative game studio.",
+        "body": "### Overview\n\nLaunching Six Minds meant building more than a game. We also needed to build an identity, an audience and a community around a completely new indie studio.\n\nI developed and manage the studio’s digital presence across platforms, translating an ongoing game-development process into content that people can understand, engage with and become part of.\n\nMy work spans brand voice and social strategy, short-form video concepts, production and editing, developer-focused content, community engagement, campaign planning and platform-specific publishing.\n\nBecause I am also directly involved in the production of *Heir of Death*, I can bridge the gap between development and marketing, identifying moments from inside the process that can become stories, educational content, entertainment and opportunities for community participation.",
         "layout": "wide",
-        "accent": "",
+        "accent": "#8e95a3",
         "role": "",
         "navTitle": "",
         "showInToc": true,
-        "alwaysVisible": false,
+        "alwaysVisible": true,
         "disciplines": [],
-        "links": [],
+        "links": [
+          {
+            "id": "link-msokjz9e-1f4x",
+            "label": "Instagram",
+            "url": "https://www.instagram.com/sixmindsstudio/",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msokjz9e-nuh8",
+            "label": "Tiktok",
+            "url": "https://www.tiktok.com/@six.minds.studio",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msokjz9e-ul7j",
+            "label": "Youtube",
+            "url": "https://www.youtube.com/@SixMindsStudio",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msokjz9e-ofew",
+            "label": "X",
+            "url": "https://x.com/SixMindsStudio",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msokjz9e-dpv9",
+            "label": "Reddit",
+            "url": "https://www.reddit.com/user/6MINDSSTUDIO/",
+            "style": "secondary"
+          },
+          {
+            "id": "link-msokjz9e-j30p",
+            "label": "Discord",
+            "url": "https://discord.gg/SHR7Wg6wmA",
+            "style": "secondary"
+          }
+        ],
         "media": [],
         "items": [],
         "quote": "",
@@ -3424,16 +3462,260 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "Process",
-        "title": "Challenge & approach",
-        "body": "Introduce a new studio before the game has a large library of finished assets.\n\nMake the process itself the content, turning team personalities, tutorials and development updates into an ongoing narrative.",
+        "kicker": "01",
+        "title": "Building the Brand",
+        "body": "Introduce a new studio before the game has a large library of finished assets.\n\nMake the process itself the content, turning team personalities, tutorials and development updates into an ongoing narrative.\n\nThe visual identity was developed in parallel, including logo explorations and variations that reflect the studio’s dual nature - both playful and professional, chaotic and structured.",
         "layout": "wide",
-        "accent": "",
-        "role": "",
+        "accent": "#8e95a3",
+        "role": "Creative Producer",
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msoiyd1b-pqdt",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoiyd1b-rk4j",
+            "url": "https://drive.google.com/open?id=1GAbzr_dCSdDnkpimfo63Y-cRO5CMBPAx&usp=drive_fs",
+            "type": "video",
+            "title": "First logo attampt",
+            "caption": "More of a cinematic approach"
+          },
+          {
+            "id": "media-msoiyd1b-1yl6",
+            "url": "https://drive.google.com/open?id=1JzBQ5n_t5qbcAV8pObxLeqxoGxnd7zPt&usp=drive_fs",
+            "type": "video",
+            "title": "Later logo design",
+            "caption": "More  of a \"Gamery\" approach"
+          },
+          {
+            "id": "media-msoiyd1b-q7hp",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-ms21grsg-qr5m",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "02",
+        "title": "Social Media Strategy",
+        "body": "With no existing audience, the challenge was not simply to promote *Heir of Death*, but to give people a reason to follow the studio long before the game was ready to launch.\n\nI developed a content strategy designed around multiple entry points into the studio:\n\n• entertaining short-form content\n• game-development updates\n• behind-the-scenes production\n• educational content and tutorials\n• team-focused storytelling\n• community questions and polls\n• gameplay and cinematic showcases\n\nInstead of treating every platform as a mirror of the others, I adapt concepts, copy and formats to match the way audiences interact with content across Instagram, TikTok, YouTube, LinkedIn, X and Discord.\n\nThe strategy is built around documenting the journey of creating the game, rather than waiting until the finished product is ready to start marketing it.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Media Manager",
+        "navTitle": "Social Media Strategy",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "social"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "An Evolving Strategy\n_________________\n\nSix Minds is still at an early stage, which makes this an active, evolving process.\n\nI continuously research platform behavior, industry practices and audience responses, test different content approaches, analyze what performs and adapt the strategy based on what we learn.\n\nRather than treating the initial strategy as fixed, the goal is to build, test, learn and refine as the studio and its community grow."
+      },
+      {
+        "id": "block-msoj83yp-zsrr",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-ms21grsg-qr5m",
+        "visible": true,
+        "kicker": "02",
+        "title": "Content Planning & Production Pipeline",
+        "body": "To turn the strategy into a consistent workflow, I built and maintain a cross-platform content tracker connecting development, content production and publishing.\n\nEach piece is planned around its purpose, platform, format, required assets and production status, allowing me to identify content opportunities throughout the game-development process and maintain a consistent publishing flow across platforms.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Media Manager",
+        "navTitle": "Content Planning & Production Pipeline",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msojc5hd-mrxc",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Gunt.png",
+            "type": "image",
+            "title": "Gant Sample",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msokmeyg-zcl9",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-ms21grsg-qr5m",
+        "visible": true,
+        "kicker": "Turning a social trend into a recurring studio format",
+        "title": "Case Study | Meet the Minds",
+        "body": "As part of our TikTok discovery strategy, I wanted to introduce the Six Minds team without relying on traditional “Meet the Team” content.\n\nInspired by the narrator-style social trend, I developed Meet the Minds, a recurring short-form series where each developer becomes the subject of their own episode.\n\nInstead of simply explaining their role, each video is built around their personality, workflow and creative quirks, combining real development footage, scripted humor and game-related storytelling.\n\nTo connect the format back to Heir of Death, we gave the narrator an identity of its own: Hell itself, observing and commenting on the developers as they build its world.\n\nThe format gives us a repeatable content series that serves multiple goals at once:\n\nDiscovery → Entertainment → Team Introduction → Game Awareness → Studio Identity",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Media Manager",
+        "navTitle": "Case Study | Meet the Minds",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "production",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msol1jkl-dxq3",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msol1jkl-1w9d",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Narrator%20Trend.png",
+            "type": "image",
+            "title": "Video Scripts Pre-Production",
+            "caption": ""
+          },
+          {
+            "id": "media-msol1jkl-vduy",
+            "url": "https://www.youtube.com/shorts/4MZPsjLhp24",
+            "type": "video",
+            "title": "Meet Natalia",
+            "caption": ""
+          },
+          {
+            "id": "media-msol1jkl-zk9f",
+            "url": "https://www.youtube.com/shorts/VehyzMGzxM0",
+            "type": "video",
+            "title": "Meet Michael",
+            "caption": ""
+          },
+          {
+            "id": "media-msol1jkl-qtsk",
+            "url": "https://www.youtube.com/shorts/TJ3SUi7otgc",
+            "type": "video",
+            "title": "Meet Yosef",
+            "caption": ""
+          },
+          {
+            "id": "media-msol1jkl-3a6a",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msok7si3-pszf",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-ms21grsg-qr5m",
+        "visible": true,
+        "kicker": "02",
+        "title": "Platform Strategy",
+        "body": "Rather than treating every platform as another distribution channel for the same content, I defined a different role for each platform within the studio’s wider content and community strategy.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Media Manager",
+        "navTitle": "Platform Strategy",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msokbvtd-jbwf",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Gunt.png",
+            "type": "image",
+            "title": "Gant Sample",
+            "caption": ""
+          }
+        ],
+        "items": [
+          {
+            "id": "item-msokbvtd-yud9",
+            "title": "YouTube - Knowledge & Showcase",
+            "text": "Our home for higher-value, evergreen content: tutorials, development deep dives, trailers, showcases and longer-form videos. The goal is to provide useful content while building a library that demonstrates the team’s knowledge and creative work."
+          },
+          {
+            "id": "item-msokbvtd-tfzx",
+            "title": "TikTok - Trends & Discovery",
+            "text": "Fast, entertaining and trend-aware content designed primarily for discovery. We adapt relevant trends to game development and the personalities behind Six Minds, creating an accessible entry point to the studio for new audiences."
+          },
+          {
+            "id": "item-msokbvtd-8buu",
+            "title": "Instagram - Community & Identity",
+            "text": "A more community-driven look into the studio. Alongside Reels and showcases, Stories, polls, questions and interactive formats allow us to involve followers in the development journey and create ongoing interaction around the game and team."
+          },
+          {
+            "id": "item-msokbvtd-90t7",
+            "title": "X & Reddit - Conversation & Engagement",
+            "text": "Focused on participating rather than simply publishing. We join relevant conversations, development threads and community discussions, ask people to share their own work and experiences, and use posts as conversation starters rather than one-way promotion."
+          },
+          {
+            "id": "item-msokbvtd-k3zu",
+            "title": "LinkedIn - Expertise & Professional Presence",
+            "text": "Our professional-facing platform, highlighting development processes, technical and creative insights, team achievements and studio milestones. The goal is to establish Six Minds and its individual team members as knowledgeable creators within the game-development industry."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msojpkgu-4fd7",
+        "type": "story",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "04",
+        "title": "Community Building & Go-to-Market",
+        "body": "Our community strategy was designed around a long-term goal: not only building an audience for Heir of Death, but establishing a community around Six Minds Studio that can grow with us into future projects.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Creative Producer",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "social"
+        ],
         "links": [],
         "media": [],
         "items": [],
@@ -3442,43 +3724,119 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-ms21grsg-qr5m",
-        "type": "credits",
-        "level": "primary",
-        "parentId": "",
+        "id": "block-msojpolk-vgnm",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msojpkgu-4fd7",
         "visible": true,
-        "kicker": "Project details",
-        "title": "Credits",
-        "body": "",
+        "kicker": "04",
+        "title": "Discord as the Community Hub",
+        "body": "We built Discord as the central space connecting our development team directly with players.\n\nRather than using it only for announcements, the server was designed as an active part of the development process, bringing together game updates, playable builds, discussions, feedback and direct interaction with the team.",
         "layout": "wide",
-        "accent": "",
-        "role": "",
-        "navTitle": "",
+        "accent": "#8e95a3",
+        "role": "Creative Producer",
+        "navTitle": "Discord",
         "showInToc": true,
         "alwaysVisible": false,
-        "disciplines": [],
+        "disciplines": [
+          "production",
+          "social"
+        ],
         "links": [],
-        "media": [],
-        "items": [
+        "media": [
           {
-            "id": "item-ms21grsg-z4gp",
-            "title": "Role",
-            "text": "Social Lead · Content Creator"
+            "id": "media-msok79t6-11an",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
           },
           {
-            "id": "item-ms21grsg-ahdh",
-            "title": "Tools",
-            "text": "Premiere Pro · Canva · Discord"
+            "id": "media-msok79t6-idwg",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Discord%20Poll.png",
+            "type": "image",
+            "title": "A poll I made on discord giving our members a chance to help shaping the player's identity",
+            "caption": ""
           },
           {
-            "id": "item-ms21grsg-shar",
-            "title": "Client / Context",
-            "text": "Six Minds Studio"
+            "id": "media-msok79t6-4jlj",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Discord%20Tutorial.png",
+            "type": "image",
+            "title": "Giving our members exclusive tuturials",
+            "caption": ""
+          },
+          {
+            "id": "media-msok79t6-6w7q",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
           }
         ],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
+      },
+      {
+        "id": "block-msok385g-mlfq",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msojpkgu-4fd7",
+        "visible": true,
+        "kicker": "04",
+        "title": "From Audience to Playtesters",
+        "body": "A key part of our go-to-market approach is introducing players to the game while it is still being developed.\n\nThrough social media and Discord, we invite players to access builds, participate in playtests, report issues, share feedback and take part in polls around development decisions.\n\nThis creates a direct feedback loop:\n\nDevelopment ➡️ Content ➡️ Community ➡️ Feedback ➡️ Development",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Creative Producer",
+        "navTitle": "Playtesting Community",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msok7f36-yigu",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Discord%20Chat.png",
+            "type": "image",
+            "title": "Our members get our latest build and help us playtest it.",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msok5rys-gmm1",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msojpkgu-4fd7",
+        "visible": true,
+        "kicker": "04",
+        "title": "Building Beyond One Game",
+        "body": "The long-term objective is to turn the audience discovering Heir of Death into a community connected to Six Minds itself.\n\nBy establishing that relationship early, each release contributes not only to the current game, but to an audience we can continue engaging with across future games, prototypes and studio projects.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Creative Producer",
+        "navTitle": "Building Beyond One Game",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "social"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "Heir of Death is the first game.\nSix Minds is the brand we are building for the long run."
       }
     ]
   },
