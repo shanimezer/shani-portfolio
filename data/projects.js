@@ -3568,6 +3568,58 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
+        "id": "block-msok7si3-pszf",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-ms21grsg-qr5m",
+        "visible": true,
+        "kicker": "02",
+        "title": "Platform Strategy",
+        "body": "Rather than treating every platform as another distribution channel for the same content, I defined a different role for each platform within the studio’s wider content and community strategy.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Media Manager",
+        "navTitle": "Platform Strategy",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "production",
+          "social"
+        ],
+        "links": [],
+        "media": [],
+        "items": [
+          {
+            "id": "item-msol8k19-suht",
+            "title": "YouTube - Knowledge & Showcase",
+            "text": "Our home for higher-value, evergreen content: tutorials, development deep dives, trailers, showcases and longer-form videos. The goal is to provide useful content while building a library that demonstrates the team’s knowledge and creative work."
+          },
+          {
+            "id": "item-msol8k19-z2ms",
+            "title": "TikTok - Trends & Discovery",
+            "text": "Fast, entertaining and trend-aware content designed primarily for discovery. We adapt relevant trends to game development and the personalities behind Six Minds, creating an accessible entry point to the studio for new audiences."
+          },
+          {
+            "id": "item-msol8k19-jhdb",
+            "title": "Instagram - Community & Identity",
+            "text": "A more community-driven look into the studio. Alongside Reels and showcases, Stories, polls, questions and interactive formats allow us to involve followers in the development journey and create ongoing interaction around the game and team."
+          },
+          {
+            "id": "item-msol8k19-6378",
+            "title": "X & Reddit - Conversation & Engagement",
+            "text": "Focused on participating rather than simply publishing. We join relevant conversations, development threads and community discussions, ask people to share their own work and experiences, and use posts as conversation starters rather than one-way promotion."
+          },
+          {
+            "id": "item-msol8k19-sx34",
+            "title": "LinkedIn - Expertise & Professional Presence",
+            "text": "Our professional-facing platform, highlighting development processes, technical and creative insights, team achievements and studio milestones. The goal is to establish Six Minds and its individual team members as knowledgeable creators within the game-development industry."
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
         "id": "block-msokmeyg-zcl9",
         "type": "story",
         "level": "secondary",
@@ -3638,66 +3690,6 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       },
       {
-        "id": "block-msok7si3-pszf",
-        "type": "story",
-        "level": "secondary",
-        "parentId": "block-ms21grsg-qr5m",
-        "visible": true,
-        "kicker": "02",
-        "title": "Platform Strategy",
-        "body": "Rather than treating every platform as another distribution channel for the same content, I defined a different role for each platform within the studio’s wider content and community strategy.",
-        "layout": "wide",
-        "accent": "#8e95a3",
-        "role": "Social Media Manager",
-        "navTitle": "Platform Strategy",
-        "showInToc": true,
-        "alwaysVisible": false,
-        "disciplines": [
-          "production",
-          "social"
-        ],
-        "links": [],
-        "media": [
-          {
-            "id": "media-msokbvtd-jbwf",
-            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Gunt.png",
-            "type": "image",
-            "title": "Gant Sample",
-            "caption": ""
-          }
-        ],
-        "items": [
-          {
-            "id": "item-msokbvtd-yud9",
-            "title": "YouTube - Knowledge & Showcase",
-            "text": "Our home for higher-value, evergreen content: tutorials, development deep dives, trailers, showcases and longer-form videos. The goal is to provide useful content while building a library that demonstrates the team’s knowledge and creative work."
-          },
-          {
-            "id": "item-msokbvtd-tfzx",
-            "title": "TikTok - Trends & Discovery",
-            "text": "Fast, entertaining and trend-aware content designed primarily for discovery. We adapt relevant trends to game development and the personalities behind Six Minds, creating an accessible entry point to the studio for new audiences."
-          },
-          {
-            "id": "item-msokbvtd-8buu",
-            "title": "Instagram - Community & Identity",
-            "text": "A more community-driven look into the studio. Alongside Reels and showcases, Stories, polls, questions and interactive formats allow us to involve followers in the development journey and create ongoing interaction around the game and team."
-          },
-          {
-            "id": "item-msokbvtd-90t7",
-            "title": "X & Reddit - Conversation & Engagement",
-            "text": "Focused on participating rather than simply publishing. We join relevant conversations, development threads and community discussions, ask people to share their own work and experiences, and use posts as conversation starters rather than one-way promotion."
-          },
-          {
-            "id": "item-msokbvtd-k3zu",
-            "title": "LinkedIn - Expertise & Professional Presence",
-            "text": "Our professional-facing platform, highlighting development processes, technical and creative insights, team achievements and studio milestones. The goal is to establish Six Minds and its individual team members as knowledgeable creators within the game-development industry."
-          }
-        ],
-        "quote": "",
-        "author": "",
-        "takeaway": ""
-      },
-      {
         "id": "block-msojpkgu-4fd7",
         "type": "story",
         "level": "primary",
@@ -3745,28 +3737,28 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msok79t6-11an",
+            "id": "media-msol7qtf-v3bj",
             "url": "slideshow://start?transition=slide",
             "type": "image",
             "title": "Slideshow",
             "caption": ""
           },
           {
-            "id": "media-msok79t6-idwg",
+            "id": "media-msol7qtf-widw",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Discord%20Poll.png",
             "type": "image",
-            "title": "A poll I made on discord giving our members a chance to help shaping the player's identity",
-            "caption": ""
+            "title": "Polls",
+            "caption": "A Discord poll I created to give our community a chance to help shape the player character’s identity."
           },
           {
-            "id": "media-msok79t6-4jlj",
-            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Discord%20Tutorial.png",
+            "id": "media-msol7qtf-gc4l",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/six-minds-studio/Discort%20Tutorials.png",
             "type": "image",
-            "title": "Giving our members exclusive tuturials",
-            "caption": ""
+            "title": "Tutorials",
+            "caption": "Providing our community members with exclusive tutorials and educational content."
           },
           {
-            "id": "media-msok79t6-6w7q",
+            "id": "media-msol7qtf-ikx6",
             "url": "slideshow://end",
             "type": "image",
             "title": "End slideshow",
