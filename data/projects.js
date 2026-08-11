@@ -1,5 +1,280 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "id": "shushu",
+    "title": "Shushu",
+    "year": "2026",
+    "category": "social",
+    "categories": [
+      "social",
+      "directing",
+      "editing"
+    ],
+    "categoryLabel": "Social Manager",
+    "roles": [
+      "Content Creator · Creative · Scriptwriter · Creative Director · Editor · AI Visual Creator · Influencer Strategy"
+    ],
+    "status": "published",
+    "accent": "#ffca57",
+    "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/Shushu%20Logo.jpeg",
+    "video": "",
+    "summary": "Ongoing social media content creation for Shushu, a rental-tech startup helping apartment hunters find listings from multiple sources in one place.",
+    "tools": "IG · Tiktok · Google Tools",
+    "client": "Shuhsu",
+    "featured": false,
+    "blocks": [
+      {
+        "id": "block-msom5nc5-ok49",
+        "type": "overview",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "The project",
+        "title": "Overview",
+        "body": "Shushu is a rental-tech startup designed to make apartment hunting faster and easier by bringing listings and opportunities into one place.\n\nAs a content creator for Shushu, I work across the full creative pipeline, from strategy and ideation to scriptwriting, production, filming, directing, AI-assisted design, and editing.\n\nI create both organic and paid social content while also providing strategic guidance for influencer collaborations.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [],
+        "links": [
+          {
+            "id": "link-mson631v-fa4u",
+            "label": "Shushu's Site",
+            "url": "https://getshushu.com/",
+            "style": "secondary"
+          },
+          {
+            "id": "link-mson631v-za71",
+            "label": "Shushu's Tiktok",
+            "url": "https://www.tiktok.com/@shushu.app",
+            "style": "secondary"
+          },
+          {
+            "id": "link-mson631v-vuz5",
+            "label": "Shushu's IG",
+            "url": "https://www.instagram.com/shushu.app/reels/",
+            "style": "secondary"
+          }
+        ],
+        "media": [],
+        "items": [
+          {
+            "id": "item-mson631v-3qr7",
+            "title": "Creative Strategy",
+            "text": "Content concepts, formats & campaign directions"
+          },
+          {
+            "id": "item-mson631v-t1hy",
+            "title": "Scriptwriting",
+            "text": "Social scripts, ads & mini-dramas"
+          },
+          {
+            "id": "item-mson631v-11q9",
+            "title": "Production & Direction",
+            "text": "Planning, filming & directing talent"
+          },
+          {
+            "id": "item-mson631v-3owu",
+            "title": "Editing",
+            "text": "Short-form & paid social content"
+          },
+          {
+            "id": "item-mson631v-5oqj",
+            "title": "AI-Assisted Design",
+            "text": "Graphics & visual assets"
+          },
+          {
+            "id": "item-mson631v-r195",
+            "title": "Influencer Strategy",
+            "text": "Creative guidance & collaboration formats"
+          }
+        ],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msom5nc5-fwh0",
+        "type": "credits",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Reaching Gen Z & Millennials",
+        "title": "Content Strategy",
+        "body": "To connect with Shushu’s primarily Gen Z and Millennial audience, I developed a content mix that balances entertainment and cultural relevance with clear product communication.\n\nThe strategy is built around three core content pillars:\nTrend-Driven Content · UGC · Direct Marketing",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Social Strategy",
+        "navTitle": "Content Strategy",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "social"
+        ],
+        "links": [],
+        "media": [],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msonc7ut-byqq",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msom5nc5-fwh0",
+        "visible": true,
+        "kicker": "Strategy in Action",
+        "title": "Trend-Driven Content",
+        "body": "Using trends, humor, relatable situations, and emerging social formats to make Shushu part of the conversations its audience is already engaging with.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Content Creator",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msoo5id8-pcx9",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoo5id8-9n25",
+            "url": "https://drive.google.com/open?id=1GxX2wjQoZCjFD8Tk75VRVvGrDqLqUgP_&usp=drive_fs",
+            "type": "video",
+            "title": "Mini-Drama Trend",
+            "caption": "I adapted the short-form mini-drama trend into an exaggerated apartment-hunting scenario, turning a familiar audience frustration into entertaining branded content."
+          },
+          {
+            "id": "media-msoo5id8-vd4p",
+            "url": "https://www.tiktok.com/@shushu.app/video/7618257216214142226",
+            "type": "image",
+            "title": "Street Apartment Tour Trend",
+            "caption": "A local take on a global social trend that playfully exposes the absurd reality of big-city rent, using humor and a familiar format to connect with Gen Z on their level."
+          },
+          {
+            "id": "media-msoo5id8-3eq0",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msoo6f7z-kr1w",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msom5nc5-fwh0",
+        "visible": true,
+        "kicker": "Strategy in Action",
+        "title": "UGC & Native Content",
+        "body": "Creating relatable, platform-native content that introduces Shushu through familiar apartment-hunting experiences rather than traditional advertising.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Content Creator",
+        "navTitle": "UGC Content",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msooah3v-opo4",
+            "url": "https://www.instagram.com/reel/DXBbCSQD_Zm/",
+            "type": "image",
+            "title": "",
+            "caption": "Real User, Real Apartment"
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      },
+      {
+        "id": "block-msoobya4-xf6i",
+        "type": "story",
+        "level": "secondary",
+        "parentId": "block-msom5nc5-fwh0",
+        "visible": true,
+        "kicker": "Strategy in Action",
+        "title": "Direct Marketing",
+        "body": "Paid Meta Campaign\n-------------------\n\nI created direct-response visual assets for Shushu’s Meta campaigns, focusing on communicating the product’s core value quickly: finding relevant rental listings from multiple sources in one place.\n\nEarly campaign data also helped reveal where creative performance ended and targeting became the next challenge, with some users dropping off after reaching the bot because they were searching for locations the service did not yet support.\n\nEarly Campaign Insights \n________________\nAccording to early performance data shared by the client, engagement with the campaign improved after launch, with an increasing share of visitors continuing from the landing page to the Shushu bot.\n\nThe initial campaign also revealed a targeting challenge: some users who showed interest were searching for cities that Shushu did not yet support, creating drop-off further down the funnel.",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Content Creator",
+        "navTitle": "Direct Marketing",
+        "showInToc": true,
+        "alwaysVisible": false,
+        "disciplines": [
+          "directing",
+          "social"
+        ],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msopcah7-e1rn",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msopcah7-oirj",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/%20A_Test.png",
+            "type": "image",
+            "title": "A Test",
+            "caption": "“Why search in a million different places? All rental listings in one place.” /  Direct-response creative highlighting Shushu’s main value proposition: aggregating rental listings from multiple sources. / Result: 378 clicks · ₪0.38 CPC · ₪143 spend"
+          },
+          {
+            "id": "media-msopcah7-qn6t",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/B_Test.png",
+            "type": "image",
+            "title": "B Test",
+            "caption": "“Get only relevant apartments from dozens of sources.” /  A benefit-led variation focused on relevance, positioning Shushu as a way to reduce the noise and effort involved in searching across multiple platforms. / Result: 164 clicks · ₪0.35 CPC"
+          },
+          {
+            "id": "media-msopcah7-sqoh",
+            "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/shushu/C_Test.png",
+            "type": "image",
+            "title": "C Test",
+            "caption": "“Why search in a million different places? All rental listings in one place.” / An additional CTA variation of the direct-response creative, tested as part of the paid campaign. / Result: 66 clicks · ₪0.36 CPC · ₪23 spend at the time of reporting"
+          },
+          {
+            "id": "media-msopcah7-64mn",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": "What have we learned?\n_______________\nAs engagement improved, the campaign revealed a targeting mismatch: some interested users were searching in cities Shushu did not yet support. This highlighted the need to align paid targeting more closely with current product coverage."
+      }
+    ],
+    "role": "Content Creator · Creative · Scriptwriter · Creative Director · Editor · AI Visual Creator · Influencer Strategy"
+  },
+  {
     "id": "gen-z-judgment",
     "title": "Gen-Z Judgment",
     "year": "2024",
