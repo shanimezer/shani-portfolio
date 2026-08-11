@@ -3816,13 +3816,13 @@ window.PORTFOLIO_PROJECTS = [
     "category": "social",
     "categoryLabel": "Content Creator · Social Manager · Editor",
     "year": "2025–2026",
-    "featured": false,
+    "featured": true,
     "accent": "#51c0f0",
     "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/tau-arts/tauArtsLogo.jpg",
     "video": "https://www.instagram.com/reel/DaKMEHiMeqE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    "summary": "Content creation and social management for both The Arts Faculty &  Digital Media track at Tel Aviv University.",
+    "summary": "Managing and creating social-first content for Tel Aviv University’s Faculty of the Arts and Digital Media program, translating academic life, events and creative work into engaging digital stories.",
     "role": "Social Media Manager · Content Creator · Editor",
-    "tools": "Premiere Pro · Canva · Meta Platforms",
+    "tools": "Premiere Pro · Canva · Instagram · TikTok",
     "client": "Tel Aviv University",
     "challenge": "Translate an interdisciplinary academic program into accessible, engaging social content.",
     "approach": "Center student work, practical tools and authentic behind-the-scenes moments rather than institutional messaging.",
@@ -3841,20 +3841,51 @@ window.PORTFOLIO_PROJECTS = [
         "type": "overview",
         "level": "primary",
         "parentId": "",
-        "visible": false,
+        "visible": true,
         "kicker": "The project",
         "title": "Overview",
-        "body": "Content creation and social management for the Digital Media program at Tel Aviv University.",
+        "body": "Since March 2025, I’ve been managing and creating social media content for Tel Aviv University’s Faculty of the Arts and Digital Media program.\n\nMy work covers the full content pipeline, from strategy and ideation to scripting, filming, editing, publishing and community management. The challenge is often taking academic, artistic or technical subjects and turning them into content that feels approachable, engaging and native to social media.\n\nWorking across both the broader Faculty of the Arts and the Digital Media program also means communicating with very different audiences, from prospective and current students to artists, creators, academics and the wider public, while giving each channel its own voice and identity.",
         "layout": "wide",
-        "accent": "",
-        "role": "",
+        "accent": "#8e95a3",
+        "role": "Content Creator",
         "navTitle": "",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [],
         "links": [],
         "media": [],
-        "items": [],
+        "items": [
+          {
+            "id": "item-msoi7fml-gs39",
+            "title": "Content Strategy",
+            "text": "Planning and shaping content around academic events, student projects, admissions, community activity and ongoing university initiatives, while adapting each idea to the platform and audience."
+          },
+          {
+            "id": "item-msoi7fml-lulq",
+            "title": "Creative Development",
+            "text": "Developing social-first concepts, recurring formats, hooks, scripts and visual directions designed to make academic and creative content feel accessible, engaging and relevant."
+          },
+          {
+            "id": "item-msoi7fml-posv",
+            "title": "Production",
+            "text": "Filming interviews, events, behind-the-scenes content and promotional videos, while directing participants and adapting quickly to fast-paced production environments."
+          },
+          {
+            "id": "item-msoi7fml-ngm2",
+            "title": "Editing & Post-Production",
+            "text": "Editing short-form and long-form video, including pacing, subtitles, sound, graphics and platform-specific versions for Instagram, TikTok, YouTube and other digital channels."
+          },
+          {
+            "id": "item-msoi7fml-x3fb",
+            "title": "Copywriting & Publishing",
+            "text": "Writing captions, titles and supporting copy, preparing content for publication and maintaining a consistent tone across different types of academic and promotional communication."
+          },
+          {
+            "id": "item-msoi7fml-efct",
+            "title": "Community & Social Management",
+            "text": "Managing ongoing social activity, interacting with the audience and using content performance and audience response to refine future creative decisions."
+          }
+        ],
         "quote": "",
         "author": "",
         "takeaway": ""
@@ -3883,51 +3914,49 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msjlehss-fzu7",
+            "id": "media-msoi2aaa-tzcj",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoi2aaa-d1gs",
             "url": "https://www.instagram.com/reel/DZKs0_pss-Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
             "type": "image",
-            "title": "שת״פ עם  הגלריה האוניברסיטאית ע”ש גניה שרייבר",
+            "title": "",
             "caption": ""
           },
           {
-            "id": "media-msjlehss-e4vv",
+            "id": "media-msoi2aaa-sw7g",
             "url": "https://www.instagram.com/reel/DQ1mLxPjYKU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
             "type": "image",
-            "title": "הצגת פרוייקטי סטודנטים",
+            "title": "",
             "caption": ""
           },
           {
-            "id": "media-msjlehss-1cyh",
+            "id": "media-msoi2aaa-3y1v",
             "url": "https://www.tiktok.com/@tauarts/video/7652687685655465223?lang=cs-CZ",
             "type": "image",
-            "title": "ראיונות עם סטודנטים",
+            "title": "",
             "caption": ""
           },
           {
-            "id": "media-msjlehss-fxo6",
+            "id": "media-msoi2aaa-zu8j",
             "url": "https://www.tiktok.com/@tauarts/video/7495703700481068295?lang=cs-CZ",
             "type": "image",
-            "title": "יצירת וולוגים",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoi2aaa-kddl",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
             "caption": ""
           }
         ],
-        "items": [
-          {
-            "id": "item-msjlehss-scuo",
-            "title": "Role",
-            "text": "Social Media Manager · Creator"
-          },
-          {
-            "id": "item-msjlehss-2rhs",
-            "title": "Tools",
-            "text": "Premiere Pro · Canva · Meta Platforms"
-          },
-          {
-            "id": "item-msjlehss-n5u6",
-            "title": "Client / Context",
-            "text": "Tel Aviv University"
-          }
-        ],
+        "items": [],
         "quote": "",
         "author": "",
         "takeaway": ""
