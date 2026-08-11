@@ -19,7 +19,11 @@
     const years = String(project?.year || '').match(/(?:19|20)\d{2}/g) || [];
     return years.length ? Math.max(...years.map(Number)) : 0;
   };
-  const sortNewestFirst = list => list.map((project,index) => ({project,index})).sort((a,b) => projectYear(b.project) - projectYear(a.project) || a.index - b.index).map(item => item.project);
+  const sortNewestFirst = list => list
+    .map((project, index) => ({ project, index }))
+    .sort((a, b) => projectYear(b.project) - projectYear(a.project) || a.index - b.index)
+    .map(item => item.project);
+
   const toEmbedUrl = value => {
     if (!value) return '';
     try {
@@ -184,5 +188,5 @@
   detail.style.setProperty('--project-accent', project.accent || '#b9bec8');
   const blocks = Array.isArray(project.blocks) ? project.blocks : [];
   const heroVideo = project.video ? `<section class="section project-hero-video"><div class="wrap"><div class="video-frame"><iframe src="${escape(toEmbedUrl(project.video))}" title="${escape(project.title)} video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></section>` : '';
-  detail.innerHTML = `<section class="project-hero-dynamic"><div class="project-hero-image" style="background-image:url('${escape(project.cover || '')}')"></div><div class="project-hero-shade"></div><div class="wrap project-hero-copy"><div class="eyebrow">${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</div><h1>${escape(project.title)}</h1><p>${escape(project.summary || '')}</p><div class="project-tags"><span>${escape(project.year || '')}</span><span>${escape(project.role || (project.roles || []).join(' · '))}</span></div></div></section>${heroVideo}${renderBlockTree(blocks, project)}`;
+  detail.innerHTML = `<section class="project-hero-dynamic"><div class="project-hero-image" style="background-image:url('${escape(project.cover || '')}')"></div><div class="project-hero-shade"></div><div class="wrap project-hero-copy"><div class="eyebrow">${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</div><h1>${escape(project.title)}</h1><p>${escape(project.summary || '')}</p><div class="project-tags"><span>${escape(project.year || '')}</span><span>${escape(project.role || (project.roles || []).join(' · '))}</span></div></div></section>${heroVideo}${renderBlockTree(blocks, project)}<section class="section next-project"><div class="wrap"><a href="../work/index.html">← View all projects</a></div></section>`;
 })();
