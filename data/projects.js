@@ -3819,7 +3819,7 @@ window.PORTFOLIO_PROJECTS = [
     "featured": true,
     "accent": "#51c0f0",
     "cover": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/tau-arts/tauArtsLogo.jpg",
-    "video": "https://www.instagram.com/reel/DaKMEHiMeqE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "video": "",
     "summary": "Managing and creating social-first content for Tel Aviv University’s Faculty of the Arts and Digital Media program, translating academic life, events and creative work into engaging digital stories.",
     "role": "Social Media Manager · Content Creator · Editor",
     "tools": "Premiere Pro · Canva · Instagram · TikTok",
@@ -3853,35 +3853,113 @@ window.PORTFOLIO_PROJECTS = [
         "alwaysVisible": false,
         "disciplines": [],
         "links": [],
-        "media": [],
+        "media": [
+          {
+            "id": "media-msoigqdq-4mq0",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-xtig",
+            "url": "https://www.instagram.com/reel/DaKMEHiMeqE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-pny6",
+            "url": "https://www.instagram.com/p/DJzF-ZUo60n/",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-xohz",
+            "url": "https://www.instagram.com/reel/DZKs0_pss-Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-5gmw",
+            "url": "https://www.instagram.com/reel/DQ1mLxPjYKU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-o6pu",
+            "url": "https://www.tiktok.com/@tauarts/video/7652687685655465223?lang=cs-CZ",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-qmj6",
+            "url": "https://www.tiktok.com/@tauarts/video/7495703700481068295?lang=cs-CZ",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-pncm",
+            "url": "https://www.instagram.com/p/DTdcvWjCHj7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-o6vn",
+            "url": "https://www.instagram.com/p/DJZShl9oeG3/",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-z2xa",
+            "url": "https://www.instagram.com/p/DMX44OOoGMH/",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigqdq-i8ep",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
         "items": [
           {
-            "id": "item-msoi7fml-gs39",
+            "id": "item-msoigqdq-p5ko",
             "title": "Content Strategy",
             "text": "Planning and shaping content around academic events, student projects, admissions, community activity and ongoing university initiatives, while adapting each idea to the platform and audience."
           },
           {
-            "id": "item-msoi7fml-lulq",
+            "id": "item-msoigqdq-sd8a",
             "title": "Creative Development",
             "text": "Developing social-first concepts, recurring formats, hooks, scripts and visual directions designed to make academic and creative content feel accessible, engaging and relevant."
           },
           {
-            "id": "item-msoi7fml-posv",
+            "id": "item-msoigqdq-rz6d",
             "title": "Production",
             "text": "Filming interviews, events, behind-the-scenes content and promotional videos, while directing participants and adapting quickly to fast-paced production environments."
           },
           {
-            "id": "item-msoi7fml-ngm2",
+            "id": "item-msoigqdq-39r4",
             "title": "Editing & Post-Production",
             "text": "Editing short-form and long-form video, including pacing, subtitles, sound, graphics and platform-specific versions for Instagram, TikTok, YouTube and other digital channels."
           },
           {
-            "id": "item-msoi7fml-x3fb",
+            "id": "item-msoigqdq-l5wx",
             "title": "Copywriting & Publishing",
             "text": "Writing captions, titles and supporting copy, preparing content for publication and maintaining a consistent tone across different types of academic and promotional communication."
           },
           {
-            "id": "item-msoi7fml-efct",
+            "id": "item-msoigqdq-t32w",
             "title": "Community & Social Management",
             "text": "Managing ongoing social activity, interacting with the audience and using content performance and audience response to refine future creative decisions."
           }
@@ -3895,8 +3973,8 @@ window.PORTFOLIO_PROJECTS = [
         "type": "credits",
         "level": "primary",
         "parentId": "",
-        "visible": true,
-        "kicker": "Videos are much better than words",
+        "visible": false,
+        "kicker": "",
         "title": "Content",
         "body": "",
         "layout": "wide",
@@ -3914,42 +3992,77 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
-            "id": "media-msoi2aaa-tzcj",
+            "id": "media-msoigh23-f7tw",
             "url": "slideshow://start?transition=slide",
             "type": "image",
             "title": "Slideshow",
             "caption": ""
           },
           {
-            "id": "media-msoi2aaa-d1gs",
+            "id": "media-msoigh23-rmu1",
+            "url": "https://www.instagram.com/reel/DaKMEHiMeqE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigh23-p8ju",
+            "url": "https://www.instagram.com/p/DJzF-ZUo60n/",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigh23-cr0c",
             "url": "https://www.instagram.com/reel/DZKs0_pss-Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
             "type": "image",
             "title": "",
             "caption": ""
           },
           {
-            "id": "media-msoi2aaa-sw7g",
+            "id": "media-msoigh23-1abq",
             "url": "https://www.instagram.com/reel/DQ1mLxPjYKU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
             "type": "image",
             "title": "",
             "caption": ""
           },
           {
-            "id": "media-msoi2aaa-3y1v",
+            "id": "media-msoigh23-3ip9",
             "url": "https://www.tiktok.com/@tauarts/video/7652687685655465223?lang=cs-CZ",
             "type": "image",
             "title": "",
             "caption": ""
           },
           {
-            "id": "media-msoi2aaa-zu8j",
+            "id": "media-msoigh23-pj2n",
             "url": "https://www.tiktok.com/@tauarts/video/7495703700481068295?lang=cs-CZ",
             "type": "image",
             "title": "",
             "caption": ""
           },
           {
-            "id": "media-msoi2aaa-kddl",
+            "id": "media-msoigh23-dc8b",
+            "url": "https://www.instagram.com/p/DTdcvWjCHj7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigh23-3qeu",
+            "url": "https://www.instagram.com/p/DJZShl9oeG3/",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigh23-ia4k",
+            "url": "https://www.instagram.com/p/DMX44OOoGMH/",
+            "type": "image",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "id": "media-msoigh23-2q1k",
             "url": "slideshow://end",
             "type": "image",
             "title": "End slideshow",
