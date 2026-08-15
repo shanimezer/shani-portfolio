@@ -9,7 +9,7 @@ window.PORTFOLIO_PROJECTS = [
       "directing",
       "editing"
     ],
-    "categoryLabel": "Social Manager",
+    "categoryLabel": "Social Manager · Creative Director",
     "roles": [
       "Content Creator · Creative · Scriptwriter · Creative Director · Editor · AI Visual Creator · Influencer Strategy"
     ],
@@ -1062,19 +1062,19 @@ window.PORTFOLIO_PROJECTS = [
         "disciplines": [],
         "links": [
           {
-            "id": "link-msjkt53v-wv4t",
+            "id": "link-msuhuv0c-5quj",
             "label": "Play on Itch.io",
             "url": "https://lunis-moonfire.itch.io/popcorn-chicken",
             "style": "secondary"
           },
           {
-            "id": "link-msjkt53v-wpz2",
-            "label": "Pitch Deck",
+            "id": "link-msuhuv0c-nffz",
+            "label": "Pitch Deck / GDD",
             "url": "https://docs.google.com/presentation/d/1kJoMEL7aHtVAZsQkTmaqW5-vDqUycGcwomfqdEog2Yc/edit?slide=id.p#slide=id.p",
             "style": "secondary"
           },
           {
-            "id": "link-msjkt53v-knl8",
+            "id": "link-msuhuv0c-ocxw",
             "label": "GitHub",
             "url": "https://github.com/shanimezer/Popcorn-Chicken",
             "style": "secondary"
@@ -1082,40 +1082,54 @@ window.PORTFOLIO_PROJECTS = [
         ],
         "media": [
           {
-            "id": "media-msjkt53v-fusy",
+            "id": "media-msuhuv0c-jcxw",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msuhuv0c-lkr9",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/PC-fox.gif",
             "type": "image",
             "title": "Fox",
             "caption": ""
           },
           {
-            "id": "media-msjkt53v-tzv0",
+            "id": "media-msuhuv0c-kbnx",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-chicken.gif",
             "type": "image",
             "title": "Chicken",
             "caption": ""
           },
           {
-            "id": "media-msjkt53v-sfyv",
+            "id": "media-msuhuv0c-1vs9",
             "url": "https://raw.githubusercontent.com/shanimezer/shani-portfolio/refs/heads/master/project/popcorn-chicken/pc-littlechicken.gif",
             "type": "image",
             "title": "Little Chicken",
+            "caption": ""
+          },
+          {
+            "id": "media-msuhuv0c-ze3t",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
             "caption": ""
           }
         ],
         "items": [
           {
-            "id": "item-msjkt53v-ca2h",
+            "id": "item-msuhuv0c-oq6s",
             "title": "2026",
             "text": "Prototype"
           },
           {
-            "id": "item-msjkt53v-66c9",
+            "id": "item-msuhuv0c-szh5",
             "title": "Status",
             "text": "Currently in Active Development"
           },
           {
-            "id": "item-msjkt53v-489y",
+            "id": "item-msuhuv0c-ko3g",
             "title": "Game Engine",
             "text": "Unity"
           }
