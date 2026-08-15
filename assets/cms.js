@@ -15,6 +15,15 @@
     if (Array.isArray(project.categories)) raw.push(...project.categories);
     return [...new Set(raw.map(normalizeCategory).filter(Boolean))];
   };
+  const projectYear = project => {
+    const years = String(project?.year || '').match(/(?:19|20)\d{2}/g) || [];
+    return years.length ? Math.max(...years.map(Number)) : 0;
+  };
+  const sortNewestFirst = list => list
+    .map((project, index) => ({ project, index }))
+    .sort((a, b) => projectYear(b.project) - projectYear(a.project) || a.index - b.index)
+    .map(item => item.project);
+
   const toEmbedUrl = value => {
     if (!value) return '';
     try {
@@ -136,7 +145,7 @@
   };
 
   window.PortfolioCMS = {
-    categories, blockTypes, escape, normalizeCategory, projectCategories, toEmbedUrl,
+    categories, blockTypes, escape, normalizeCategory, projectCategories, projectYear, sortNewestFirst, toEmbedUrl,
     defaults() { return clone(window.PORTFOLIO_PROJECTS || []); },
     get() { return this.defaults(); },
     bySlug(slug) { return this.get().find(project => project.id === slug); },
@@ -150,6 +159,7 @@
       let list = this.get();
       if (options.category) { const wanted = normalizeCategory(options.category); list = list.filter(project => projectCategories(project).includes(wanted)); }
       if (options.featured) list = list.filter(project => project.featured);
+      list = sortNewestFirst(list);
       container.innerHTML = list.length ? list.map(project => `<a class="card cms-card" data-cat="${escape(normalizeCategory(project.category))}" href="${this.projectUrl(project, options.prefix || '../', options.category || '')}"><div class="cms-cover" style="--project-accent:${escape(project.accent || '#b9bec8')};background-image:url('${escape(project.cover || '')}')"></div><div class="card-body"><div class="meta"><span>${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title)}</h3><p class="muted">${escape(project.summary || '')}</p></div></a>`).join('') : `<div class="empty-state"><h3>No projects here yet.</h3><p>Add one from the Admin panel.</p></div>`;
     }
   };
