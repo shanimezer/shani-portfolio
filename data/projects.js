@@ -482,6 +482,7 @@ window.PORTFOLIO_PROJECTS = [
     "category": "directing",
     "categories": [
       "directing",
+      "narrative",
       "editing",
       "ai"
     ],
@@ -776,6 +777,7 @@ window.PORTFOLIO_PROJECTS = [
     "category": "games",
     "categories": [
       "games",
+      "narrative",
       "production",
       "ai"
     ],
@@ -1439,6 +1441,7 @@ window.PORTFOLIO_PROJECTS = [
     "category": "games",
     "categories": [
       "games",
+      "narrative",
       "production",
       "ai"
     ],
@@ -1882,6 +1885,7 @@ window.PORTFOLIO_PROJECTS = [
     ],
     "categories": [
       "directing",
+      "narrative",
       "production"
     ],
     "status": "published",
