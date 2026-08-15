@@ -80,9 +80,9 @@
       if (!body || body.querySelector('.case-study-cta')) return;
       const cue = document.createElement('div');
       cue.className = 'case-study-cta';
-      cue.innerHTML = '<span>View Case Study</span><b>↗</b>';
+      cue.innerHTML = '<span>Explore Project</span><b>↗</b>';
       body.appendChild(cue);
-      card.setAttribute('aria-label', `${card.querySelector('h3')?.textContent || 'Project'} · View case study`);
+      card.setAttribute('aria-label', `${card.querySelector('h3')?.textContent || 'Project'} · Explore project`);
     });
   };
 
