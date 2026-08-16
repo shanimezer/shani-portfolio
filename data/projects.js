@@ -1,5 +1,114 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "id": "short-form-edits",
+    "title": "Selected Short-Form Edits",
+    "year": "2024-Present",
+    "category": "editing",
+    "categories": [
+      "editing"
+    ],
+    "categoryLabel": "Editting",
+    "roles": [],
+    "status": "draft",
+    "accent": "#8e95a3",
+    "cover": "",
+    "video": "",
+    "summary": "A selection of social-first videos created and edited for brands, creators and campaigns.",
+    "tools": "Cap Cut · Premiere · After Effects · Canva",
+    "client": "Listerine · o.b. · Johnson’s Baby · OGX Hair Products · Jonathan Biton · Smadar Brener",
+    "featured": true,
+    "blocks": [
+      {
+        "id": "block-msvl82em-tea8",
+        "type": "gallery",
+        "level": "primary",
+        "parentId": "",
+        "visible": true,
+        "kicker": "Edits",
+        "title": "Gallery",
+        "body": "",
+        "layout": "wide",
+        "accent": "#8e95a3",
+        "role": "Editor",
+        "navTitle": "",
+        "showInToc": true,
+        "alwaysVisible": true,
+        "disciplines": [],
+        "links": [],
+        "media": [
+          {
+            "id": "media-msvlz3iw-tyum",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Slideshow",
+            "caption": ""
+          },
+          {
+            "id": "media-msvlz3iw-z9yy",
+            "url": "https://www.instagram.com/p/DbSlch7CVGk/",
+            "type": "image",
+            "title": "OGX",
+            "caption": "Editting - Cap Cut"
+          },
+          {
+            "id": "media-msvlz3ix-9dpf",
+            "url": "https://www.instagram.com/p/DaKsH9uCX87/",
+            "type": "image",
+            "title": "JOHNSON’S® Baby",
+            "caption": "Editting - Cap Cut"
+          },
+          {
+            "id": "media-msvlz3ix-o681",
+            "url": "https://drive.google.com/open?id=1vXYPraTIPR9eogBOjUzSBDNCE9zNV4Gq&usp=drive_fs",
+            "type": "video",
+            "title": "O.b",
+            "caption": "Editting (Cap Cut)"
+          },
+          {
+            "id": "media-msvlz3ix-ddhn",
+            "url": "https://www.tiktok.com/@listerine_il/video/7576654222821772565",
+            "type": "image",
+            "title": "Listerine Israel",
+            "caption": "Creative Directing , Filming and Editting (Cap Cut)"
+          },
+          {
+            "id": "media-msvlz3ix-aycb",
+            "url": "https://www.tiktok.com/@smadarbrener5/video/7552190703506443528",
+            "type": "image",
+            "title": "Smadar Brener",
+            "caption": "Creative Directing , Filming and Editting (Cap Cut)"
+          },
+          {
+            "id": "media-msvlz3ix-5c1y",
+            "url": "https://www.instagram.com/reel/DZTANg4sKxd/",
+            "type": "image",
+            "title": "Jonathan Bitton",
+            "caption": "Editting (Cap Cut)"
+          },
+          {
+            "id": "media-msvlz3ix-szy1",
+            "url": "https://www.instagram.com/reel/DLrYEwNokjS/",
+            "type": "image",
+            "title": "Jonathan Bitton",
+            "caption": "Editting (Cap Cut)"
+          },
+          {
+            "id": "media-msvlz3ix-3wxp",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End slideshow",
+            "caption": ""
+          }
+        ],
+        "items": [],
+        "quote": "",
+        "author": "",
+        "takeaway": ""
+      }
+    ],
+    "role": ""
+  },
+  {
     "id": "shushu",
     "title": "Shushu",
     "year": "2026",
