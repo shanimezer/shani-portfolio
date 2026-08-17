@@ -23,6 +23,34 @@
     .map((project, index) => ({ project, index }))
     .sort((a, b) => projectYear(b.project) - projectYear(a.project) || a.index - b.index)
     .map(item => item.project);
+  const isPublicProject = project => !!project && project.publicVisible !== false;
+  const usableThumbnailItem = item => {
+    if (!item?.url || item.type === 'video') return false;
+    const url = String(item.url);
+    if (/^slideshow:/i.test(url)) return false;
+    if (/youtube|youtu\.be|vimeo|instagram|tiktok|drive\.google|docs\.google/i.test(url)) return false;
+    return true;
+  };
+  const projectThumbnailMedia = (project, limit = 4) => {
+    if (!project) return [];
+    const urls = [];
+    (project.blocks || []).forEach(block => {
+      if (block.visible === false) return;
+      (block.media || []).forEach(item => {
+        if (!usableThumbnailItem(item) || urls.includes(item.url)) return;
+        urls.push(item.url);
+      });
+    });
+    if (Array.isArray(project.gallery)) project.gallery.forEach(url => { if (url && !urls.includes(url)) urls.push(url); });
+    return urls.slice(0, limit);
+  };
+  const projectThumbnailMarkup = project => {
+    const accent = escape(project?.accent || '#b9bec8');
+    if (project?.cover) return `<div class="cms-cover" style="--project-accent:${accent};background-image:url('${escape(project.cover)}')"></div>`;
+    const media = projectThumbnailMedia(project, 4);
+    if (!media.length) return `<div class="cms-cover cms-cover-empty" style="--project-accent:${accent}"><span>✦</span></div>`;
+    return `<div class="cms-cover cms-cover-mosaic count-${media.length}" style="--project-accent:${accent}">${media.map(url => `<span style="background-image:url('${escape(url)}')"></span>`).join('')}</div>`;
+  };
 
   const toEmbedUrl = value => {
     if (!value) return '';
@@ -145,7 +173,7 @@
   };
 
   window.PortfolioCMS = {
-    categories, blockTypes, escape, normalizeCategory, projectCategories, projectYear, sortNewestFirst, toEmbedUrl,
+    categories, blockTypes, escape, normalizeCategory, projectCategories, projectYear, sortNewestFirst, isPublicProject, projectThumbnailMedia, projectThumbnailMarkup, toEmbedUrl,
     defaults() { return clone(window.PORTFOLIO_PROJECTS || []); },
     get() { return this.defaults(); },
     bySlug(slug) { return this.get().find(project => project.id === slug); },
@@ -156,16 +184,21 @@
     },
     renderGrid(container, options = {}) {
       if (!container) return;
-      let list = this.get();
+      let list = this.get().filter(isPublicProject);
       if (options.category) { const wanted = normalizeCategory(options.category); list = list.filter(project => projectCategories(project).includes(wanted)); }
       if (options.featured) list = list.filter(project => project.featured);
       list = sortNewestFirst(list);
-      container.innerHTML = list.length ? list.map(project => `<a class="card cms-card" data-cat="${escape(normalizeCategory(project.category))}" href="${this.projectUrl(project, options.prefix || '../', options.category || '')}"><div class="cms-cover" style="--project-accent:${escape(project.accent || '#b9bec8')};background-image:url('${escape(project.cover || '')}')"></div><div class="card-body"><div class="meta"><span>${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title)}</h3><p class="muted">${escape(project.summary || '')}</p></div></a>`).join('') : `<div class="empty-state"><h3>No projects here yet.</h3><p>Add one from the Admin panel.</p></div>`;
+      container.innerHTML = list.length ? list.map(project => `<a class="card cms-card" data-cat="${escape(normalizeCategory(project.category))}" href="${this.projectUrl(project, options.prefix || '../', options.category || '')}">${projectThumbnailMarkup(project)}<div class="card-body"><div class="meta"><span>${escape(project.categoryLabel || categories[normalizeCategory(project.category)] || project.category)}</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title)}</h3><p class="muted">${escape(project.summary || '')}</p></div></a>`).join('') : `<div class="empty-state"><h3>No projects here yet.</h3><p>Add one from the Admin panel.</p></div>`;
     }
   };
 
   const socialStyle = document.createElement('style');
   socialStyle.textContent = `
+    .cms-cover-mosaic{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:2px;background:#111318!important;background-image:none!important;overflow:hidden}
+    .cms-cover-mosaic>span{min-width:0;min-height:0;background-size:cover;background-position:center;transition:transform .55s ease,filter .55s ease;filter:saturate(.9) brightness(.88)}
+    .cms-cover-mosaic.count-1>span{grid-column:1/-1;grid-row:1/-1}.cms-cover-mosaic.count-2>span{grid-row:1/-1}.cms-cover-mosaic.count-3>span:first-child{grid-row:1/-1}.cms-cover-mosaic.count-3>span:nth-child(2){grid-column:2}.cms-cover-mosaic.count-3>span:nth-child(3){grid-column:2}
+    .cms-card:hover .cms-cover-mosaic>span{transform:scale(1.035);filter:saturate(1) brightness(.95)}
+    .cms-cover-empty{display:grid!important;place-items:center;background:radial-gradient(circle at 50% 45%,color-mix(in srgb,var(--project-accent) 22%,#181a20),#111318 68%)!important;background-image:none!important}.cms-cover-empty span{font-size:2rem;color:var(--project-accent);opacity:.75}
     .social-media-figure{width:100%}
     .social-embed{position:relative;width:100%;overflow:hidden;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:#111318}
     .social-embed iframe{display:block;width:100%;height:100%;border:0;background:#111318}
@@ -183,7 +216,7 @@
   if (!detail) return;
   const params = new URLSearchParams(location.search);
   const project = PortfolioCMS.bySlug(detail.dataset.slug || params.get('slug'));
-  if (!project) { detail.innerHTML = '<section class="page-hero"><div class="wrap"><div class="eyebrow">Project not found</div><h1>This project does not exist.</h1><a class="button" href="../work/index.html">Back to work</a></div></section>'; return; }
+  if (!project || !isPublicProject(project)) { detail.innerHTML = '<section class="page-hero"><div class="wrap"><div class="eyebrow">Project unavailable</div><h1>This project is not currently available to view.</h1><a class="button" href="../work/index.html">Back to work</a></div></section>'; return; }
   document.title = `${project.title} | Shani Mezer`;
   detail.style.setProperty('--project-accent', project.accent || '#b9bec8');
   const blocks = Array.isArray(project.blocks) ? project.blocks : [];
