@@ -79,7 +79,7 @@
         <span class="project-thumb" style="background-image:url('${cms.escape(project.cover || '')}')"></span>
         <span>
           <strong>${cms.escape(project.title || 'Untitled')}</strong>
-          <small>${cms.escape(project.status || 'draft')} · ${(project.blocks || []).length} blocks</small>
+          <small>${cms.escape(project.status || 'draft')} · ${project.publicVisible === false ? 'hidden from site · ' : ''}${(project.blocks || []).length} blocks</small>
         </span>
       </button>`).join('');
     $$('.project-item').forEach(button => {
@@ -110,6 +110,7 @@
       .filter(value => value !== project.category).join(', ');
     settingsForm.elements.roles.value = (project.roles || []).join(', ');
     settingsForm.elements.featured.checked = !!project.featured;
+    if (settingsForm.elements.publicVisible) settingsForm.elements.publicVisible.checked = project.publicVisible !== false;
     syncCategoryCheckboxes();
   };
 
@@ -141,6 +142,7 @@
     project.tools = settingsForm.elements.tools.value.trim();
     project.client = settingsForm.elements.client.value.trim();
     project.featured = settingsForm.elements.featured.checked;
+    project.publicVisible = settingsForm.elements.publicVisible ? settingsForm.elements.publicVisible.checked : true;
     currentId = id;
   };
 
@@ -457,6 +459,7 @@
       categoryLabel:'Directing',
       roles:[],
       status:'draft',
+      publicVisible:true,
       accent:'#8e95a3',
       cover:'',
       video:'',
@@ -477,6 +480,7 @@
     copy.id = `${source.id}-copy-${Date.now().toString().slice(-4)}`;
     copy.title = `${source.title} Copy`;
     copy.status = 'draft';
+    copy.publicVisible = false;
     const idMap = new Map();
     copy.blocks = copy.blocks.map(block => {
       const newId = cms.makeId('block');
