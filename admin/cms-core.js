@@ -26,6 +26,7 @@
     if (!Array.isArray(p.roles)) p.roles = (p.role || '').split(',').map(x => x.trim()).filter(Boolean);
     if (!Array.isArray(p.categories)) p.categories = p.category ? [p.category] : [];
     if (!p.status) p.status = 'draft';
+    if (typeof p.publicVisible !== 'boolean') p.publicVisible = true;
     if (!Array.isArray(p.blocks) || !p.blocks.length) {
       const gallery = Array.isArray(p.gallery) ? p.gallery : [];
       p.blocks = [
@@ -48,7 +49,7 @@
   };
 
   window.PortfolioCMS = {
-    version:7,
+    version:8,
     blockTypes:{overview:'Overview',roles:'Roles',story:'Story Step',image:'Large Image',split:'Two Images',video:'Video',comparison:'Before / After',gallery:'Gallery',timeline:'Timeline',quote:'Quote',results:'Results',credits:'Credits',gameLinks:'Game Links / Play Buttons'},
     layouts:{wide:'Wide',contained:'Contained','text-left':'Text left','text-right':'Text right',grid:'Grid',carousel:'Carousel',masonry:'Masonry'},
     categories:{directing:'Directing',games:'Games',narrative:'Narrative Design',production:'Production',social:'Social Content',editing:'Editing',ai:'AI Creation'},
