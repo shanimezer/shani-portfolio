@@ -10,11 +10,11 @@
     return categories.includes('narrative') || categories.includes('narrative design');
   };
   const projects = window.PortfolioCMS.sortNewestFirst(
-    window.PORTFOLIO_PROJECTS.filter(project => project.status !== 'draft' && explicitNarrative(project))
+    window.PORTFOLIO_PROJECTS.filter(project => project.status !== 'draft' && window.PortfolioCMS.isPublicProject(project) && explicitNarrative(project))
   );
   grid.innerHTML = projects.length ? projects.map(project => `
     <a class="card cms-card narrative-card" href="${window.PortfolioCMS.projectUrl(project, prefix, 'narrative')}">
-      <div class="cms-cover" style="--project-accent:${escape(project.accent || '#ff70bc')};background-image:url('${escape(project.cover || '')}')"></div>
+      ${window.PortfolioCMS.projectThumbnailMarkup(project)}
       <div class="card-body"><div class="meta"><span>Narrative Design</span><span>${escape(project.year || '')}</span></div><h3>${escape(project.title || '')}</h3><p class="muted">${escape(project.summary || '')}</p><div class="case-study-cta"><span>Explore Project</span><b>↗</b></div></div>
     </a>`).join('') : '<div class="empty-state"><h3>No narrative projects yet.</h3><p>Tag a project with Narrative Design in the Admin panel.</p></div>';
 })();
