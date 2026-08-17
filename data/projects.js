@@ -106,7 +106,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       }
     ],
-    "role": ""
+    "role": "",
+    "publicVisible": true
   },
   {
     "id": "shushu",
@@ -582,7 +583,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       }
     ],
-    "role": "Content Creator · Creative · Scriptwriter · Creative Director · Editor · AI Visual Creator · Influencer Strategy"
+    "role": "Content Creator · Creative · Scriptwriter · Creative Director · Editor · AI Visual Creator · Influencer Strategy",
+    "publicVisible": true
   },
   {
     "id": "gen-z-judgment",
@@ -877,7 +879,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       }
     ],
-    "role": "Director, AI Creator, Editor, Narrative Designer"
+    "role": "Director, AI Creator, Editor, Narrative Designer",
+    "publicVisible": true
   },
   {
     "id": "crazy-like-me",
@@ -1129,7 +1132,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": "Rather than treating cinematics as standalone cutscenes, I designed them to become part of the storytelling itself. Each sequence was intended to raise questions instead of providing answers, introducing players to the world while preserving the mystery that drives the rest of the experience. Using AI generation allowed rapid visual experimentation, while careful editing and integration ensured that every cinematic remained consistent with the game's narrative and atmosphere."
       }
     ],
-    "role": "Game Designer, Producer, Narrative Designer, AI Designer"
+    "role": "Game Designer, Producer, Narrative Designer, AI Designer",
+    "publicVisible": true
   },
   {
     "id": "popcorn-chicken",
@@ -1541,7 +1545,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       }
     ],
-    "role": "Lead Developer, Game Designer, Sound Designer"
+    "role": "Lead Developer, Game Designer, Sound Designer",
+    "publicVisible": true
   },
   {
     "id": "team-r",
@@ -1970,7 +1975,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": "Developing and integrating the systems myself allowed me to see how small technical decisions directly affected pacing, clarity, feedback and the overall feel of the game."
       }
     ],
-    "role": "Producer, Developer, AI Designer, Tech-Artist"
+    "role": "Producer, Developer, AI Designer, Tech-Artist",
+    "publicVisible": true
   },
   {
     "id": "divine-chaos",
@@ -3490,7 +3496,8 @@ window.PORTFOLIO_PROJECTS = [
         "author": "",
         "takeaway": ""
       }
-    ]
+    ],
+    "publicVisible": true
   },
   {
     "id": "heir-of-death",
@@ -3859,7 +3866,8 @@ window.PORTFOLIO_PROJECTS = [
         "author": "",
         "takeaway": ""
       }
-    ]
+    ],
+    "publicVisible": true
   },
   {
     "id": "showreel-2026",
@@ -3867,7 +3875,7 @@ window.PORTFOLIO_PROJECTS = [
     "category": "editing",
     "categoryLabel": "Editing · Direction",
     "year": "2026",
-    "featured": true,
+    "featured": false,
     "accent": "#65b7ff",
     "cover": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1800&q=88",
     "video": "",
@@ -3971,7 +3979,8 @@ window.PORTFOLIO_PROJECTS = [
         "author": "",
         "takeaway": ""
       }
-    ]
+    ],
+    "publicVisible": false
   },
   {
     "id": "six-minds-social",
@@ -4437,7 +4446,8 @@ window.PORTFOLIO_PROJECTS = [
         "author": "",
         "takeaway": "Heir of Death is the first game.\nSix Minds is the brand we are building for the long run."
       }
-    ]
+    ],
+    "publicVisible": true
   },
   {
     "id": "loom-cinematics",
@@ -4765,7 +4775,8 @@ window.PORTFOLIO_PROJECTS = [
         "author": "",
         "takeaway": "- Directed and delivered two cinematics from concept to final edit.\n- Developed a structured AI production pipeline for narrative cinematics.\n- Balanced creative direction with technical constraints to maintain character and visual consistency.\n- Collaborated closely with the game's creator through multiple review and iteration cycles.\n- Delivered all production assets within a two week schedule and project budget."
       }
-    ]
+    ],
+    "publicVisible": true
   },
   {
     "id": "tau-arts",
@@ -5054,6 +5065,7 @@ window.PORTFOLIO_PROJECTS = [
         "author": "",
         "takeaway": ""
       }
-    ]
+    ],
+    "publicVisible": true
   }
 ];
