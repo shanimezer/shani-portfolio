@@ -9,10 +9,10 @@ window.PORTFOLIO_PROJECTS.push({
   roles: ["AI Filmmaker · Director · Editor"],
   status: "published",
   accent: "#8e95a3",
-  cover: "",
-  video: "",
+  cover: "https://drive.google.com/thumbnail?id=12r5CZ8yxEEsBmOWgpOS1b_y8P9NrATc5&sz=w1800",
+  video: "https://drive.google.com/file/d/100NtZB3b1OM6ui7S9AVSYllezpl1GulC/preview",
   summary: "Episode 1 of a vertical cinematic sequence created through an AI-first filmmaking workflow, focused on character consistency, performance, continuity and shot-to-shot visual storytelling.",
-  tools: "AI Image & Video Generation · Prompt Design · Keyframe Workflows · Editing",
+  tools: "Seedance · Kling · AI Image Generation · Adobe Premiere Pro · Prompt Design · Keyframe Workflows",
   client: "",
   featured: false,
   blocks: [
@@ -33,7 +33,15 @@ window.PORTFOLIO_PROJECTS.push({
       alwaysVisible: true,
       disciplines: ["ai", "directing"],
       links: [],
-      media: [],
+      media: [
+        {
+          id: "gow-final-film",
+          url: "https://drive.google.com/file/d/100NtZB3b1OM6ui7S9AVSYllezpl1GulC/preview",
+          type: "video",
+          title: "Episode 1 · Final Version",
+          caption: "Final vertical edit"
+        }
+      ],
       items: [
         { id: "gow-item-1", title: "Format", text: "Vertical cinematic sequence · 9:16" },
         { id: "gow-item-2", title: "Focus", text: "Character consistency · continuity · cinematic performance" },
@@ -51,7 +59,7 @@ window.PORTFOLIO_PROJECTS.push({
       visible: true,
       kicker: "From Shot List to Final Cut",
       title: "AI Production Workflow",
-      body: "The sequence was planned as a real cinematic scene before generation began. I created a detailed shot breakdown and defined what each shot needed to accomplish dramatically, visually and spatially.\n\nInstead of relying on one-pass generations, I worked through approved start frames and controlled iterations. Each new shot had to preserve character identity, wardrobe, environment, physical geography and emotional progression from the previous one. Prompting therefore functioned less like description and more like direction: blocking, eyelines, camera behavior, pacing, movement and performance all had to be specified deliberately.\n\nGenerated material was then reviewed, corrected and assembled in the edit, where pacing and continuity were refined into the final sequence.",
+      body: "The sequence was planned as a real cinematic scene before generation began. I created a detailed shot breakdown and defined what each shot needed to accomplish dramatically, visually and spatially.\n\nA visual continuity bible locked recurring descriptors and approved references for Ari, Blair, the Boss and guards, the welding workshop, the vintage car and trunk, and Ari’s office. For shots with complex blocking or camera geography, approved 9:16 start and end frames were created before animation.\n\nModel choice was made shot by shot. Seedance was used primarily for dialogue, lip-sync, performance and identity-sensitive acting, while Kling was used mainly for start/end-frame interpolation, camera blocking, physical movement and object physics. Generated material was then consolidated and edited in Adobe Premiere Pro with dialogue, ambience, Foley and music.",
       layout: "wide",
       accent: "#8e95a3",
       role: "AI Filmmaker · Director · Editor",
@@ -59,14 +67,47 @@ window.PORTFOLIO_PROJECTS.push({
       showInToc: true,
       alwaysVisible: false,
       disciplines: ["ai", "directing", "editing"],
-      links: [],
-      media: [],
+      links: [
+        { id: "gow-link-shotlist", label: "View Live Shotlist", url: "https://docs.google.com/spreadsheets/d/1PWLRiWzMT6uxsKrSt-iQpJ26mYnNAjg3eB9h44QNBdE/edit", style: "primary" },
+        { id: "gow-link-workflow", label: "Workflow & Prompts", url: "https://docs.google.com/document/d/1PmeLY034MNRtFECdA5Gl-wLb0cVxtXnMmHc9IXkRmL4/edit", style: "secondary" }
+      ],
+      media: [
+        {
+          id: "gow-kf-ari-boss",
+          url: "https://drive.google.com/thumbnail?id=1M09MfJAmeTWPzPyKEjWs5PF6SHhTkpw1&sz=w1600",
+          type: "image",
+          title: "Approved Keyframe · Ari Answers the Boss",
+          caption: "Identity-sensitive dialogue setup"
+        },
+        {
+          id: "gow-kf-blair-trunk",
+          url: "https://drive.google.com/thumbnail?id=1UOW68xs8wVfSXV9CB3cGO1kInj7tly4w&sz=w1600",
+          type: "image",
+          title: "Approved Keyframe · Blair in the Trunk",
+          caption: "Insert shot used to maintain geography and tension"
+        },
+        {
+          id: "gow-kf-face",
+          url: "https://drive.google.com/thumbnail?id=12r5CZ8yxEEsBmOWgpOS1b_y8P9NrATc5&sz=w1600",
+          type: "image",
+          title: "Approved Keyframe · Ari and Blair",
+          caption: "Character continuity and performance reference"
+        },
+        {
+          id: "gow-kf-kiss",
+          url: "https://drive.google.com/thumbnail?id=1ukiMQ3Ncx5LczGWBxATvCT6xvZsiwhaq&sz=w1600",
+          type: "image",
+          title: "Approved Keyframe · Blair Kisses Ari",
+          caption: "Late-sequence emotional continuity"
+        }
+      ],
       items: [
-        { id: "gow-flow-1", title: "01 · Shot Breakdown", text: "Breaking the scene into dramatic beats, camera setups and continuity requirements." },
-        { id: "gow-flow-2", title: "02 · Keyframe Design", text: "Establishing approved visual anchors before moving into video generation." },
-        { id: "gow-flow-3", title: "03 · Performance Prompting", text: "Directing movement, blocking, eyelines and emotional behavior through precise prompts." },
-        { id: "gow-flow-4", title: "04 · Continuity Control", text: "Maintaining character identity, wardrobe, props, environment and screen direction across shots." },
-        { id: "gow-flow-5", title: "05 · Final Edit", text: "Selecting, timing and assembling generated shots into a cohesive cinematic sequence." }
+        { id: "gow-flow-1", title: "01 · Source Analysis", text: "Story beats, dialogue, characters, props, locations, audio requirements and delivery constraints were extracted before visual generation." },
+        { id: "gow-flow-2", title: "02 · Continuity Bible", text: "Approved references locked identity, wardrobe, environment, props, lighting and screen direction." },
+        { id: "gow-flow-3", title: "03 · Keyframe-First Design", text: "Complex blocking and camera geography were established through approved start and end frames before animation." },
+        { id: "gow-flow-4", title: "04 · Performance Prompting", text: "Prompts controlled movement, blocking, eyelines, dialogue tone, lip-sync and physical behavior." },
+        { id: "gow-flow-5", title: "05 · Model Selection", text: "Seedance for performance-sensitive shots; Kling for interpolation, blocking, motion and object physics." },
+        { id: "gow-flow-6", title: "06 · Edit & Sound", text: "Selected takes were assembled in Premiere Pro with dialogue, workshop ambience, Foley and music." }
       ],
       quote: "",
       author: "",
@@ -89,7 +130,29 @@ window.PORTFOLIO_PROJECTS.push({
       alwaysVisible: false,
       disciplines: ["ai", "directing"],
       links: [],
-      media: [],
+      media: [
+        {
+          id: "gow-kf-please-dont-go",
+          url: "https://drive.google.com/thumbnail?id=1oeDORkuxGQHjArcmE-O64nYb1-TiIJpT&sz=w1600",
+          type: "image",
+          title: "Blair · Close-Up",
+          caption: "Performance-focused keyframe"
+        },
+        {
+          id: "gow-kf-water",
+          url: "https://drive.google.com/thumbnail?id=1u4e9WdM_YTnKxWua5EAudde67U0yR1qd&sz=w1600",
+          type: "image",
+          title: "Ari Returns with Water",
+          caption: "Maintaining character, wardrobe and room continuity"
+        },
+        {
+          id: "gow-kf-apron",
+          url: "https://drive.google.com/thumbnail?id=1EZgW27EnhuS_4dt435U3MX87vY7wDBvU&sz=w1600",
+          type: "image",
+          title: "Blair Removes Ari’s Apron",
+          caption: "Physical interaction and blocking reference"
+        }
+      ],
       items: [],
       quote: "",
       author: "",
