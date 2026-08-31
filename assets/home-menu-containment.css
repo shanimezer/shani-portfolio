@@ -1,0 +1,34 @@
+/* Prevent the off-canvas mobile menu from leaking into desktop/short viewports. */
+.home-page .mobile-menu{
+  visibility:hidden;
+  pointer-events:none;
+  overflow:hidden;
+  opacity:0;
+}
+.home-page .mobile-menu.open{
+  visibility:visible;
+  pointer-events:auto;
+  overflow-y:auto;
+  opacity:1;
+}
+
+/* On a true desktop the mobile menu should not participate in layout/rendering at all. */
+@media (min-width:901px) and (pointer:fine){
+  .home-page .mobile-menu{display:none!important;}
+}
+
+/* On mobile/coarse devices keep the existing animated menu behavior. */
+@media (max-width:900px), (pointer:coarse){
+  .home-page .mobile-menu{
+    display:flex;
+    visibility:hidden;
+    pointer-events:none;
+    overflow-y:auto;
+    opacity:0;
+  }
+  .home-page .mobile-menu.open{
+    visibility:visible;
+    pointer-events:auto;
+    opacity:1;
+  }
+}
