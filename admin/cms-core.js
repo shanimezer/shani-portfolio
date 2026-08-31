@@ -48,15 +48,22 @@
     return p;
   };
 
+  const mergeMissingDefaults = savedProjects => {
+    const saved = (savedProjects || []).map(migrateProject);
+    const ids = new Set(saved.map(project => project.id));
+    const missing = clone(window.PORTFOLIO_PROJECTS || []).map(migrateProject).filter(project => !ids.has(project.id));
+    return saved.concat(missing);
+  };
+
   window.PortfolioCMS = {
-    version:8,
+    version:9,
     blockTypes:{overview:'Overview',roles:'Roles',story:'Story Step',image:'Large Image',split:'Two Images',video:'Video',comparison:'Before / After',gallery:'Gallery',timeline:'Timeline',quote:'Quote',results:'Results',credits:'Credits',gameLinks:'Game Links / Play Buttons'},
     layouts:{wide:'Wide',contained:'Contained','text-left':'Text left','text-right':'Text right',grid:'Grid',carousel:'Carousel',masonry:'Masonry'},
     categories:{directing:'Directing',games:'Games',narrative:'Narrative Design',production:'Production',social:'Social Content',editing:'Editing',ai:'AI Creation'},
     disciplines:{directing:'Directing',gameDesign:'Game Design',narrativeDesign:'Narrative Design',cinematics:'Cinematics',production:'Production',motionCapture:'Motion Capture',editing:'Editing',ai:'AI',social:'Social Content'},
     makeId,normalizeBlock,migrateProject,
     defaults(){return clone(window.PORTFOLIO_PROJECTS||[]).map(migrateProject);},
-    get(){try{const saved=localStorage.getItem(KEY);if(saved)return JSON.parse(saved).map(migrateProject);const old=localStorage.getItem(OLD_KEY);if(old){const migrated=JSON.parse(old).map(migrateProject);this.save(migrated);return migrated;}return this.defaults();}catch{return this.defaults();}},
+    get(){try{const saved=localStorage.getItem(KEY);if(saved){const merged=mergeMissingDefaults(JSON.parse(saved));this.save(merged);return merged;}const old=localStorage.getItem(OLD_KEY);if(old){const migrated=mergeMissingDefaults(JSON.parse(old));this.save(migrated);return migrated;}return this.defaults();}catch{return this.defaults();}},
     save(projects){localStorage.setItem(KEY,JSON.stringify(projects));window.dispatchEvent(new CustomEvent('portfolio-projects-updated'));},
     reset(){localStorage.removeItem(KEY);localStorage.removeItem(OLD_KEY);},
     escape(value=''){const d=document.createElement('div');d.textContent=String(value);return d.innerHTML;},
