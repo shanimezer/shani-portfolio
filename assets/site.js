@@ -1,4 +1,14 @@
 (() => {
+  const faviconHref = 'https://shanimezer.github.io/shani-portfolio/assets/favicon.svg';
+  let favicon = document.querySelector('link[rel="icon"]');
+  if (!favicon) {
+    favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/svg+xml';
+    document.head.appendChild(favicon);
+  }
+  favicon.href = faviconHref;
+
   const body = document.body;
   const intro = document.getElementById('intro');
   const enter = document.getElementById('enterButton');
