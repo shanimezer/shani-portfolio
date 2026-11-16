@@ -17,6 +17,7 @@
   const mobileMenu = document.getElementById('mobileMenu');
   const overlay = document.getElementById('projectOverlay');
   const overlayClose = document.getElementById('overlayClose');
+  const showreelPlayer = document.getElementById('showreelPlayer');
   const motionToggle = document.getElementById('motionToggle');
   const cursor = document.querySelector('.cursor');
   const cursorText = cursor?.querySelector('span');
@@ -104,6 +105,9 @@
       event.preventDefault();
       overlay?.classList.add('open');
       overlay?.setAttribute('aria-hidden', 'false');
+      if (showreelPlayer && !showreelPlayer.hasAttribute('src')) {
+        showreelPlayer.src = showreelPlayer.dataset.src;
+      }
       body.style.overflow = 'hidden';
 
       if (coarse && !scrollNudgePlayed) {
@@ -119,6 +123,7 @@
   const closeOverlay = () => {
     overlay?.classList.remove('open');
     overlay?.setAttribute('aria-hidden', 'true');
+    showreelPlayer?.removeAttribute('src');
     body.style.overflow = '';
 
     if (coarse && !scrollNudgePlayed) {
