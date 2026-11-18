@@ -1986,18 +1986,17 @@ window.PORTFOLIO_PROJECTS = [
     "categories": [
       "production"
     ],
-    "categoryLabel": "VR Game · Production · Performance Capture",
+    "categoryLabel": "VR Game · Production",
     "roles": [
       "Producer",
-      "On-Set Direction",
       "Motion Capture Performer"
     ],
     "status": "published",
     "accent": "#79c6cc",
     "cover": "https://static.wixstatic.com/media/9b9f90_66851fdb45b34274973154a549e6c30a~mv2.jpeg",
     "video": "https://drive.google.com/file/d/1utED0K1WODfV2GTP_6UCjpQyLsNePTuA/preview",
-    "summary": "Producing a narrative VR game from casting and creative development through on-set motion capture and real-time Unity integration.",
-    "tools": "Unity · Motion Capture · Cross-Disciplinary Production",
+    "summary": "Production for a narrative VR game, collaborating closely with the director and multidisciplinary team from casting and planning through performance capture and Unity integration.",
+    "tools": "Unity · Production Coordination · Performance Capture",
     "client": "Digital Media Graduation Project · Tel Aviv University",
     "featured": false,
     "blocks": [
@@ -2009,7 +2008,7 @@ window.PORTFOLIO_PROJECTS = [
         "visible": true,
         "kicker": "2025 · VR GAME",
         "title": "Overview",
-        "body": "Ocean of Memories is a narrative-led VR game developed as a Digital Media graduation project at Tel Aviv University.\n\nI joined as the project's producer, guiding the production between April and September 2025. My role connected the creative and technical sides of development, from casting and script feedback to visual direction, performance capture and coordination with the team responsible for bringing those performances into Unity.",
+        "body": "Ocean of Memories is a narrative VR game developed as a Digital Media graduation project at Tel Aviv University.\n\nI joined as the producer and worked closely with the director throughout the project. I supported the production from casting and script discussions to scheduling, team coordination and on-set logistics, working alongside developers, animators and technical artists as the experience took shape in Unity.\n\nI also appeared as a motion capture performer in the roles of Maggie and Emily. The capture itself was handled by the relevant technical team.",
         "layout": "wide",
         "accent": "#82d2dc",
         "role": "Producer",
@@ -2052,12 +2051,12 @@ window.PORTFOLIO_PROJECTS = [
         "parentId": "",
         "visible": true,
         "kicker": "PRODUCTION",
-        "title": "Bringing the Team Together",
-        "body": "Producing Ocean of Memories meant keeping a multidisciplinary team aligned around one experience. I coordinated developers, animators and technical artists while overseeing casting, advising on script refinements and helping translate the creative vision into a workable production process.\n\nA central part of my job was connecting decisions made in rehearsals and on set with the requirements of the real-time pipeline. Creative choices had to serve both the emotional performance and what the team could capture, animate and integrate.",
+        "title": "Producing the Experience",
+        "body": "My main responsibility was helping the director turn the project's creative vision into a practical production. I coordinated people, schedules and communication across disciplines, supported casting and script discussions, and worked alongside the director to prepare and run the shoot.\n\nWe discussed creative questions, including staging and the game's visual direction, but the artistic vision and visual language were developed by the director. My contribution was to support that process from a production perspective and help the team execute it.",
         "layout": "wide",
         "accent": "#82d2dc",
         "role": "Producer",
-        "navTitle": "Bringing the Team Together",
+        "navTitle": "Producing the Experience",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -2068,28 +2067,28 @@ window.PORTFOLIO_PROJECTS = [
         "items": [
           {
             "id": "ocean-prod-1",
-            "title": "Casting & talent",
-            "text": "Oversaw casting and helped connect performance choices to the needs of the story."
+            "title": "Production coordination",
+            "text": "Scheduling, planning, logistics and keeping work aligned across departments."
           },
           {
             "id": "ocean-prod-2",
-            "title": "Creative development",
-            "text": "Contributed script feedback, visual direction and staging decisions."
+            "title": "Director collaboration",
+            "text": "Working closely with the director on practical production decisions, casting and script discussions."
           },
           {
             "id": "ocean-prod-3",
-            "title": "Team coordination",
-            "text": "Aligned developers, animators and technical artists throughout the production."
+            "title": "Team communication",
+            "text": "Coordinating developers, animators and technical artists throughout development."
           },
           {
             "id": "ocean-prod-4",
-            "title": "Capture pipeline",
-            "text": "Coordinated the production workflow supporting motion-capture data for real-time Unity integration."
+            "title": "On-set support",
+            "text": "Supporting the director and the team during production and performance-capture sessions."
           }
         ],
         "quote": "",
         "author": "",
-        "takeaway": "Production was the bridge between story, performance and technical delivery."
+        "takeaway": "My role was to support the director's vision and make it achievable through planning, coordination and hands-on production."
       },
       {
         "id": "block-ocean-capture",
@@ -2097,13 +2096,13 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "PERFORMANCE CAPTURE",
-        "title": "Directing the Capture",
-        "body": "On set, I directed production operations and worked closely with the performers and technical team to capture expressive performances that could be used in the game.\n\nI also stepped in front of the motion-capture system as a performer, playing Maggie and Emily. Having a role on both sides of the capture process gave me a direct view of how acting choices, staging and technical constraints affect the final experience.\n\nSelected footage from the production:",
+        "kicker": "PRODUCTION & PERFORMANCE",
+        "title": "On Set & Performance Capture",
+        "body": "I worked closely with the director during production, supporting the shoot and coordinating with the cast and technical team. I did not operate the motion capture system or direct the capture process.\n\nI also performed the characters Maggie and Emily in motion capture sessions.\n\nThe footage below provides a glimpse of the production, including an interview I conducted with the director. These are supporting documentary materials, not separate trailers.",
         "layout": "wide",
         "accent": "#82d2dc",
-        "role": "Producer · Motion Capture Performer",
-        "navTitle": "Directing the Capture",
+        "role": "Producer · Performer",
+        "navTitle": "On Set & Performance Capture",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -2112,25 +2111,39 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
+            "id": "ocean-clips-start",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Start carousel",
+            "caption": ""
+          },
+          {
             "id": "ocean-footage-1",
             "url": "https://video.wixstatic.com/video/9b9f90_242cc15da3364260a26352de11089ab7/480p/mp4/file.mp4",
             "type": "video",
-            "title": "Production footage 01",
-            "caption": "Original project footage"
+            "title": "Behind the scenes · Clip 1",
+            "caption": "Production and behind-the-scenes footage"
           },
           {
             "id": "ocean-footage-2",
             "url": "https://video.wixstatic.com/video/9b9f90_94e93df9b63c4da3b1b3130519c32e5d/480p/mp4/file.mp4",
             "type": "video",
-            "title": "Production footage 02",
-            "caption": "Original project footage"
+            "title": "Behind the scenes · Clip 2",
+            "caption": "Additional material from the production"
           },
           {
             "id": "ocean-footage-3",
             "url": "https://video.wixstatic.com/video/9b9f90_9443b70d9d9847219db1259f33f19886/480p/mp4/file.mp4",
             "type": "video",
-            "title": "Production footage 03",
-            "caption": "Original project footage"
+            "title": "Behind the scenes · Clip 3",
+            "caption": "Additional material from the production"
+          },
+          {
+            "id": "ocean-clips-end",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End carousel",
+            "caption": ""
           }
         ],
         "items": [],
@@ -2144,13 +2157,13 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "CREATIVE DIRECTION",
-        "title": "Shaping the Visual Experience",
-        "body": "Alongside production management, I contributed to the game's visual direction and staging. The goal was to maintain a consistent creative language as the project moved between script, actors, motion capture, animation and the VR environment.\n\nThis work required close collaboration rather than a handoff between departments: decisions about framing, performance and visual style affected the production workflow, and the workflow in turn shaped what was possible on screen.",
+        "kicker": "WORKING WITH THE DIRECTOR",
+        "title": "Creative Collaboration",
+        "body": "Throughout production, I worked closely with the director, who consulted with me about elements of the game's visual approach and staging. I offered feedback and helped translate decisions into the production process, but I was not responsible for creating the visual language or art direction.\n\nThe images here are included to give a sense of the project's world and the creative work I supported, not to claim authorship of its visual design.",
         "layout": "wide",
         "accent": "#82d2dc",
-        "role": "Producer · Creative Collaboration",
-        "navTitle": "Shaping the Visual Experience",
+        "role": "Producer",
+        "navTitle": "Creative Collaboration",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -2159,18 +2172,32 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
+            "id": "ocean-visual-start",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Start carousel",
+            "caption": ""
+          },
+          {
             "id": "ocean-visual-1",
             "url": "https://static.wixstatic.com/media/9b9f90_93fbddbaaa9c4fbdaeeb9836928f80de~mv2.jpeg",
             "type": "image",
-            "title": "Project imagery",
-            "caption": "Visual documentation from Ocean of Memories"
+            "title": "Ocean of Memories · Project still",
+            "caption": "Visual material from the project, shown for context"
           },
           {
             "id": "ocean-visual-2",
             "url": "https://static.wixstatic.com/media/9b9f90_187bfaa4ac314928aebe9e61e441f57f~mv2.jpeg",
             "type": "image",
-            "title": "Production imagery",
-            "caption": "Project documentation"
+            "title": "Ocean of Memories · Project still",
+            "caption": "Visual material from the project, shown for context"
+          },
+          {
+            "id": "ocean-visual-end",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End carousel",
+            "caption": ""
           }
         ],
         "items": [],
@@ -2184,13 +2211,13 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "BEHIND THE SCENES",
-        "title": "Production Gallery",
-        "body": "Images from the project's production and performance-capture process.",
-        "layout": "grid",
+        "kicker": "FROM THE PROJECT",
+        "title": "Project & Production Gallery",
+        "body": "A collection of project imagery and behind-the-scenes documentation. These visuals are presented together to give context to the experience and its production.",
+        "layout": "wide",
         "accent": "#82d2dc",
         "role": "Producer",
-        "navTitle": "Production Gallery",
+        "navTitle": "Project & Production Gallery",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -2199,60 +2226,74 @@ window.PORTFOLIO_PROJECTS = [
         "links": [],
         "media": [
           {
+            "id": "ocean-gallery-start",
+            "url": "slideshow://start?transition=slide",
+            "type": "image",
+            "title": "Start carousel",
+            "caption": ""
+          },
+          {
             "id": "ocean-photo-1",
             "url": "https://static.wixstatic.com/media/9b9f90_87d5167b408e4ff7886d9f76d09f324b~mv2.jpeg",
             "type": "image",
-            "title": "Production image 01",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-2",
             "url": "https://static.wixstatic.com/media/9b9f90_6bd803c4e03046009c550f23788aa75d~mv2.jpeg",
             "type": "image",
-            "title": "Production image 02",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-3",
             "url": "https://static.wixstatic.com/media/9b9f90_0b2249466dce4b9f8f91637daf5dfa9f~mv2.jpg",
             "type": "image",
-            "title": "Production image 03",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-4",
             "url": "https://static.wixstatic.com/media/9b9f90_a8be9379dd144ff99801f4efd9a04f4c~mv2.jpg",
             "type": "image",
-            "title": "Production image 04",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-5",
             "url": "https://static.wixstatic.com/media/9b9f90_cf32444366474c58a1b51f4106adb4c0~mv2.jpg",
             "type": "image",
-            "title": "Production image 05",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-6",
             "url": "https://static.wixstatic.com/media/9b9f90_16df9ecc867440dcaa9a02a114747374~mv2.jpg",
             "type": "image",
-            "title": "Production image 06",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-7",
             "url": "https://static.wixstatic.com/media/9b9f90_20a24b38093f4cb3825ea467c0449a06~mv2.jpg",
             "type": "image",
-            "title": "Production image 07",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
           },
           {
             "id": "ocean-photo-8",
             "url": "https://static.wixstatic.com/media/9b9f90_b16163cdf98a43fabcc3af5392f82db6~mv2.jpg",
             "type": "image",
-            "title": "Production image 08",
-            "caption": "Ocean of Memories · Production documentation"
+            "title": "Ocean of Memories",
+            "caption": "Project imagery and production documentation"
+          },
+          {
+            "id": "ocean-gallery-end",
+            "url": "slideshow://end",
+            "type": "image",
+            "title": "End carousel",
+            "caption": ""
           }
         ],
         "items": [],
@@ -2282,20 +2323,25 @@ window.PORTFOLIO_PROJECTS = [
           {
             "id": "ocean-credit-1",
             "title": "Project",
-            "text": "Ocean of Memories · a graduation project by Shaked Regev"
+            "text": "Ocean of Memories · graduation project by Shaked Regev"
           },
           {
             "id": "ocean-credit-2",
             "title": "My roles",
-            "text": "Producer · On-set direction · Motion-capture performer (Maggie and Emily)"
+            "text": "Producer · Motion Capture Performer (Maggie and Emily)"
           },
           {
             "id": "ocean-credit-3",
+            "title": "Creative direction",
+            "text": "Led by the director, in close collaboration with production"
+          },
+          {
+            "id": "ocean-credit-4",
             "title": "Production",
             "text": "April–September 2025 · Tel Aviv, Israel"
           },
           {
-            "id": "ocean-credit-4",
+            "id": "ocean-credit-5",
             "title": "Engine",
             "text": "Unity"
           }
@@ -2306,7 +2352,7 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     "publicVisible": true,
-    "role": "Producer · On-Set Direction · Motion Capture Performer"
+    "role": "Producer · Motion Capture Performer"
   },
   {
     "id": "divine-chaos",
