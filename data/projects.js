@@ -1995,7 +1995,7 @@ window.PORTFOLIO_PROJECTS = [
     "status": "published",
     "accent": "#79c6cc",
     "cover": "https://static.wixstatic.com/media/9b9f90_66851fdb45b34274973154a549e6c30a~mv2.jpeg",
-    "video": "",
+    "video": "https://drive.google.com/file/d/1utED0K1WODfV2GTP_6UCjpQyLsNePTuA/preview",
     "summary": "Producing a narrative VR game from casting and creative development through on-set motion capture and real-time Unity integration.",
     "tools": "Unity · Motion Capture · Cross-Disciplinary Production",
     "client": "Digital Media Graduation Project · Tel Aviv University",
@@ -2305,7 +2305,8 @@ window.PORTFOLIO_PROJECTS = [
         "takeaway": ""
       }
     ],
-    "publicVisible": true
+    "publicVisible": true,
+    "role": "Producer · On-Set Direction · Motion Capture Performer"
   },
   {
     "id": "divine-chaos",
