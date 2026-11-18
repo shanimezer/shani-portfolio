@@ -11,7 +11,7 @@
 .ocean-hero-heading p {max-width:475px;color:#d4e0e0!important;font-size:clamp(1rem,1.5vw,1.14rem)!important;line-height:1.7!important}
 .ocean-hero-heading .project-tags {margin-top:24px}
 .ocean-hero-video {position:relative;z-index:3;width:100%;aspect-ratio:16/9;background:#04080a;border:1px solid rgba(169,231,235,.25);border-radius:18px;overflow:hidden;box-shadow:0 30px 75px rgba(0,0,0,.46)}
-.ocean-hero-video iframe {display:block;width:100%;height:100%;border:0}
+.ocean-hero-video iframe,.ocean-hero-video video {display:block;width:100%;height:100%;border:0;object-fit:contain;background:#04080a}
 .ocean-video-label {position:absolute;right:12px;top:12px;padding:7px 10px;font-size:10px;line-height:1;letter-spacing:.12em;font-weight:700;border-radius:6px;background:rgba(6,12,16,.75);color:#e5f5f6;pointer-events:none}
 @media(max-width:980px){.ocean-hero-inner{grid-template-columns:1fr;padding-top:125px;padding-bottom:56px;gap:30px}.ocean-hero-heading h1{font-size:clamp(3.4rem,10vw,6.4rem)!important}.ocean-hero-heading p{max-width:720px}}
 @media(max-width:600px){.ocean-hero-inner{width:calc(100% - 32px);padding-top:108px;padding-bottom:40px}.ocean-hero-heading h1{font-size:clamp(3.1rem,13vw,4.8rem)!important}.ocean-hero-video{border-radius:12px}}
