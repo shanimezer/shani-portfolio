@@ -2096,13 +2096,13 @@ window.PORTFOLIO_PROJECTS = [
         "level": "primary",
         "parentId": "",
         "visible": true,
-        "kicker": "PRODUCTION DOCUMENTATION",
-        "title": "On Set",
-        "body": "I supported the director during the shoot, worked with the cast and crew, and also performed Maggie and Emily in motion capture.\n\nThe following videos are additional material from the production.",
+        "kicker": "FROM THE PRODUCTION",
+        "title": "Interview & Animation Test",
+        "body": "An interview I conducted with director Shaked Regev, followed by an early animation test of Thomas, the main character, wearing his hospital gown.",
         "layout": "wide",
         "accent": "#82d2dc",
         "role": "Producer · Performer",
-        "navTitle": "On Set",
+        "navTitle": "Interview & Animation Test",
         "showInToc": true,
         "alwaysVisible": false,
         "disciplines": [
@@ -2121,15 +2121,15 @@ window.PORTFOLIO_PROJECTS = [
             "id": "ocean-footage-2",
             "url": "https://video.wixstatic.com/video/9b9f90_94e93df9b63c4da3b1b3130519c32e5d/480p/mp4/file.mp4",
             "type": "video",
-            "title": "Production footage",
-            "caption": ""
+            "title": "Interview with Director Shaked Regev",
+            "caption": "An interview I conducted with the game's director."
           },
           {
             "id": "ocean-footage-3",
             "url": "https://video.wixstatic.com/video/9b9f90_9443b70d9d9847219db1259f33f19886/480p/mp4/file.mp4",
             "type": "video",
-            "title": "Production footage",
-            "caption": ""
+            "title": "Thomas | Hospital Gown Animation Test",
+            "caption": "An animation test of the main character, Thomas, in his hospital gown."
           },
           {
             "id": "ocean-clips-end",
@@ -2304,14 +2304,14 @@ window.PORTFOLIO_PROJECTS = [
             "text": "Ocean of Memories · graduation project by Shaked Regev"
           },
           {
+            "id": "ocean-credit-director",
+            "title": "Director",
+            "text": "Shaked Regev"
+          },
+          {
             "id": "ocean-credit-2",
             "title": "My roles",
             "text": "Producer · Motion Capture Performer (Maggie and Emily)"
-          },
-          {
-            "id": "ocean-credit-3",
-            "title": "Creative direction",
-            "text": "Led by the director, in close collaboration with production"
           },
           {
             "id": "ocean-credit-4",
